@@ -10,7 +10,6 @@ export default function MainNavbar() {
     const [showEnterDoorsDropdown, setShowEnterDoorsDropdown] = useState(false);
     const [showInterkumDropdown, setShowInterkumDropdown] = useState(false);
     const [navbarScrolledCls, setNavbarScrolledCls] = useState('start-style');
-    const CLIENT_URL = "aaa";
 
     const handleWindowScrolled = () => {
         var scroll = window.scrollY;
@@ -35,28 +34,26 @@ export default function MainNavbar() {
                 <Container className={styles.navbarContainer}>
                     <Row>
                         <Col sm={12}>
-                            <Navbar className={`${styles.navbar} navbar-expand-xxl navbar-light`} expand="xxl">
+                            <Navbar className={`${styles.navbar} navbar-expand-xxl`} expand="xxl">
                                 <span className={styles.navbarBrand}>
-                                    {/* <span className={`${styles.navbarBrandTitle} ${styles.textShine}`}><span>פאר </span> <span>אנפון</span></span> */}
-                                    {/* <Image src="/images/company-logo-1.png" width={10} height={10} layout="responsive" alt="" /> */}
-                                    <Image src="/images/company-logo.png" width={10} height={3} layout="responsive" alt="" />
+                                    <Image src="/images/company-logo.png" className="undragablle-image" width={10} height={3} layout="responsive" alt="" />
                                 </span>
 
-                                <Navbar.Toggle className={styles.navbarToggler} type="button" data-toggle="collapse"
+                                <Navbar.Toggle className="navbar-toggler" type="button" data-toggle="collapse"
                                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                     aria-expanded="false" aria-label="Toggle navigation">
-                                    <span className={styles.navbarTogglerIcon}></span>
+                                    <span className="navbar-toggler-icon"></span>
                                 </Navbar.Toggle>
 
                                 <Navbar.Collapse id="navbarSupportedContent">
-                                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <div className="collapse navbar-collapse show" id="navbarSupportedContent">
                                         <ul className="navbar-nav ml-auto py-4 py-md-0">
 
                                             <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active-navbar">
                                                 <Link className="nav-link" href="/">בית</Link>
                                             </li>
 
-                                            <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                            <li onClick={() => alert("HI")} className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                                                 <NavDropdown
                                                     className="dropdown-toggle"
                                                     title="דלתות אוטומטיות"

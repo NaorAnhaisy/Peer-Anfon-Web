@@ -7,7 +7,7 @@ const AppLayout = ({ children }) => {
         <>
             <div>
                 <Navbar />
-                <div style={{ opacity: '0', height: '70px' }}></div>
+                {/* <div style={{ opacity: '0', height: '70px' }}></div> */}
             </div>
             <main>{children}</main>
             {/* <Footer /> */}
