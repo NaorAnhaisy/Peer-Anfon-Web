@@ -13,12 +13,11 @@ export default function MainNavbar() {
 
     const handleWindowScrolled = () => {
         var scroll = window.scrollY;
-        if (scroll >= 10) {
+        if (scroll >= 30) {
             setNavbarScrolledCls('scroll-on');
         } else {
             setNavbarScrolledCls('start-style');
         }
-
     };
 
     useEffect(() => {
@@ -53,10 +52,11 @@ export default function MainNavbar() {
                                                 <Link className="nav-link" href="/">בית</Link>
                                             </li>
 
-                                            <li onClick={() => alert("HI")} className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                            <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                                                 <NavDropdown
                                                     className="dropdown-toggle"
                                                     title="דלתות אוטומטיות"
+                                                    href="https://doors.com"
                                                     show={showAutoDoorsDropdown}
                                                     // onClick={() => history.push('/automatic-doores')}
                                                     onMouseEnter={() => setShowAutoDoorsDropdown(true)}

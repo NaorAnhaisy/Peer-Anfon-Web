@@ -206,14 +206,14 @@
     }
 }
 
-.badUrlBackToHomeLink {
+.badUrlBackToHomeLink a {
     color: white;
     text-decoration: inherit;
-    font-size: 50px;
+    font-size: 35px;
     transition: color .3s;
 }
 
-.badUrlBackToHomeLink:hover {
+.badUrlBackToHomeLink a:hover {
     color: wheat;
 }
 

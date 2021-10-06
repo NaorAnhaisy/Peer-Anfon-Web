@@ -16,7 +16,7 @@ export default function BadUrl() {
                 <div className={styles.contError}>
                     <h1>אופס!</h1>
                     <p>הדף שחיפשת אינו נמצא...</p>
-                    <p><Link className={styles.badUrlBackToHomeLink} href="/">לדף הבית</Link></p>
+                    <p className={styles.badUrlBackToHomeLink}><Link href="/">לדף הבית</Link></p>
                 </div>
                 <div className={styles.contAura1}></div>
                 <div className={styles.contAura2}></div>

@@ -71,7 +71,8 @@
 }
 
 .navbar-collapse {
-    flex-direction: row-reverse;
+    flex-direction: row;
+    justify-content: left;
 }
 
 .nav-link {

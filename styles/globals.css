@@ -191,6 +191,13 @@ body {
   user-drag: none;
 }
 
+.no-href-css {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+/* 404 page */
+
 .contPrincipal {
   margin: 0px auto;
   padding: 0px;
