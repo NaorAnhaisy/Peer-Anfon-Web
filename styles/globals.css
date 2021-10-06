@@ -1,16 +1,181 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext");
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alef&display=swap");
 
 * {
   box-sizing: border-box;
 }
+
+.App {
+  text-align: center;
+  margin: 0 auto;
+  min-height: 100%;
+  direction: rtl;
+}
+
+html,
+body,
+.App {
+  color: black;
+  background-color: #f7f7f5 !important;
+  scroll-behavior: smooth;
+}
+
+#root {
+  width: 100%;
+}
+
+body > #root > div {
+  min-height: 100vh !important;
+}
+
+body {
+  position: relative;
+  direction: rtl;
+  margin: 0;
+  min-height: 100%;
+  right: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 !important;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 7%;
+  transition: all 200ms linear;
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -ms-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+}
+
+::selection {
+  color: #fff;
+  background-color: #cebb52;
+}
+
+::-moz-selection {
+  color: #fff;
+  background-color: #cebb52;
+}
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 0.4em;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #cbcbcb;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(149, 149, 149);
+}
+
+@font-face {
+  font-family: VarelaRound;
+  src: local("VarelaRound"),
+    url(/src/assets/fonts/VarelaRound/VarelaRound.woff) format("woff"),
+    url(/src/assets/fonts/VarelaRound/VarelaRound.eot)
+      format("embedded-opentype"),
+    url(/src/assets/fonts/VarelaRound/VarelaRound.woff2) format("woff2"),
+    url(/src/assets/fonts/VarelaRound/VarelaRound.ttf) format("truetype"),
+    url(/src/assets/fonts/VarelaRound/VarelaRound.svg) format("svg");
+}
+
+.modal-dialog-margin-top {
+  margin-top: 100px !important;
+}
+
+.MuiDialog-container {
+  height: 90% !important;
+  margin-top: 70px !important;
+  outline: 0;
+}
+
+.dir-ltr {
+  direction: ltr;
+}
+
+.dir-rtl {
+  direction: rtl;
+}
+
+.main {
+  padding: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  /* TODO or 52px */
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  margin-top: 40px;
+  transform: translateY(-50%);
+  z-index: 20;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.separator {
+  background-color: #b3a073;
+  background: #b3a073;
+  display: inline-block;
+  height: 1px;
+  width: 48px;
+  margin: auto;
+}
+
+/* .container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+} */

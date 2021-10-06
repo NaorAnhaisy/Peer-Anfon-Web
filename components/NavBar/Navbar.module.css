@@ -1,0 +1,149 @@
+.startHeader {
+    opacity: 1;
+    transform: translateY(0);
+    padding: 20px 0;
+    box-shadow: 0 10px 30px 0 rgba(138, 155, 165, 0.15);
+    background-color: #131313e6;
+    color: white;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+
+.navbarBrand div div {
+    padding-top: 0 !important;
+}
+
+.navigationWrap {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+
+.navbarBrandTitle {
+    margin-right: 20px;
+    font-weight: bold;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.navbarBrand img {
+    width: auto !important;
+    position: relative !important;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+
+.navbarToggler {
+    float: right;
+    border: none !important;
+    outline: none !important;
+    padding-right: 0;
+}
+
+.navbarToggler:active, .navbarToggler:focus {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.navbarTogglerIcon {
+    background-image: none !important;
+    width: 24px;
+    height: 17px;
+    background-image: none;
+    position: relative;
+    border-bottom: 1px solid #000;
+    transition: all 300ms linear;
+    -webkit-transition: all 300ms linear;
+    -moz-transition: all 300ms linear;
+    -ms-transition: all 300ms linear;
+    -o-transition: all 300ms linear;
+}
+
+.navbarTogglerIcon:after, .navbarTogglerIcon:before {
+    width: 24px;
+    position: absolute;
+    height: 1px;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    content: '';
+    z-index: 2;
+    transition: all 300ms linear;
+    -webkit-transition: all 300ms linear;
+    -moz-transition: all 300ms linear;
+    -ms-transition: all 300ms linear;
+    -o-transition: all 300ms linear;
+}
+
+.navbarTogglerIcon:after {
+    top: 8px;
+}
+
+.navbarToggler[aria-expanded="true"] .navbarTogglerIcon:after {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+.navbarToggler[aria-expanded="true"] .navbarTogglerIcon:before {
+    transform: translateY(8px) rotate(-45deg);
+    -webkit-transform: translateY(8px) rotate(-45deg);
+    -moz-transform: translateY(8px) rotate(-45deg);
+    -ms-transform: translateY(8px) rotate(-45deg);
+    -o-transform: translateY(8px) rotate(-45deg);
+}
+
+.navbarToggler[aria-expanded="true"] .navbarTogglerIcon {
+    border-color: transparent;
+}
+
+@media (max-width: 576px) {
+    .navbarContainer {
+        padding-right: 30px !important;
+        padding-left: 30px !important;
+    }
+}
+
+.textShine {
+    position: absolute;
+    padding: 5px 48px;
+    background: linear-gradient(to right, #4d4d4d 0, #fff 10%, #4d4d4d 20%);
+    background-position: 0;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation-fill-mode: forwards;
+    -webkit-text-size-adjust: none;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+    animation: shine 8s infinite 5s;
+    -webkit-animation: shine 8s infinite 5s;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 0;
+    }
+    60% {
+        background-position: 180px;
+    }
+    100% {
+        background-position: 180px;
+    }
+}
