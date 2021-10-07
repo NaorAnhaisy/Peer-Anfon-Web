@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import Image from 'next/image';
 import styles from './Navbar.module.css';
-import { Row, Col, Container, NavDropdown, Navbar } from 'react-bootstrap';
+import Image from 'next/image';
 import Link from 'next/link';
+import { Row, Col, Container, NavDropdown, Navbar } from 'react-bootstrap';
+// import getConfig from 'next/config'
+// const { publicRuntimeConfig } = getConfig()
 
 export default function MainNavbar() {
     const [showAutoDoorsDropdown, setShowAutoDoorsDropdown] = useState(false);
@@ -56,7 +58,6 @@ export default function MainNavbar() {
                                                 <NavDropdown
                                                     className="dropdown-toggle"
                                                     title="דלתות אוטומטיות"
-                                                    href="https://doors.com"
                                                     show={showAutoDoorsDropdown}
                                                     // onClick={() => history.push('/automatic-doores')}
                                                     onMouseEnter={() => setShowAutoDoorsDropdown(true)}

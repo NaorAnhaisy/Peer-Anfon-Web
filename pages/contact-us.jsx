@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import styles from '../styles/contact-us.module.css';
 import { Col, Container, Row } from 'react-bootstrap';
 import Image from 'next/image';
-import ContactUsForm from '../components/ContactUsForm/ContactUsFor'
+import ContactUsForm from '../components/ContactUsForm/ContactUsForm'
 // import MapContainer from '../components/MapContainer/MapContainer';
 
 export default function ContactUs() {

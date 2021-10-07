@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import styles from './AboutUs.module.css';
+import styles from './about-us.module.css';
 
 export default function AboutUs() {
     return (

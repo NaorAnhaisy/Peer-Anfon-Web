@@ -113,177 +113,176 @@ export default function ContactUs() {
             data-aos-once={true}
             data-aos-duration="500"
         >
-            <div className="">
-                <div className="contact-us-form">
-                    {returnedMessage && isSendSucced ? (
-                        <p
-                            data-aos="fade-zoom-in"
-                            data-aos-once={true}
-                            data-aos-duration="600"
-                            className="forgot-pass-msg succes-msg succes-msg-background contact-us-succes-msg"
-                        >
-                            {returnedMessage}
-                            {returnedSubMsg && (
-                                <>
-                                    <br />
-                                    <span className="contact-us-succes-submsg">
-                                        {returnedSubMsg}
-                                    </span>
-                                </>
-                            )}
-                        </p>
-                    ) : (
-                        <form id="contact-card-owner-form" onSubmit={handleSubmit}>
-                            <fieldset className="contact-us-fieldset">
-                                <div
-                                    className="form-element form-input"
-                                >
-                                    <input
-                                        className="form-element-field"
-                                        placeholder=" "
-                                        type="text"
-                                        spellCheck="false"
-                                        value={fullName}
-                                        onChange={(e) => setFullName(e.target.value)}
-                                        required
-                                    />
-                                    <div className="form-element-bar"></div>
-                                    <label className="form-element-label">
-                                        <i className="fas fa-user form-account-icon"></i>
-                                        שם מלא
-                                    </label>
-                                </div>
-                                <div className="form-element form-input">
-                                    <input
-                                        className="form-element-field"
-                                        placeholder=" "
-                                        type="text"
-                                        spellCheck="false"
-                                        value={address}
-                                        onChange={(e) => setAddress(e.target.value)}
-                                        required
-                                    />
-                                    <div className="form-element-bar"></div>
-                                    <label className="form-element-label">
-                                        <i class="fas fa-map-marker-alt form-account-icon"></i>
-                                        כתובת
-                                    </label>
-                                </div>
-                            </fieldset>
-                            <fieldset className="contact-us-fieldset contact-us-2nd-fieldset">
-                                <div
-                                    className="form-element form-input"
-                                >
-                                    <input
-                                        className="form-element-field"
-                                        placeholder=" "
-                                        type="email"
-                                        spellCheck="false"
-                                        value={email}
-                                        onChange={(e) => setEmail(e.target.value)}
-                                        required
-                                    />
-                                    <div className="form-element-bar"></div>
-                                    <label className="form-element-label">
-                                        <i className="fas fa-at form-account-icon"></i>
-                                        דוא"ל
-                                    </label>
-                                </div>
-                                <div className="form-element form-input">
-                                    <input
-                                        className="form-element-field"
-                                        placeholder=" "
-                                        type="tel"
-                                        pattern="[0-9()#&+*-=.]+"
-                                        title="Allowed to use only numbers & Phone Characters (#, -, *,)."
-                                        value={phoneNumber}
-                                        onChange={(e) => setPhoneNumber(e.target.value)}
-                                        required
-                                    />
-                                    <div className="form-element-bar"></div>
-                                    <label className="form-element-label">
-                                        <i className="fas fa-phone form-account-icon"></i>
-                                        טלפון
-                                    </label>
-                                </div>
-                            </fieldset>
-                            <FormControl className={classes.formControl + " " + classes.typeOfReq} component="fieldset">
-                                <FormLabel
-                                    className={"contact-us-type-of-request-title"}
-                                >
-                                    מהי סוג הפנייה ?
-                                </FormLabel>
+            <div className={styles.contactUsForm}>
+                {returnedMessage && isSendSucced ? (
+                    <p
+                        data-aos="fade-zoom-in"
+                        data-aos-once={true}
+                        data-aos-duration="600"
+                        className={`${styles.succesMsg} ${styles.succesMsgBackground} ${styles.contactUsSuccesMsg}`}
+                    >
+                        {returnedMessage}
+                        {returnedSubMsg && (
+                            <>
                                 <br />
-                                <RadioGroup
-                                    className={classes.radioGroup}
-                                    aria-label="askType"
-                                    name="askType"
-                                    value={askType}
-                                    onChange={(e) => setAskType(e.target.value)}
-                                >
-                                    {radioOptions.map((value, i) => {
-                                        return (
-                                            <FormControlLabel
-                                                value={value}
-                                                key={i}
-                                                control={<Radio required color="default" />}
-                                                label={value}
-                                                classes={{
-                                                    root: classes.radioRoot,
-                                                    label: classes.radioLabel,
-                                                }}
-                                            />
-                                        );
-                                    })}
-                                </RadioGroup>
-                            </FormControl>
-
-                            <div className="form-element form-input">
-                                <textarea
+                                <span className={styles.contactUsSuccesSubmsg}>
+                                    {returnedSubMsg}
+                                </span>
+                            </>
+                        )}
+                    </p>
+                ) : (
+                    <form onSubmit={handleSubmit}>
+                        <fieldset className={styles.contactUsFieldset}>
+                            <div
+                                className="form-element form-input"
+                            >
+                                <input
                                     className="form-element-field"
+                                    placeholder=" "
+                                    type="text"
+                                    spellCheck="false"
+                                    value={fullName}
+                                    onChange={(e) => setFullName(e.target.value)}
                                     required
-                                    placeholder="איך נוכל לעזור?"
-                                    rows="3"
-                                    value={message}
-                                    onChange={(e) => setMessage(e.target.value)}
-                                ></textarea>
+                                />
                                 <div className="form-element-bar"></div>
                                 <label className="form-element-label">
-                                    <i className="fas fa-comment-dots form-account-icon"></i>
-                                    הודעה
+                                    <i className={`fas fa-user ${styles.formAccountIcon}`}></i>
+                                    שם מלא
                                 </label>
                             </div>
+                            <div className="form-element form-input">
+                                <input
+                                    className="form-element-field"
+                                    placeholder=" "
+                                    type="text"
+                                    spellCheck="false"
+                                    value={address}
+                                    onChange={(e) => setAddress(e.target.value)}
+                                    required
+                                />
+                                <div className="form-element-bar"></div>
+                                <label className="form-element-label">
+                                    <i className={`fas fa-map-marker-alt ${styles.formAccountIcon}`}></i>
+                                    כתובת
+                                </label>
+                            </div>
+                        </fieldset>
+                        <fieldset className={`${styles.contactUsFieldse} ${styles.contactUs2ndFieldset}`}>
+                            <div
+                                className="form-element form-input"
+                            >
+                                <input
+                                    className="form-element-field"
+                                    placeholder=" "
+                                    type="email"
+                                    spellCheck="false"
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
+                                    required
+                                />
+                                <div className="form-element-bar"></div>
+                                <label className="form-element-label">
+                                    <i className={`fas fa-at ${styles.formAccountIcon}`}></i>
+                                    דוא&quot;ל
+                                </label>
+                            </div>
+                            <div className="form-element form-input">
+                                <input
+                                    className="form-element-field"
+                                    placeholder=" "
+                                    type="tel"
+                                    pattern="[0-9()#&+*-=.]+"
+                                    title="Allowed to use only numbers & Phone Characters (#, -, *,)."
+                                    value={phoneNumber}
+                                    onChange={(e) => setPhoneNumber(e.target.value)}
+                                    required
+                                />
+                                <div className="form-element-bar"></div>
+                                <label className="form-element-label">
+                                    <i className={`fas fa-phone ${styles.formAccountIcon}`}></i>
+                                    טלפון
+                                </label>
+                            </div>
+                        </fieldset>
+                        <FormControl className={classes.formControl + " " + classes.typeOfReq} component="fieldset">
+                            <FormLabel
+                                className={styles.contactUsTypeOfRequestTitle}
+                            >
+                                מהי סוג הפנייה ?
+                            </FormLabel>
+                            <br />
+                            <RadioGroup
+                                className={classes.radioGroup}
+                                aria-label="askType"
+                                name="askType"
+                                value={askType}
+                                onChange={(e) => setAskType(e.target.value)}
+                            >
+                                {radioOptions.map((value, i) => {
+                                    return (
+                                        <FormControlLabel
+                                            value={value}
+                                            key={i}
+                                            control={<Radio required color="default" />}
+                                            label={value}
+                                            classes={{
+                                                root: classes.radioRoot,
+                                                label: classes.radioLabel,
+                                            }}
+                                        />
+                                    );
+                                })}
+                            </RadioGroup>
+                        </FormControl>
 
-                            {isLoading ? (
-                                <div
-                                    data-aos="fade-zoom-in"
-                                    data-aos-once={true}
-                                    data-aos-duration="1600"
-                                >
-                                    <RotateLoader className="contact-us-rotate-loader" />
+                        <div className="form-element form-input">
+                            <textarea
+                                className="form-element-field"
+                                required
+                                placeholder="איך נוכל לעזור?"
+                                rows="3"
+                                value={message}
+                                onChange={(e) => setMessage(e.target.value)}
+                            ></textarea>
+                            <div className="form-element-bar"></div>
+                            <label className="form-element-label">
+                                <i className={`fas fa-comment-dots ${styles.formAccountIcon}`}></i>
+                                הודעה
+                            </label>
+                        </div>
+
+                        {isLoading ? (
+                            <div
+                                data-aos="fade-zoom-in"
+                                data-aos-once={true}
+                                data-aos-duration="1600"
+                            >
+                                Loading...
+                                {/* <RotateLoader className="contact-us-rotate-loader" /> */}
+                            </div>
+                        ) : (
+                            <>
+                                <div className={`form-actions ${styles.contactUsFormSubmitDiv}`}>
+                                    <button className="form-submit-btn" type="submit">
+                                        שלח הודעה
+                                    </button>
                                 </div>
-                            ) : (
-                                <>
-                                    <div className="form-actions contact-us-form-submit-div">
-                                        <button className="contact-us-form-btn" type="submit">
-                                            שלח הודעה
-                                        </button>
-                                    </div>
-                                    {returnedMessage && !isSendSucced && (
-                                        <p
-                                            data-aos="fade-zoom-in"
-                                            data-aos-once={true}
-                                            data-aos-duration="500"
-                                            className="error-msg error-msg-background contact-us-error-msg"
-                                        >
-                                            {returnedMessage}
-                                        </p>
-                                    )}
-                                </>
-                            )}
-                        </form>
-                    )}
-                </div>
+                                {returnedMessage && !isSendSucced && (
+                                    <p
+                                        data-aos="fade-zoom-in"
+                                        data-aos-once={true}
+                                        data-aos-duration="500"
+                                        className={`${styles.errorMsg} ${styles.errorMsgBackground} ${styles.contactUsErrorMsg}`}
+                                    >
+                                        {returnedMessage}
+                                    </p>
+                                )}
+                            </>
+                        )}
+                    </form>
+                )}
             </div>
         </div>
     );
