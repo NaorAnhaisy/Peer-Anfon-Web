@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import getConfig from 'next/config'
 import styles from "./ContactUsForm.module.css";
 import AOS from "aos";
 import { makeStyles } from "@material-ui/core/styles";
@@ -9,10 +10,10 @@ import {
     RadioGroup,
     Radio
 } from "@material-ui/core";
-// import RotateLoader from "../Loaders/RotateLoader/RotateLoader";
-// import axios from "axios";
-// import { serverApiUrl } from "../../globals";
+import RotateLoader from "../Loaders/RotateLoader/RotateLoader";
+import axios from "axios";
 
+const { publicRuntimeConfig } = getConfig()
 const radioOptions = ["הצעת מחיר", "קריאה לתיקון", "חידוש ביטוח (לדלת אוטומטית)", "אחר"];
 
 const useStyles = makeStyles((theme) => ({
@@ -67,44 +68,44 @@ export default function ContactUs() {
 
         console.log(contactData);
 
-        setTimeout(() => {
-            setIsLoading(false);
-            setIsSendSucced(true);
-            setReturenedMessage(
-                "מייל נשלח בהצלחה!"
-            );
-            setReturnedSubMsg(
-                "נחזור אלייך בהקדם. תודה רבה!"
-            );
-        }, 2000);
+        // setTimeout(() => {
+        //     setIsLoading(false);
+        //     setIsSendSucced(true);
+        //     setReturenedMessage(
+        //         "מייל נשלח בהצלחה!"
+        //     );
+        //     setReturnedSubMsg(
+        //         "נחזור אלייך בהקדם. תודה רבה!"
+        //     );
+        // }, 2000);
 
-        // try {
-        //   axios
-        //     .post(serverApiUrl + "/general/ContactUs", contactData)
-        //     .then((response) => {
-        //       setIsLoading(false);
-        //       setIsSendSucced(true);
-        //       setReturenedMessage(response.data.message);
-        //       setReturnedSubMsg(response.data.subMessage);
-        //     })
-        //     .catch((err) => {
-        //       const resMessage =
-        //         (err.response && err.response.data && err.response.data.message) ||
-        //         err.message ||
-        //         err.toString();
+        try {
+          axios
+            .post(publicRuntimeConfig.SERVER_URL + "/mailer/contact-us", contactData)
+            .then((response) => {
+              setIsLoading(false);
+              setIsSendSucced(true);
+              setReturenedMessage(response.data.message);
+              setReturnedSubMsg(response.data.subMessage);
+            })
+            .catch((err) => {
+              const resMessage =
+                (err.response && err.response.data && err.response.data.message) ||
+                err.message ||
+                err.toString();
 
-        //       console.error(resMessage);
+              console.error(resMessage);
 
-        //       setIsLoading(false);
-        //       setIsSendSucced(false);
-        //       setReturenedMessage(resMessage);
-        //     });
-        // } catch (error) {
-        //   console.error(error);
-        //   setIsLoading(false);
-        //   setIsSendSucced(false);
-        //   setReturenedMessage(error);
-        // }
+              setIsLoading(false);
+              setIsSendSucced(false);
+              setReturenedMessage(resMessage);
+            });
+        } catch (error) {
+          console.error(error);
+          setIsLoading(false);
+          setIsSendSucced(false);
+          setReturenedMessage(error);
+        }
     };
 
     return (
@@ -135,7 +136,7 @@ export default function ContactUs() {
                     <form onSubmit={handleSubmit}>
                         <fieldset className={styles.contactUsFieldset}>
                             <div
-                                className="form-element form-input"
+                                className={`${styles.contactUsFormInput} form-element form-input`}
                             >
                                 <input
                                     className="form-element-field"
@@ -152,7 +153,7 @@ export default function ContactUs() {
                                     שם מלא
                                 </label>
                             </div>
-                            <div className="form-element form-input">
+                            <div className={`${styles.contactUsFormInput} form-element form-input`}>
                                 <input
                                     className="form-element-field"
                                     placeholder=" "
@@ -169,9 +170,9 @@ export default function ContactUs() {
                                 </label>
                             </div>
                         </fieldset>
-                        <fieldset className={`${styles.contactUsFieldse} ${styles.contactUs2ndFieldset}`}>
+                        <fieldset className={`${styles.contactUsFieldset} ${styles.contactUs2ndFieldset}`}>
                             <div
-                                className="form-element form-input"
+                                className={`${styles.contactUsFormInput} form-element form-input`}
                             >
                                 <input
                                     className="form-element-field"
@@ -188,7 +189,7 @@ export default function ContactUs() {
                                     דוא&quot;ל
                                 </label>
                             </div>
-                            <div className="form-element form-input">
+                            <div className={`${styles.contactUsFormInput} form-element form-input`}>
                                 <input
                                     className="form-element-field"
                                     placeholder=" "
@@ -259,8 +260,7 @@ export default function ContactUs() {
                                 data-aos-once={true}
                                 data-aos-duration="1600"
                             >
-                                Loading...
-                                {/* <RotateLoader className="contact-us-rotate-loader" /> */}
+                                <RotateLoader className={styles.contactUsRotateLoader} />
                             </div>
                         ) : (
                             <>

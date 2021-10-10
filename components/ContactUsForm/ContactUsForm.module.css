@@ -68,11 +68,11 @@
     background: #eb4c81;
 }
 
-.contact-us-fieldset {
+.contactUsFieldset {
     display: flex;
 }
 
-.contact-us-fieldset .form-element {
+.contactUsFormInput {
     width: 50%;
 }
 
@@ -113,10 +113,10 @@
         padding: 0;
         margin: 20px;
     }
-    .contact-us-fieldset {
+    .contactUsFieldset {
         display: contents;
     }
-    .contact-us-fieldset .form-element {
+    .contactUsFormInput {
         width: 100%;
     }
 }
@@ -151,7 +151,7 @@
     padding: 8px 15px;
 }
 
-.contact-us-succes-submsg {
+.contactUsSuccesSubmsg {
     font-size: 18px;
 }
 
@@ -159,7 +159,7 @@
     margin-top: 10px;
 }
 
-.contact-us-rotate-loader {
+.contactUsRotateLoader {
     margin: 30px auto;
 }
 

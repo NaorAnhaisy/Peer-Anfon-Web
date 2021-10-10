@@ -3,7 +3,7 @@ import styles from '../styles/contact-us.module.css';
 import { Col, Container, Row } from 'react-bootstrap';
 import Image from 'next/image';
 import ContactUsForm from '../components/ContactUsForm/ContactUsForm'
-// import MapContainer from '../components/MapContainer/MapContainer';
+import MapContainer from '../components/MapContainer/MapContainer';
 
 export default function ContactUs() {
 
@@ -23,7 +23,7 @@ export default function ContactUs() {
                 <Container>
                     <div className={styles.contactUsPageDiv}>
                         <div className={styles.contactUsPageImgDiv}>
-                            <Image width={10} height={3} layout="responsive" alt="" src="/images/backgrounds/contact-us-background-2.jpg" />
+                            <Image width={5} height={7} layout="responsive" alt="" src="/images/backgrounds/contact-us-background-2.jpg" />
                         </div>
                         <div className={styles.contactUsPageForm}>
                             <ContactUsForm />
@@ -31,7 +31,7 @@ export default function ContactUs() {
                     </div>
                 </Container>
             </Container>
-            {/* <MapContainer /> */}
+            <MapContainer />
             <Container className={styles.contactUsContactInfoContainer}>
                 <Row className={styles.contactUsContactInfoRow}>
                     <Col sm={12} md={6} lg={3}>
@@ -57,17 +57,17 @@ export default function ContactUs() {
                         <div className={styles.socialsContactUs}>
                             <ul className={styles.socials}>
                                 <li>
-                                    <a href="https://example.com">
+                                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                                         <i className={`${styles.zmdi} ${styles.zmdiFacebook} zmdi zmdi-facebook`}></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://example.com">
+                                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
                                         <i className={`${styles.zmdi} ${styles.zmdiInstagram} zmdi zmdi-instagram`}></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://example.com">
+                                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
                                         <i className={`${styles.zmdi} ${styles.zmdiYoutubePlay} zmdi zmdi-youtube-play`}></i>
                                     </a>
                                 </li>

@@ -38,7 +38,7 @@
         position: absolute;
         padding: 4rem;
         width: 60%;
-        margin-top: 2rem;
+        margin-top: 6rem;
         right: 0;
         border-radius: 10px;
         -webkit-border-radius: 10px;
@@ -78,6 +78,7 @@
 
 .contactUsContactInfoRow {
     padding: 20px;
+    row-gap: 3rem;
     text-align: right;
     font-family: 'Alef';
 }
