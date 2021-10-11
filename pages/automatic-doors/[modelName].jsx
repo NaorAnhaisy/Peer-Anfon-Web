@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 // import Link from 'next/Link';
-import Image from 'next/Image';
+import Image from 'next/image';
 import { Col, Container, Row } from "react-bootstrap";
 import styles from "../../styles/./automatic-door-model.module.css"
 

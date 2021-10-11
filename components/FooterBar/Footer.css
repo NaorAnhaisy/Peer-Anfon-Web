@@ -1,0 +1,41 @@
+.footer-bar-row {
+    width: 100% !important;
+    background: #b2a074;
+    color: white;
+    display: block;
+    padding: 15px;
+    font-size: 13px;
+    font-family: VarelaRound;
+    direction: ltr;
+}
+
+.copyright-span {
+    text-align: right;
+    direction: rtl;
+}
+
+.about-site {
+    text-align: left;
+    direction: ltr;
+}
+
+.developer-name {
+    margin-left: 5px;
+    color: #2f4f4f;
+    text-decoration: none;
+    transition: all .4s;
+}
+
+.developer-name:hover {
+    color: #1e2552;
+}
+
+@media (max-width: 767px) {
+    .footer-bar-row .col-sm-12 {
+        text-align: center;
+    }
+
+    .footer-bar-row .col-sm-12:first-child {
+        margin-bottom: 15px;
+    }
+}

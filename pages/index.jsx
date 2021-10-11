@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import Head from 'next/head'
 import Image from 'next/image';
 import styles from '../styles/Home.module.css'
 import { Col, Container, Row } from 'react-bootstrap';
 // import ImagesSlider from '../../Components/ImagesSlider/ImagesSlider';
-// import ColorsTemplate from '../../Components/ColorsTemplate/ColorsTemplate';
+import ColorsTemplate from '../components/ColorsTemplate/ColorsTemplate';
 import AOS from 'aos';
 import CountUp from 'react-countup';
 import VisibilitySensor from "react-visibility-sensor";
@@ -89,7 +88,7 @@ export default function Home() {
         <Container data-aos="fade-zoom-in" data-aos-easing="ease-in-back" className={styles.homeColorsContainer}>
           <Row className={styles.homeFlexColumnReverse}>
             <Col sm={12} md={6} >
-              {/* <ColorsTemplate /> */}
+              <ColorsTemplate />
             </Col>
             <Col sm={12} md={6} className={styles.homeColorsTextCol}>
               <h1>גודל וצבע כרצונך החופשי</h1>
@@ -117,7 +116,8 @@ export default function Home() {
             </VisibilitySensor>
           </h1>
           <p className={styles.inOurCustomersText}>בין לקוחותינו :</p>
-          <div className={styles.homeCustomersExamples}>
+        </Container>
+        {/* <div className={styles.homeCustomersExamples}>
             <div className={styles.homeItemZoom}>
               <Image alt="" width='100%' height='100%' src="/images/OurCustomers/agodathastodentim.jpg" />
             </div>
@@ -217,8 +217,55 @@ export default function Home() {
             <div className={styles.homeItemZoom}>
               <Image alt="" width='100%' height='100%' src="/images/OurCustomers/zalman.jpg" />
             </div>
+          </div> */}
+        <div className={styles.sliderBody}>
+          <div className={styles.slider}>
+            <div className={styles.slideTrack}>
+              <div className={styles.slide}>
+                <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" layout="responsive" height={100} width={250} alt="" />
+              </div>
+              <div className={styles.slide}>
+                <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" layout="responsive" height={100} width={250} alt="" />
+              </div>
+              <div className={styles.slide}>
+                <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" layout="responsive" height={100} width={250} alt="" />
+              </div>
+              <div className={styles.slide}>
+                <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" layout="responsive" height={100} width={250} alt="" />
+              </div>
+              <div className={styles.slide}>
+                <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" layout="responsive" height={100} width={250} alt="" />
+              </div>
+              <div className={styles.slide}>
+                <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" layout="responsive" height={100} width={250} alt="" />
+              </div>
+              <div className={styles.slide}>
+                <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" layout="responsive" height={100} width={250} alt="" />
+              </div>
+              <div className={styles.slide}>
+                <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" layout="responsive" height={100} width={250} alt="" />
+              </div>
+              <div className={styles.slide}>
+                <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" layout="responsive" height={100} width={250} alt="" />
+              </div>
+              <div className={styles.slide}>
+                <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" layout="responsive" height={100} width={250} alt="" />
+              </div>
+              <div className={styles.slide}>
+                <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" layout="responsive" height={100} width={250} alt="" />
+              </div>
+              <div className={styles.slide}>
+                <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" layout="responsive" height={100} width={250} alt="" />
+              </div>
+              <div className={styles.slide}>
+                <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" layout="responsive" height={100} width={250} alt="" />
+              </div>
+              <div className={styles.slide}>
+                <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" layout="responsive" height={100} width={250} alt="" />
+              </div>
+            </div>
           </div>
-        </Container>
+        </div>
       </div>
     </div >
   )

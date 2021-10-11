@@ -1,0 +1,87 @@
+.CrossfadeImage {
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+}
+
+.colorsTemplateColorTop {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute
+}
+
+.colorsTemplateColorBottom {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media (min-width: 640px) {
+    .smGap_6 {
+        gap: 1.5rem;
+    }
+}
+
+.elementsTemplate {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+
+
+
+.colorTemplateImgDiv img {
+    border-bottom-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+@media (min-width: 640px) {
+    .colorTemplateImgDiv img {
+        border-bottom-right-radius: 1.5rem;
+        border-top-left-radius: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .colorTemplateImgDiv img {
+        border-bottom-right-radius: 2rem;
+        border-top-left-radius: 2rem;
+    }
+}
+
+.orderFirst {
+    order: -9999;
+}
+
+.CrossfadeImage img {
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+@keyframes cf3FadeInOut {
+    0% {
+        opacity: 1;
+    }
+
+    45% {
+        opacity: 1;
+    }
+
+    55% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.CrossfadeImage img.colorsTemplateColorTop {
+    animation-name: cf3FadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-direction: alternate;
+}

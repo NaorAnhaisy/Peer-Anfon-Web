@@ -235,3 +235,23 @@ body {
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
+
+/* Automatic Doors */
+.carousel .carousel-indicators li {
+  width: 45px;
+  height: 2px;
+  margin: 0 14px;
+  transition: all 200ms;
+  -webkit-transition: all 200ms;
+  -moz-transition: all 200ms;
+  -ms-transition: all 200ms;
+  -o-transition: all 200ms;
+}
+
+.carousel .carousel-indicators :not(.active) {
+  background: #f1f1f1;
+}
+
+.carousel .carousel-indicators .active {
+  background: #a3a3a3;
+}
