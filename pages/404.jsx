@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import styles from "../styles/404.module.css";
 import Link from 'next/link';
+import Head from 'next/head';
 
 export default function BadUrl() {
     useEffect(() => {
@@ -12,6 +13,9 @@ export default function BadUrl() {
 
     return (
         <div className={styles.mainDiv}>
+            <Head>
+                <title>פאר אנפון תעשיות בע&quot;מ - דף לא נמצא</title>
+            </Head>
             <div className="contPrincipal">
                 <div className={styles.contError}>
                     <h1>אופס!</h1>

@@ -12,7 +12,12 @@
 
 @media (max-width: 1024px) {
     .contactUsPageImgDiv {
-        width: 100%;
+        display: none;
+    }
+
+    .contactUsFormContainer {
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     .contactUsPageForm {
@@ -26,7 +31,7 @@
     .contactUsPageDiv {
         flex-wrap: nowrap;
         flex-direction: row;
-        margin-bottom: 10rem;
+        margin-bottom: 15rem;
     }
 
     .contactUsPageImgDiv {

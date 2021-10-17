@@ -23,9 +23,12 @@ const useStyles = makeStyles((theme) => ({
     },
     radioRoot: {
         marginLeft: "0px",
+        float: "right",
+        textAlign: "right"
     },
     radioLabel: {
-        fontFamily: "inherit",
+        fontFamily: "revert",
+        textAlign: "right"
     },
     formControl: {
         display: "block",
@@ -209,7 +212,7 @@ export default function ContactUs() {
                         </fieldset>
                         <FormControl className={classes.formControl + " " + classes.typeOfReq} component="fieldset">
                             <FormLabel
-                                className={styles.contactUsTypeOfRequestTitle}
+                                className={`mb-3 ${styles.contactUsTypeOfRequestTitle}`}
                             >
                                 מהי סוג הפנייה ?
                             </FormLabel>
@@ -230,7 +233,7 @@ export default function ContactUs() {
                                             label={value}
                                             classes={{
                                                 root: classes.radioRoot,
-                                                label: classes.radioLabel,
+                                                label: styles.radioLabel,
                                             }}
                                         />
                                     );
@@ -264,10 +267,8 @@ export default function ContactUs() {
                             </div>
                         ) : (
                             <>
-                                <div className={`form-actions ${styles.contactUsFormSubmitDiv}`}>
-                                    <button className="form-submit-btn" type="submit">
-                                        שלח הודעה
-                                    </button>
+                                <div className={`${styles.contactUsFormSubmitDiv}`}>
+                                    <button className="form-submit-btn-send" type="submit">שלח הודעה</button>
                                 </div>
                                 {returnedMessage && !isSendSucced && (
                                     <p

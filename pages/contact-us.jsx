@@ -20,7 +20,7 @@ export default function ContactUs() {
                     <div className="mt-3 mb-4 separator"></div>
                     <p>בין אם זה לקבוע תור לביקור אצלנו, לקבל ייעוץ מומחה או לדבר על דרישותיכם, נשמח לשמוע מכם. מלאו את הטופס למטה ונהיה בקשר.</p>
                 </div>
-                <Container>
+                <Container className={styles.contactUsFormContainer}>
                     <div className={styles.contactUsPageDiv}>
                         <div className={styles.contactUsPageImgDiv}>
                             <Image width={5} height={7} layout="responsive" alt="" src="/images/backgrounds/contact-us-background-2.jpg" />
@@ -38,7 +38,7 @@ export default function ContactUs() {
                         <h6>צרו קשר</h6>
                         <span><a href="tel:0525561128" className="no-href-css">טלפון: 072-3712701</a></span>
                         <br />
-                        <span>דוא&quot;ל: info@8peer.co.il</span>
+                        <span><a href="mailto:info@8peer.co.il" className="no-href-css">דוא&quot;ל: info@8peer.co.il</a></span>
                     </Col>
                     <Col sm={12} md={6} lg={3}>
                         <h6>כתובת</h6>

@@ -93,19 +93,19 @@ export default function MainNavbar() {
                           onMouseEnter={() => setShowAutoDoorsDropdown(true)}
                           onMouseLeave={() => setShowAutoDoorsDropdown(false)}
                         >
-                          <NavDropdown.Item href="/automatic-doors/double-leaf">
+                          <NavDropdown.Item href="/automatic-doors/double-leaf-door">
                             אוטומטית הזזה דו-כנף
                           </NavDropdown.Item>
-                          <NavDropdown.Item href="/automatic-doors/single-leaf">
+                          <NavDropdown.Item href="/automatic-doors/single-leaf-door">
                             אוטומטית הזזה חד-כנף
                           </NavDropdown.Item>
-                          <NavDropdown.Item href="/automatic-doors/telescop">
+                          <NavDropdown.Item href="/automatic-doors/telescop-door">
                             אוטומטית טלסקופית
                           </NavDropdown.Item>
-                          <NavDropdown.Item href="/automatic-doors/crashed">
+                          <NavDropdown.Item href="/automatic-doors/collapse-door">
                             אוטומטית קורסת
                           </NavDropdown.Item>
-                          <NavDropdown.Item href="/automatic-doors/inside">
+                          <NavDropdown.Item href="/automatic-doors/inside-door">
                             דלתות פנים אוטומטיות
                           </NavDropdown.Item>
                         </NavDropdown>
