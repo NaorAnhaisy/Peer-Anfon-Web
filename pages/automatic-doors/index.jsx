@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { Carousel } from 'react-bootstrap';
+import { Carousel, Col, Container, Row } from 'react-bootstrap';
 import styles from '../../styles/automatic-doors.module.css';
 
 export default function AutomaticDoors() {
@@ -40,7 +40,24 @@ export default function AutomaticDoors() {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
-            <h1>Automatic Doors</h1>
+
+            <Row className="p-5">
+                <Col sm={12} md={6} className="pr-5 pl-5">
+                    <h1>דלתות אוטומטיות</h1>
+                    <p>
+                        פאר אנפון : יבואנית בלעדית של מערכות דלתות אוטומטיות של TAU איטליה המבטיחים איכות , שירות ואמינות מוצריה . www.tauitalia.com
+                        דלת הזזה אוטומטית יכולה להיות בעלת מראה זכוכית עם פרופיל דק או עם מסגרת עבה בהתאם לדרישות לקוח .
+                        דלתות אוטומטיות אוטומטיות מותקנות על מסילה עילית ומתקבל מראה אסתטי ונקי.
+                        דלתות חשמליות אוטומטיות מותקנות בעיקר בפתחן של כניסה למשרדים, בתים משותפים , חנויות, ועוד
+                    </p>
+                </Col>
+                <Col sm={12} md={6} className="pl-5 pr-5">
+                    <img src="/images/Doors/ALM/background.jpg" className={styles.doorSelectedMainDiv} alt="דלת אוטומטית" />
+                </Col>
+            </Row>
+
+            <br />
+            <br />
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempus imperdiet nulla malesuada pellentesque elit eget gravida. Rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Massa id neque aliquam vestibulum morbi blandit. Leo urna molestie at elementum eu facilisis. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean. Commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Vestibulum morbi blandit cursus risus at ultrices mi tempus. In ante metus dictum at tempor commodo ullamcorper a. Nunc consequat interdum varius sit amet mattis vulputate enim. Bibendum neque egestas congue quisque egestas diam in arcu. Ac turpis egestas integer eget aliquet. Aliquet nec ullamcorper sit amet risus nullam eget. Ut pharetra sit amet aliquam id. Justo eget magna fermentum iaculis eu non. Nisl purus in mollis nunc sed id semper risus in. Cras pulvinar mattis nunc sed blandit libero volutpat sed cras.
 

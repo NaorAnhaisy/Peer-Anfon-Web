@@ -151,7 +151,7 @@ export default function AutomaticDoorModel() {
           <h1>שמרו על קשר</h1>
           <div className="separator"></div>
           <p>
-            אם אתה רוצה לדבר איתנו על פרויקט דומה, צור איתנו קשר.
+            לקבלת הצעת מחיר, צרו עימנו קשר.
           </p>
           <Link href="/contact-us">דבר עם הצוות</Link>
         </div>
