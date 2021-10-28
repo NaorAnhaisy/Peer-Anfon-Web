@@ -18,106 +18,107 @@ export default function Home() {
   }, []);
 
   return (
-    <div className={"main " + styles.homeMainDiv}>
-      <div className={styles.homeVideoTitleContainer}>
-        <video className={styles.homeStartVideo} autoPlay loop playsInline muted id="home-video">
-          <source src="https://d2na49kk21qo66.cloudfront.net/Deuren-Internal-Video-Low-Res.mp4"
-            type="video/mp4" />
-        </video>
-        <div className={styles.homeTitleOverlayVideo}>
-          <h1>דלתות פנימיות מודרניות ויוקרתיות</h1>
-        </div>
-      </div>
-
-      <div className={styles.homeContent}>
-        <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" className={styles.homeRowContentContainer + " " + styles.homeRowContentContainer1}>
-          <Row className={styles.homeRowViewExamples}>
-            <Col sm={12} md={6}>
-              <div className={styles.homeGap4}>
-                <Image alt="" layout="responsive" width={3} height={4}
-                  src="https://images.prismic.io/deuren/eef23dde-f47b-4947-8393-a8d48ca086cd_1-Deuren-Define-Your-Style-Grey-Oak-Internal-Door.jpg?auto=compress%2Cformat&rect=0%2C20%2C1000%2C1400&w=500&h=700"
-                />
-                <Image alt="" layout="responsive" width={3} height={4}
-                  src="https://images.prismic.io/deuren/3586e45e-af6e-4c16-931c-44b74cb4415c_2-Deuren-Define-Your-Style-Vario-4-Internal-Door.jpg?auto=compress%2Cformat&rect=21%2C62%2C962%2C1347&w=500&h=700"
-                />
-                <Image alt="" layout="responsive" width={3} height={4}
-                  src="https://images.prismic.io/deuren/4fcfee0e-3dbf-4c9c-8c78-ca1b69ea7f78_3-Deuren-Define-Your-Style-Internal-Door.jpg?auto=compress%2Cformat&rect=0%2C20%2C1000%2C1400&w=500&h=700"
-                />
-                <Image alt="" layout="responsive" width={3} height={4}
-                  src="https://images.prismic.io/deuren/50f4b565-73de-4bc3-b8dd-74285827866a_4-Deuren-Define-Your-Style-Glass-Internal-Door.jpg?auto=compress%2Cformat&rect=0%2C20%2C1000%2C1400&w=500&h=700"
-                />
-              </div>
-            </Col>
-            <Col sm={12} md={6}>
-              <Container className={styles.homeSticky}>
-                <h1>הגדר את הסגנון שלך</h1>
-                <p>בחירתך בדלת צריכה לקחת בחשבון את מרכיבי עיצוב הפנים כמו גם את הטעם האישי שלך. הסגנון האינדיבידואלי שלך יבטיח את הדלת הפנימית המודרנית שלך והאיפור שלה לא דומה לשום דבר אחר. כספק מנוסה של דלתות פנים, אנו נעבוד איתך כדי לשקף את טעמך האישי, בין אם זה מהגוני מסורתי או עכשווי, עמוק או אלון לבן או עץ טבעי.</p>
-              </Container>
-            </Col>
-          </Row>
-        </div>
-        <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" className={styles.homeRowContentContainer + " " + styles.homeRowContentContainer2}>
-          <Row className={styles.homeRowViewExamples}>
-            <Col sm={12} md={6}>
-              <Container className={styles.homeSticky}>
-                <h1>הגדר את הסגנון שלך</h1>
-                <p>בחירתך בדלת צריכה לקחת בחשבון את מרכיבי עיצוב הפנים כמו גם את הטעם האישי שלך. הסגנון האינדיבידואלי שלך יבטיח את הדלת הפנימית המודרנית שלך והאיפור שלה לא דומה לשום דבר אחר. כספק מנוסה של דלתות פנים, אנו נעבוד איתך כדי לשקף את טעמך האישי, בין אם זה מהגוני מסורתי או עכשווי, עמוק או אלון לבן או עץ טבעי.</p>
-              </Container>
-            </Col>
-            <Col sm={12} md={6}>
-              <div className={styles.homeGap4}>
-                <Image alt="" layout="responsive" width={3} height={4}
-                  src="https://images.prismic.io/deuren/eef23dde-f47b-4947-8393-a8d48ca086cd_1-Deuren-Define-Your-Style-Grey-Oak-Internal-Door.jpg?auto=compress%2Cformat&rect=0%2C20%2C1000%2C1400&w=500&h=700"
-                />
-                <Image alt="" layout="responsive" width={3} height={4}
-                  src="https://images.prismic.io/deuren/3586e45e-af6e-4c16-931c-44b74cb4415c_2-Deuren-Define-Your-Style-Vario-4-Internal-Door.jpg?auto=compress%2Cformat&rect=21%2C62%2C962%2C1347&w=500&h=700"
-                />
-              </div>
-            </Col>
-          </Row>
+    <main>
+      <div className={"main " + styles.homeMainDiv}>
+        <div className={styles.homeVideoTitleContainer}>
+          <video className={styles.homeStartVideo} autoPlay loop playsInline muted id="home-video">
+            <source src="https://d2na49kk21qo66.cloudfront.net/Deuren-Internal-Video-Low-Res.mp4"
+              type="video/mp4" />
+          </video>
+          <div className={styles.homeTitleOverlayVideo}>
+            <h1>דלתות פנימיות מודרניות ויוקרתיות</h1>
+          </div>
         </div>
 
-        <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" className={styles.homeChooseConfigDiv}>
-          <Container className={styles.homeInfoDiv + " mb-3"}>
-            <h1>בחר קונפיגורציה</h1>
-            <p>בחירתך בדלת צריכה לקחת בחשבון את מרכיבי עיצוב הפנים כמו גם את הטעם האישי שלך. הסגנון האינדיבידואלי שלך יבטיח את הדלת הפנימית המודרנית שלך והאיפור שלה לא דומה לשום דבר אחר. כספק מנוסה של דלתות פנים, אנו נעבוד איתך כדי לשקף את טעמך האישי, בין אם זה מהגוני מסורתי או עכשווי, עמוק או אלון לבן או עץ טבעי.</p>
-          </Container>
-          {/* <ImagesSlider /> */}
-        </div>
-
-        <Container data-aos="fade-zoom-in" data-aos-easing="ease-in-back" className={styles.homeColorsContainer}>
-          <Row className={styles.homeFlexColumnReverse}>
-            <Col sm={12} md={6} >
-              <ColorsTemplate />
-            </Col>
-            <Col sm={12} md={6} className={styles.homeColorsTextCol}>
-              <h1>גודל וצבע כרצונך החופשי</h1>
-              <p>בחירתך בדלת צריכה לקחת בחשבון את מרכיבי עיצוב הפנים כמו גם את הטעם האישי שלך. הסגנון האינדיבידואלי שלך יבטיח את הדלת הפנימית המודרנית שלך והאיפור שלה לא דומה לשום דבר אחר. כספק מנוסה של דלתות פנים, אנו נעבוד איתך כדי לשקף את טעמך האישי, בין אם זה מהגוני מסורתי או עכשווי, עמוק או אלון לבן או עץ טבעי.</p>
-            </Col>
-          </Row>
-        </Container>
-
-        <Container className={styles.homeInfoDiv}>
-          <h1>
-            <VisibilitySensor partialVisibility>
-              {({ isVisible }) => (
-                <div style={{ minHeight: "100px" }}>
-                  {isVisible ? <CountUp
-                    onEnd={() => setIsCounterUpEnded(true)}
-                    duration={3}
-                    update={(newNumber) => console.log(newNumber)}
-                    separator=","
-                    prefix="יותר מ - "
-                    suffix=" לקוחות!"
-                    start={isCounterUpEnded ? NUMBER_OF_USERS : 0}
-                    end={NUMBER_OF_USERS} /> : null}
+        <div className={styles.homeContent}>
+          <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" className={styles.homeRowContentContainer + " " + styles.homeRowContentContainer1}>
+            <Row className={styles.homeRowViewExamples}>
+              <Col sm={12} md={6}>
+                <div className={styles.homeGap4}>
+                  <Image alt="" layout="responsive" width={3} height={4}
+                    src="https://images.prismic.io/deuren/eef23dde-f47b-4947-8393-a8d48ca086cd_1-Deuren-Define-Your-Style-Grey-Oak-Internal-Door.jpg?auto=compress%2Cformat&rect=0%2C20%2C1000%2C1400&w=500&h=700"
+                  />
+                  <Image alt="" layout="responsive" width={3} height={4}
+                    src="https://images.prismic.io/deuren/3586e45e-af6e-4c16-931c-44b74cb4415c_2-Deuren-Define-Your-Style-Vario-4-Internal-Door.jpg?auto=compress%2Cformat&rect=21%2C62%2C962%2C1347&w=500&h=700"
+                  />
+                  <Image alt="" layout="responsive" width={3} height={4}
+                    src="https://images.prismic.io/deuren/4fcfee0e-3dbf-4c9c-8c78-ca1b69ea7f78_3-Deuren-Define-Your-Style-Internal-Door.jpg?auto=compress%2Cformat&rect=0%2C20%2C1000%2C1400&w=500&h=700"
+                  />
+                  <Image alt="" layout="responsive" width={3} height={4}
+                    src="https://images.prismic.io/deuren/50f4b565-73de-4bc3-b8dd-74285827866a_4-Deuren-Define-Your-Style-Glass-Internal-Door.jpg?auto=compress%2Cformat&rect=0%2C20%2C1000%2C1400&w=500&h=700"
+                  />
                 </div>
-              )}
-            </VisibilitySensor>
-          </h1>
-          <p className={styles.inOurCustomersText}>בין לקוחותינו :</p>
-        </Container>
-        {/* <div className={styles.homeCustomersExamples}>
+              </Col>
+              <Col sm={12} md={6}>
+                <Container className={styles.homeSticky}>
+                  <h1>הגדר את הסגנון שלך</h1>
+                  <p>בחירתך בדלת צריכה לקחת בחשבון את מרכיבי עיצוב הפנים כמו גם את הטעם האישי שלך. הסגנון האינדיבידואלי שלך יבטיח את הדלת הפנימית המודרנית שלך והאיפור שלה לא דומה לשום דבר אחר. כספק מנוסה של דלתות פנים, אנו נעבוד איתך כדי לשקף את טעמך האישי, בין אם זה מהגוני מסורתי או עכשווי, עמוק או אלון לבן או עץ טבעי.</p>
+                </Container>
+              </Col>
+            </Row>
+          </div>
+          <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" className={styles.homeRowContentContainer + " " + styles.homeRowContentContainer2}>
+            <Row className={styles.homeRowViewExamples}>
+              <Col sm={12} md={6}>
+                <Container className={styles.homeSticky}>
+                  <h1>הגדר את הסגנון שלך</h1>
+                  <p>בחירתך בדלת צריכה לקחת בחשבון את מרכיבי עיצוב הפנים כמו גם את הטעם האישי שלך. הסגנון האינדיבידואלי שלך יבטיח את הדלת הפנימית המודרנית שלך והאיפור שלה לא דומה לשום דבר אחר. כספק מנוסה של דלתות פנים, אנו נעבוד איתך כדי לשקף את טעמך האישי, בין אם זה מהגוני מסורתי או עכשווי, עמוק או אלון לבן או עץ טבעי.</p>
+                </Container>
+              </Col>
+              <Col sm={12} md={6}>
+                <div className={styles.homeGap4}>
+                  <Image alt="" layout="responsive" width={3} height={4}
+                    src="https://images.prismic.io/deuren/eef23dde-f47b-4947-8393-a8d48ca086cd_1-Deuren-Define-Your-Style-Grey-Oak-Internal-Door.jpg?auto=compress%2Cformat&rect=0%2C20%2C1000%2C1400&w=500&h=700"
+                  />
+                  <Image alt="" layout="responsive" width={3} height={4}
+                    src="https://images.prismic.io/deuren/3586e45e-af6e-4c16-931c-44b74cb4415c_2-Deuren-Define-Your-Style-Vario-4-Internal-Door.jpg?auto=compress%2Cformat&rect=21%2C62%2C962%2C1347&w=500&h=700"
+                  />
+                </div>
+              </Col>
+            </Row>
+          </div>
+
+          <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" className={styles.homeChooseConfigDiv}>
+            <Container className={styles.homeInfoDiv + " mb-3"}>
+              <h1>בחר קונפיגורציה</h1>
+              <p>בחירתך בדלת צריכה לקחת בחשבון את מרכיבי עיצוב הפנים כמו גם את הטעם האישי שלך. הסגנון האינדיבידואלי שלך יבטיח את הדלת הפנימית המודרנית שלך והאיפור שלה לא דומה לשום דבר אחר. כספק מנוסה של דלתות פנים, אנו נעבוד איתך כדי לשקף את טעמך האישי, בין אם זה מהגוני מסורתי או עכשווי, עמוק או אלון לבן או עץ טבעי.</p>
+            </Container>
+            {/* <ImagesSlider /> */}
+          </div>
+
+          <Container data-aos="fade-zoom-in" data-aos-easing="ease-in-back" className={styles.homeColorsContainer}>
+            <Row className={styles.homeFlexColumnReverse}>
+              <Col sm={12} md={6} >
+                <ColorsTemplate />
+              </Col>
+              <Col sm={12} md={6} className={styles.homeColorsTextCol}>
+                <h1>גודל וצבע כרצונך החופשי</h1>
+                <p>בחירתך בדלת צריכה לקחת בחשבון את מרכיבי עיצוב הפנים כמו גם את הטעם האישי שלך. הסגנון האינדיבידואלי שלך יבטיח את הדלת הפנימית המודרנית שלך והאיפור שלה לא דומה לשום דבר אחר. כספק מנוסה של דלתות פנים, אנו נעבוד איתך כדי לשקף את טעמך האישי, בין אם זה מהגוני מסורתי או עכשווי, עמוק או אלון לבן או עץ טבעי.</p>
+              </Col>
+            </Row>
+          </Container>
+
+          <Container className={styles.homeInfoDiv}>
+            <h1>
+              <VisibilitySensor partialVisibility>
+                {({ isVisible }) => (
+                  <div style={{ minHeight: "100px" }}>
+                    {isVisible ? <CountUp
+                      onEnd={() => setIsCounterUpEnded(true)}
+                      duration={3}
+                      update={(newNumber) => console.log(newNumber)}
+                      separator=","
+                      prefix="יותר מ - "
+                      suffix=" לקוחות!"
+                      start={isCounterUpEnded ? NUMBER_OF_USERS : 0}
+                      end={NUMBER_OF_USERS} /> : null}
+                  </div>
+                )}
+              </VisibilitySensor>
+            </h1>
+            <p className={styles.inOurCustomersText}>בין לקוחותינו :</p>
+          </Container>
+          {/* <div className={styles.homeCustomersExamples}>
             <div className={styles.homeItemZoom}>
               <Image alt="" width='100%' height='100%' src="/images/OurCustomers/agodathastodentim.jpg" />
             </div>
@@ -218,55 +219,56 @@ export default function Home() {
               <Image alt="" width='100%' height='100%' src="/images/OurCustomers/zalman.jpg" />
             </div>
           </div> */}
-        <div className={styles.sliderBody}>
-          <div className={styles.slider}>
-            <div className={styles.slideTrack}>
-              <div className={styles.slide}>
-                <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" layout="responsive" height={100} width={250} alt="" />
-              </div>
-              <div className={styles.slide}>
-                <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" layout="responsive" height={100} width={250} alt="" />
-              </div>
-              <div className={styles.slide}>
-                <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" layout="responsive" height={100} width={250} alt="" />
-              </div>
-              <div className={styles.slide}>
-                <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" layout="responsive" height={100} width={250} alt="" />
-              </div>
-              <div className={styles.slide}>
-                <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" layout="responsive" height={100} width={250} alt="" />
-              </div>
-              <div className={styles.slide}>
-                <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" layout="responsive" height={100} width={250} alt="" />
-              </div>
-              <div className={styles.slide}>
-                <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" layout="responsive" height={100} width={250} alt="" />
-              </div>
-              <div className={styles.slide}>
-                <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" layout="responsive" height={100} width={250} alt="" />
-              </div>
-              <div className={styles.slide}>
-                <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" layout="responsive" height={100} width={250} alt="" />
-              </div>
-              <div className={styles.slide}>
-                <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" layout="responsive" height={100} width={250} alt="" />
-              </div>
-              <div className={styles.slide}>
-                <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" layout="responsive" height={100} width={250} alt="" />
-              </div>
-              <div className={styles.slide}>
-                <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" layout="responsive" height={100} width={250} alt="" />
-              </div>
-              <div className={styles.slide}>
-                <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" layout="responsive" height={100} width={250} alt="" />
-              </div>
-              <div className={styles.slide}>
-                <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" layout="responsive" height={100} width={250} alt="" />
+          <div className={styles.sliderBody}>
+            <div className={styles.slider}>
+              <div className={styles.slideTrack}>
+                <div className={styles.slide}>
+                  <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" layout="responsive" height={100} width={250} alt="" />
+                </div>
+                <div className={styles.slide}>
+                  <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" layout="responsive" height={100} width={250} alt="" />
+                </div>
+                <div className={styles.slide}>
+                  <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" layout="responsive" height={100} width={250} alt="" />
+                </div>
+                <div className={styles.slide}>
+                  <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" layout="responsive" height={100} width={250} alt="" />
+                </div>
+                <div className={styles.slide}>
+                  <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" layout="responsive" height={100} width={250} alt="" />
+                </div>
+                <div className={styles.slide}>
+                  <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" layout="responsive" height={100} width={250} alt="" />
+                </div>
+                <div className={styles.slide}>
+                  <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" layout="responsive" height={100} width={250} alt="" />
+                </div>
+                <div className={styles.slide}>
+                  <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" layout="responsive" height={100} width={250} alt="" />
+                </div>
+                <div className={styles.slide}>
+                  <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" layout="responsive" height={100} width={250} alt="" />
+                </div>
+                <div className={styles.slide}>
+                  <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" layout="responsive" height={100} width={250} alt="" />
+                </div>
+                <div className={styles.slide}>
+                  <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" layout="responsive" height={100} width={250} alt="" />
+                </div>
+                <div className={styles.slide}>
+                  <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" layout="responsive" height={100} width={250} alt="" />
+                </div>
+                <div className={styles.slide}>
+                  <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" layout="responsive" height={100} width={250} alt="" />
+                </div>
+                <div className={styles.slide}>
+                  <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" layout="responsive" height={100} width={250} alt="" />
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div >
+      </div >
+    </main>
   )
 }

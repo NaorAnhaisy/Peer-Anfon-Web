@@ -8,5 +8,28 @@
 .doorSelectedMainDiv {
     width: 100%;
     height: auto;
-    min-height: 300px;
+}
+
+.automaticDoorsContainer {
+    max-width: 90%;
+    margin: auto;
+    margin-top: 10rem;
+}
+
+.automaticDoorsRow {
+    max-width: 100%;
+    margin-bottom: 10rem;
+}
+
+.automaticDoorsRow h3 {
+    font-weight: 100;
+    letter-spacing: 2px;
+    font-size: 2.3rem;
+}
+
+.automaticDoorsRow p {
+    padding: 1rem;
+    font-size: 16px;
+    color: black;
+    word-spacing: 3px;
 }

@@ -73,10 +73,7 @@ export default function MainNavbar() {
                 </Navbar.Toggle>
 
                 <Navbar.Collapse id="navbarSupportedContent">
-                  <div
-                    className="collapse navbar-collapse show"
-                    id="navbarSupportedContent"
-                  >
+                  <div className="collapse navbar-collapse show">
                     <ul className="navbar-nav ml-auto py-4 py-md-0">
                       <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active-navbar">
                         <Link className="nav-link" href="/">

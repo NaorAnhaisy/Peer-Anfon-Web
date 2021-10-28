@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import Link from 'next/link';
 import Image from 'next/image';
 import { Col, Container, Row } from "react-bootstrap";
-import styles from "../../styles/./automatic-door-model.module.css"
+import styles from "../../styles/automatic-door-model.module.css"
 import { useEffect, useState } from "react";
 import AOS from 'aos';
 import { automaticDoorsData } from '../../data/automaticDoors';
