@@ -1,6 +1,31 @@
 /* eslint-disable @next/next/no-img-element */
 import { Carousel, Col, Container, Row } from 'react-bootstrap';
+import ImagesGallery from '../../components/ImagesGallery/ImagesGallery';
 import styles from '../../styles/automatic-doors.module.css';
+
+const images = [
+    { src: "/images/Doors/LUX/example1.jpg" },
+    { src: "/images/Doors/LUX/example2.jpg", strechType: "vStrech" },
+    { src: "/images/Doors/LUX/example3.jpg", strechType: "hStrech" },
+    { src: "/images/Doors/LUX/example4.jpg" },
+    { src: "/images/Doors/LUX/example1.jpg" },
+    { src: "/images/Doors/LUX/example2.jpg", strechType: "vStrech" },
+    { src: "/images/Doors/LUX/example3.jpg", strechType: "bigStrech" },
+    { src: "/images/Doors/LUX/example4.jpg" },
+    { src: "/images/Doors/LUX/example1.jpg", strechType: "hStrech" },
+    { src: "/images/Doors/LUX/example2.jpg" },
+    { src: "/images/Doors/LUX/example3.jpg" },
+    { src: "/images/Doors/LUX/example4.jpg" },
+    { src: "/images/Doors/LUX/example1.jpg", strechType: "vStrech" },
+    { src: "/images/Doors/LUX/example2.jpg" },
+    { src: "/images/Doors/LUX/example3.jpg", strechType: "bigStrech" },
+    { src: "/images/Doors/LUX/example4.jpg" },
+    { src: "/images/Doors/LUX/example1.jpg", strechType: "hStrech" },
+    { src: "/images/Doors/LUX/example2.jpg" },
+    { src: "/images/Doors/LUX/example3.jpg", strechType: "bigStrech" },
+    { src: "/images/Doors/LUX/example4.jpg" },
+    { src: "/images/Doors/LUX/example1.jpg" },
+]
 
 export default function AutomaticDoors() {
     return (
@@ -77,6 +102,7 @@ export default function AutomaticDoors() {
                     </Col>
                 </Row>
 
+                <ImagesGallery images={images} altLabel={"דלתות אוטומטיות"} />
             </div>
         </div>
     )
