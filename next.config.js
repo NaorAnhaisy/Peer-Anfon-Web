@@ -2,8 +2,6 @@ const withPlugins = require('next-compose-plugins')
 
 module.exports = withPlugins([], {
   images: {
-    loader: 'imgix',
-    path: "",
     domains: ['images.prismic.io', 's3-us-west-2.amazonaws.com'],
   },
   publicRuntimeConfig: {
