@@ -115,7 +115,7 @@ export default function Home() {
                 )}
               </VisibilitySensor>
             </h1>
-            <p className={styles.inOurCustomersText}>בין לקוחותינו :</p>
+            <p className={styles.inOurCustomersText}>בין לקוחותינו:</p>
           </Container>
           <CustomersSlider />
         </div>

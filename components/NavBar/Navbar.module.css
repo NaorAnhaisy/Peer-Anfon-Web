@@ -16,6 +16,10 @@
     padding-top: 0 !important;
 }
 
+.navbarBrand span span {
+    padding: 0 !important;
+}
+
 .navigationWrap {
     position: fixed;
     width: 100%;

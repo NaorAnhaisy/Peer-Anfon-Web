@@ -140,11 +140,9 @@ body {
   text-align-last: center;
   background: #161616;
   color: white;
-  border-top: 1px solid #eaeaea;
   display: block;
   justify-content: center;
   align-items: center;
-  margin-top: 4rem;
 }
 
 .full-height {
@@ -239,10 +237,11 @@ body {
   background: #bda286;
 }
 
-.carousel .carousel-indicators li {
+.carousel .carousel-indicators button {
   width: 45px;
   height: 2px;
   margin: 0 14px;
+  border: none;
   transition: all 200ms;
   -webkit-transition: all 200ms;
   -moz-transition: all 200ms;
