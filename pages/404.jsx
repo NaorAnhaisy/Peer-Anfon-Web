@@ -14,7 +14,7 @@ export default function BadUrl() {
     return (
         <div className={styles.mainDiv}>
             <Head>
-                <title>דף לא נמצא - פאר אנפון</title>
+                <title>פאר אנפון - דף לא נמצא</title>
             </Head>
             <div className="contPrincipal">
                 <div className={styles.contError}>

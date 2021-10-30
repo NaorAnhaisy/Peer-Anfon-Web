@@ -49,16 +49,18 @@ export default function MainNavbar() {
                 className={`${styles.navbar} navbar-expand-xxl`}
                 expand="xxl"
               >
-                <span className={styles.navbarBrand}>
-                  <Image
-                    src="/images/company-logo.png"
-                    className="undragablle-image"
-                    width={10}
-                    height={3}
-                    layout="responsive"
-                    alt=""
-                  />
-                </span>
+                <Link href="/">
+                  <a className={styles.navbarBrand}>
+                    <Image
+                      src="/images/company-logo.png"
+                      className="undragablle-image"
+                      width={10}
+                      height={3}
+                      layout="responsive"
+                      alt=""
+                    />
+                  </a>
+                </Link>
 
                 <Navbar.Toggle
                   className="navbar-toggler"
@@ -132,9 +134,9 @@ export default function MainNavbar() {
                           <NavDropdown.Item href="/mailbox/deposit-cellphones">
                             ארון הפקדה לטלפונים סלולריים
                           </NavDropdown.Item>
-                          {/* 
+                          {/*
                           <NavDropdown.Divider />
-                          <NavDropdown.Item href="#action/3.4">משהו אחר</NavDropdown.Item> 
+                          <NavDropdown.Item href="#action/3.4">משהו אחר</NavDropdown.Item>
                           */}
                         </NavDropdown>
                       </li>

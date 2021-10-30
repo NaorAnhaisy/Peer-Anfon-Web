@@ -3,6 +3,7 @@ import Image from 'next/image';
 import styles from '../styles/Home.module.css'
 import { Col, Container, Row } from 'react-bootstrap';
 import ColorsTemplate from '../components/ColorsTemplate/ColorsTemplate';
+import CustomersSlider from '../components/CustomersSlider/CustomersSlider';
 import AOS from 'aos';
 import CountUp from 'react-countup';
 import VisibilitySensor from "react-visibility-sensor";
@@ -103,7 +104,7 @@ export default function Home() {
                   <div style={{ minHeight: "100px" }}>
                     {isVisible ? <CountUp
                       onEnd={() => setIsCounterUpEnded(true)}
-                      duration={3}
+                      duration={1.7}
                       update={(newNumber) => console.log(newNumber)}
                       separator=","
                       prefix="יותר מ - "
@@ -116,155 +117,7 @@ export default function Home() {
             </h1>
             <p className={styles.inOurCustomersText}>בין לקוחותינו :</p>
           </Container>
-          {/* <div className={styles.homeCustomersExamples}>
-            <div className={styles.homeItemZoom}>
-              <Image alt="" width='100%' height='100%' src="/images/OurCustomers/agodathastodentim.jpg" />
-            </div>
-            <div className={styles.homeItemZoom}>
-              <Image alt="" width='100%' height='100%' src="/images/OurCustomers/avisrur.jpg" />
-            </div>
-            <div className={styles.homeItemZoom}>
-              <Image alt="" width='100%' height='100%' src="/images/OurCustomers/memshala1.jpg" />
-            </div>
-            <div className={styles.homeItemZoom}>
-              <Image alt="" width='100%' height='100%' src="/images/OurCustomers/levinstein.jpg" />
-            </div>
-            <div className={styles.homeItemZoom}>
-              <Image alt="" width='100%' height='100%' src="/images/OurCustomers/leumi.jpg" />
-            </div>
-            <div className={styles.homeItemZoom}>
-              <Image alt="" width='100%' height='100%' src="/images/OurCustomers/kfar-saba.jpg" />
-            </div>
-            <div className={styles.homeItemZoom}>
-              <Image alt="" width='100%' height='100%' src="/images/OurCustomers/kaplan.jpg" />
-            </div>
-            <div className={styles.homeItemZoom}>
-              <Image alt="" width='100%' height='100%' src="/images/OurCustomers/gindi.jpg" />
-            </div>
-            <div className={styles.homeItemZoom}>
-              <Image alt="" width='100%' height='100%' src="/images/OurCustomers/electra.jpg" />
-            </div>
-            <div className={styles.homeItemZoom}>
-              <Image alt="" width='100%' height='100%' src="/images/OurCustomers/discount.jpg" />
-            </div>
-            <div className={styles.homeItemZoom}>
-              <Image alt="" width='100%' height='100%' src="/images/OurCustomers/defence.jpg" />
-            </div>
-            <div className={styles.homeItemZoom}>
-              <Image alt="" width='100%' height='100%' src="/images/OurCustomers/benleumi.jpg" />
-            </div>
-            <div className={styles.homeItemZoom}>
-              <Image alt="" width='100%' height='100%' src="/images/OurCustomers/bar-ilan.jpg" />
-            </div>
-            <div className={styles.homeItemZoom}>
-              <Image alt="" width='100%' height='100%' src="/images/OurCustomers/bank_hapoalim_logo.jpg" />
-            </div>
-            <div className={styles.homeItemZoom}>
-              <Image alt="" width='100%' height='100%' src="/images/OurCustomers/mizrahi-and-sons.jpg" />
-            </div>
-            <div className={styles.homeItemZoom}>
-              <Image alt="" width='100%' height='100%' src="/images/OurCustomers/mevaker.jpg" />
-            </div>
-            <div className={styles.homeItemZoom}>
-              <Image alt="" width='100%' height='100%' src="/images/OurCustomers/mizrahi.jpg" />
-            </div>
-            <div className={styles.homeItemZoom}>
-              <Image alt="" width='100%' height='100%' src="/images/OurCustomers/netanya.jpg" />
-            </div>
-            <div className={styles.homeItemZoom}>
-              <Image alt="" width='100%' height='100%' src="/images/OurCustomers/poaley-agudat-israel.jpg" />
-            </div>
-            <div className={styles.homeItemZoom}>
-              <Image alt="" width='100%' height='100%' src="/images/OurCustomers/rakevet.jpg" />
-            </div>
-            <div className={styles.homeItemZoom}>
-              <Image alt="" width='100%' height='100%' src="/images/OurCustomers/rambam.jpg" />
-            </div>
-            <div className={styles.homeItemZoom}>
-              <Image alt="" width='100%' height='100%' src="/images/OurCustomers/Tel-Aviv-Jaffa_logo216.jpg" />
-            </div>
-            <div className={styles.homeItemZoom}>
-              <Image alt="" width='100%' height='100%' src="/images/OurCustomers/ashtrum.jpg" />
-            </div>
-            <div className={styles.homeItemZoom}>
-              <Image alt="" width='100%' height='100%' src="/images/OurCustomers/tel-aviv-uni.jpg" />
-            </div>
-            <div className={styles.homeItemZoom}>
-              <Image alt="" width='100%' height='100%' src="/images/OurCustomers/zalman.jpg" />
-            </div>
-            <div className={styles.homeItemZoom}>
-              <Image alt="" width='100%' height='100%' src="/images/OurCustomers/Tel-Aviv-Jaffa_logo216.jpg" />
-            </div>
-            <div className={styles.homeItemZoom}>
-              <Image alt="" width='100%' height='100%' src="/images/OurCustomers/ashtrum.jpg" />
-            </div>
-            <div className={styles.homeItemZoom}>
-              <Image alt="" width='100%' height='100%' src="/images/OurCustomers/tel-aviv-uni.jpg" />
-            </div>
-            <div className={styles.homeItemZoom}>
-              <Image alt="" width='100%' height='100%' src="/images/OurCustomers/zalman.jpg" />
-            </div>
-            <div className={styles.homeItemZoom}>
-              <Image alt="" width='100%' height='100%' src="/images/OurCustomers/Tel-Aviv-Jaffa_logo216.jpg" />
-            </div>
-            <div className={styles.homeItemZoom}>
-              <Image alt="" width='100%' height='100%' src="/images/OurCustomers/ashtrum.jpg" />
-            </div>
-            <div className={styles.homeItemZoom}>
-              <Image alt="" width='100%' height='100%' src="/images/OurCustomers/tel-aviv-uni.jpg" />
-            </div>
-            <div className={styles.homeItemZoom}>
-              <Image alt="" width='100%' height='100%' src="/images/OurCustomers/zalman.jpg" />
-            </div>
-          </div> */}
-          <div className={styles.sliderBody}>
-            <div className={styles.slider}>
-              <div className={styles.slideTrack}>
-                <div className={styles.slide}>
-                  <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" layout="responsive" height={100} width={250} alt="" />
-                </div>
-                <div className={styles.slide}>
-                  <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" layout="responsive" height={100} width={250} alt="" />
-                </div>
-                <div className={styles.slide}>
-                  <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" layout="responsive" height={100} width={250} alt="" />
-                </div>
-                <div className={styles.slide}>
-                  <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" layout="responsive" height={100} width={250} alt="" />
-                </div>
-                <div className={styles.slide}>
-                  <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" layout="responsive" height={100} width={250} alt="" />
-                </div>
-                <div className={styles.slide}>
-                  <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" layout="responsive" height={100} width={250} alt="" />
-                </div>
-                <div className={styles.slide}>
-                  <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" layout="responsive" height={100} width={250} alt="" />
-                </div>
-                <div className={styles.slide}>
-                  <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" layout="responsive" height={100} width={250} alt="" />
-                </div>
-                <div className={styles.slide}>
-                  <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" layout="responsive" height={100} width={250} alt="" />
-                </div>
-                <div className={styles.slide}>
-                  <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" layout="responsive" height={100} width={250} alt="" />
-                </div>
-                <div className={styles.slide}>
-                  <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" layout="responsive" height={100} width={250} alt="" />
-                </div>
-                <div className={styles.slide}>
-                  <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" layout="responsive" height={100} width={250} alt="" />
-                </div>
-                <div className={styles.slide}>
-                  <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" layout="responsive" height={100} width={250} alt="" />
-                </div>
-                <div className={styles.slide}>
-                  <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" layout="responsive" height={100} width={250} alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
+          <CustomersSlider />
         </div>
       </div >
     </main>

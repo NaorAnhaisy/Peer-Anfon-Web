@@ -14,6 +14,16 @@ class MyDocument extends Document {
                         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossOrigin="anonymous" />
                     <link rel="stylesheet"
                         href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" />
+                    <link rel="canonical" href="https://peer-anfon.co.il/" />
+                    <meta property="og:locale" content="he_IL" />
+                    <meta property="og:type" content="website" />
+                    <meta property="og:title" content="פאר אנפון - דלתות אוטומטיות, דלתות חשמליות אסתטיות ויוקרתיות" />
+                    <meta property="og:description" content="פאר אנפון - החברה המובילה בישראל ליצור והתקנת דלתות אוטומטיות וחשמליות, מערכות אינטרקום, דלתות כניסה לבניין ותיבות דואר, אמרת דלתות כניסה לבניין? אמרת פאר אנפון" />
+                    <meta property="og:url" content="https://peer-anfon.co.il/" />
+                    <meta property="og:site_name" content="פאר אנפון" />
+                    <meta name="twitter:card" content="summary_large_image" />
+                    <meta name="twitter:title" content="פאר אנפון - דלתות אוטומטיות, דלתות חשמליות אסתטיות ויוקרתיות" />
+                    <meta name="twitter:description" content="פאר אנפון - החברה המובילה בישראל ליצור והתקנת דלתות אוטומטיות וחשמליות, מערכות אינטרקום, דלתות כניסה לבניין ותיבות דואר, אמרת דלתות כניסה לבניין? אמרת פאר אנפון" />
                 </Head>
                 <body>
                     <Main />
