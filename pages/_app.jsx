@@ -1,14 +1,30 @@
+import { useEffect } from "react"
+import { SSRProvider } from '@react-aria/ssr';
+import Head from 'next/head';
+import AppLayout from '../components/AppLayout/AppLayout'
 import '../styles/globals.css';
 import '../styles/navbarStyles.css';
 import '../styles/custom-inputs.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'animate.css';
 import "aos/dist/aos.css";
-import AppLayout from '../components/AppLayout/AppLayout'
-import Head from 'next/head';
-import { SSRProvider } from '@react-aria/ssr';
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register("/sw.js").then(
+          function (registration) {
+            console.log("Service Worker registration successful with scope: ", registration.scope);
+          },
+          function (err) {
+            console.log("Service Worker registration failed: ", err);
+          }
+        );
+      });
+    }
+  }, [])
+
   return (
     <SSRProvider>
       <AppLayout>

@@ -36,8 +36,9 @@ export default function CustomersSlider() {
                 <div className={styles.slideTrack}>
                     {CUSTOMER_IMAGES?.map((image, i) => {
                         return <div key={i} className={styles.slide}
-                            style={{ position: "relative", width: "250px", height: "100px"}}>
+                            style={{ position: "relative", width: "250px", height: "100px" }}>
                             <Image
+                                className="undragablle-image"
                                 src={`/images/OurCustomers/${image.srcName}`}
                                 layout="fill"
                                 objectFit="contain" alt={image.altName} />
