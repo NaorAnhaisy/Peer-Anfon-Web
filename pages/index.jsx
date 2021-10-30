@@ -26,8 +26,7 @@ export default function Home() {
               type="video/mp4" />
           </video>
           <div className={styles.homeTitleOverlayVideo}>
-            <h1>דלתות פנימיות מודרניות ויוקרתיות</h1>
-            <h3>שלום!</h3>
+            <h1>דלתות פנימיות מודרניות ויוקרתיות!</h1>
           </div>
         </div>
 
