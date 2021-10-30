@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postbuild": "cross-env next-sitemap --config next-sitemap.js"
+    "postbuild": "npm run generate:sitemap",
+    "generate:sitemap": "node ./scripts/generate-sitemap.js"
   },
   "dependencies": {
     "@material-ui/core": "^4.12.3",
@@ -18,7 +19,6 @@
     "aos": "^2.3.4",
     "axios": "^0.24.0",
     "bootstrap": "^5.1.3",
-    "cross-env": "^7.0.3",
     "google-maps-react": "^2.0.6",
     "next": "^12.0.1",
     "react": "17.0.2",
@@ -30,8 +30,6 @@
   "devDependencies": {
     "eslint": "^7.32.0",
     "eslint-config-next": "12.0.1",
-    "generate-robotstxt": "^8.0.3",
-    "next-sitemap": "^1.6.192",
     "nextjs-sitemap-generator": "^1.3.1"
   }
 }
