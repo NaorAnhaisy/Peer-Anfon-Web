@@ -50,7 +50,7 @@ export default function MainNavbar() {
                 expand="xxl"
               >
                 <Link href="/">
-                  <a className={styles.navbarBrand}>
+                  <a aria-label="לוגו פאר אנפון" className={styles.navbarBrand}>
                     <Image
                       src="/images/company-logo.png"
                       className="undragablle-image"

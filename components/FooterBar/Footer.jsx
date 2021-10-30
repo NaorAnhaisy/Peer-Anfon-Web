@@ -51,14 +51,14 @@ export default function Footer() {
           Peer Anfon © {new Date().getFullYear()} - All Rights Reserve.
         </Col>
         <Col sm={12} md={4} className={styles.socialLinks}>
-          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className={styles.footerHover}>
-            <i className="fab fa-facebook" aria-label="Facebook פאר אנפון" aria-hidden="true" />
+          <a href="https://www.facebook.com/" aria-label="Facebook פאר אנפון" target="_blank" rel="noopener noreferrer" className={styles.footerHover}>
+            <i className="fab fa-facebook" aria-hidden="true" />
           </a>
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className={styles.footerHover}>
-            <i className="fab fa-instagram" aria-label="Instagram פאר אנפון" aria-hidden="true" />
+          <a href="https://www.instagram.com/" aria-label="Instagram פאר אנפון" target="_blank" rel="noopener noreferrer" className={styles.footerHover}>
+            <i className="fab fa-instagram" aria-hidden="true" />
           </a>
-          <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" className={styles.footerHover}>
-            <i className="fab fa-youtube" aria-label="Youtube פאר אנפון" aria-hidden="true" />
+          <a href="https://www.youtube.com/" aria-label="Youtube פאר אנפון" target="_blank" rel="noopener noreferrer" className={styles.footerHover}>
+            <i className="fab fa-youtube" aria-hidden="true" />
           </a>
         </Col>
         <Col sm={12} md={4} className={styles.copyrightSpan}>
