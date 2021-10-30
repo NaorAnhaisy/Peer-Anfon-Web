@@ -132,8 +132,10 @@ export default function MainNavbar() {
                           <NavDropdown.Item href="/mailbox/deposit-cellphones">
                             ארון הפקדה לטלפונים סלולריים
                           </NavDropdown.Item>
-                          {/* <NavDropdown.Divider />
-                                                    <NavDropdown.Item href="#action/3.4">משהו אחר</NavDropdown.Item> */}
+                          {/* 
+                          <NavDropdown.Divider />
+                          <NavDropdown.Item href="#action/3.4">משהו אחר</NavDropdown.Item> 
+                          */}
                         </NavDropdown>
                       </li>
 

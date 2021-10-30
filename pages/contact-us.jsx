@@ -42,9 +42,12 @@ export default function ContactUs() {
                     </Col>
                     <Col sm={12} md={6} lg={3}>
                         <h6>כתובת</h6>
-                        <span>הסדנא 13</span>
-                        <br />
-                        <span>חולון, אזור התעשייה 5881407</span>
+                        <a target="_blank" rel="noreferrer noopener" 
+                            href="https://www.waze.com/ul?q=%D7%94%D7%A1%D7%93%D7%A0%D7%90+13+%D7%97%D7%95%D7%9C%D7%95%D7%9F&navigate=yes" className="no-href-css">
+                            הסדנא 13
+                            <br />
+                            חולון, אזור התעשייה 5881407
+                        </a>
                     </Col>
                     <Col sm={12} md={6} lg={3}>
                         <h6>שעות פתיחה</h6>
@@ -57,17 +60,17 @@ export default function ContactUs() {
                         <div className={styles.socialsContactUs}>
                             <ul className={styles.socials}>
                                 <li>
-                                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">
                                         <i className={`${styles.zmdi} ${styles.zmdiFacebook} zmdi zmdi-facebook`}></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
                                         <i className={`${styles.zmdi} ${styles.zmdiInstagram} zmdi zmdi-instagram`}></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://youtube.com/" target="_blank" rel="noopener noreferrer">
                                         <i className={`${styles.zmdi} ${styles.zmdiYoutubePlay} zmdi zmdi-youtube-play`}></i>
                                     </a>
                                 </li>

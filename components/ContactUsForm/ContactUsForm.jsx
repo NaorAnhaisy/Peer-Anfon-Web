@@ -197,8 +197,8 @@ export default function ContactUs() {
                                     className="form-element-field"
                                     placeholder=" "
                                     type="tel"
-                                    pattern="[0-9()#&+*-=.]+"
-                                    title="Allowed to use only numbers & Phone Characters (#, -, *,)."
+                                    pattern="[0-9()+-]+"
+                                    title="ניתן להשתמש אך ורק במספרים ותווי טלפון (+, -)."
                                     value={phoneNumber}
                                     onChange={(e) => setPhoneNumber(e.target.value)}
                                     required
@@ -247,6 +247,7 @@ export default function ContactUs() {
                                 required
                                 placeholder="איך נוכל לעזור?"
                                 rows="3"
+                                spellCheck="true"
                                 value={message}
                                 onChange={(e) => setMessage(e.target.value)}
                             ></textarea>
