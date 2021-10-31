@@ -87,24 +87,24 @@ export default function MainNavbar() {
                         <NavDropdown
                           className="dropdown-toggle"
                           title="דלתות אוטומטיות"
-                          onToggle={() => toogleTo("/automatic-doors")}
+                          onToggle={() => toogleTo("/דלתות-אוטומטיות")}
                           show={showAutoDoorsDropdown}
                           onMouseEnter={() => setShowAutoDoorsDropdown(true)}
                           onMouseLeave={() => setShowAutoDoorsDropdown(false)}
                         >
-                          <NavDropdown.Item href="/automatic-doors/double-leaf-door">
+                          <NavDropdown.Item href="/דלתות-אוטומטיות/דלת-אוטומטית-הזזה-דו-כנף">
                             אוטומטית הזזה דו-כנף
                           </NavDropdown.Item>
-                          <NavDropdown.Item href="/automatic-doors/single-leaf-door">
+                          <NavDropdown.Item href="/דלתות-אוטומטיות/דלת-אוטומטית-הזזה-חד-כנף">
                             אוטומטית הזזה חד-כנף
                           </NavDropdown.Item>
-                          <NavDropdown.Item href="/automatic-doors/telescop-door">
+                          <NavDropdown.Item href="/דלתות-אוטומטיות/דלת-אוטומטית-טלסקופית">
                             אוטומטית טלסקופית
                           </NavDropdown.Item>
-                          <NavDropdown.Item href="/automatic-doors/collapse-door">
+                          <NavDropdown.Item href="/דלתות-אוטומטיות/דלת-אוטומטית-קורסת">
                             אוטומטית קורסת
                           </NavDropdown.Item>
-                          <NavDropdown.Item href="/automatic-doors/inside-door">
+                          <NavDropdown.Item href="/דלתות-אוטומטיות/דלת-פנים-אוטומטית">
                             דלתות פנים אוטומטיות
                           </NavDropdown.Item>
                         </NavDropdown>

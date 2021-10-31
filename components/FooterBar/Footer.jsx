@@ -12,14 +12,14 @@ export default function Footer() {
       <button type="button" onClick={scrollTop} className={styles.backToTopBtn}>חזור למעלה</button>
       <Row className={`${styles.footerBarRow} ${styles.linksFooter} dir-rtl`}>
         <Col className={styles.linksFooterCol} xs={12} sm={6} lg={3}>
-          <Link href="/automatic-doors">
+          <Link href="/דלתות-אוטומטיות">
             <a className={styles.linksFooterColTitle}>דלתות אוטומטיות</a>
           </Link>
-          <Link href="/automatic-doors/double-leaf-door">אוטומטית הזזה דו-כנף</Link>
-          <Link href="/automatic-doors/single-leaf-door">אוטומטית הזזה חד-כנף</Link>
-          <Link href="/automatic-doors/telescop-door">אוטומטית טלסקופית</Link>
-          <Link href="/automatic-doors/collapse-door">אוטומטית קורסת</Link>
-          <Link href="/automatic-doors/inside-door">דלתות פנים אוטומטיות</Link>
+          <Link href="/דלתות-אוטומטיות/דלת-אוטומטית-הזזה-דו-כנף">אוטומטית הזזה דו-כנף</Link>
+          <Link href="/דלתות-אוטומטיות/דלת-אוטומטית-הזזה-חד-כנף">אוטומטית הזזה חד-כנף</Link>
+          <Link href="/דלתות-אוטומטיות/דלת-אוטומטית-טלסקופית">אוטומטית טלסקופית</Link>
+          <Link href="/דלתות-אוטומטיות/דלת-אוטומטית-קורסת">אוטומטית קורסת</Link>
+          <Link href="/דלתות-אוטומטיות/דלת-פנים-אוטומטית">דלתות פנים אוטומטיות</Link>
         </Col>
         <Col className={styles.linksFooterCol} xs={12} sm={6} lg={3}>
           <Link href="/mailbox">
