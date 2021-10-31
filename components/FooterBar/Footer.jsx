@@ -22,21 +22,21 @@ export default function Footer() {
           <Link href="/דלתות-אוטומטיות/דלת-פנים-אוטומטית">דלתות פנים אוטומטיות</Link>
         </Col>
         <Col className={styles.linksFooterCol} xs={12} sm={6} lg={3}>
-          <Link href="/mailbox">
+          <Link href="/תיבות-דואר">
             <a className={styles.linksFooterColTitle}>תיבות דואר</a>
           </Link>
-          <Link href="/mailbox/shared-houses">תיבות דואר לבתים משותפים</Link>
-          <Link href="/mailbox/organizations">תיבות דואר למוסדות</Link>
-          <Link href="/mailbox/private-houses">תיבות דואר לבתים פרטיים</Link>
-          <Link href="/mailbox/mailbox-rooms">חדרי תיבות דואר</Link>
-          <Link href="/mailbox/deposit-cellphones">ארון הפקדה לטלפונים סלולריים</Link>
+          <Link href="/תיבות-דואר/תיבות-דואר-לבתים-משותפים">תיבות דואר לבתים משותפים</Link>
+          <Link href="/תיבות-דואר/תיבות-דואר-למוסדות">תיבות דואר למוסדות</Link>
+          <Link href="/תיבות-דואר/תיבות-דואר-לבתים-פרטיים">תיבות דואר לבתים פרטיים</Link>
+          <Link href="/תיבות-דואר/חדרי-תיבות-דואר">חדרי תיבות דואר</Link>
+          <Link href="/תיבות-דואר/ארון-הפקדה-לטלפונים-סלולריים">ארון הפקדה לטלפונים סלולריים</Link>
         </Col>
         <Col className={styles.linksFooterCol} xs={12} sm={6} lg={3}>
-          <Link href="/enter-doors">
+          <Link href="/דלתות-כניסה">
             <a className={styles.linksFooterColTitle}>דלתות כניסה</a>
           </Link>
-          <Link href="/enter-doors/aluminium">דלתות כניסה אלומיניום</Link>
-          <Link href="/enter-doors/glass">דלתות כניסה זכוכית</Link>
+          <Link href="/דלתות-כניסה/דלתות-כניסה-אלומיניום">דלתות כניסה אלומיניום</Link>
+          <Link href="/דלתות-כניסה/דלתות-כניסה-זכוכית">דלתות כניסה זכוכית</Link>
         </Col>
         <Col className={styles.linksFooterCol} xs={12} sm={6} lg={3}>
           <Link href="/intercom">

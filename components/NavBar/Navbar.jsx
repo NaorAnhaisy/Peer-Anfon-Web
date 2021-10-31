@@ -114,24 +114,24 @@ export default function MainNavbar() {
                         <NavDropdown
                           className="dropdown-toggle"
                           title="תיבות דואר"
-                          onToggle={() => toogleTo("/mailbox")}
+                          onToggle={() => toogleTo("/תיבות-דואר")}
                           show={showMailBoxDropdown}
                           onMouseEnter={() => setShowMailBoxDropdown(true)}
                           onMouseLeave={() => setShowMailBoxDropdown(false)}
                         >
-                          <NavDropdown.Item href="/mailbox/shared-houses">
+                          <NavDropdown.Item href="/תיבות-דואר/תיבות-דואר-לבתים-משותפים">
                             תיבות דואר לבתים משותפים
                           </NavDropdown.Item>
-                          <NavDropdown.Item href="/mailbox/organizations">
+                          <NavDropdown.Item href="/תיבות-דואר/תיבות-דואר-למוסדות">
                             תיבות דואר למוסדות
                           </NavDropdown.Item>
-                          <NavDropdown.Item href="/mailbox/private-houses">
+                          <NavDropdown.Item href="/תיבות-דואר/תיבות-דואר-לבתים-פרטיים">
                             תיבות דואר לבתים פרטיים
                           </NavDropdown.Item>
-                          <NavDropdown.Item href="/mailbox/mailbox-rooms">
+                          <NavDropdown.Item href="/תיבות-דואר/חדרי-תיבות-דואר">
                             חדרי תיבות דואר
                           </NavDropdown.Item>
-                          <NavDropdown.Item href="/mailbox/deposit-cellphones">
+                          <NavDropdown.Item href="/תיבות-דואר/ארון-הפקדה-לטלפונים-סלולריים">
                             ארון הפקדה לטלפונים סלולריים
                           </NavDropdown.Item>
                           {/*
@@ -151,15 +151,15 @@ export default function MainNavbar() {
                         <NavDropdown
                           className="dropdown-toggle"
                           title="דלתות כניסה"
-                          onToggle={() => toogleTo("/enter-doors")}
+                          onToggle={() => toogleTo("/דלתות-כניסה")}
                           show={showEnterDoorsDropdown}
                           onMouseEnter={() => setShowEnterDoorsDropdown(true)}
                           onMouseLeave={() => setShowEnterDoorsDropdown(false)}
                         >
-                          <NavDropdown.Item href="/enter-doors/aluminium">
+                          <NavDropdown.Item href="/דלתות-כניסה/דלתות-כניסה-אלומיניום">
                             דלתות כניסה אלומיניום
                           </NavDropdown.Item>
-                          <NavDropdown.Item href="/enter-doors/glass">
+                          <NavDropdown.Item href="/דלתות-כניסה/דלתות-כניסה-זכוכית">
                             דלתות כניסה זכוכית
                           </NavDropdown.Item>
                         </NavDropdown>
