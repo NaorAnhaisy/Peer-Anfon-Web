@@ -1,4 +1,4 @@
 User-agent: *,
 Allow: /
 
-Sitemap: https://www.peer-anfon.co.il/sitemap.xml
+Sitemap: https://www.peer-anfon-group.co.il/sitemap.xml
