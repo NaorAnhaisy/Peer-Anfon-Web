@@ -12,6 +12,7 @@
 
 .automaticDoorsContainer {
     max-width: 90%;
+    overflow: hidden;
     margin: auto;
     margin-top: 10rem;
     margin-bottom: 4rem;

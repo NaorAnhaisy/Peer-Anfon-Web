@@ -83,14 +83,14 @@ export default function MainNavbar() {
                         </Link>
                       </li>
 
-                      <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                      <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4"
+                        onMouseLeave={() => setShowAutoDoorsDropdown(false)}>
                         <NavDropdown
                           className="dropdown-toggle"
                           title="דלתות אוטומטיות"
                           onToggle={() => toogleTo("/דלתות-אוטומטיות")}
                           show={showAutoDoorsDropdown}
                           onMouseEnter={() => setShowAutoDoorsDropdown(true)}
-                          onMouseLeave={() => setShowAutoDoorsDropdown(false)}
                         >
                           <NavDropdown.Item href="/דלתות-אוטומטיות/דלת-אוטומטית-הזזה-דו-כנף">
                             אוטומטית הזזה דו-כנף
@@ -110,14 +110,14 @@ export default function MainNavbar() {
                         </NavDropdown>
                       </li>
 
-                      <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                      <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4"
+                        onMouseLeave={() => setShowMailBoxDropdown(false)}>
                         <NavDropdown
                           className="dropdown-toggle"
                           title="תיבות דואר"
                           onToggle={() => toogleTo("/תיבות-דואר")}
                           show={showMailBoxDropdown}
                           onMouseEnter={() => setShowMailBoxDropdown(true)}
-                          onMouseLeave={() => setShowMailBoxDropdown(false)}
                         >
                           <NavDropdown.Item href="/תיבות-דואר/תיבות-דואר-לבתים-משותפים">
                             תיבות דואר לבתים משותפים
@@ -147,14 +147,14 @@ export default function MainNavbar() {
                         </Link>
                       </li>
 
-                      <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                      <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4"
+                        onMouseLeave={() => setShowEnterDoorsDropdown(false)}>
                         <NavDropdown
                           className="dropdown-toggle"
                           title="דלתות כניסה"
                           onToggle={() => toogleTo("/דלתות-כניסה")}
                           show={showEnterDoorsDropdown}
                           onMouseEnter={() => setShowEnterDoorsDropdown(true)}
-                          onMouseLeave={() => setShowEnterDoorsDropdown(false)}
                         >
                           <NavDropdown.Item href="/דלתות-כניסה/דלתות-כניסה-אלומיניום">
                             דלתות כניסה אלומיניום
@@ -165,14 +165,14 @@ export default function MainNavbar() {
                         </NavDropdown>
                       </li>
 
-                      <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                      <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4"
+                      onMouseLeave={() => setShowInterkumDropdown(false)}>
                         <NavDropdown
                           className="dropdown-toggle"
                           title="מערכות אינטרקום"
                           onToggle={() => toogleTo("/intercom")}
                           show={showInterkumDropdown}
                           onMouseEnter={() => setShowInterkumDropdown(true)}
-                          onMouseLeave={() => setShowInterkumDropdown(false)}
                         >
                           <NavDropdown.Item href="/intercom">
                             עמודי נירוסטה לאינטרקום

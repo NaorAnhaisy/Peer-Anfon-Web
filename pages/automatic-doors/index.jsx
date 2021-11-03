@@ -152,7 +152,7 @@ export default function AutomaticDoors() {
                 </Row>
 
                 <Row className={styles.automaticDoorsRow} data-aos="fade-right" data-aos-duration="700">
-                    <Col xs={12} lg={6} className="pr-5 pl-5">
+                    <Col xs={12} lg={6} >
                         <h3 data-aos="zoom-in" data-aos-delay="600">דלתות חשמליות</h3>
                         <div className={styles.ulContainer2}>
                             <p>
@@ -181,7 +181,7 @@ export default function AutomaticDoors() {
                             </ul>
                         </div>
                     </Col>
-                    <Col xs={12} lg={6} className="pr-5 pl-5">
+                    <Col xs={12} lg={6} >
                         <img
                             src="/images/AutomaticDoors/Automatic-door-3.jpeg"
                             className={styles.doorSelectedMainDiv}

@@ -20,12 +20,12 @@ export default function DoubleLeafDoor() {
                 <img src="/images/AutomaticDoors/double-leaf-automatic-door.jpg" className={styles.doorSelectedMainDiv} alt="דלת אוטומטית" />
                 <Container>
                     <div>
-                        <Row style={{ marginBottom: "5rem" }}>
-                            <Col lg={9} md={6} sm={12} className={styles.doorSelectedNameDiv}>
+                        <Row style={{ margin: "5rem 0" }}>
+                            <Col lg={9} md={8} sm={8} xs={8} className={styles.doorSelectedNameDiv}>
                                 <div className={styles.animatedTitle}>
                                     <div className={styles.textTop}>
                                         <div>
-                                            <span>דלתות אוטומטיות</span>
+                                            <span>דלת אוטומטית</span>
                                         </div>
                                     </div>
                                     <div className={styles.textBottom}>
@@ -33,13 +33,16 @@ export default function DoubleLeafDoor() {
                                     </div>
                                 </div>
                             </Col>
-                            <Col lg={3} md={6} sm={12}>
-                                <div
+                            <Col lg={3} md={4} sm={4} xs={4} style={{ alignSelf: 'center' }}>
+                                <div style={{ position: 'relative' }}>
+                                    <div className={styles.arrowBackIcon} onClick={() => router.back()}></div>
+                                </div>
+                                {/* <div
                                     className={styles.doorSelectedBackBtn}
                                     onClick={() => router.back()}
                                 >
                                     <i className="fas fa-chevron-left ml-4"></i>
-                                </div>
+                                </div> */}
                             </Col>
                         </Row>
 
