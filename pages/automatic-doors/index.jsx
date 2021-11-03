@@ -38,7 +38,7 @@ export default function AutomaticDoors() {
         <div>
             <Carousel
                 autoPlay={true}
-                interval={5000}
+                interval={1000}
                 controls={false}
                 indicators={true}
                 fade={true}
