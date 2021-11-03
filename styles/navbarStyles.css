@@ -257,10 +257,10 @@
         -o-transform: rotate(90deg);
     }
     .dropdown-menu {
-        background: #131313e6;
+        background: #181818 !important;
         padding: 10px 0px !important;
-        border: 1px solid #806c36;
-        color: white;
+        border: 1px solid #806c36 !important;
+        color: white !important;
         box-shadow: none;
         transition: all 200ms linear;
         -webkit-transition: all 200ms linear;
