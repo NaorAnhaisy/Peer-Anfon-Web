@@ -48,7 +48,7 @@ export default function Footer() {
       <div className={styles.linksAboutseparator}></div>
       <Row className={`${styles.footerBarRow} dir-ltr`}>
         <Col sm={12} md={4} className={styles.aboutSite}>
-          Peer Anfon © {new Date().getFullYear()} - All Rights Reserve.
+          Peer Anfon © {new Date().getFullYear()} - All Rights Reserve
         </Col>
         <Col sm={12} md={4} className={styles.socialLinks}>
           <a href="https://www.facebook.com/" aria-label="Facebook פאר אנפון" target="_blank" rel="noopener noreferrer" className={styles.footerHover}>

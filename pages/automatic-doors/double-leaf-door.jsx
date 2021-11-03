@@ -17,43 +17,38 @@ export default function DoubleLeafDoor() {
     return (
         <div>
             <div>
-                <img src="/images/Doors/ALM/background.jpg" className={styles.doorSelectedMainDiv} alt="דלת אוטומטית" />
+                <img src="/images/AutomaticDoors/double-leaf-automatic-door.jpg" className={styles.doorSelectedMainDiv} alt="דלת אוטומטית" />
                 <Container>
-                    <div
-                        className={styles.doorSelectedBackBtn}
-                        onClick={() => router.back()}
-                    >
-                        <i className="fas fa-chevron-right ml-4"></i> <span>אחורה</span>
-                    </div>
                     <div>
-                        <Row style={{ marginBottom: "20px" }}>
+                        <Row style={{ marginBottom: "5rem" }}>
                             <Col lg={9} md={6} sm={12} className={styles.doorSelectedNameDiv}>
-                                <div style={{ width: "fit-content" }}>
-                                    <h2>דלת אוטומטית הזזה דו-כנף</h2>
-                                    <div className={`separator ${styles.doorSelectedSeperator}`}></div>
+                                <div className={styles.animatedTitle}>
+                                    <div className={styles.textTop}>
+                                        <div>
+                                            <span>דלתות אוטומטיות</span>
+                                        </div>
+                                    </div>
+                                    <div className={styles.textBottom}>
+                                        <div>דו-כנף</div>
+                                    </div>
                                 </div>
                             </Col>
-                            <Col lg={3} md={6} sm={12} className={styles.doorSelectedDoorInfo}>
-                                <div>
-                                    <h6>סגנון הדלת</h6>
-                                    <p>Vario 6</p>
-                                </div>
-                                <div>
-                                    <h6>עוד פרטים</h6>
-                                    <p>פרט מסויים...</p>
-                                </div>
-                                <div>
-                                    <h6>קונפיגורציה</h6>
-                                    <p>Single Leaf , Double leaf</p>
+                            <Col lg={3} md={6} sm={12}>
+                                <div
+                                    className={styles.doorSelectedBackBtn}
+                                    onClick={() => router.back()}
+                                >
+                                    <i className="fas fa-chevron-left ml-4"></i>
                                 </div>
                             </Col>
                         </Row>
 
                         <Row>
-                            <Col lg={6} md={8} sm={12}
-                                data-aos="fade-zoom-in"
-                                data-aos-duration="700">
-                                <div className={styles.doorSelectedDoorDetails}>
+                            <Col lg={6} sm={12}
+                                data-aos="zoom-out"
+                                data-aos-delay="2200"
+                                data-aos-duration="1500">
+                                <div className={`mt-5 ${styles.doorSelectedDoorDetails}`}>
                                     <h6>היעדים</h6>
                                     <p>
                                         הלקוח שלנו הגיע אלינו בחיפוש אחר דלתות המשלימות את הארכיטקטורה
@@ -65,22 +60,15 @@ export default function DoubleLeafDoor() {
                                         הלקוח שלנו.
                                     </p>
                                 </div>
-                                <Image
-                                    className={styles.doorSelectedDetailsExampleImg}
-                                    src="/images/Doors/LUX/example1.jpg"
-                                    alt=""
-                                    layout="responsive"
-                                    width={3}
-                                    height={2}
-                                />
                             </Col>
                         </Row>
 
                         <Row className="reverse-flex-direction">
-                            <Col lg={6} md={8} sm={12}>
-                                <div className={styles.doorSelectedDoorDetails}
-                                    data-aos="fade-zoom-in"
-                                    data-aos-duration="700">
+                            <Col lg={6} sm={12}>
+                                <div className={`mt-5 mb-5 ${styles.doorSelectedDoorDetails}`}
+                                    data-aos="zoom-out"
+                                    data-aos-delay="2500"
+                                    data-aos-duration="1500">
                                     <h6>פתרון Peer Anfon</h6>
                                     <p>
                                         הדף הכפול Vario 6 הותקן בחלקו האחורי של פרוזדור הכניסה הראשית,
@@ -91,15 +79,6 @@ export default function DoubleLeafDoor() {
                                         טריקות וטיחות, בעוד הצירים הנסתרים ותפס הדלת המגנטית משפרים את
                                         האבטחה ושומרים על עיצוב מינימלי. שלוש הדלתות המותקנות במסדרון
                                         משלימות את עיצוב הבית תוך הוספת נופך של תחכום למסגרת המסדרון.
-                                    </p>
-                                    <p>
-                                        בהתחשב בכך שהאבטחה הייתה בעדיפות עצומה עבור הלקוח, הצלחנו
-                                        לעמוד בדרישות עם אבטחת RC2 המדורגת כסטנדרט. לדלת שייצרנו יש גם
-                                        אפשרות לשדרג ל- RC3. זיגוג משולש הוא גם תכונה סטנדרטית וחשובה
-                                        מאוד עבור בתים רבים בכל הנוגע ליעילות אנרגטית. הצלחנו להתאים
-                                        את העיצוב החיצוני של הלקוח שלנו הודות למגוון רחב של לכות
-                                        וגימורים, כלומר הדמיון היה הגבול היחיד ליצירת דלת ייחודית
-                                        באמת.
                                     </p>
                                 </div>
                             </Col>

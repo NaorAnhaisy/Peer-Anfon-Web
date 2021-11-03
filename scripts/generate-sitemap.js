@@ -12,6 +12,10 @@ sitemap({
         "favicon",
     ],
     extraPaths: [
-        "/"
+        "/",
+        "/automatic-doors",
+        "/enter-doors",
+        "/mailbox",
+        "/intercom"
     ]
 })

@@ -164,7 +164,6 @@ body {
 }
 
 .separator {
-  background-color: #b3a073;
   background: #b3a073;
   display: inline-block;
   height: 1px;
@@ -255,4 +254,8 @@ body {
 
 .carousel .carousel-indicators .active {
   background: #ffffff;
+}
+
+.clickable {
+  cursor: pointer;
 }

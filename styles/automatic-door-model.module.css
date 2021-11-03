@@ -6,17 +6,17 @@
   width: 100%;
   height: auto;
   min-height: 300px;
+  object-fit: cover;
 }
 
 .doorSelectedBackBtn {
+  float: left;
   cursor: pointer !important;
   color: black;
   outline: none;
   border: none;
   background: none;
   display: table-cell;
-  margin-right: auto;
-  margin-left: 0;
   font-family: "Alef";
   font-size: 20px;
   padding: 45px 0;
@@ -32,6 +32,7 @@
 .doorSelectedNameDiv {
   text-align: right;
   color: #caaf6d;
+  position: relative;
   font-family: "Julius Sans One", "Alef";
 }
 
@@ -39,22 +40,7 @@
   width: 50% !important;
 }
 
-.doorSelectedDoorInfo {
-  text-align: right;
-}
-
-.doorSelectedDoorInfo h6 {
-  margin-bottom: 5px;
-  letter-spacing: 2px;
-}
-
-.doorSelectedDoorInfo p {
-  font-family: "Julius Sans One", system-ui;
-  font-weight: 100;
-}
-
 .doorSelectedDoorDetails {
-  margin: 80px 0;
   text-align: right;
 }
 
@@ -113,4 +99,91 @@
 
 .doorSelectedContactUsDiv a:hover {
   background: #caaf6d;
+}
+
+@keyframes showTopText {
+  0% {
+    transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(0, 100%, 0);
+    -moz-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    -o-transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes showBottomText {
+  0% {
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+  }
+}
+
+.animatedTitle {
+  color: #ad9f4e;
+  height: 10rem;
+  margin-top: 2rem;
+  left: 64%;
+  position: absolute;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  width: 45rem;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.animatedTitle>div {
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+.animatedTitle>div div {
+  font-size: 70px;
+  position: absolute;
+}
+
+.animatedTitle>div div span {
+  display: block;
+}
+
+.animatedTitle>div.textTop {
+  border-bottom: 3px solid #5a5a5a;
+  top: 0;
+}
+
+.animatedTitle>div.textTop div {
+  animation: showTopText 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+
+.animatedTitle>div.textTop div span:first-child {
+  color: #5a5a5a;
+}
+
+.animatedTitle>div.textBottom {
+  bottom: 0;
+}
+
+.animatedTitle>div.textBottom div {
+  animation: showBottomText 0.5s;
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  top: 0;
+  transform: translate(0, -100%);
 }
