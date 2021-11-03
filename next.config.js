@@ -91,7 +91,7 @@ module.exports = withPlugins([], {
           },
           {
             key: 'Content-Security-Policy',
-            value: 'vitals.vercel-insights.com'
+            value: "script-src 'self' vitals.vercel-insights.com"
           }
         ],
       },
