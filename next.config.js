@@ -88,6 +88,10 @@ module.exports = withPlugins([], {
           {
             key: 'X-XSS-Protection',
             value: '1; mode=block',
+          },
+          {
+            key: 'Content-Security-Policy',
+            value: "script-src vitals.vercel-insights.com"
           }
         ],
       },
