@@ -72,6 +72,31 @@ module.exports = withPlugins([], {
   images: {
     domains: ['images.prismic.io', 's3-us-west-2.amazonaws.com'],
   },
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'X-Content-Type-Options',
+            value: 'nosniff',
+          },
+          {
+            key: 'X-Frame-Options',
+            value: 'DENY',
+          },
+          {
+            key: 'X-XSS-Protection',
+            value: '1; mode=block',
+          },
+          {
+            key: 'Content-Security-Policy',
+            value: 'vitals.vercel-insights.com'
+          }
+        ],
+      },
+    ];
+  },
   publicRuntimeConfig: {
     CLIENT_URL: process.env.NODE_ENV === "production" ? "https://peer-anfon-group.co.il" : "http://localhost:3000",
     SERVER_URL: process.env.NODE_ENV === "production" ? "https://peer-anfon.co.il/server" : "http://localhost:5000/server",
