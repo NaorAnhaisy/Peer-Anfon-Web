@@ -88,6 +88,16 @@
   font-family: inherit;
   letter-spacing: 2px;
   transition: background 0.4s;
+  -webkit-transition: background 0.4s;
+  -moz-transition: background 0.4s;
+  -ms-transition: background 0.4s;
+  -o-transition: background 0.4s;
+}
+
+@media (max-width: 400px) {
+  .doorSelectedContactUsDiv a {
+    padding: 10px 60px;
+  }
 }
 
 .doorSelectedContactUsDiv a:hover {
@@ -120,6 +130,10 @@
     -ms-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
   }
+}
+
+.doorSelectedTitleRow {
+  margin: 5rem 0;
 }
 
 .doorSelectedNameDiv {
@@ -160,7 +174,11 @@
 
 @media (max-width: 440px) {
   .animatedTitle>div div {
-    font-size: 40px;
+    font-size: 30px;
+  }
+
+  .doorSelectedTitleRow {
+    margin: 3rem 0 0 0;
   }
 }
 
@@ -270,4 +288,15 @@
   -moz-transform: scale(.8);
   -ms-transform: scale(.8);
   -o-transform: scale(.8);
+}
+
+.doorSelectedContainer {
+  overflow: hidden;
+}
+
+.arrowBackIconText {
+  display: flex;
+  flex-flow: row-reverse;
+  margin-left: 30px;
+  line-height: 16px;
 }
