@@ -8,7 +8,6 @@ sitemap({
     ignoredExtensions: ["js", "css", "png", "jpeg", "xml", "icon", "json", "map"],
     ignoredPaths: [
         "404",
-        "index",
         "favicon",
     ],
     extraPaths: [
