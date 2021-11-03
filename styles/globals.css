@@ -178,7 +178,6 @@ body {
   -webkit-user-select: none;
   -ms-user-select: none;
   -webkit-user-drag: none;
-  user-drag: none;
 }
 
 .no-href-css {
