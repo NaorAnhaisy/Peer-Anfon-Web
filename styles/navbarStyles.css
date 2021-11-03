@@ -228,6 +228,19 @@
 
 /* Media */
 
+@media (max-width: 1399px) {
+    .dropdown-menu {
+        background: #181818 !important;
+        padding: 10px 0px !important;
+        border: 1px solid #806c36 !important;
+        color: white !important;
+    }
+
+    .nav-item {
+        margin-bottom: 10px;
+    }
+}
+
 @media (max-width: 767px) {
     .nav-item:after {
         display: none;
@@ -257,10 +270,8 @@
         -o-transform: rotate(90deg);
     }
     .dropdown-menu {
-        background: #181818 !important;
-        padding: 10px 0px !important;
-        border: 1px solid #806c36 !important;
-        color: white !important;
+        padding: 0;
+        background-color: transparent;
         box-shadow: none;
         transition: all 200ms linear;
         -webkit-transition: all 200ms linear;
