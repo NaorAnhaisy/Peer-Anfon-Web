@@ -12,11 +12,15 @@
     -o-transition: all 0.3s ease-out;
 }
 
+.navbarBrand {
+    display: inline-flex;
+}
+
 .navbarBrand div div {
     padding-top: 0 !important;
 }
 
-.navbarBrand span span {
+.navbarBrand span:first-child span {
     padding: 0 !important;
 }
 

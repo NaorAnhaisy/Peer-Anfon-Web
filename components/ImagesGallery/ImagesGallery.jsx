@@ -1,5 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from './ImagesGallery.module.css';
+import { useEffect } from 'react';
+import AOS from 'aos';
 
 /**
  * @param {Array.<object>} images Array of objects, which inlcues:
@@ -9,10 +11,14 @@ import styles from './ImagesGallery.module.css';
  * @returns Responsive Images Gallery Component.
  */
 export default function ImagesGallery({ images, altLabel }) {
+    useEffect(() => {
+        AOS.init({ once: true });
+    }, []);
+
     return (
         <div className={styles.gallery}>
             {images?.map((image, i) => {
-                return <div key={i} className={image.strechType ? styles[image.strechType] : ""}>
+                return <div key={i} data-aos="fade-up" data-aos-duration="700" className={`${image.strechType ? styles[image.strechType] : ""} ${styles.blackedImageOnHover}`}>
                     <img src={image.src} alt={`${altLabel} ${i + 1}`} />
                 </div>
             })}

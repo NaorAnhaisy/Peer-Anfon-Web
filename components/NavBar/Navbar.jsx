@@ -1,10 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useState } from "react";
 import styles from "./Navbar.module.css";
-import Image from "next/image";
 import Link from "next/link";
 import { Row, Col, Container, NavDropdown, Navbar } from "react-bootstrap";
-// import getConfig from 'next/config'
-// const { publicRuntimeConfig } = getConfig()
 
 export default function MainNavbar() {
   const [showAutoDoorsDropdown, setShowAutoDoorsDropdown] = useState(false);
@@ -51,14 +49,15 @@ export default function MainNavbar() {
               >
                 <Link href="/">
                   <a aria-label="לוגו פאר אנפון" className={styles.navbarBrand}>
-                    <Image
-                      src="/images/company-logo.png"
+                    <img
+                      src="/images/‏‏company-logo-symbol.png"
                       className="undragablle-image"
                       width={10}
                       height={3}
                       layout="responsive"
                       alt=""
                     />
+                    <span><span>פאר</span><span>אנפון</span><span>תעשיות בע&quot;מ</span></span>
                   </a>
                 </Link>
 

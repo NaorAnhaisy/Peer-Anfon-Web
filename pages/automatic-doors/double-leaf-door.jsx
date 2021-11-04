@@ -33,8 +33,8 @@ export default function DoubleLeafDoor() {
                             </div>
                         </Col>
                         <Col lg={3} md={4} sm={4} xs={12} style={{ alignSelf: 'center', padding: "50px" }}>
-                            <div style={{ position: 'relative' }}>
-                                <div className={styles.arrowBackIcon} onClick={() => router.back()}></div>
+                            <div style={{ position: 'relative', cursor: 'pointer' }} onClick={() => router.back()}>
+                                <div className={styles.arrowBackIcon}></div>
                                 <span className={styles.arrowBackIconText}>חזור</span>
                             </div>
                         </Col>

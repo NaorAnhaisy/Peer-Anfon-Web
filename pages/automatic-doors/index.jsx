@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { useEffect } from 'react';
-import { Carousel, Col, Container, Row } from "react-bootstrap";
+import { Carousel, Col, Row } from "react-bootstrap";
 import ImagesGallery from "../../components/ImagesGallery/ImagesGallery";
 import styles from "../../styles/automatic-doors.module.css";
 import AOS from 'aos';
@@ -78,8 +78,34 @@ export default function AutomaticDoors() {
                 </Carousel.Item>
             </Carousel>
 
+            <div styles={{ width: '100%', height: '100vh', direction: 'ltr', textAlign: 'right' }}>
+                <div className={styles.divContainer}>
+                    <div className={styles.title}>
+                        <div className={styles.titleInner}>
+                            <div className={styles.cafe}>
+                                <div className={styles.cafeInner}>דלתות אוטומטיות</div>
+                            </div>
+                            <div className={styles.mozart}>
+                                <div className={styles.mozartInner}>
+                                    פאר אנפון : יבואנית בלעדית של מערכות דלתות אוטומטיות של TAU איטליה המבטיחים איכות , שירות ואמינות מוצריה . www.tauitalia.com
+                                    דלת הזזה אוטומטית יכולה להיות בעלת מראה זכוכית עם פרופיל דק או עם מסגרת עבה בהתאם לדרישות לקוח .
+                                    דלתות אוטומטיות אוטומטיות מותקנות על מסילה עילית ומתקבל מראה אסתטי ונקי.
+                                    דלתות חשמליות אוטומטיות מותקנות בעיקר בפתחן של כניסה למשרדים, בתים משותפים , חנויות, ועוד{" "}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={styles.image}>
+                        <img
+                            src="/images/AutomaticDoors/Automatic-door-1.jpeg"
+                            alt="דלת אוטומטית"
+                        />
+                    </div>
+                </div>
+            </div>
             <div className={styles.automaticDoorsContainer}>
-                <Row className={styles.automaticDoorsRow} data-aos="fade-right" data-aos-duration="700">
+                {/* <Row className={styles.automaticDoorsRow} data-aos="fade-right" data-aos-duration="700">
                     <Col xs={12} lg={6} className="pr-5 pl-5">
                         <h3 data-aos="zoom-in" data-aos-delay="600">דלתות אוטומטיות</h3>
                         <p>
@@ -96,7 +122,7 @@ export default function AutomaticDoors() {
                             alt="דלת אוטומטית"
                         />
                     </Col>
-                </Row>
+                </Row> */}
 
                 <Row className={styles.automaticDoorsRow} data-aos="fade-left" data-aos-duration="700">
                     <Col xs={12} lg={6} className="pr-5 pl-5">
@@ -208,7 +234,7 @@ export default function AutomaticDoors() {
                         </Link>
                     </Col>
                     <Col xs={12} md={6} lg={4}>
-                    <Link href="/דלתות-אוטומטיות/דלת-אוטומטית-הזזה-דו-כנף" passHref={true}>
+                        <Link href="/דלתות-אוטומטיות/דלת-אוטומטית-הזזה-דו-כנף" passHref={true}>
                             <div className="clickable">
                                 <div className={styles.imageLinkDivToCategorys}>
                                     <img src="/images/AutomaticDoors/Automatic-door-2.jpeg" alt="דלתות חשמליות הזזה חד כנף" />
@@ -224,7 +250,7 @@ export default function AutomaticDoors() {
                         </Link>
                     </Col>
                     <Col xs={12} md={6} lg={4}>
-                    <Link href="/דלתות-אוטומטיות/דלת-אוטומטית-טלסקופית" passHref={true}>
+                        <Link href="/דלתות-אוטומטיות/דלת-אוטומטית-טלסקופית" passHref={true}>
                             <div className="clickable">
                                 <div className={styles.imageLinkDivToCategorys}>
                                     <img src="/images/AutomaticDoors/Automatic-door-3.jpeg" alt="דלתות חשמליות הזזה חד כנף" />
@@ -240,7 +266,7 @@ export default function AutomaticDoors() {
                         </Link>
                     </Col>
                     <Col xs={12} md={6} lg={4}>
-                    <Link href="/דלתות-אוטומטיות/דלת-אוטומטית-קורסת" passHref={true}>
+                        <Link href="/דלתות-אוטומטיות/דלת-אוטומטית-קורסת" passHref={true}>
                             <div className="clickable">
                                 <div className={styles.imageLinkDivToCategorys}>
                                     <img src="/images/AutomaticDoors/Automatic-door-4.jpeg" alt="דלתות חשמליות הזזה חד כנף" />
@@ -258,7 +284,7 @@ export default function AutomaticDoors() {
                     <Col xs={12} md={6} lg={4} className={styles.displayNoneMobile}>
                     </Col>
                     <Col xs={12} md={6} lg={4}>
-                    <Link href="/דלתות-אוטומטיות/דלת-פנים-אוטומטית" passHref={true}>
+                        <Link href="/דלתות-אוטומטיות/דלת-פנים-אוטומטית" passHref={true}>
                             <div className="clickable">
                                 <div className={styles.imageLinkDivToCategorys}>
                                     <img src="/images/AutomaticDoors/Automatic-door-5.jpeg" alt="דלתות חשמליות הזזה חד כנף" />
@@ -275,7 +301,7 @@ export default function AutomaticDoors() {
                     </Col>
                 </Row>
 
-                <div data-aos="fade-zoom-in" data-aos-duration="700" style={{marginTop: "100px"}}>
+                <div style={{ marginTop: "100px" }}>
                     <ImagesGallery images={images} altLabel={"דלתות אוטומטיות"} />
                 </div>
             </div>

@@ -27,7 +27,7 @@ main {
   width: 100%;
 }
 
-body > #root > div {
+body>#root>div {
   min-height: 100vh !important;
 }
 
@@ -101,8 +101,7 @@ body {
   font-family: VarelaRound;
   src: local("VarelaRound"),
     url(/src/assets/fonts/VarelaRound/VarelaRound.woff) format("woff"),
-    url(/src/assets/fonts/VarelaRound/VarelaRound.eot)
-      format("embedded-opentype"),
+    url(/src/assets/fonts/VarelaRound/VarelaRound.eot) format("embedded-opentype"),
     url(/src/assets/fonts/VarelaRound/VarelaRound.woff2) format("woff2"),
     url(/src/assets/fonts/VarelaRound/VarelaRound.ttf) format("truetype"),
     url(/src/assets/fonts/VarelaRound/VarelaRound.svg) format("svg");
@@ -202,15 +201,15 @@ body {
   overflow: hidden;
 }
 
-.contErrorActive > .contError > h1 {
+.contErrorActive>.contError>h1 {
   left: 0%;
 }
 
-.contErrorActive > .contError > p {
+.contErrorActive>.contError>p {
   left: 0%;
 }
 
-.contErrorActive > .contAura2 {
+.contErrorActive>.contAura2 {
   animation-name: animation_error_2;
   animation-duration: 4s;
   animation-timing-function: linear;
@@ -219,7 +218,7 @@ body {
   transform: rotate(-20deg);
 }
 
-.contErrorActive > .contAura1 {
+.contErrorActive>.contAura1 {
   transform: rotate(20deg);
   right: -170px;
   animation-name: animation_error_1;
@@ -257,4 +256,45 @@ body {
 
 .clickable {
   cursor: pointer;
+}
+
+/* Shine Text */
+.btnShine {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 12px 48px;
+  color: #ffffff;
+  background: linear-gradient(to right, #4d4d4d 0, white 10%, #4d4d4d 20%);
+  background-position: 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  white-space: nowrap;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  animation: shine3sinfinitelinear;
+  -webkit-animation: shine3sinfinitelinear;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+
+  60% {
+    background-position: 180px;
+  }
+
+  100% {
+    background-position: 180px;
+  }
 }
