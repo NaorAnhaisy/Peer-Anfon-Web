@@ -60,7 +60,8 @@ export default function MainNavbar() {
                           alt=""
                         />
                         <div className={` ${styles.navbarLogoTextDiv}`}>
-                          <span className={`${styles.shine} ${styles.navbarLogoText}`}>
+                        {/* ${styles.shine}  */}
+                          <span className={`${styles.navbarLogoText}`}>
                             <span>פאר</span>
                             <span>אנפון</span>
                             <span>תעשיות בע&quot;מ</span>

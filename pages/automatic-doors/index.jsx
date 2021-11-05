@@ -78,7 +78,7 @@ export default function AutomaticDoors() {
                 </Carousel.Item>
             </Carousel>
 
-            <div styles={{ width: '100%', height: '100vh', direction: 'ltr', textAlign: 'right' }}>
+            <div className={styles.contentWrapper}>
                 <div className={styles.divContainer}>
                     <div className={styles.title}>
                         <div className={styles.titleInner}>
@@ -88,9 +88,12 @@ export default function AutomaticDoors() {
                             <div className={styles.mozart}>
                                 <div className={styles.mozartInner}>
                                     פאר אנפון : יבואנית בלעדית של מערכות דלתות אוטומטיות של TAU איטליה המבטיחים איכות , שירות ואמינות מוצריה . www.tauitalia.com
+                                    <br />
                                     דלת הזזה אוטומטית יכולה להיות בעלת מראה זכוכית עם פרופיל דק או עם מסגרת עבה בהתאם לדרישות לקוח .
+                                    <br />
                                     דלתות אוטומטיות אוטומטיות מותקנות על מסילה עילית ומתקבל מראה אסתטי ונקי.
-                                    דלתות חשמליות אוטומטיות מותקנות בעיקר בפתחן של כניסה למשרדים, בתים משותפים , חנויות, ועוד{" "}
+                                    <br />
+                                    דלתות חשמליות אוטומטיות מותקנות בעיקר בפתחן של כניסה למשרדים, בתים משותפים , חנויות, ועוד.
                                 </div>
                             </div>
                         </div>
@@ -98,7 +101,7 @@ export default function AutomaticDoors() {
 
                     <div className={styles.image}>
                         <img
-                            src="/images/AutomaticDoors/Automatic-door-1.jpeg"
+                            src="https://images.unsplash.com/photo-1616362355051-6a9f8c434fff?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYxNzE0MTYzNQ&ixlib=rb-1.2.1&q=80&w=800&h=600"
                             alt="דלת אוטומטית"
                         />
                     </div>

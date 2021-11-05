@@ -118,36 +118,28 @@
 
 /* New */
 
-
-@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
-
-.iframely-embed {
-    position: fixed;
-    top: 0;
-    left: 0;
+.contentWrapper {
     width: 100%;
     height: 100%;
-    z-index: 50;
-    background: white;
+    text-align: right;
+    display: inline-block;
+    padding-right: 3vmin;
 }
 
 .divContainer {
+    margin-top: 5rem;
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
     padding-bottom: 4vmin;
-    height: 90vh;
     width: 100%;
-    background: #ede8e2;
-    color: #3a3535;
 }
 
 .title {
     padding-left: 1em;
-    grid-column: -1;
+    grid-column: 1/-1;
     grid-row: 1;
-    font-family: "Prata", serif;
-    font-size: 8vw;
+    font-size: 6vw;
     width: 100%;
     z-index: 2;
 }
@@ -169,6 +161,10 @@
 @keyframes outer-left {
     from {
         transform: translateX(50%);
+        -webkit-transform: translateX(50%);
+        -moz-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+        -o-transform: translateX(50%);
     }
 
     to {
@@ -179,6 +175,10 @@
 @keyframes inner-left {
     from {
         transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
     }
 
     to {
@@ -189,6 +189,11 @@
 .cafe,
 .mozart {
     animation: outer-left 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
+    -webkit-animation: outer-left 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
+}
+
+.mozart {
+    margin-top: 2rem;
 }
 
 .titleInner {
@@ -197,13 +202,29 @@
 }
 
 .cafeInner {
+    background: #ffffff91;
+    padding: 0px 35px;
+    border-radius: 20px;
+    color: #c0ab64;
     display: inline-block;
     animation: inner-left 1s 1s ease both, text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
 .mozartInner {
+    padding: 20px 45px;
+    background: #ffffffcc;
+    border-radius: 10px;
+    color: black;
     font-size: 20px;
     animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .title {
@@ -221,9 +242,10 @@
 .image {
     grid-row: 1;
     grid-column: 2;
-    margin-left: -2rem;
+    margin-left: 0;
     opacity: 0.7;
     animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 2s backwards;
+    -webkit-animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 2s backwards;
 }
 
 @keyframes image-in {
