@@ -43,7 +43,7 @@ export default function DoubleLeafDoor() {
                     <Row>
                         <Col lg={6} sm={12}
                             data-aos="zoom-out"
-                            data-aos-delay="2200"
+                            data-aos-delay="200"
                             data-aos-duration="1500">
                             <div className={`mt-5 ${styles.doorSelectedDoorDetails}`}>
                                 <h6>היעדים</h6>
@@ -64,7 +64,7 @@ export default function DoubleLeafDoor() {
                         <Col lg={6} sm={12}>
                             <div className={`mt-5 mb-5 ${styles.doorSelectedDoorDetails}`}
                                 data-aos="zoom-out"
-                                data-aos-delay="2500"
+                                data-aos-delay="500"
                                 data-aos-duration="1500">
                                 <h6>פתרון Peer Anfon</h6>
                                 <p>
@@ -80,12 +80,41 @@ export default function DoubleLeafDoor() {
                             </div>
                         </Col>
                     </Row>
-                    <Row
-                        data-aos="fade-zoom-in"
-                        data-aos-duration="700">
+
+                    <Row className="mt-5 mb-5">
+                        <div className="mb-5">
+                            <video autoPlay loop playsInline muted id="home-video" className={styles.automaticDoorVideo}>
+                                <source src="https://d2na49kk21qo66.cloudfront.net/Deuren-Internal-Video-Low-Res.mp4"
+                                    type="video/mp4" />
+                            </video>
+                        </div>
+                    </Row>
+
+                    {/* <Row className="mt-5 mb-5">
+                        <Col sm={12} md={6}>
+                            <div className="mb-5">
+                                <video autoPlay loop playsInline muted id="home-video" className={styles.automaticDoorVideo}>
+                                    <source src="https://d2na49kk21qo66.cloudfront.net/Deuren-Internal-Video-Low-Res.mp4"
+                                        type="video/mp4" />
+                                </video>
+                            </div>
+                        </Col>
+                        <Col sm={12} md={6}>
+                            <div className="mb-5">
+                                <video autoPlay loop playsInline muted id="home-video" className={styles.automaticDoorVideo}>
+                                    <source src="https://d2na49kk21qo66.cloudfront.net/Deuren-Internal-Video-Low-Res.mp4"
+                                        type="video/mp4" />
+                                </video>
+                            </div>
+                        </Col>
+                    </Row> */}
+
+                    <Row>
                         <Col sm={12} lg={6} className={styles.doorSelectedHorizontalImages}>
                             <Image
                                 className={styles.doorSelectedDetailsExampleImg}
+                                data-aos="fade-zoom-in"
+                                data-aos-duration="700"
                                 src="/images/Doors/LUX/example2.jpg"
                                 alt=""
                                 layout="responsive"
@@ -94,6 +123,8 @@ export default function DoubleLeafDoor() {
                             />
                             <Image
                                 className={styles.doorSelectedDetailsExampleImg}
+                                data-aos="fade-zoom-in"
+                                data-aos-duration="700"
                                 src="/images/Doors/LUX/example3.jpg"
                                 alt=""
                                 layout="responsive"
@@ -104,6 +135,8 @@ export default function DoubleLeafDoor() {
                         <Col sm={12} lg={6}>
                             <Image
                                 className={styles.doorSelectedDetailsExampleImg}
+                                data-aos="fade-zoom-in"
+                                data-aos-duration="700"
                                 src="/images/Doors/LUX/example4.jpg"
                                 alt=""
                                 layout="responsive"
