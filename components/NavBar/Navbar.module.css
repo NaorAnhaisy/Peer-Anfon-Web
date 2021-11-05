@@ -45,6 +45,7 @@
 
 .navbarBrand img {
     width: auto !important;
+    padding: 5px;
     position: relative !important;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
@@ -57,5 +58,87 @@
     .navbarContainer {
         padding-right: 30px !important;
         padding-left: 30px !important;
+    }
+}
+
+.navbarLogoTextDiv {
+    position: relative;
+}
+
+.navbarLogoTextDiv .navbarLogoText {
+    font-family: 'Rubik', sans-serif;
+    position: absolute;
+    bottom: 0;
+    width: max-content;
+}
+
+.navbarLogoTextDiv .navbarLogoText {
+    text-decoration: none;
+}
+
+.navbarLogoText span:first-child {
+    color: #4361AD;
+    font-size: 24px;
+}
+
+.navbarLogoText span:nth-child(2) {
+    color: #dfdfdf;
+    font-size: 23px;
+}
+
+.navbarLogoText span:nth-child(3) {
+    font-size: 10px;
+    color: #dfdfdf;
+    margin-right: 5px;
+}
+
+.shine {
+    text-align: center;
+    background: linear-gradient(to right, #222, #fff);
+    background-size: 15px 100%;
+    background-clip: initial;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    animation: shimmer 2s infinite ease-in-out;
+    -webkit-animation: shimmer 2s infinite ease-in-out;
+}
+
+@-moz-keyframes shimmer {
+    0% {
+        background-position: top left;
+    }
+
+    100% {
+        background-position: top right;
+    }
+}
+
+@-webkit-keyframes shimmer {
+    0% {
+        background-position: top left;
+    }
+
+    100% {
+        background-position: top right;
+    }
+}
+
+@-o-keyframes shimmer {
+    0% {
+        background-position: top left;
+    }
+
+    100% {
+        background-position: top right;
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: top left;
+    }
+
+    100% {
+        background-position: top right;
     }
 }

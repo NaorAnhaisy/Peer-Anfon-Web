@@ -47,19 +47,29 @@ export default function MainNavbar() {
                 className={`${styles.navbar} navbar-expand-xxl`}
                 expand="xxl"
               >
-                <Link href="/">
-                  <a aria-label="לוגו פאר אנפון" className={styles.navbarBrand}>
-                    <img
-                      src="/images/‏‏company-logo-symbol.png"
-                      className="undragablle-image"
-                      width={10}
-                      height={3}
-                      layout="responsive"
-                      alt=""
-                    />
-                    <span><span>פאר</span><span>אנפון</span><span>תעשיות בע&quot;מ</span></span>
-                  </a>
-                </Link>
+                <div style={{ position: "relative" }}>
+                  <div className={styles.logo}>
+                    <Link href="/">
+                      <a aria-label="לוגו פאר אנפון" className={styles.navbarBrand}>
+                        <img
+                          src="/images/‏‏company-logo-symbol.png"
+                          className="undragablle-image"
+                          width={10}
+                          height={3}
+                          layout="responsive"
+                          alt=""
+                        />
+                        <div className={` ${styles.navbarLogoTextDiv}`}>
+                          <span className={`${styles.shine} ${styles.navbarLogoText}`}>
+                            <span>פאר</span>
+                            <span>אנפון</span>
+                            <span>תעשיות בע&quot;מ</span>
+                          </span>
+                        </div>
+                      </a>
+                    </Link>
+                  </div>
+                </div>
 
                 <Navbar.Toggle
                   className="navbar-toggler"
@@ -165,7 +175,7 @@ export default function MainNavbar() {
                       </li>
 
                       <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4"
-                      onMouseLeave={() => setShowInterkumDropdown(false)}>
+                        onMouseLeave={() => setShowInterkumDropdown(false)}>
                         <NavDropdown
                           className="dropdown-toggle"
                           title="מערכות אינטרקום"
