@@ -119,34 +119,36 @@
 /* New */
 
 .contentWrapper {
-    width: 100%;
     height: 100%;
     text-align: right;
-    display: inline-block;
     padding-right: 3vmin;
-}
-
-.divContainer {
     margin-top: 5rem;
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
     padding-bottom: 4vmin;
     width: 100%;
+    height: 100%;
+    text-align: right;
+    padding-right: 3vmin;
 }
 
-.title {
+.content {
     padding-left: 1em;
     grid-column: 1/-1;
     grid-row: 1;
-    font-size: 6vw;
     width: 100%;
     z-index: 2;
+    animation: outer-left 1s 1s ease both;
+    -webkit-animation: outer-left 1s 1s ease both;
 }
 
-.title>.titleInner {
+.contentInner {
     display: inline-block;
+    animation: inner-left 1s 1s ease both;
+    -webkit-animation: inner-left 1s 1s ease both;
 }
+
 
 @keyframes text-clip {
     from {
@@ -169,6 +171,10 @@
 
     to {
         transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
     }
 }
 
@@ -183,38 +189,40 @@
 
     to {
         transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
     }
 }
 
-.cafe,
-.mozart {
+.title,
+.contentText {
     animation: outer-left 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
     -webkit-animation: outer-left 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
 }
 
-.mozart {
+.contentText {
     margin-top: 2rem;
+    display: inline-block;
 }
 
 .titleInner {
-    display: inline-block;
-    animation: inner-left 1s 1s ease both;
-}
-
-.cafeInner {
+    font-size: 6vw;
     background: #ffffff91;
     padding: 0px 35px;
     border-radius: 20px;
     color: #c0ab64;
     display: inline-block;
     animation: inner-left 1s 1s ease both, text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+    -webkit-animation: inner-left 1s 1s ease both, text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
 }
 
-.mozartInner {
+.contentTextInner {
     padding: 20px 45px;
     background: #ffffffcc;
     border-radius: 10px;
@@ -226,18 +234,6 @@
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     -webkit-animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
-}
-
-.title {
-    animation: outer-left 1s 1s ease both;
-}
-
-.cafe>.cafeInner {
-    display: inline-block;
-}
-
-.mozart {
-    display: inline-block;
 }
 
 .image {
@@ -263,4 +259,19 @@
     display: block;
     width: 100%;
     height: auto;
+}
+
+@media (max-width: 382px) {
+    .titleInner {
+        font-size: 25px;
+        background: transparent;
+    }
+
+    .contentTextInner {
+        font-size: 14px;
+    }
+
+    .divContainer {
+        grid-template-columns: 0fr 1fr;
+    }
 }

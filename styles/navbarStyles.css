@@ -10,7 +10,8 @@
     padding: 0 !important;
 }
 
-.navbar-toggler:active, .navbar-toggler:focus {
+.navbar-toggler:active,
+.navbar-toggler:focus {
     border: none !important;
     box-shadow: none !important;
     outline: none !important;
@@ -30,7 +31,8 @@
     -o-transition: all 300ms linear;
 }
 
-.navbar-toggler-icon:after, .navbar-toggler-icon:before {
+.navbar-toggler-icon:after,
+.navbar-toggler-icon:before {
     width: 24px;
     position: absolute;
     height: 1px;
@@ -85,11 +87,13 @@
 }
 
 
-.nav-item:hover .nav-link, .nav-item a:hover {
+.nav-item:hover .nav-link,
+.nav-item a:hover {
     color: #a1863a !important;
 }
 
-.nav-item.active-nav .nav-link, .nav-item.active-nav a:hover {
+.nav-item.active-nav .nav-link,
+.nav-item.active-nav a:hover {
     color: #777 !important;
 }
 
@@ -170,7 +174,7 @@
 }
 
 .dropdown-menu {
-    padding: 10px!important;
+    padding: 10px !important;
     margin: 0;
     right: 0;
     left: unset !important;
@@ -186,6 +190,10 @@
     -moz-transition: all 200ms linear;
     -ms-transition: all 200ms linear;
     -o-transition: all 200ms linear;
+}
+
+.dropdown-menu[data-bs-popper] {
+    margin-top: 0 !important;
 }
 
 .dropdown-toggle {
@@ -210,7 +218,8 @@
     -o-transition: all 200ms linear;
 }
 
-.navbar-nav .dropdown-item.active-nav, .dropdown-item:active {
+.navbar-nav .dropdown-item.active-nav,
+.dropdown-item:active {
     background-color: rgb(211, 211, 211) !important;
 }
 
@@ -221,7 +230,8 @@
     font-size: 17px;
 }
 
-.dropdown-item:hover, .dropdown-item:focus {
+.dropdown-item:hover,
+.dropdown-item:focus {
     color: #fff;
     background-color: rgb(108, 255, 164);
 }
@@ -245,6 +255,7 @@
     .nav-item:after {
         display: none;
     }
+
     .dropdown-toggle::after {
         position: absolute;
         top: 10px;
@@ -261,6 +272,7 @@
         -ms-transition: all 200ms linear;
         -o-transition: all 200ms linear;
     }
+
     .dropdown-toggle[aria-expanded="true"]::after {
         transform: rotate(90deg);
         opacity: 0;
@@ -269,6 +281,7 @@
         -ms-transform: rotate(90deg);
         -o-transform: rotate(90deg);
     }
+
     .dropdown-menu {
         padding: 0;
         background-color: transparent;
@@ -279,6 +292,7 @@
         -ms-transition: all 200ms linear;
         -o-transition: all 200ms linear;
     }
+
     .dropdown-toggle[aria-expanded="true"]+.dropdown-menu {
         margin-top: 10px !important;
         margin-bottom: 20px !important;

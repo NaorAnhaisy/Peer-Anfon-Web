@@ -79,19 +79,47 @@ export default function AutomaticDoors() {
             </Carousel>
 
             <div className={styles.contentWrapper}>
-                <div className={styles.divContainer}>
-                    <div className={styles.title}>
-                        <div className={styles.titleInner}>
-                            <div className={styles.cafe}>
-                                <div className={styles.cafeInner}>דלתות אוטומטיות</div>
+                <div className={styles.content}>
+                    <div className={styles.contentInner}>
+                        <div className={styles.title}>
+                            <div className={styles.titleInner}>דלתות אוטומטיות</div>
+                        </div>
+                        <div className={styles.contentText}>
+                            <div className={styles.contentTextInner}>
+                                פאר אנפון הינה יבואנית בלעדית של מערכות דלתות אוטומטיות של TAU איטליה (www.tauitalia.com) המבטיחים איכות, שירות ואמינות מוצריה.
+                                <br />
+                                דלת הזזה אוטומטית יכולה להיות בעלת מראה זכוכית עם פרופיל דק או עם מסגרת עבה בהתאם לדרישות לקוח.
+                                <br />
+                                דלתות אוטומטיות מותקנות על מסילה עילית ומתקבל מראה אסתטי ונקי.
+                                <br />
+                                דלתות חשמליות אוטומטיות מותקנות בעיקר בפתחן של כניסה למשרדים, בתים משותפים , חנויות, ועוד.
                             </div>
-                            <div className={styles.mozart}>
-                                <div className={styles.mozartInner}>
-                                    פאר אנפון : יבואנית בלעדית של מערכות דלתות אוטומטיות של TAU איטליה המבטיחים איכות , שירות ואמינות מוצריה . www.tauitalia.com
+                        </div>
+                    </div>
+                </div>
+
+                <div className={styles.image}>
+                    <img
+                        src="https://images.unsplash.com/photo-1616362355051-6a9f8c434fff?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYxNzE0MTYzNQ&ixlib=rb-1.2.1&q=80&w=800&h=600"
+                        alt="דלת אוטומטית"
+                    />
+                </div>
+            </div>
+
+            <div>
+                <div className={styles.contentWrapper}>
+                    <div className={styles.content}>
+                        <div className={styles.contentInner}>
+                            <div className={styles.title}>
+                                <div className={styles.titleInner}>דלתות אוטומטיות</div>
+                            </div>
+                            <div className={styles.contentText}>
+                                <div className={styles.contentTextInner}>
+                                    פאר אנפון הינה יבואנית בלעדית של מערכות דלתות אוטומטיות של TAU איטליה (www.tauitalia.com) המבטיחים איכות, שירות ואמינות מוצריה.
                                     <br />
-                                    דלת הזזה אוטומטית יכולה להיות בעלת מראה זכוכית עם פרופיל דק או עם מסגרת עבה בהתאם לדרישות לקוח .
+                                    דלת הזזה אוטומטית יכולה להיות בעלת מראה זכוכית עם פרופיל דק או עם מסגרת עבה בהתאם לדרישות לקוח.
                                     <br />
-                                    דלתות אוטומטיות אוטומטיות מותקנות על מסילה עילית ומתקבל מראה אסתטי ונקי.
+                                    דלתות אוטומטיות מותקנות על מסילה עילית ומתקבל מראה אסתטי ונקי.
                                     <br />
                                     דלתות חשמליות אוטומטיות מותקנות בעיקר בפתחן של כניסה למשרדים, בתים משותפים , חנויות, ועוד.
                                 </div>
@@ -107,6 +135,70 @@ export default function AutomaticDoors() {
                     </div>
                 </div>
             </div>
+
+            {/* <div className={styles.contentWrapper}>
+                <div className={styles.divContainer}>
+                    <div className={styles.title}>
+                        <div className={styles.titleInner}>
+                            <div className={styles.cafe}>
+                                <div className={styles.cafeInner}>יתרונות בולטים בבחירת דלתות אוטומטיות</div>
+                            </div>
+                            <div className={styles.mozart}>
+                                <div className={styles.mozartInner}>
+                                    <div className={`mt-5 ${styles.ulContainer1}`}>
+                                        <ul>
+                                            <li>
+                                                השימוש בדלת אוטומטית מאפשרת נגישות לנכים ומקלה על בעלי מוגבלויות.
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                דלת אוטומטית מסייעת בשמירה על ניקיון החלל בכך שהיא מקטינה את כמות הלכלוך שנכנס למינימום. אין צורך במגע יד אדם ולכן נשארת נקייה לאורך זמן.
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                דלת אוטומטית מונעת צורך לגעת בידיים בדלת ובכך מונעת העברה לא נחוצה של חיידקים ומזיקים אחרים.
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                התקנת דלת אוטומטית בכניסה מעניקה תחושת חשיבות לכניסת לקוח לחנות, למשרד או לבניין – יש תחושה שמזמינה להיכנס.
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                דלתות אוטומטיות הנפתחות בפני יוצאים ונכנסים משרה אוירה מזמינה ומנומסת עבור הדיירים והאורחים בבניין.
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                דלתות חשמליות נוחות באופן משמעותי לבאים והיוצאים עם קניות בידיהם, ילדים, תיקים ועוד.
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                קיימת אפשרות לעיצוב על פי דרישות הלקוח.
+                                            </li>
+                                        </ul>
+                                        <p className="mt-5" style={{ borderTop: '1px solid #b1a44c' }}>
+                                            פאר אנפון נותנת יעוץ והתקנה לבנייני משרדים, חברות ובתים משותפים המעוניינים בפתרון מעולה ונח שלדלתות כניסה לבניין מהדור החדש – דלתות חשמליות ואוטומטיות מעוצבות ובצבע לפי בחירתכם.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={styles.image}>
+                        <img
+                            src="https://images.unsplash.com/photo-1616362355051-6a9f8c434fff?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYxNzE0MTYzNQ&ixlib=rb-1.2.1&q=80&w=800&h=600"
+                            alt="דלת אוטומטית"
+                        />
+                    </div>
+                </div>
+            </div> */}
+
             <div className={styles.automaticDoorsContainer}>
                 {/* <Row className={styles.automaticDoorsRow} data-aos="fade-right" data-aos-duration="700">
                     <Col xs={12} lg={6} className="pr-5 pl-5">
@@ -127,7 +219,7 @@ export default function AutomaticDoors() {
                     </Col>
                 </Row> */}
 
-                <Row className={styles.automaticDoorsRow} data-aos="fade-left" data-aos-duration="700">
+                {/* <Row className={styles.automaticDoorsRow} data-aos="fade-left" data-aos-duration="700">
                     <Col xs={12} lg={6} className="pr-5 pl-5">
                         <img
                             src="/images/AutomaticDoors/Automatic-door-2.jpeg"
@@ -217,7 +309,7 @@ export default function AutomaticDoors() {
                             alt="דלת אוטומטית"
                         />
                     </Col>
-                </Row>
+                </Row> */}
 
                 <Row className={styles.rowImagesLinks}>
                     <Col xs={12} md={6} lg={4}>
