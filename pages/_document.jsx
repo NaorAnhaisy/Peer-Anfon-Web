@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/next-script-for-ga */
 // eslint-disable-next-line @next/next/no-document-import-in-page
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
@@ -27,6 +28,24 @@ class MyDocument extends Document {
                     <link rel="stylesheet"
                         href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" />
                     <link rel="canonical" href="https://peer-anfon-group.co.il/" />
+
+                    {/* Global Site Tag (gtag.js) - Google Analytics */}
+                    <script
+                        async
+                        src="https://www.googletagmanager.com/gtag/js?id=G-GGLJL2SHN4"
+                    />
+                    <script
+                        dangerouslySetInnerHTML={{
+                            __html: `
+                                window.dataLayer = window.dataLayer || [];
+                                function gtag(){dataLayer.push(arguments);}
+                                gtag('js', new Date());
+                                gtag('config', 'GGLJL2SHN4', {
+                                page_path: window.location.pathname,
+                                });
+                            `,
+                        }}
+                    />
                 </Head>
                 <body>
                     <Main />

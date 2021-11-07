@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Carousel, Col, Row } from "react-bootstrap";
 import ImagesGallery from "../../components/ImagesGallery/ImagesGallery";
 import styles from "../../styles/automatic-doors.module.css";
-import AOS from 'aos';
 import Link from "next/link";
+import VisibilitySensor from "react-visibility-sensor";
 
 const images = [
     { src: "/images/Doors/LUX/example1.jpg" },
@@ -28,9 +28,9 @@ const images = [
 ];
 
 export default function AutomaticDoors() {
-    useEffect(() => {
-        AOS.init({ once: true });
-    }, []);
+    const [isFirstContentShowed, setIsFirstContentShowed] = useState(false);
+    const [isSecondContentShowed, setIsSecondContentShowed] = useState(false);
+    const [isThirdContentShowed, setIsThirdContentShowed] = useState(false);
 
     return (
         <div>
@@ -78,7 +78,163 @@ export default function AutomaticDoors() {
                 </Carousel.Item>
             </Carousel>
 
-            <div className={styles.contentWrapper}>
+            <VisibilitySensor partialVisibility onChange={(isVisible => { isVisible && setIsFirstContentShowed(true) })}>
+                <div style={{ minHeight: "300px" }}>
+                    <div className={styles.contentWrapper} style={{ display: isFirstContentShowed ? "grid" : "none" }}>
+                        <div className={styles.content}>
+                            <div className={styles.contentInner}>
+                                <div className={styles.title}>
+                                    <div className={`${styles.titleInner} ${styles.mainTitle}`}>דלתות אוטומטיות</div>
+                                </div>
+                                <div className={styles.contentText}>
+                                    <div className={`${styles.contentTextInner} ${styles.mainContextInner}`}>
+                                        פאר אנפון הינה יבואנית בלעדית של מערכות דלתות אוטומטיות של TAU איטליה (www.tauitalia.com) המבטיחים איכות, שירות ואמינות מוצריה.
+                                        <br />
+                                        דלת הזזה אוטומטית יכולה להיות בעלת מראה זכוכית עם פרופיל דק או עם מסגרת עבה בהתאם לדרישות לקוח.
+                                        <br />
+                                        דלתות אוטומטיות מותקנות על מסילה עילית ומתקבל מראה אסתטי ונקי.
+                                        <br />
+                                        דלתות חשמליות אוטומטיות מותקנות בעיקר בפתחן של כניסה למשרדים, בתים משותפים , חנויות, ועוד.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className={styles.image}>
+                            <img
+                                src="https://images.unsplash.com/photo-1616362355051-6a9f8c434fff?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYxNzE0MTYzNQ&ixlib=rb-1.2.1&q=80&w=800&h=600"
+                                alt="דלת אוטומטית"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </VisibilitySensor>
+
+            <VisibilitySensor partialVisibility onChange={(isVisible => { isVisible && setIsSecondContentShowed(true) })}>
+                <div style={{ minHeight: "300px" }}>
+                    <div className={`${styles.contentWrapper} ${styles.leftContext}`} style={{ display: isSecondContentShowed ? "grid" : "none" }}>
+                        <div className={styles.content}>
+                            <div className={styles.contentInner}>
+                                <div className={styles.title}>
+                                    <div className={`${styles.titleInner} ${styles.subTitle}`}>יתרונות בולטים בבחירת דלתות אוטומטיות</div>
+                                </div>
+                                <div className={styles.contentText}>
+                                    <div className={`${styles.contentTextInner} ${styles.subContentInner} dir-rtl`}>
+                                        <div className={`mt-5 ${styles.ulContainer1}`}>
+                                            <ul>
+                                                <li>
+                                                    השימוש בדלת אוטומטית מאפשרת נגישות לנכים ומקלה על בעלי מוגבלויות.
+                                                </li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    דלת אוטומטית מסייעת בשמירה על ניקיון החלל בכך שהיא מקטינה את כמות הלכלוך שנכנס למינימום. אין צורך במגע יד אדם ולכן נשארת נקייה לאורך זמן.
+                                                </li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    דלת אוטומטית מונעת צורך לגעת בידיים בדלת ובכך מונעת העברה לא נחוצה של חיידקים ומזיקים אחרים.
+                                                </li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    התקנת דלת אוטומטית בכניסה מעניקה תחושת חשיבות לכניסת לקוח לחנות, למשרד או לבניין – יש תחושה שמזמינה להיכנס.
+                                                </li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    דלתות אוטומטיות הנפתחות בפני יוצאים ונכנסים משרה אוירה מזמינה ומנומסת עבור הדיירים והאורחים בבניין.
+                                                </li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    דלתות חשמליות נוחות באופן משמעותי לבאים והיוצאים עם קניות בידיהם, ילדים, תיקים ועוד.
+                                                </li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    קיימת אפשרות לעיצוב על פי דרישות הלקוח.
+                                                </li>
+                                            </ul>
+                                            <p className="mt-5 p-4" style={{ borderTop: '1px solid #b1a44c' }}>
+                                                פאר אנפון נותנת יעוץ והתקנה לבנייני משרדים, חברות ובתים משותפים המעוניינים בפתרון מעולה ונח שלדלתות כניסה לבניין מהדור החדש – דלתות חשמליות ואוטומטיות מעוצבות ובצבע לפי בחירתכם.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className={styles.image}>
+                            <img
+                                src="https://images.unsplash.com/photo-1616362355051-6a9f8c434fff?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYxNzE0MTYzNQ&ixlib=rb-1.2.1&q=80&w=800&h=600"
+                                alt="דלת אוטומטית"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </VisibilitySensor>
+
+            <VisibilitySensor partialVisibility onChange={(isVisible => { isVisible && setIsThirdContentShowed(true) })}>
+                <div style={{ minHeight: "300px" }}>
+                    <div className={styles.contentWrapper} style={{ display: isThirdContentShowed ? "grid" : "none" }}>
+                        <div className={styles.content}>
+                            <div className={styles.contentInner}>
+                                <div className={styles.title}>
+                                    <div className={`${styles.titleInner} ${styles.subTitle}`}>דלתות חשמליות</div>
+                                </div>
+                                <div className={styles.contentText}>
+                                    <div className={`${styles.contentTextInner} ${styles.subContentInner}`}>
+                                        <div className={styles.ulContainer2}>
+                                            <p>
+                                                דלתות חשמליות, שבעבר היו מותקנות בעיקר בבנייני משרדים או מלונות יוקרה, הפכו לדלתות המועדפות כיום על בתים משותפים, חנויות ורבי קומות שונים. מה הופך דלתות חשמליות למועדפות?
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <strong>נוחות השימוש</strong>{" "}-{" "}
+                                                    דלתות חשמליות שנפתחות ללא צורך במנעול או ידית כניסה, הן נוחות לשימוש.  נוחות פתיחה וסגירה של דלת כניסה חשובה למשל בבתים משותפים מהם יוצאים דיירים עם מספר דברים או בחנויות שמהן יוצאים לקוחות עם שקיות ומוצרי הרכישה.
+                                                </li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <strong>נגישות</strong>{" "}-{" "}
+                                                    דלתות חשמליות הן נגישות ומזמינות בעיקר לבעלי מוגבלויות ונכויות שונות, שלצערינו יש לא מעט בארצנו. דלתות אלו מקלות מאוד על אדם המתקשה לפתוח את דלת הכניסה כשהוא על קביים או בכיסא גלגלים.                                </li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <strong>אסטטיקה</strong>{" "}-{" "}
+                                                    דלתות חשמליות ניתן לעצב לפי דרישת הלקוח. דלתות חשמליות בדרך כלל מורכבות מזכוכית בעלת מראה יוקרתי ואסטטי מאוד, כמו כן ניתן לעצב אותן בעזרת סוגי זכוכית שונים, צבעים שונים של הזכוכית ואפילו עיטורים מיוחדים על הזכוכית.                                </li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <strong>קלות התפעול</strong>{" "}-{" "}
+                                                    דלתות חשמליות מופעלות על ידי מנגנון מיוחד, חברת פאר אנפון הינה היבואנית הבלעדית של מערכות דלתות חשמליות של חברת TAU איטליה שלה מוצרים איכותיים ואמינים.                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className={styles.image}>
+                            <img
+                                src="https://images.unsplash.com/photo-1616362355051-6a9f8c434fff?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYxNzE0MTYzNQ&ixlib=rb-1.2.1&q=80&w=800&h=600"
+                                alt="דלת אוטומטית"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </VisibilitySensor>
+
+            {/* <VisibilitySensor partialVisibility>
+                {({ isVisible }) => (
+                    <div style={{ height: "1px" }}>
+                        {isVisible && setIsSecondContentShowed(true)}
+                    </div>
+                )}
+            </VisibilitySensor>
+
+            <div className={styles.contentWrapper} style={{ display: isSecondContentShowed ? "grid" : "none" }}>
                 <div className={styles.content}>
                     <div className={styles.contentInner}>
                         <div className={styles.title}>
@@ -104,9 +260,9 @@ export default function AutomaticDoors() {
                         alt="דלת אוטומטית"
                     />
                 </div>
-            </div>
+            </div> */}
 
-            <div>
+            {/* <div>
                 <div className={styles.contentWrapper}>
                     <div className={styles.content}>
                         <div className={styles.contentInner}>
@@ -134,7 +290,7 @@ export default function AutomaticDoors() {
                         />
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             {/* <div className={styles.contentWrapper}>
                 <div className={styles.divContainer}>
@@ -199,8 +355,7 @@ export default function AutomaticDoors() {
                 </div>
             </div> */}
 
-            <div className={styles.automaticDoorsContainer}>
-                {/* <Row className={styles.automaticDoorsRow} data-aos="fade-right" data-aos-duration="700">
+            {/* <Row className={styles.automaticDoorsRow} data-aos="fade-right" data-aos-duration="700">
                     <Col xs={12} lg={6} className="pr-5 pl-5">
                         <h3 data-aos="zoom-in" data-aos-delay="600">דלתות אוטומטיות</h3>
                         <p>
@@ -219,7 +374,7 @@ export default function AutomaticDoors() {
                     </Col>
                 </Row> */}
 
-                {/* <Row className={styles.automaticDoorsRow} data-aos="fade-left" data-aos-duration="700">
+            {/* <Row className={styles.automaticDoorsRow} data-aos="fade-left" data-aos-duration="700">
                     <Col xs={12} lg={6} className="pr-5 pl-5">
                         <img
                             src="/images/AutomaticDoors/Automatic-door-2.jpeg"
@@ -311,6 +466,7 @@ export default function AutomaticDoors() {
                     </Col>
                 </Row> */}
 
+            <div className={styles.automaticDoorsContainer}>
                 <Row className={styles.rowImagesLinks}>
                     <Col xs={12} md={6} lg={4}>
                         <Link href="/דלתות-אוטומטיות/דלת-אוטומטית-הזזה-חד-כנף" passHref={true}>
@@ -376,8 +532,8 @@ export default function AutomaticDoors() {
                             </div>
                         </Link>
                     </Col>
-                    <Col xs={12} md={6} lg={4} className={styles.displayNoneMobile}>
-                    </Col>
+                    {/* <Col xs={12} md={6} lg={4} className={styles.displayNoneMobile}>
+                    </Col> */}
                     <Col xs={12} md={6} lg={4}>
                         <Link href="/דלתות-אוטומטיות/דלת-פנים-אוטומטית" passHref={true}>
                             <div className="clickable">

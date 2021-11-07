@@ -91,7 +91,7 @@ module.exports = withPlugins([], {
           },
           {
             key: 'Content-Security-Policy',
-            value: "script-src 'self' 'unsafe-eval' vitals.vercel-insights.com"
+            value: "script-src 'self' 'unsafe-eval' vitals.vercel-insights.com googletagmanager.com; object-src 'self' www.googletagmanager.com"
           }
         ],
       },
