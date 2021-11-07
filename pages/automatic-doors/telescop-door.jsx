@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { useRouter } from "next/router";
 import Link from 'next/link';
-import Image from 'next/image';
 import { Col, Container, Row } from "react-bootstrap";
 import styles from "../../styles/automatic-door-model.module.css"
 import { useEffect } from "react";
@@ -16,137 +15,120 @@ export default function TelescopDoor() {
 
     return (
         <div>
-            <div>
-                <img src="/images/Doors/ALM/background.jpg" className={styles.doorSelectedMainDiv} alt="דלת אוטומטית" />
-                <Container>
-                    <div
-                        className={styles.doorSelectedBackBtn}
-                        onClick={() => router.back()}
-                    >
-                        <i className="fas fa-chevron-right ml-4"></i> <span>אחורה</span>
-                    </div>
-                    <div>
-                        <Row style={{ marginBottom: "20px" }}>
-                            <Col lg={9} md={6} sm={12} className={styles.doorSelectedNameDiv}>
-                                <div style={{ width: "fit-content" }}>
-                                    <h2>דלת אוטומטית טלסקופית</h2>
-                                    <div className={`separator ${styles.doorSelectedSeperator}`}></div>
+            <img src="/images/automaticDoors/backgrounds/telescop-automatic-door.jpg" className={styles.doorSelectedMainDiv} alt="דלת אוטומטית" />
+            <Container className={styles.doorSelectedContainer}>
+                <div>
+                    <Row className={styles.doorSelectedTitleRow}>
+                        <Col lg={9} md={8} sm={8} xs={12} className={styles.doorSelectedNameDiv}>
+                            <div className={styles.animatedTitle}>
+                                <div className={styles.textTop}>
+                                    <div>
+                                        <span>דלת אוטומטית</span>
+                                    </div>
                                 </div>
-                            </Col>
-                            <Col lg={3} md={6} sm={12} className={styles.doorSelectedDoorInfo}>
-                                <div>
-                                    <h6>סגנון הדלת</h6>
-                                    <p>Vario 6</p>
+                                <div className={styles.textBottom}>
+                                    <div>טלסקופית</div>
                                 </div>
-                                <div>
-                                    <h6>עוד פרטים</h6>
-                                    <p>פרט מסויים...</p>
-                                </div>
-                                <div>
-                                    <h6>קונפיגורציה</h6>
-                                    <p>Single Leaf , Double leaf</p>
-                                </div>
-                            </Col>
-                        </Row>
+                            </div>
+                        </Col>
+                        <Col lg={3} md={4} sm={4} xs={12} style={{ alignSelf: 'center', padding: "50px" }}>
+                            <div style={{ position: 'relative', cursor: 'pointer' }} onClick={() => router.back()}>
+                                <div className={styles.arrowBackIcon}></div>
+                                <span className={styles.arrowBackIconText}>חזור</span>
+                            </div>
+                        </Col>
+                    </Row>
 
-                        <Row>
-                            <Col lg={6} md={8} sm={12}
+                    <Row>
+                        <Col lg={6} sm={12}
+                            data-aos="zoom-out"
+                            data-aos-delay="200"
+                            data-aos-duration="1500">
+                            <div className={`mt-5 ${styles.doorSelectedDoorDetails}`}>
+                                <h6>היעדים</h6>
+                                <p>
+                                    הלקוח שלנו הגיע אלינו בחיפוש אחר דלתות המשלימות את הארכיטקטורה
+                                    המדהימה ואת אומנות הבית החדש. לאחר שבחרנו במגוון דלתות האלון
+                                    המדהימה ואת אומנות הבית החדש. לאחר שבחרנו במגוון דלתות האלון
+                                    הטבעי Vario 6 שלנו, תערובת של עלים בודדים וכפולים, כולם בהתאמה
+                                    אישית ומיוצרים לפי מידה, התבקשנו לעצב דלת כניסה בהתאמה אישית.
+                                    אבטחה ותכונות בטיחות בעלות ביצועים גבוהים היו דרישות מפתח עבור
+                                    הלקוח שלנו.
+                                </p>
+                            </div>
+                        </Col>
+                    </Row>
+
+                    <Row className="reverse-flex-direction">
+                        <Col lg={6} sm={12}>
+                            <div className={`mt-5 mb-5 ${styles.doorSelectedDoorDetails}`}
+                                data-aos="zoom-out"
+                                data-aos-delay="500"
+                                data-aos-duration="1500">
+                                <h6>פתרון Peer Anfon</h6>
+                                <p>
+                                    הדף הכפול Vario 6 הותקן בחלקו האחורי של פרוזדור הכניסה הראשית,
+                                    עם שתי דלתות עלים בודדות נוספות משני הצדדים. דלתות פנימיות
+                                    Vario 6 שלנו כוללות תכונות פרימיום כסטנדרט, המספקות אבטחה
+                                    נוספת בעיצוב איכותי. משקופים ואדריכלים תואמים עשויים מאותו עץ
+                                    כדי להבטיח עיצוב עקבי בהתאמה אישית מלאה. אטם הדלת הגמיש מונע
+                                    טריקות וטיחות, בעוד הצירים הנסתרים ותפס הדלת המגנטית משפרים את
+                                    האבטחה ושומרים על עיצוב מינימלי. שלוש הדלתות המותקנות במסדרון
+                                    משלימות את עיצוב הבית תוך הוספת נופך של תחכום למסגרת המסדרון.
+                                </p>
+                            </div>
+                        </Col>
+                    </Row>
+
+                    <Row className="mt-5 mb-5">
+                        <div className="mb-5">
+                            <video autoPlay loop playsInline muted id="home-video" className={styles.automaticDoorVideo}>
+                                <source src="https://d2na49kk21qo66.cloudfront.net/Deuren-Internal-Video-Low-Res.mp4"
+                                    type="video/mp4" />
+                            </video>
+                        </div>
+                    </Row>
+
+                    <Row>
+                        <Col sm={12} lg={6} className={styles.doorSelectedHorizontalImages}>
+                            <img
+                                style={{ height: '50%' }}
+                                className={styles.doorSelectedDetailsExampleImg}
                                 data-aos="fade-zoom-in"
-                                data-aos-duration="700">
-                                <div className={styles.doorSelectedDoorDetails}>
-                                    <h6>היעדים</h6>
-                                    <p>
-                                        הלקוח שלנו הגיע אלינו בחיפוש אחר דלתות המשלימות את הארכיטקטורה
-                                        המדהימה ואת אומנות הבית החדש. לאחר שבחרנו במגוון דלתות האלון
-                                        המדהימה ואת אומנות הבית החדש. לאחר שבחרנו במגוון דלתות האלון
-                                        הטבעי Vario 6 שלנו, תערובת של עלים בודדים וכפולים, כולם בהתאמה
-                                        אישית ומיוצרים לפי מידה, התבקשנו לעצב דלת כניסה בהתאמה אישית.
-                                        אבטחה ותכונות בטיחות בעלות ביצועים גבוהים היו דרישות מפתח עבור
-                                        הלקוח שלנו.
-                                    </p>
-                                </div>
-                                <Image
-                                    className={styles.doorSelectedDetailsExampleImg}
-                                    src="/images/Doors/LUX/example1.jpg"
-                                    alt=""
-                                    layout="responsive"
-                                    width={3}
-                                    height={2}
-                                />
-                            </Col>
-                        </Row>
-
-                        <Row className="reverse-flex-direction">
-                            <Col lg={6} md={8} sm={12}>
-                                <div className={styles.doorSelectedDoorDetails}
-                                    data-aos="fade-zoom-in"
-                                    data-aos-duration="700">
-                                    <h6>פתרון Peer Anfon</h6>
-                                    <p>
-                                        הדף הכפול Vario 6 הותקן בחלקו האחורי של פרוזדור הכניסה הראשית,
-                                        עם שתי דלתות עלים בודדות נוספות משני הצדדים. דלתות פנימיות
-                                        Vario 6 שלנו כוללות תכונות פרימיום כסטנדרט, המספקות אבטחה
-                                        נוספת בעיצוב איכותי. משקופים ואדריכלים תואמים עשויים מאותו עץ
-                                        כדי להבטיח עיצוב עקבי בהתאמה אישית מלאה. אטם הדלת הגמיש מונע
-                                        טריקות וטיחות, בעוד הצירים הנסתרים ותפס הדלת המגנטית משפרים את
-                                        האבטחה ושומרים על עיצוב מינימלי. שלוש הדלתות המותקנות במסדרון
-                                        משלימות את עיצוב הבית תוך הוספת נופך של תחכום למסגרת המסדרון.
-                                    </p>
-                                    <p>
-                                        בהתחשב בכך שהאבטחה הייתה בעדיפות עצומה עבור הלקוח, הצלחנו
-                                        לעמוד בדרישות עם אבטחת RC2 המדורגת כסטנדרט. לדלת שייצרנו יש גם
-                                        אפשרות לשדרג ל- RC3. זיגוג משולש הוא גם תכונה סטנדרטית וחשובה
-                                        מאוד עבור בתים רבים בכל הנוגע ליעילות אנרגטית. הצלחנו להתאים
-                                        את העיצוב החיצוני של הלקוח שלנו הודות למגוון רחב של לכות
-                                        וגימורים, כלומר הדמיון היה הגבול היחיד ליצירת דלת ייחודית
-                                        באמת.
-                                    </p>
-                                </div>
-                            </Col>
-                        </Row>
-                        <Row
-                            data-aos="fade-zoom-in"
-                            data-aos-duration="700">
-                            <Col sm={12} lg={6} className={styles.doorSelectedHorizontalImages}>
-                                <Image
-                                    className={styles.doorSelectedDetailsExampleImg}
-                                    src="/images/Doors/LUX/example2.jpg"
-                                    alt=""
-                                    layout="responsive"
-                                    width={3}
-                                    height={2}
-                                />
-                                <Image
-                                    className={styles.doorSelectedDetailsExampleImg}
-                                    src="/images/Doors/LUX/example3.jpg"
-                                    alt=""
-                                    layout="responsive"
-                                    width={3}
-                                    height={2}
-                                />
-                            </Col>
-                            <Col sm={12} lg={6}>
-                                <Image
-                                    className={styles.doorSelectedDetailsExampleImg}
-                                    src="/images/Doors/LUX/example4.jpg"
-                                    alt=""
-                                    layout="responsive"
-                                    objectFit="cover"
-                                    width={6}
-                                    height={8}
-                                />
-                            </Col>
-                        </Row>
-                    </div>
-                </Container>
-                <div className={styles.doorSelectedContactUsDiv}>
-                    <h1>שמרו על קשר</h1>
-                    <div className="separator"></div>
-                    <p>
-                        לקבלת הצעת מחיר, צרו עימנו קשר.
-                    </p>
-                    <Link href="/contact-us">דבר עם הצוות</Link>
+                                data-aos-duration="700"
+                                src="/images/Doors/LUX/example2.jpg"
+                                alt=""
+                            />
+                            <img
+                                style={{ height: '50%' }}
+                                className={styles.doorSelectedDetailsExampleImg}
+                                data-aos="fade-zoom-in"
+                                data-aos-duration="700"
+                                src="/images/Doors/LUX/example3.jpg"
+                                alt=""
+                            />
+                        </Col>
+                        <Col sm={12} lg={6}>
+                            <img
+                                style={{ height: '100%' }}
+                                className={styles.doorSelectedDetailsExampleImg}
+                                data-aos="fade-zoom-in"
+                                data-aos-duration="700"
+                                src="/images/Doors/LUX/example4.jpg"
+                                alt=""
+                            />
+                        </Col>
+                    </Row>
                 </div>
+            </Container>
+
+            <div className={styles.doorSelectedContactUsDiv}>
+                <h1>שמרו על קשר</h1>
+                <div className="separator"></div>
+                <p>
+                    לקבלת הצעת מחיר, צרו עימנו קשר.
+                </p>
+                <Link href="/contact-us">דברו עם הצוות</Link>
             </div>
         </div>
     );

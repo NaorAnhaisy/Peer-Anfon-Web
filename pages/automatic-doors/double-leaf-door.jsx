@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { useRouter } from "next/router";
 import Link from 'next/link';
-import Image from 'next/image';
 import { Col, Container, Row } from "react-bootstrap";
 import styles from "../../styles/automatic-door-model.module.css"
 import { useEffect } from "react";
@@ -16,7 +15,7 @@ export default function DoubleLeafDoor() {
 
     return (
         <div>
-            <img src="/images/AutomaticDoors/double-leaf-automatic-door.jpg" className={styles.doorSelectedMainDiv} alt="דלת אוטומטית" />
+            <img src="/images/automaticDoors/backgrounds/double-leaf-automatic-door.jpg" className={styles.doorSelectedMainDiv} alt="דלת אוטומטית" />
             <Container className={styles.doorSelectedContainer}>
                 <div>
                     <Row className={styles.doorSelectedTitleRow}>
@@ -90,62 +89,94 @@ export default function DoubleLeafDoor() {
                         </div>
                     </Row>
 
-                    {/* <Row className="mt-5 mb-5">
-                        <Col sm={12} md={6}>
-                            <div className="mb-5">
-                                <video autoPlay loop playsInline muted id="home-video" className={styles.automaticDoorVideo}>
-                                    <source src="https://d2na49kk21qo66.cloudfront.net/Deuren-Internal-Video-Low-Res.mp4"
-                                        type="video/mp4" />
-                                </video>
-                            </div>
-                        </Col>
-                        <Col sm={12} md={6}>
-                            <div className="mb-5">
-                                <video autoPlay loop playsInline muted id="home-video" className={styles.automaticDoorVideo}>
-                                    <source src="https://d2na49kk21qo66.cloudfront.net/Deuren-Internal-Video-Low-Res.mp4"
-                                        type="video/mp4" />
-                                </video>
-                            </div>
-                        </Col>
-                    </Row> */}
-
-                    <Row>
-                        <Col sm={12} lg={6} className={styles.doorSelectedHorizontalImages}>
-                            <Image
+                    <div>
+                        <Row>
+                            <Col sm={12} lg={6} className={styles.doorSelectedHorizontalImages}>
+                                <img
+                                    style={{ height: '50%' }}
+                                    className={styles.doorSelectedDetailsExampleImg}
+                                    data-aos="fade-zoom-in"
+                                    data-aos-duration="700"
+                                    src="/images/Doors/LUX/example2.jpg"
+                                    alt=""
+                                />
+                                <img
+                                    style={{ height: '50%' }}
+                                    className={styles.doorSelectedDetailsExampleImg}
+                                    data-aos="fade-zoom-in"
+                                    data-aos-duration="700"
+                                    src="/images/Doors/LUX/example3.jpg"
+                                    alt=""
+                                />
+                            </Col>
+                            <Col sm={12} lg={6}>
+                                <img
+                                    style={{ height: '100%' }}
+                                    className={styles.doorSelectedDetailsExampleImg}
+                                    data-aos="fade-zoom-in"
+                                    data-aos-duration="700"
+                                    src="/images/Doors/LUX/example4.jpg"
+                                    alt=""
+                                />
+                            </Col>
+                        </Row>
+                        <Row>
+                            <img
+                                style={{ maxHeight: '400px' }}
                                 className={styles.doorSelectedDetailsExampleImg}
                                 data-aos="fade-zoom-in"
                                 data-aos-duration="700"
                                 src="/images/Doors/LUX/example2.jpg"
                                 alt=""
-                                layout="responsive"
-                                width={3}
-                                height={2}
                             />
-                            <Image
-                                className={styles.doorSelectedDetailsExampleImg}
-                                data-aos="fade-zoom-in"
-                                data-aos-duration="700"
-                                src="/images/Doors/LUX/example3.jpg"
-                                alt=""
-                                layout="responsive"
-                                width={3}
-                                height={2}
-                            />
-                        </Col>
-                        <Col sm={12} lg={6}>
-                            <Image
-                                className={styles.doorSelectedDetailsExampleImg}
-                                data-aos="fade-zoom-in"
-                                data-aos-duration="700"
-                                src="/images/Doors/LUX/example4.jpg"
-                                alt=""
-                                layout="responsive"
-                                objectFit="cover"
-                                width={6}
-                                height={8}
-                            />
-                        </Col>
-                    </Row>
+                        </Row>
+                        <Row>
+                            <Col sm={12} lg={6}>
+                                <img
+                                    style={{ maxHeight: '400px' }}
+                                    className={styles.doorSelectedDetailsExampleImg}
+                                    data-aos="fade-zoom-in"
+                                    data-aos-duration="700"
+                                    src="/images/Doors/LUX/example4.jpg"
+                                    alt=""
+                                />
+                                <img
+                                    style={{ height: '100%' }}
+                                    className={styles.doorSelectedDetailsExampleImg}
+                                    data-aos="fade-zoom-in"
+                                    data-aos-duration="700"
+                                    src="/images/Doors/LUX/example4.jpg"
+                                    alt=""
+                                />
+                            </Col>
+                            <Col sm={12} lg={6}>
+                                <img
+                                    style={{ height: '35%' }}
+                                    className={styles.doorSelectedDetailsExampleImg}
+                                    data-aos="fade-zoom-in"
+                                    data-aos-duration="700"
+                                    src="/images/Doors/LUX/example1.jpg"
+                                    alt=""
+                                />
+                                <img
+                                    style={{ height: '35%' }}
+                                    className={styles.doorSelectedDetailsExampleImg}
+                                    data-aos="fade-zoom-in"
+                                    data-aos-duration="700"
+                                    src="/images/Doors/LUX/example2.jpg"
+                                    alt=""
+                                />
+                                <img
+                                    style={{ height: '35%' }}
+                                    className={styles.doorSelectedDetailsExampleImg}
+                                    data-aos="fade-zoom-in"
+                                    data-aos-duration="700"
+                                    src="/images/Doors/LUX/example3.jpg"
+                                    alt=""
+                                />
+                            </Col>
+                        </Row>
+                    </div>
                 </div>
             </Container>
             <div className={styles.doorSelectedContactUsDiv}>
@@ -154,7 +185,7 @@ export default function DoubleLeafDoor() {
                 <p>
                     לקבלת הצעת מחיר, צרו עימנו קשר.
                 </p>
-                <Link href="/contact-us">דבר עם הצוות</Link>
+                <Link href="/contact-us">דברו עם הצוות</Link>
             </div>
         </div>
     );
