@@ -11,6 +11,7 @@ export default function DoubleLeafDoor() {
 
     useEffect(() => {
         AOS.init({ once: true });
+        document.getElementById('double-leaf-video').play();
     }, []);
 
     return (
@@ -82,7 +83,7 @@ export default function DoubleLeafDoor() {
 
                     <Row className="mt-5 mb-5">
                         <div className="mb-5">
-                            <video autoPlay loop playsInline muted id="home-video" className={styles.automaticDoorVideo}>
+                            <video autoPlay loop playsInline muted id="double-leaf-video" className={styles.automaticDoorVideo}>
                                 <source src="/videos/double-leaf-door.mp4"
                                     type="video/mp4" />
                             </video>

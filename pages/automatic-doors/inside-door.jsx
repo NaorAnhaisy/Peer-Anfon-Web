@@ -83,16 +83,16 @@ export default function InsideDoor() {
                     <Row className="mt-5 mb-5">
                         <Col sm={12} md={6}>
                             <div className="mb-5">
-                                <video autoPlay loop playsInline muted id="home-video" className={styles.automaticDoorVideo}>
-                                    <source src="https://d2na49kk21qo66.cloudfront.net/Deuren-Internal-Video-Low-Res.mp4"
+                                <video controls controlsList="nodownload" className={styles.automaticDoorVideo}>
+                                    <source src="/videos/inside-automatic-door-1.mp4"
                                         type="video/mp4" />
                                 </video>
                             </div>
                         </Col>
                         <Col sm={12} md={6}>
                             <div className="mb-5">
-                                <video autoPlay loop playsInline muted id="home-video" className={styles.automaticDoorVideo}>
-                                    <source src="https://d2na49kk21qo66.cloudfront.net/Deuren-Internal-Video-Low-Res.mp4"
+                                <video controls controlsList="nodownload" className={styles.automaticDoorVideo}>
+                                    <source src="/videos/inside-automatic-door-2.mp4"
                                         type="video/mp4" />
                                 </video>
                             </div>

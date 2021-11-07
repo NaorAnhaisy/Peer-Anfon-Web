@@ -11,6 +11,7 @@ export default function SingleLeafDoor() {
 
     useEffect(() => {
         AOS.init({ once: true });
+        document.getElementById('single-leaf-video').play();
     }, []);
 
     return (
@@ -82,7 +83,7 @@ export default function SingleLeafDoor() {
 
                     <Row className="mt-5 mb-5">
                         <div className="mb-5">
-                            <video autoPlay loop playsInline muted id="home-video" className={styles.automaticDoorVideo}>
+                            <video autoPlay loop playsInline muted id="single-leaf-video" className={styles.automaticDoorVideo}>
                                 <source src="https://d2na49kk21qo66.cloudfront.net/Deuren-Internal-Video-Low-Res.mp4"
                                     type="video/mp4" />
                             </video>
