@@ -16,7 +16,7 @@ export default function DoubleLeafDoor() {
 
     return (
         <div>
-            <img src="/images/automaticDoors/backgrounds/double-leaf-automatic-door.jpg" className={styles.doorSelectedMainDiv} alt="דלת אוטומטית" />
+            <img src="/images/automaticDoors/double-leaf-automatic-door.jpg" className={styles.doorSelectedMainDiv} alt="דלת אוטומטית" />
             <Container className={styles.doorSelectedContainer}>
                 <div>
                     <Row className={styles.doorSelectedTitleRow}>

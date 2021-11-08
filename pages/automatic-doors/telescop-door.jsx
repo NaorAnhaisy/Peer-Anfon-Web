@@ -16,7 +16,7 @@ export default function TelescopDoor() {
 
     return (
         <div>
-            <img src="/images/automaticDoors/backgrounds/telescop-automatic-door.jpg" className={styles.doorSelectedMainDiv} alt="דלת אוטומטית" />
+            <img src="/images/automaticDoors/telescop-automatic-door.jpeg" className={styles.doorSelectedMainDiv} alt="דלת אוטומטית" />
             <Container className={styles.doorSelectedContainer}>
                 <div>
                     <Row className={styles.doorSelectedTitleRow}>
@@ -93,32 +93,34 @@ export default function TelescopDoor() {
                     <Row>
                         <Col sm={12} lg={6} className={styles.doorSelectedHorizontalImages}>
                             <img
-                                style={{ height: '50%' }}
+                                style={{ height: '100%', maxHeight: '800px' }}
                                 className={styles.doorSelectedDetailsExampleImg}
                                 data-aos="fade-zoom-in"
                                 data-aos-duration="700"
-                                src="/images/Doors/LUX/example2.jpg"
-                                alt=""
-                            />
-                            <img
-                                style={{ height: '50%' }}
-                                className={styles.doorSelectedDetailsExampleImg}
-                                data-aos="fade-zoom-in"
-                                data-aos-duration="700"
-                                src="/images/Doors/LUX/example3.jpg"
+                                src="/images/automaticDoors/telescop-door/telescop-2.jpeg"
                                 alt=""
                             />
                         </Col>
                         <Col sm={12} lg={6}>
                             <img
-                                style={{ height: '100%' }}
+                                style={{ height: '100%', maxHeight: '800px' }}
                                 className={styles.doorSelectedDetailsExampleImg}
                                 data-aos="fade-zoom-in"
                                 data-aos-duration="700"
-                                src="/images/Doors/LUX/example4.jpg"
+                                src="/images/automaticDoors/telescop-door/telescop-1.jpeg"
                                 alt=""
                             />
                         </Col>
+                    </Row>
+                    <Row>
+                        <img
+                            style={{ height: '100%', maxHeight: '1000px' }}
+                            className={styles.doorSelectedDetailsExampleImg}
+                            data-aos="fade-zoom-in"
+                            data-aos-duration="700"
+                            src="/images/automaticDoors/telescop-door/telescop-3.jpeg"
+                            alt=""
+                        />
                     </Row>
                 </div>
             </Container>
