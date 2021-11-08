@@ -23,7 +23,7 @@ export default function ContactUs() {
                 <Container className={styles.contactUsFormContainer}>
                     <div className={styles.contactUsPageDiv}>
                         <div className={styles.contactUsPageImgDiv}>
-                            <Image width={5} height={7} layout="responsive" alt="" src="/images/backgrounds/contact-us-background-2.jpg" />
+                            <Image width={5} height={7} layout="responsive" alt="" src="/images/backgrounds/contact-us-background.jpg" />
                         </div>
                         <div className={styles.contactUsPageForm}>
                             <ContactUsForm />
@@ -42,7 +42,7 @@ export default function ContactUs() {
                     </Col>
                     <Col sm={12} md={6} lg={3}>
                         <h6>כתובת</h6>
-                        <a target="_blank" rel="noreferrer noopener" 
+                        <a target="_blank" rel="noreferrer noopener"
                             href="https://www.waze.com/ul?q=%D7%94%D7%A1%D7%93%D7%A0%D7%90+13+%D7%97%D7%95%D7%9C%D7%95%D7%9F&navigate=yes" className="no-href-css">
                             הסדנא 13
                             <br />

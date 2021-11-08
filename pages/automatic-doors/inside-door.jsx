@@ -84,7 +84,7 @@ export default function InsideDoor() {
                         <Col sm={12} md={6}>
                             <div className="mb-5">
                                 <video controls controlsList="nodownload" className={styles.automaticDoorVideo}>
-                                    <source src="/videos/inside-automatic-door-1.mp4"
+                                    <source src="/videos/automatic-doors/inside-automatic-door-1.mp4"
                                         type="video/mp4" />
                                 </video>
                             </div>
@@ -92,7 +92,7 @@ export default function InsideDoor() {
                         <Col sm={12} md={6}>
                             <div className="mb-5">
                                 <video controls controlsList="nodownload" className={styles.automaticDoorVideo}>
-                                    <source src="/videos/inside-automatic-door-2.mp4"
+                                    <source src="/videos/automatic-doors/inside-automatic-door-2.mp4"
                                         type="video/mp4" />
                                 </video>
                             </div>
