@@ -44,35 +44,35 @@ export default function AutomaticDoors() {
                 <Carousel.Item>
                     <img
                         className={styles.caruselImage}
-                        src="/images/Doors/LUX/example1.jpg"
+                        src="/images/Doors/door-1.jpeg"
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h3>עיצוב ססגוני</h3>
+                        <p>דלתות אוטומטיות מעוצבות ויוקרתיות</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                         className={styles.caruselImage}
-                        src="/images/Doors/LUX/example2.jpg"
+                        src="/images/Doors/door-2.jpeg"
                         alt="Second slide"
                     />
                     <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h3>לפי הדרישה שלך</h3>
+                        <p>דלתות אוטומטיות לבניינים</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                         className={styles.caruselImage}
-                        src="/images/Doors/LUX/example3.jpg"
+                        src="/images/Doors/door-5.jpeg"
                         alt="Third slide"
                     />
                     <Carousel.Caption>
-                        <h3>Third slide label</h3>
+                        <h3>מתאים לארגונים</h3>
                         <p>
-                            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                            דלתות אוטומטיות לחברות ומוסדות
                         </p>
                     </Carousel.Caption>
                 </Carousel.Item>

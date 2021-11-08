@@ -23,7 +23,7 @@ export default function ContactUs() {
                 <Container className={styles.contactUsFormContainer}>
                     <div className={styles.contactUsPageDiv}>
                         <div className={styles.contactUsPageImgDiv}>
-                            <Image width={5} height={7} layout="responsive" alt="" src="/images/backgrounds/contact-us-background.jpg" />
+                            <Image width={5} height={7} layout="responsive" alt="" src="/images/backgrounds/contact-us-background-3.jpeg" />
                         </div>
                         <div className={styles.contactUsPageForm}>
                             <ContactUsForm />

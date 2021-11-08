@@ -48,7 +48,8 @@ export default function Footer() {
       <div className={styles.linksAboutseparator}></div>
       <Row className={`${styles.footerBarRow} dir-ltr`}>
         <Col sm={12} md={4} className={styles.aboutSite}>
-          Peer Anfon © {new Date().getFullYear()} - All Rights Reserve
+          <span>Peer Anfon © {new Date().getFullYear()} - All Rights Reserve</span>
+          <a href="tel:0723712701" className="no-href-css" style={{ marginLeft: "40px" }}>072-371-2701</a>
         </Col>
         <Col sm={12} md={4} className={styles.socialLinks}>
           <a href="https://www.facebook.com/" aria-label="Facebook פאר אנפון" target="_blank" rel="noopener noreferrer" className={styles.footerHover}>
