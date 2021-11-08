@@ -472,7 +472,7 @@ export default function AutomaticDoors() {
                         <Link href="/דלתות-אוטומטיות/דלת-אוטומטית-הזזה-חד-כנף" passHref={true}>
                             <div className="clickable">
                                 <div className={styles.imageLinkDivToCategorys}>
-                                    <img src="/images/automaticDoors/Automatic-door-1.jpg" alt="דלת אוטומטית חד כנף" />
+                                    <img src="/images/automaticDoors/automatic-door.jpg" alt="דלת אוטומטית חד כנף" />
                                 </div>
                                 <div className={styles.imageLinkDivText}>
                                     <h5>דלת הזזה חד-כנף</h5>
