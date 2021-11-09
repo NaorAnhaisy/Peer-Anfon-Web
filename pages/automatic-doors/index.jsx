@@ -535,19 +535,21 @@ export default function AutomaticDoors() {
                     {/* <Col xs={12} md={6} lg={4} className={styles.displayNoneMobile}>
                     </Col> */}
                     <Col xs={12} md={6} lg={4}>
-                        <Link href="/דלתות-אוטומטיות/דלת-פנים-אוטומטית" passHref={true}>
-                            <div className="clickable">
-                                <div className={styles.imageLinkDivToCategorys}>
-                                    <img src="/images/automaticDoors/Automatic-door-5.jpg" alt="דלת פנים אוטומטית" />
+                        <Link href="/דלתות-אוטומטיות/דלת-פנים-אוטומטית">
+                            <a style={{ textDecoration: 'none' }}>
+                                <div className="clickable">
+                                    <div className={styles.imageLinkDivToCategorys}>
+                                        <img src="/images/automaticDoors/Automatic-door-5.jpg" alt="דלת פנים אוטומטית" />
+                                    </div>
+                                    <div className={styles.imageLinkDivText}>
+                                        <h5>דלת פנים אוטומטית</h5>
+                                        <div className={styles.separatorLinkText} />
+                                        <p>
+                                            דלת אוטומטית מונעת צורך לגעת בידיים בדלת ובכך מונעת העברה לא נחוצה של חיידקים ומזיקים אחרים.
+                                        </p>
+                                    </div>
                                 </div>
-                                <div className={styles.imageLinkDivText}>
-                                    <h5>דלת פנים אוטומטית</h5>
-                                    <div className={styles.separatorLinkText} />
-                                    <p>
-                                        דלת אוטומטית מונעת צורך לגעת בידיים בדלת ובכך מונעת העברה לא נחוצה של חיידקים ומזיקים אחרים.
-                                    </p>
-                                </div>
-                            </div>
+                            </a>
                         </Link>
                     </Col>
                 </Row>
