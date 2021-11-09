@@ -79,7 +79,7 @@ export default function AutomaticDoors() {
                 </Carousel.Item>
             </Carousel>
 
-            <Image src="/images/automaticDoors/single-leaf-automatic-door.jpeg" alt="דלת אוטומטית חד כנף" layout="responsive" width={10} height={8} />
+            <img src="/images/automaticDoors/single-leaf-automatic-door.jpeg" alt="דלת אוטומטית חד כנף" style={{width: "1000px", height: "800px"}} />
 
             <VisibilitySensor partialVisibility onChange={(isVisible => { isVisible && setIsFirstContentShowed(true) })}>
                 <div style={{ minHeight: "300px" }}>
