@@ -16,7 +16,7 @@ export default function TelescopDoor() {
 
     return (
         <div>
-            <img src="/images/automaticDoors/telescop-automatic-door.jpeg" className={styles.doorSelectedMainDiv} alt="דלת אוטומטית" />
+            <img src="/images/automatic-doors/telescop-automatic-door.jpeg" className={styles.doorSelectedMainDiv} alt="דלת אוטומטית" />
             <Container className={styles.doorSelectedContainer}>
                 <div>
                     <Row className={styles.doorSelectedTitleRow}>
@@ -97,7 +97,7 @@ export default function TelescopDoor() {
                                 className={styles.doorSelectedDetailsExampleImg}
                                 data-aos="fade-zoom-in"
                                 data-aos-duration="700"
-                                src="/images/automaticDoors/telescop-door/telescop-2.jpeg"
+                                src="/images/automatic-doors/telescop-door/telescop-2.jpeg"
                                 alt=""
                             />
                         </Col>
@@ -107,7 +107,7 @@ export default function TelescopDoor() {
                                 className={styles.doorSelectedDetailsExampleImg}
                                 data-aos="fade-zoom-in"
                                 data-aos-duration="700"
-                                src="/images/automaticDoors/telescop-door/telescop-1.jpeg"
+                                src="/images/automatic-doors/telescop-door/telescop-1.jpeg"
                                 alt=""
                             />
                         </Col>
@@ -118,7 +118,7 @@ export default function TelescopDoor() {
                             className={styles.doorSelectedDetailsExampleImg}
                             data-aos="fade-zoom-in"
                             data-aos-duration="700"
-                            src="/images/automaticDoors/telescop-door/telescop-3.jpeg"
+                            src="/images/automatic-doors/telescop-door/telescop-3.jpeg"
                             alt=""
                         />
                     </Row>
