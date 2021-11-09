@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Carousel, Col, Row } from "react-bootstrap";
 import ImagesGallery from "../../components/ImagesGallery/ImagesGallery";
 import styles from "../../styles/automatic-doors.module.css";
@@ -28,7 +28,6 @@ const images = [
 ];
 
 export default function AutomaticDoors() {
-
     const [isFirstContentShowed, setIsFirstContentShowed] = useState(false);
     const [isSecondContentShowed, setIsSecondContentShowed] = useState(false);
     const [isThirdContentShowed, setIsThirdContentShowed] = useState(false);
