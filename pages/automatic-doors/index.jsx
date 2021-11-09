@@ -469,74 +469,82 @@ export default function AutomaticDoors() {
             <div className={styles.automaticDoorsContainer}>
                 <Row className={styles.rowImagesLinks}>
                     <Col xs={12} md={6} lg={4}>
-                        <Link href="/דלתות-אוטומטיות/דלת-אוטומטית-הזזה-חד-כנף" passHref={true}>
-                            <div className="clickable">
-                                <div className={styles.imageLinkDivToCategorys}>
-                                    <img src="/images/automaticDoors/single-leaf-automatic-door.jpeg" alt="דלת אוטומטית חד כנף" />
+                        <Link href="/דלתות-אוטומטיות/דלת-אוטומטית-הזזה-חד-כנף">
+                            <a className="no-href-css">
+                                <div className="clickable">
+                                    <div className={styles.imageLinkDivToCategorys}>
+                                        <img src="/images/automaticDoors/single-leaf-automatic-door.jpeg" alt="דלת אוטומטית חד כנף" />
+                                    </div>
+                                    <div className={styles.imageLinkDivText}>
+                                        <h5>דלת הזזה חד-כנף</h5>
+                                        <div className={styles.separatorLinkText} />
+                                        <p>
+                                            דלת אוטומטית מונעת צורך לגעת בידיים בדלת ובכך מונעת העברה לא נחוצה של חיידקים ומזיקים אחרים.
+                                        </p>
+                                    </div>
                                 </div>
-                                <div className={styles.imageLinkDivText}>
-                                    <h5>דלת הזזה חד-כנף</h5>
-                                    <div className={styles.separatorLinkText} />
-                                    <p>
-                                        דלת אוטומטית מונעת צורך לגעת בידיים בדלת ובכך מונעת העברה לא נחוצה של חיידקים ומזיקים אחרים.
-                                    </p>
-                                </div>
-                            </div>
+                            </a>
                         </Link>
                     </Col>
                     <Col xs={12} md={6} lg={4}>
-                        <Link href="/דלתות-אוטומטיות/דלת-אוטומטית-הזזה-דו-כנף" passHref={true}>
-                            <div className="clickable">
-                                <div className={styles.imageLinkDivToCategorys}>
-                                    <img src="/images/automaticDoors/double-leaf-automatic-door.jpg" alt="דלת אוטומטית דו כנף" />
+                        <Link href="/דלתות-אוטומטיות/דלת-אוטומטית-הזזה-דו-כנף">
+                            <a className="no-href-css">
+                                <div className="clickable">
+                                    <div className={styles.imageLinkDivToCategorys}>
+                                        <img src="/images/automaticDoors/double-leaf-automatic-door.jpg" alt="דלת אוטומטית דו כנף" />
+                                    </div>
+                                    <div className={styles.imageLinkDivText}>
+                                        <h5>דלת הזזה דו-כנף</h5>
+                                        <div className={styles.separatorLinkText} />
+                                        <p>
+                                            דלת אוטומטית מונעת צורך לגעת בידיים בדלת ובכך מונעת העברה לא נחוצה של חיידקים ומזיקים אחרים.
+                                        </p>
+                                    </div>
                                 </div>
-                                <div className={styles.imageLinkDivText}>
-                                    <h5>דלת הזזה דו-כנף</h5>
-                                    <div className={styles.separatorLinkText} />
-                                    <p>
-                                        דלת אוטומטית מונעת צורך לגעת בידיים בדלת ובכך מונעת העברה לא נחוצה של חיידקים ומזיקים אחרים.
-                                    </p>
-                                </div>
-                            </div>
+                            </a>
                         </Link>
                     </Col>
                     <Col xs={12} md={6} lg={4}>
-                        <Link href="/דלתות-אוטומטיות/דלת-אוטומטית-טלסקופית" passHref={true}>
-                            <div className="clickable">
-                                <div className={styles.imageLinkDivToCategorys}>
-                                    <img src="/images/automaticDoors/telescop-automatic-door.jpeg" alt="דלת אוטומטית טלסקופית" />
+                        <Link href="/דלתות-אוטומטיות/דלת-אוטומטית-טלסקופית">
+                            <a className="no-href-css">
+                                <div className="clickable">
+                                    <div className={styles.imageLinkDivToCategorys}>
+                                        <img src="/images/automaticDoors/telescop-automatic-door.jpeg" alt="דלת אוטומטית טלסקופית" />
+                                    </div>
+                                    <div className={styles.imageLinkDivText}>
+                                        <h5>דלת אוטומטית טלסקופית</h5>
+                                        <div className={styles.separatorLinkText} />
+                                        <p>
+                                            דלת אוטומטית מונעת צורך לגעת בידיים בדלת ובכך מונעת העברה לא נחוצה של חיידקים ומזיקים אחרים.
+                                        </p>
+                                    </div>
                                 </div>
-                                <div className={styles.imageLinkDivText}>
-                                    <h5>דלת אוטומטית טלסקופית</h5>
-                                    <div className={styles.separatorLinkText} />
-                                    <p>
-                                        דלת אוטומטית מונעת צורך לגעת בידיים בדלת ובכך מונעת העברה לא נחוצה של חיידקים ומזיקים אחרים.
-                                    </p>
-                                </div>
-                            </div>
+                            </a>
                         </Link>
                     </Col>
                     <Col xs={12} md={6} lg={4}>
-                        <Link href="/דלתות-אוטומטיות/דלת-אוטומטית-קורסת" passHref={true}>
-                            <div className="clickable">
-                                <div className={styles.imageLinkDivToCategorys}>
-                                    <img src="/images/automaticDoors/Automatic-door-4.jpg" alt="דלת אוטומטית קורסת" />
+                        <Link href="/דלתות-אוטומטיות/דלת-אוטומטית-קורסת">
+                            <a className="no-href-css">
+                                <div className="clickable">
+                                    <div className={styles.imageLinkDivToCategorys}>
+                                        <img src="/images/automaticDoors/Automatic-door-4.jpg" alt="דלת אוטומטית קורסת" />
+                                    </div>
+                                    <div className={styles.imageLinkDivText}>
+                                        <h5>דלת הזזה קורסת</h5>
+                                        <div className={styles.separatorLinkText} />
+                                        <p>
+                                            דלת אוטומטית מונעת צורך לגעת בידיים בדלת ובכך מונעת העברה לא נחוצה של חיידקים ומזיקים אחרים.
+                                        </p>
+                                    </div>
                                 </div>
-                                <div className={styles.imageLinkDivText}>
-                                    <h5>דלת הזזה קורסת</h5>
-                                    <div className={styles.separatorLinkText} />
-                                    <p>
-                                        דלת אוטומטית מונעת צורך לגעת בידיים בדלת ובכך מונעת העברה לא נחוצה של חיידקים ומזיקים אחרים.
-                                    </p>
-                                </div>
-                            </div>
+                            </a>
                         </Link>
                     </Col>
                     {/* <Col xs={12} md={6} lg={4} className={styles.displayNoneMobile}>
                     </Col> */}
                     <Col xs={12} md={6} lg={4}>
                         <Link href="/דלתות-אוטומטיות/דלת-פנים-אוטומטית">
-                            <a style={{ textDecoration: 'none' }}>
+                            <a className="no-href-css">
                                 <div className="clickable">
                                     <div className={styles.imageLinkDivToCategorys}>
                                         <img src="/images/automaticDoors/Automatic-door-5.jpg" alt="דלת פנים אוטומטית" />
