@@ -4,7 +4,6 @@ import { Carousel, Col, Row } from "react-bootstrap";
 import ImagesGallery from "../../components/ImagesGallery/ImagesGallery";
 import styles from "../../styles/automatic-doors.module.css";
 import Link from "next/link";
-import Image from 'next/image';
 import VisibilitySensor from "react-visibility-sensor";
 
 const images = [
@@ -29,6 +28,11 @@ const images = [
 ];
 
 export default function AutomaticDoors() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     const [isFirstContentShowed, setIsFirstContentShowed] = useState(false);
     const [isSecondContentShowed, setIsSecondContentShowed] = useState(false);
     const [isThirdContentShowed, setIsThirdContentShowed] = useState(false);
@@ -78,13 +82,6 @@ export default function AutomaticDoors() {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
-
-            <img src="/images/automatic-doors/single-leaf-automatic-door.jpeg" alt="דלת אוטומטית חד כנף" style={{ width: "1000px", height: "800px" }} />
-            <img
-                src="/images/backgrounds/home-slide-2.jpeg"
-                alt="דלת אוטומטית"
-                style={{ width: "1000px", height: "800px" }}
-            />
 
             <VisibilitySensor partialVisibility onChange={(isVisible => { isVisible && setIsFirstContentShowed(true) })}>
                 <div style={{ minHeight: "300px" }}>
@@ -481,7 +478,7 @@ export default function AutomaticDoors() {
                             <a className="no-href-css">
                                 <div className="clickable">
                                     <div className={styles.imageLinkDivToCategorys}>
-                                        <Image src="/images/automatic-doors/single-leaf-automatic-door.jpeg" alt="דלת אוטומטית חד כנף" className={styles.imageToCategorys} layout="responsive" width={10} height={8} />
+                                        <img src="/images/automatic-doors/single-leaf-automatic-door.jpeg" alt="דלת אוטומטית חד כנף" className={styles.imageToCategorys} />
                                     </div>
                                     <div className={styles.imageLinkDivText}>
                                         <h5>דלת הזזה חד-כנף</h5>
@@ -499,7 +496,7 @@ export default function AutomaticDoors() {
                             <a className="no-href-css">
                                 <div className="clickable">
                                     <div className={styles.imageLinkDivToCategorys}>
-                                        <Image src="/images/automatic-doors/double-leaf-automatic-door.jpg" alt="דלת אוטומטית דו כנף" className={styles.imageToCategorys} layout="responsive" width={10} height={8} />
+                                        <img src="/images/automatic-doors/double-leaf-automatic-door.jpg" alt="דלת אוטומטית דו כנף" className={styles.imageToCategorys} />
                                     </div>
                                     <div className={styles.imageLinkDivText}>
                                         <h5>דלת הזזה דו-כנף</h5>
@@ -517,7 +514,7 @@ export default function AutomaticDoors() {
                             <a className="no-href-css">
                                 <div className="clickable">
                                     <div className={styles.imageLinkDivToCategorys}>
-                                        <Image src="/images/automatic-doors/telescop-automatic-door.jpeg" alt="דלת אוטומטית טלסקופית" className={styles.imageToCategorys} layout="responsive" width={10} height={8} />
+                                        <img src="/images/automatic-doors/telescop-automatic-door.jpeg" alt="דלת אוטומטית טלסקופית" className={styles.imageToCategorys} />
                                     </div>
                                     <div className={styles.imageLinkDivText}>
                                         <h5>דלת אוטומטית טלסקופית</h5>
@@ -535,7 +532,7 @@ export default function AutomaticDoors() {
                             <a className="no-href-css">
                                 <div className="clickable">
                                     <div className={styles.imageLinkDivToCategorys}>
-                                        <Image src="/images/automatic-doors/Automatic-door-4.jpg" alt="דלת אוטומטית קורסת" className={styles.imageToCategorys} layout="responsive" width={10} height={8} />
+                                        <img src="/images/automatic-doors/Automatic-door-4.jpg" alt="דלת אוטומטית קורסת" className={styles.imageToCategorys} />
                                     </div>
                                     <div className={styles.imageLinkDivText}>
                                         <h5>דלת הזזה קורסת</h5>
@@ -553,7 +550,7 @@ export default function AutomaticDoors() {
                     <Col xs={12} md={6} lg={4}>
                         <div className="clickable">
                             <div className={styles.imageLinkDivToCategorys}>
-                                <Image src="/images/automatic-doors/Automatic-door-5.jpg" alt="דלת פנים אוטומטית" className={styles.imageToCategorys} layout="responsive" width={10} height={8} />
+                                <img src="/images/automatic-doors/Automatic-door-5.jpg" alt="דלת פנים אוטומטית" className={styles.imageToCategorys} />
                             </div>
                             <div className={styles.imageLinkDivText}>
                                 <h5>דלת פנים אוטומטית</h5>
