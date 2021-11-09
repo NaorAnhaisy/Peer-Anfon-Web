@@ -47,7 +47,7 @@ export default function AutomaticDoors() {
                         src="/images/Doors/door-1.jpeg"
                         alt="First slide"
                     />
-                    <Carousel.Caption>
+                    <Carousel.Caption className={styles.caruselCaption}>
                         <h3>עיצוב ססגוני</h3>
                         <p>דלתות אוטומטיות מעוצבות ויוקרתיות</p>
                     </Carousel.Caption>
@@ -58,7 +58,7 @@ export default function AutomaticDoors() {
                         src="/images/Doors/door-2.jpeg"
                         alt="Second slide"
                     />
-                    <Carousel.Caption>
+                    <Carousel.Caption className={styles.caruselCaption}>
                         <h3>לפי הדרישה שלך</h3>
                         <p>דלתות אוטומטיות לבניינים</p>
                     </Carousel.Caption>
@@ -69,7 +69,7 @@ export default function AutomaticDoors() {
                         src="/images/Doors/door-5.jpeg"
                         alt="Third slide"
                     />
-                    <Carousel.Caption>
+                    <Carousel.Caption className={styles.caruselCaption}>
                         <h3>מתאים לארגונים</h3>
                         <p>
                             דלתות אוטומטיות לחברות ומוסדות
@@ -543,8 +543,8 @@ export default function AutomaticDoors() {
                     {/* <Col xs={12} md={6} lg={4} className={styles.displayNoneMobile}>
                     </Col> */}
                     <Col xs={12} md={6} lg={4}>
-                        <Link href="/דלתות-אוטומטיות/דלת-פנים-אוטומטית">
-                            <a className="no-href-css">
+                        {/* <Link href="/דלתות-אוטומטיות/דלת-פנים-אוטומטית"> */}
+                            {/* <a className="no-href-css"> */}
                                 <div className="clickable">
                                     <div className={styles.imageLinkDivToCategorys}>
                                         <img src="/images/automaticDoors/Automatic-door-5.jpg" alt="דלת פנים אוטומטית" />
@@ -557,8 +557,8 @@ export default function AutomaticDoors() {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
-                        </Link>
+                            {/* </a> */}
+                        {/* </Link> */}
                     </Col>
                 </Row>
 
