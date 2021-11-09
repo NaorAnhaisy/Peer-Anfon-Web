@@ -18,7 +18,7 @@ export default function ContactUs() {
                 <div className={"mb-5 " + styles.contactUsPageTitleDiv}>
                     <h1>דברו איתנו</h1>
                     <div className="mt-3 mb-4 separator"></div>
-                    <p>בין אם זה לקבוע תור לביקור אצלנו, לקבל ייעוץ מומחה או לדבר על דרישותיכם, נשמח לשמוע מכם. מלאו את הטופס למטה ונהיה בקשר.</p>
+                    <p>לקבלת הצעת מחיר, לקבלת יעוץ או לדבר על דרישותיכם, נשמח לשמוע מכם. מלאו את הטופס למטה ונהיה בקשר.</p>
                 </div>
                 <Container className={styles.contactUsFormContainer}>
                     <div className={styles.contactUsPageDiv}>
