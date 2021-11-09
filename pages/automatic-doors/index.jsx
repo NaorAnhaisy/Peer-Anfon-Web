@@ -29,10 +29,6 @@ const images = [
 
 export default function AutomaticDoors() {
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
-
     const [isFirstContentShowed, setIsFirstContentShowed] = useState(false);
     const [isSecondContentShowed, setIsSecondContentShowed] = useState(false);
     const [isThirdContentShowed, setIsThirdContentShowed] = useState(false);
