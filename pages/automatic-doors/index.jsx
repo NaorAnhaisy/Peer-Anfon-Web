@@ -1,10 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Carousel, Col, Row } from "react-bootstrap";
 import ImagesGallery from "../../components/ImagesGallery/ImagesGallery";
 import styles from "../../styles/automatic-doors.module.css";
 import Link from "next/link";
 import VisibilitySensor from "react-visibility-sensor";
+import AOS from 'aos';
 
 const images = [
     { src: "/images/Doors/LUX/example1.jpg" },
@@ -28,6 +29,10 @@ const images = [
 ];
 
 export default function AutomaticDoors() {
+    useEffect(() => {
+        AOS.init({ once: true });
+    });
+
     const [isFirstContentShowed, setIsFirstContentShowed] = useState(false);
     const [isSecondContentShowed, setIsSecondContentShowed] = useState(false);
     const [isThirdContentShowed, setIsThirdContentShowed] = useState(false);
@@ -468,7 +473,10 @@ export default function AutomaticDoors() {
 
             <div className={styles.automaticDoorsContainer}>
                 <Row className={styles.rowImagesLinks}>
-                    <Col xs={12} md={6} lg={4}>
+                    <Col data-aos="zoom-in"
+                        data-aos-once={true}
+                        data-aos-duration="1000"
+                        xs={12} md={6} lg={4}>
                         <Link href="/דלתות-אוטומטיות/דלת-אוטומטית-הזזה-חד-כנף">
                             <a className="no-href-css">
                                 <div className="clickable">
@@ -486,7 +494,10 @@ export default function AutomaticDoors() {
                             </a>
                         </Link>
                     </Col>
-                    <Col xs={12} md={6} lg={4}>
+                    <Col data-aos="zoom-in"
+                        data-aos-once={true}
+                        data-aos-duration="1000"
+                        xs={12} md={6} lg={4}>
                         <Link href="/דלתות-אוטומטיות/דלת-אוטומטית-הזזה-דו-כנף">
                             <a className="no-href-css">
                                 <div className="clickable">
@@ -504,7 +515,10 @@ export default function AutomaticDoors() {
                             </a>
                         </Link>
                     </Col>
-                    <Col xs={12} md={6} lg={4}>
+                    <Col data-aos="zoom-in"
+                        data-aos-once={true}
+                        data-aos-duration="1000"
+                        xs={12} md={6} lg={4}>
                         <Link href="/דלתות-אוטומטיות/דלת-אוטומטית-טלסקופית">
                             <a className="no-href-css">
                                 <div className="clickable">
@@ -522,7 +536,10 @@ export default function AutomaticDoors() {
                             </a>
                         </Link>
                     </Col>
-                    <Col xs={12} md={6} lg={4}>
+                    <Col data-aos="zoom-in"
+                        data-aos-once={true}
+                        data-aos-duration="1000"
+                        xs={12} md={6} lg={4}>
                         <Link href="/דלתות-אוטומטיות/דלת-אוטומטית-קורסת">
                             <a className="no-href-css">
                                 <div className="clickable">
@@ -542,19 +559,26 @@ export default function AutomaticDoors() {
                     </Col>
                     {/* <Col xs={12} md={6} lg={4} className={styles.displayNoneMobile}>
                     </Col> */}
-                    <Col xs={12} md={6} lg={4}>
-                        <div className="clickable">
-                            <div className={styles.imageLinkDivToCategorys}>
-                                <img src="/images/automatic-doors/Automatic-door-5.jpg" alt="דלת פנים אוטומטית" className={styles.imageToCategorys} />
-                            </div>
-                            <div className={styles.imageLinkDivText}>
-                                <h5>דלת פנים אוטומטית</h5>
-                                <div className={styles.separatorLinkText} />
-                                <p>
-                                    דלת אוטומטית מונעת צורך לגעת בידיים בדלת ובכך מונעת העברה לא נחוצה של חיידקים ומזיקים אחרים.
-                                </p>
-                            </div>
-                        </div>
+                    <Col data-aos="zoom-in"
+                        data-aos-once={true}
+                        data-aos-duration="1000"
+                        xs={12} md={6} lg={4}>
+                        <Link href="/דלתות-אוטומטיות/דלת-פנים-אוטומטית">
+                            <a className="no-href-css">
+                                <div className="clickable">
+                                    <div className={styles.imageLinkDivToCategorys}>
+                                        <img src="/images/automatic-doors/Automatic-door-5.jpg" alt="דלת פנים אוטומטית" className={styles.imageToCategorys} />
+                                    </div>
+                                    <div className={styles.imageLinkDivText}>
+                                        <h5>דלת הזזה קורסת</h5>
+                                        <div className={styles.separatorLinkText} />
+                                        <p>
+                                            דלת אוטומטית מונעת צורך לגעת בידיים בדלת ובכך מונעת העברה לא נחוצה של חיידקים ומזיקים אחרים.
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </Link>
                     </Col>
                 </Row>
 

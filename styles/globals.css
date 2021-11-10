@@ -299,3 +299,24 @@ body {
     background-position: 180px;
   }
 }
+
+/* Filepond Styles */
+.filepond--root {
+  margin: 0 !important;
+}
+
+.filepond--credits, .filepond--action-process-item {
+  display: none;
+}
+
+.filepond--drop-label, .filepond--file-status-main {
+  direction: rtl;
+}
+
+.filepond--drop-label {
+  height: auto !important;
+}
+
+.filepond-max-file-size-label {
+  font-size: 12px !important;
+}
