@@ -15,7 +15,7 @@ export default function CollapseDoor() {
 
     return (
         <div>
-            <img src="/images/automaticDoors/backgrounds/collapse-automatic-door.jpg" className={styles.doorSelectedMainDiv} alt="דלת אוטומטית" />
+            <img src="/images/automatic-doors/backgrounds/collapse-automatic-door.jpg" className={styles.doorSelectedMainDiv} alt="דלת אוטומטית" />
             <Container className={styles.doorSelectedContainer}>
                 <div>
                     <Row className={styles.doorSelectedTitleRow}>

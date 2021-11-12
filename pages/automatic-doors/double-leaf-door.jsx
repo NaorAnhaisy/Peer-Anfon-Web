@@ -16,7 +16,7 @@ export default function DoubleLeafDoor() {
 
     return (
         <div>
-            <img src="/images/automaticDoors/backgrounds/double-leaf-automatic-door.jpg" className={styles.doorSelectedMainDiv} alt="דלת אוטומטית" />
+            <img src="/images/automatic-doors/double-leaf-automatic-door.jpg" className={styles.doorSelectedMainDiv} alt="דלת אוטומטית" />
             <Container className={styles.doorSelectedContainer}>
                 <div>
                     <Row className={styles.doorSelectedTitleRow}>
@@ -84,7 +84,7 @@ export default function DoubleLeafDoor() {
                     <Row className="mt-5 mb-5">
                         <div className="mb-5">
                             <video autoPlay loop playsInline muted id="double-leaf-video" className={styles.automaticDoorVideo}>
-                                <source src="/videos/double-leaf-door.mp4"
+                                <source src="/videos/automatic-doors/double-leaf-door.mp4"
                                     type="video/mp4" />
                             </video>
                         </div>

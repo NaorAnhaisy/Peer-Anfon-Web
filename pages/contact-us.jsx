@@ -18,12 +18,12 @@ export default function ContactUs() {
                 <div className={"mb-5 " + styles.contactUsPageTitleDiv}>
                     <h1>דברו איתנו</h1>
                     <div className="mt-3 mb-4 separator"></div>
-                    <p>בין אם זה לקבוע תור לביקור אצלנו, לקבל ייעוץ מומחה או לדבר על דרישותיכם, נשמח לשמוע מכם. מלאו את הטופס למטה ונהיה בקשר.</p>
+                    <p>לקבלת הצעת מחיר, לקבלת יעוץ או לדבר על דרישותיכם, נשמח לשמוע מכם. מלאו את הטופס למטה ונהיה בקשר.</p>
                 </div>
                 <Container className={styles.contactUsFormContainer}>
                     <div className={styles.contactUsPageDiv}>
                         <div className={styles.contactUsPageImgDiv}>
-                            <Image width={5} height={7} layout="responsive" alt="" src="/images/backgrounds/contact-us-background.jpg" />
+                            <Image width={5} height={7} layout="responsive" alt="" src="/images/backgrounds/contact-us-background-3.jpeg" />
                         </div>
                         <div className={styles.contactUsPageForm}>
                             <ContactUsForm />
@@ -36,7 +36,7 @@ export default function ContactUs() {
                 <Row className={styles.contactUsContactInfoRow}>
                     <Col sm={12} md={6} lg={3}>
                         <h6>צרו קשר</h6>
-                        <span><a href="tel:0525561128" className="no-href-css">טלפון: 072-3712701</a></span>
+                        <span><a href="tel:0723712701" className="no-href-css">טלפון: 072-371-2701</a></span>
                         <br />
                         <span><a href="mailto:info@8peer.co.il" className="no-href-css">דוא&quot;ל: info@8peer.co.il</a></span>
                     </Col>

@@ -11,6 +11,7 @@ import {
     Radio
 } from "@material-ui/core";
 import RotateLoader from "../Loaders/RotateLoader/RotateLoader";
+import FileUploaderMulti from '../FileUploaderMulti/FileUploaderMulti';
 import axios from "axios";
 
 const { publicRuntimeConfig } = getConfig()
@@ -83,31 +84,31 @@ export default function ContactUs() {
         // }, 2000);
 
         try {
-          axios
-            .post(publicRuntimeConfig.SERVER_URL + "/mailer/contact-us", contactData)
-            .then((response) => {
-              setIsLoading(false);
-              setIsSendSucced(true);
-              setReturenedMessage(response.data.message);
-              setReturnedSubMsg(response.data.subMessage);
-            })
-            .catch((err) => {
-              const resMessage =
-                (err.response && err.response.data && err.response.data.message) ||
-                err.message ||
-                err.toString();
+            axios
+                .post(publicRuntimeConfig.SERVER_URL + "/mailer/contact-us", contactData)
+                .then((response) => {
+                    setIsLoading(false);
+                    setIsSendSucced(true);
+                    setReturenedMessage(response.data.message);
+                    setReturnedSubMsg(response.data.subMessage);
+                })
+                .catch((err) => {
+                    const resMessage =
+                        (err.response && err.response.data && err.response.data.message) ||
+                        err.message ||
+                        err.toString();
 
-              console.error(resMessage);
+                    console.error(resMessage);
 
-              setIsLoading(false);
-              setIsSendSucced(false);
-              setReturenedMessage(resMessage);
-            });
+                    setIsLoading(false);
+                    setIsSendSucced(false);
+                    setReturenedMessage(resMessage);
+                });
         } catch (error) {
-          console.error(error);
-          setIsLoading(false);
-          setIsSendSucced(false);
-          setReturenedMessage(error);
+            console.error(error);
+            setIsLoading(false);
+            setIsSendSucced(false);
+            setReturenedMessage(error);
         }
     };
 
@@ -256,6 +257,10 @@ export default function ContactUs() {
                                 <i className={`fas fa-comment-dots ${styles.formAccountIcon}`}></i>
                                 הודעה
                             </label>
+                        </div>
+
+                        <div className="form-element form-input">
+                            <FileUploaderMulti />
                         </div>
 
                         {isLoading ? (

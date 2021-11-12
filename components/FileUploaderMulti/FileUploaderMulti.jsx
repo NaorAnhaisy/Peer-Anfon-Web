@@ -29,7 +29,7 @@ export default function FileUploaderMulti(props) {
                     let filesObjectArray = fileItems.map(fileItem => fileItem.file);
                     console.log(filesObjectArray)
                     setFiles(filesObjectArray);
-                    props.onChange(filesObjectArray);
+                    // props.onChange(filesObjectArray);
                 }}
                 allowMultiple={true}
                 maxFiles={5}

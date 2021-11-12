@@ -60,7 +60,7 @@ export default function MainNavbar() {
                           alt=""
                         />
                         <div className={` ${styles.navbarLogoTextDiv}`}>
-                        {/* ${styles.shine}  */}
+                          {/* ${styles.shine}  */}
                           <span className={`${styles.navbarLogoText}`}>
                             <span>פאר</span>
                             <span>אנפון</span>
@@ -202,10 +202,10 @@ export default function MainNavbar() {
                         </Link>
                       </li>
 
-                      <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                        <Link className="nav-link" href="/anfon-luxery">
-                          אנפון Luxery
-                        </Link>
+                      <li className={styles.phoneText}>
+                        <a href="tel:0723712701">
+                          <i className={`${styles.phone} fas fa-phone`} aria-hidden="true"></i><span>072-371-2701</span>
+                        </a>
                       </li>
                     </ul>
                   </div>

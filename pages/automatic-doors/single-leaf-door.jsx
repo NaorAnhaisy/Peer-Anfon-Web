@@ -16,7 +16,7 @@ export default function SingleLeafDoor() {
 
     return (
         <div>
-            <img src="/images/automaticDoors/backgrounds/single-leaf-automatic-door.jpg" className={styles.doorSelectedMainDiv} alt="דלת אוטומטית" />
+            <img src="/images/automatic-doors/single-leaf-automatic-door.jpeg" className={styles.doorSelectedMainDiv} alt="דלת אוטומטית" />
             <Container className={styles.doorSelectedContainer}>
                 <div>
                     <Row className={styles.doorSelectedTitleRow}>
@@ -97,7 +97,7 @@ export default function SingleLeafDoor() {
                                 className={styles.doorSelectedDetailsExampleImg}
                                 data-aos="fade-zoom-in"
                                 data-aos-duration="700"
-                                src="/images/Doors/LUX/example2.jpg"
+                                src="/images/automatic-doors/singleLeaf-door/singleleaf-1.jpg"
                                 alt=""
                             />
                             <img
@@ -105,7 +105,7 @@ export default function SingleLeafDoor() {
                                 className={styles.doorSelectedDetailsExampleImg}
                                 data-aos="fade-zoom-in"
                                 data-aos-duration="700"
-                                src="/images/Doors/LUX/example3.jpg"
+                                src="/images/automatic-doors/singleLeaf-door/singleleaf-2.jpeg"
                                 alt=""
                             />
                         </Col>
@@ -115,7 +115,40 @@ export default function SingleLeafDoor() {
                                 className={styles.doorSelectedDetailsExampleImg}
                                 data-aos="fade-zoom-in"
                                 data-aos-duration="700"
-                                src="/images/Doors/LUX/example4.jpg"
+                                src="/images/automatic-doors/singleLeaf-door/singleleaf-3.jpeg"
+                                alt=""
+                            />
+                        </Col>
+                    </Row>
+                    <Row>
+                        <img
+                            style={{ height: '50%' }}
+                            className={styles.doorSelectedDetailsExampleImg}
+                            data-aos="fade-zoom-in"
+                            data-aos-duration="700"
+                            src="/images/automatic-doors/singleLeaf-door/singleleaf-7.jpg"
+                            alt=""
+                        />
+                    </Row>
+                    <Row>
+                        <Col sm={12} lg={6} className={styles.doorSelectedHorizontalImages}>
+                            <img
+                                style={{ height: '100%', maxHeight: '800px' }}
+                                className={styles.doorSelectedDetailsExampleImg}
+                                data-aos="fade-zoom-in"
+                                data-aos-duration="700"
+                                src="/images/automatic-doors/singleLeaf-door/singleleaf-4.jpeg"
+                                alt=""
+                            />
+
+                        </Col>
+                        <Col sm={12} lg={6}>
+                            <img
+                                style={{ height: '100%', maxHeight: '800px' }}
+                                className={styles.doorSelectedDetailsExampleImg}
+                                data-aos="fade-zoom-in"
+                                data-aos-duration="700"
+                                src="/images/automatic-doors/singleLeaf-door/singleleaf-5.jpeg"
                                 alt=""
                             />
                         </Col>

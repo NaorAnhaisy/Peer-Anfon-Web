@@ -1,10 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Carousel, Col, Row } from "react-bootstrap";
 import ImagesGallery from "../../components/ImagesGallery/ImagesGallery";
 import styles from "../../styles/automatic-doors.module.css";
 import Link from "next/link";
 import VisibilitySensor from "react-visibility-sensor";
+import AOS from 'aos';
 
 const images = [
     { src: "/images/Doors/LUX/example1.jpg" },
@@ -28,6 +29,10 @@ const images = [
 ];
 
 export default function AutomaticDoors() {
+    useEffect(() => {
+        AOS.init({ once: true });
+    });
+
     const [isFirstContentShowed, setIsFirstContentShowed] = useState(false);
     const [isSecondContentShowed, setIsSecondContentShowed] = useState(false);
     const [isThirdContentShowed, setIsThirdContentShowed] = useState(false);
@@ -44,35 +49,35 @@ export default function AutomaticDoors() {
                 <Carousel.Item>
                     <img
                         className={styles.caruselImage}
-                        src="/images/Doors/LUX/example1.jpg"
+                        src="/images/Doors/door-1.jpeg"
                         alt="First slide"
                     />
-                    <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <Carousel.Caption className={styles.caruselCaption}>
+                        <h3>עיצוב ססגוני</h3>
+                        <p>דלתות אוטומטיות מעוצבות ויוקרתיות</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                         className={styles.caruselImage}
-                        src="/images/Doors/LUX/example2.jpg"
+                        src="/images/Doors/door-2.jpeg"
                         alt="Second slide"
                     />
-                    <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <Carousel.Caption className={styles.caruselCaption}>
+                        <h3>לפי הדרישה שלך</h3>
+                        <p>דלתות אוטומטיות לבניינים</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                         className={styles.caruselImage}
-                        src="/images/Doors/LUX/example3.jpg"
+                        src="/images/Doors/door-5.jpeg"
                         alt="Third slide"
                     />
-                    <Carousel.Caption>
-                        <h3>Third slide label</h3>
+                    <Carousel.Caption className={styles.caruselCaption}>
+                        <h3>מתאים לארגונים</h3>
                         <p>
-                            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                            דלתות אוטומטיות לחברות ומוסדות
                         </p>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -88,7 +93,7 @@ export default function AutomaticDoors() {
                                 </div>
                                 <div className={styles.contentText}>
                                     <div className={`${styles.contentTextInner} ${styles.mainContextInner}`}>
-                                        פאר אנפון הינה יבואנית בלעדית של מערכות דלתות אוטומטיות של TAU איטליה (www.tauitalia.com) המבטיחים איכות, שירות ואמינות מוצריה.
+                                        פאר אנפון הינה יבואנית בלעדית של מערכות דלתות אוטומטיות של (www.Topp.it) Topp ו- TAU איטליה (www.tauitalia.com) המבטיחים איכות, שירות ואמינות מוצריה.
                                         <br />
                                         דלת הזזה אוטומטית יכולה להיות בעלת מראה זכוכית עם פרופיל דק או עם מסגרת עבה בהתאם לדרישות לקוח.
                                         <br />
@@ -102,7 +107,7 @@ export default function AutomaticDoors() {
 
                         <div className={styles.image}>
                             <img
-                                src="https://images.unsplash.com/photo-1616362355051-6a9f8c434fff?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYxNzE0MTYzNQ&ixlib=rb-1.2.1&q=80&w=800&h=600"
+                                src="/images/backgrounds/home-slide-3.jpeg"
                                 alt="דלת אוטומטית"
                             />
                         </div>
@@ -167,7 +172,7 @@ export default function AutomaticDoors() {
 
                         <div className={styles.image}>
                             <img
-                                src="https://images.unsplash.com/photo-1616362355051-6a9f8c434fff?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYxNzE0MTYzNQ&ixlib=rb-1.2.1&q=80&w=800&h=600"
+                                src="/images/backgrounds/home-slide-2.jpeg"
                                 alt="דלת אוטומטית"
                             />
                         </div>
@@ -198,17 +203,17 @@ export default function AutomaticDoors() {
                                             <ul>
                                                 <li>
                                                     <strong>נגישות</strong>{" "}-{" "}
-                                                    דלתות חשמליות הן נגישות ומזמינות בעיקר לבעלי מוגבלויות ונכויות שונות, שלצערינו יש לא מעט בארצנו. דלתות אלו מקלות מאוד על אדם המתקשה לפתוח את דלת הכניסה כשהוא על קביים או בכיסא גלגלים.                                </li>
+                                                    דלתות חשמליות הן נגישות ומזמינות בעיקר לבעלי מוגבלויות ונכויות שונות. דלתות אלו מקלות מאוד על אדם המתקשה לפתוח את דלת הכניסה כשהוא על קביים או בכיסא גלגלים.                                </li>
                                             </ul>
                                             <ul>
                                                 <li>
                                                     <strong>אסטטיקה</strong>{" "}-{" "}
-                                                    דלתות חשמליות ניתן לעצב לפי דרישת הלקוח. דלתות חשמליות בדרך כלל מורכבות מזכוכית בעלת מראה יוקרתי ואסטטי מאוד, כמו כן ניתן לעצב אותן בעזרת סוגי זכוכית שונים, צבעים שונים של הזכוכית ואפילו עיטורים מיוחדים על הזכוכית.                                </li>
+                                                    דלתות חשמליות ניתנות לעיצוב לפי דרישת הלקוח. דלתות חשמליות בדרך כלל מורכבות מזכוכית בעלת מראה יוקרתי ואסטטי מאוד, כמו כן ניתן לעצב אותן בעזרת סוגי זכוכית שונים, צבעים שונים של הזכוכית ואפילו עיטורים מיוחדים על הזכוכית.                                </li>
                                             </ul>
                                             <ul>
                                                 <li>
                                                     <strong>קלות התפעול</strong>{" "}-{" "}
-                                                    דלתות חשמליות מופעלות על ידי מנגנון מיוחד, חברת פאר אנפון הינה היבואנית הבלעדית של מערכות דלתות חשמליות של חברת TAU איטליה שלה מוצרים איכותיים ואמינים.                                </li>
+                                                    דלתות חשמליות מופעלות על ידי מנגנון מיוחד, חברת פאר אנפון הינה היבואנית הבלעדית של מערכות של חברת Topp ו Tau איטליה שלהן מוצרים איכותיים ואמינים.                                </li>
                                             </ul>
                                         </div>
                                     </div>
@@ -218,7 +223,7 @@ export default function AutomaticDoors() {
 
                         <div className={styles.image}>
                             <img
-                                src="https://images.unsplash.com/photo-1616362355051-6a9f8c434fff?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYxNzE0MTYzNQ&ixlib=rb-1.2.1&q=80&w=800&h=600"
+                                src="/images/backgrounds/home-slide-1.jpeg"
                                 alt="דלת אוטומטית"
                             />
                         </div>
@@ -367,7 +372,7 @@ export default function AutomaticDoors() {
                     </Col>
                     <Col xs={12} lg={6} className="pr-5 pl-5">
                         <img
-                            src="/images/automaticDoors/Automatic-door-1.jpeg"
+                            src="/images/automatic-doors/Automatic-door-1.jpeg"
                             className={styles.doorSelectedMainDiv}
                             alt="דלת אוטומטית"
                         />
@@ -377,7 +382,7 @@ export default function AutomaticDoors() {
             {/* <Row className={styles.automaticDoorsRow} data-aos="fade-left" data-aos-duration="700">
                     <Col xs={12} lg={6} className="pr-5 pl-5">
                         <img
-                            src="/images/automaticDoors/Automatic-door-2.jpeg"
+                            src="/images/automatic-doors/Automatic-door-2.jpeg"
                             className={styles.doorSelectedMainDiv}
                             alt="דלת אוטומטית"
                         />
@@ -459,7 +464,7 @@ export default function AutomaticDoors() {
                     </Col>
                     <Col xs={12} lg={6} >
                         <img
-                            src="/images/automaticDoors/Automatic-door-3.jpeg"
+                            src="/images/automatic-doors/Automatic-door-3.jpeg"
                             className={styles.doorSelectedMainDiv}
                             alt="דלת אוטומטית"
                         />
@@ -468,86 +473,111 @@ export default function AutomaticDoors() {
 
             <div className={styles.automaticDoorsContainer}>
                 <Row className={styles.rowImagesLinks}>
-                    <Col xs={12} md={6} lg={4}>
-                        <Link href="/דלתות-אוטומטיות/דלת-אוטומטית-הזזה-חד-כנף" passHref={true}>
-                            <div className="clickable">
-                                <div className={styles.imageLinkDivToCategorys}>
-                                    <img src="/images/automaticDoors/Automatic-door-1.jpeg" alt="דלת אוטומטית חד כנף" />
+                    <Col data-aos="zoom-in"
+                        data-aos-once={true}
+                        data-aos-duration="1000"
+                        xs={12} md={6} lg={4}>
+                        <Link href="/דלתות-אוטומטיות/דלת-אוטומטית-הזזה-חד-כנף">
+                            <a className="no-href-css">
+                                <div className="clickable">
+                                    <div className={styles.imageLinkDivToCategorys}>
+                                        <img src="/images/automatic-doors/single-leaf-automatic-door.jpeg" alt="דלת אוטומטית חד כנף" className={styles.imageToCategorys} />
+                                    </div>
+                                    <div className={styles.imageLinkDivText}>
+                                        <h5>דלת הזזה חד-כנף</h5>
+                                        <div className={styles.separatorLinkText} />
+                                        <p>
+                                            דלת אוטומטית מונעת צורך לגעת בידיים בדלת ובכך מונעת העברה לא נחוצה של חיידקים ומזיקים אחרים.
+                                        </p>
+                                    </div>
                                 </div>
-                                <div className={styles.imageLinkDivText}>
-                                    <h5>דלת הזזה חד-כנף</h5>
-                                    <div className={styles.separatorLinkText} />
-                                    <p>
-                                        דלת אוטומטית מונעת צורך לגעת בידיים בדלת ובכך מונעת העברה לא נחוצה של חיידקים ומזיקים אחרים.
-                                    </p>
-                                </div>
-                            </div>
+                            </a>
                         </Link>
                     </Col>
-                    <Col xs={12} md={6} lg={4}>
-                        <Link href="/דלתות-אוטומטיות/דלת-אוטומטית-הזזה-דו-כנף" passHref={true}>
-                            <div className="clickable">
-                                <div className={styles.imageLinkDivToCategorys}>
-                                    <img src="/images/automaticDoors/Automatic-door-2.jpeg" alt="דלת אוטומטית דו כנף" />
+                    <Col data-aos="zoom-in"
+                        data-aos-once={true}
+                        data-aos-duration="1000"
+                        xs={12} md={6} lg={4}>
+                        <Link href="/דלתות-אוטומטיות/דלת-אוטומטית-הזזה-דו-כנף">
+                            <a className="no-href-css">
+                                <div className="clickable">
+                                    <div className={styles.imageLinkDivToCategorys}>
+                                        <img src="/images/automatic-doors/double-leaf-automatic-door.jpg" alt="דלת אוטומטית דו כנף" className={styles.imageToCategorys} />
+                                    </div>
+                                    <div className={styles.imageLinkDivText}>
+                                        <h5>דלת הזזה דו-כנף</h5>
+                                        <div className={styles.separatorLinkText} />
+                                        <p>
+                                            דלת אוטומטית מונעת צורך לגעת בידיים בדלת ובכך מונעת העברה לא נחוצה של חיידקים ומזיקים אחרים.
+                                        </p>
+                                    </div>
                                 </div>
-                                <div className={styles.imageLinkDivText}>
-                                    <h5>דלת הזזה דו-כנף</h5>
-                                    <div className={styles.separatorLinkText} />
-                                    <p>
-                                        דלת אוטומטית מונעת צורך לגעת בידיים בדלת ובכך מונעת העברה לא נחוצה של חיידקים ומזיקים אחרים.
-                                    </p>
-                                </div>
-                            </div>
+                            </a>
                         </Link>
                     </Col>
-                    <Col xs={12} md={6} lg={4}>
-                        <Link href="/דלתות-אוטומטיות/דלת-אוטומטית-טלסקופית" passHref={true}>
-                            <div className="clickable">
-                                <div className={styles.imageLinkDivToCategorys}>
-                                    <img src="/images/automaticDoors/Automatic-door-3.jpeg" alt="דלת אוטומטית טלסקופית" />
+                    <Col data-aos="zoom-in"
+                        data-aos-once={true}
+                        data-aos-duration="1000"
+                        xs={12} md={6} lg={4}>
+                        <Link href="/דלתות-אוטומטיות/דלת-אוטומטית-טלסקופית">
+                            <a className="no-href-css">
+                                <div className="clickable">
+                                    <div className={styles.imageLinkDivToCategorys}>
+                                        <img src="/images/automatic-doors/telescop-automatic-door.jpeg" alt="דלת אוטומטית טלסקופית" className={styles.imageToCategorys} />
+                                    </div>
+                                    <div className={styles.imageLinkDivText}>
+                                        <h5>דלת אוטומטית טלסקופית</h5>
+                                        <div className={styles.separatorLinkText} />
+                                        <p>
+                                            דלת אוטומטית מונעת צורך לגעת בידיים בדלת ובכך מונעת העברה לא נחוצה של חיידקים ומזיקים אחרים.
+                                        </p>
+                                    </div>
                                 </div>
-                                <div className={styles.imageLinkDivText}>
-                                    <h5>דלת אוטומטית טלסקופית</h5>
-                                    <div className={styles.separatorLinkText} />
-                                    <p>
-                                        דלת אוטומטית מונעת צורך לגעת בידיים בדלת ובכך מונעת העברה לא נחוצה של חיידקים ומזיקים אחרים.
-                                    </p>
-                                </div>
-                            </div>
+                            </a>
                         </Link>
                     </Col>
-                    <Col xs={12} md={6} lg={4}>
-                        <Link href="/דלתות-אוטומטיות/דלת-אוטומטית-קורסת" passHref={true}>
-                            <div className="clickable">
-                                <div className={styles.imageLinkDivToCategorys}>
-                                    <img src="/images/automaticDoors/Automatic-door-4.jpeg" alt="דלת אוטומטית קורסת" />
+                    <Col data-aos="zoom-in"
+                        data-aos-once={true}
+                        data-aos-duration="1000"
+                        xs={12} md={6} lg={4}>
+                        <Link href="/דלתות-אוטומטיות/דלת-אוטומטית-קורסת">
+                            <a className="no-href-css">
+                                <div className="clickable">
+                                    <div className={styles.imageLinkDivToCategorys}>
+                                        <img src="/images/automatic-doors/Automatic-door-4.jpg" alt="דלת אוטומטית קורסת" className={styles.imageToCategorys} />
+                                    </div>
+                                    <div className={styles.imageLinkDivText}>
+                                        <h5>דלת הזזה קורסת</h5>
+                                        <div className={styles.separatorLinkText} />
+                                        <p>
+                                            דלת אוטומטית מונעת צורך לגעת בידיים בדלת ובכך מונעת העברה לא נחוצה של חיידקים ומזיקים אחרים.
+                                        </p>
+                                    </div>
                                 </div>
-                                <div className={styles.imageLinkDivText}>
-                                    <h5>דלת הזזה קורסת</h5>
-                                    <div className={styles.separatorLinkText} />
-                                    <p>
-                                        דלת אוטומטית מונעת צורך לגעת בידיים בדלת ובכך מונעת העברה לא נחוצה של חיידקים ומזיקים אחרים.
-                                    </p>
-                                </div>
-                            </div>
+                            </a>
                         </Link>
                     </Col>
                     {/* <Col xs={12} md={6} lg={4} className={styles.displayNoneMobile}>
                     </Col> */}
-                    <Col xs={12} md={6} lg={4}>
-                        <Link href="/דלתות-אוטומטיות/דלת-פנים-אוטומטית" passHref={true}>
-                            <div className="clickable">
-                                <div className={styles.imageLinkDivToCategorys}>
-                                    <img src="/images/automaticDoors/Automatic-door-5.jpeg" alt="דלת פנים אוטומטית" />
+                    <Col data-aos="zoom-in"
+                        data-aos-once={true}
+                        data-aos-duration="1000"
+                        xs={12} md={6} lg={4}>
+                        <Link href="/דלתות-אוטומטיות/דלת-פנים-אוטומטית">
+                            <a className="no-href-css">
+                                <div className="clickable">
+                                    <div className={styles.imageLinkDivToCategorys}>
+                                        <img src="/images/automatic-doors/Automatic-door-5.jpg" alt="דלת פנים אוטומטית" className={styles.imageToCategorys} />
+                                    </div>
+                                    <div className={styles.imageLinkDivText}>
+                                        <h5>דלת הזזה קורסת</h5>
+                                        <div className={styles.separatorLinkText} />
+                                        <p>
+                                            דלת אוטומטית מונעת צורך לגעת בידיים בדלת ובכך מונעת העברה לא נחוצה של חיידקים ומזיקים אחרים.
+                                        </p>
+                                    </div>
                                 </div>
-                                <div className={styles.imageLinkDivText}>
-                                    <h5>דלת פנים אוטומטית</h5>
-                                    <div className={styles.separatorLinkText} />
-                                    <p>
-                                        דלת אוטומטית מונעת צורך לגעת בידיים בדלת ובכך מונעת העברה לא נחוצה של חיידקים ומזיקים אחרים.
-                                    </p>
-                                </div>
-                            </div>
+                            </a>
                         </Link>
                     </Col>
                 </Row>

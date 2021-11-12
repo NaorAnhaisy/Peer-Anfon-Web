@@ -13,7 +13,6 @@ import AOS from 'aos';
 export default function ImagesGallery({ images, altLabel }) {
     useEffect(() => {
         AOS.init({
-            startEvent: 'load',
             once: true
         });
     }, []);
@@ -21,7 +20,7 @@ export default function ImagesGallery({ images, altLabel }) {
     return (
         <div className={styles.gallery}>
             {images?.map((image, i) => {
-                return <div key={i} data-aos="fade-up" data-aos-offset="1500" data-aos-duration="700" className={`${image.strechType ? styles[image.strechType] : ""} ${styles.blackedImageOnHover}`}>
+                return <div key={i} data-aos="fade-up" data-aos-offset="200" data-aos-duration="700" className={`${image.strechType ? styles[image.strechType] : ""} ${styles.blackedImageOnHover}`}>
                     <img src={image.src} alt={`${altLabel} ${i + 1}`} />
                 </div>
             })}
