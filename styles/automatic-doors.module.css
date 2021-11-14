@@ -322,5 +322,6 @@
 @media(max-width: 1076px) {
     .caruselCaption {
         width: 70vw;
+        padding: 10px;
     }
 }

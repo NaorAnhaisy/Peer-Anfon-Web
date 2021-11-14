@@ -19,8 +19,8 @@ const radioOptions = ["הצעת מחיר", "קריאה לתיקון", "חידו�
 
 const useStyles = makeStyles((theme) => ({
     radioGroup: {
-        display: "inline",
-        textAlign: "left",
+        display: "grid",
+        justifyContent: "center"
     },
     radioRoot: {
         marginLeft: "0px",

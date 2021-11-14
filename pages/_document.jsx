@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/next-script-for-ga */
 // eslint-disable-next-line @next/next/no-document-import-in-page
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import PhoneWidget from '../components/PhoneWidget/PhoneWidget';
 
 class MyDocument extends Document {
     render() {
@@ -49,6 +50,7 @@ class MyDocument extends Document {
                 </Head>
                 <body>
                     <Main />
+                    {/* <PhoneWidget /> */}
                     <NextScript />
                 </body>
             </Html>

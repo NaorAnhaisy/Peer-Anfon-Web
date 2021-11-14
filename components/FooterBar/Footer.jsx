@@ -49,7 +49,6 @@ export default function Footer() {
       <Row className={`${styles.footerBarRow} dir-ltr`}>
         <Col sm={12} md={4} className={styles.aboutSite}>
           <span>Peer Anfon © {new Date().getFullYear()} - All Rights Reserve</span>
-          <a href="tel:0723712701" className="no-href-css" style={{ marginLeft: "40px" }}>072-371-2701</a>
         </Col>
         <Col sm={12} md={4} className={styles.socialLinks}>
           <a href="https://www.facebook.com/" aria-label="Facebook פאר אנפון" target="_blank" rel="noopener noreferrer" className={styles.footerHover}>
@@ -60,6 +59,9 @@ export default function Footer() {
           </a>
           <a href="https://www.youtube.com/" aria-label="Youtube פאר אנפון" target="_blank" rel="noopener noreferrer" className={styles.footerHover}>
             <i className="fab fa-youtube" aria-hidden="true" />
+          </a>
+          <a href="tel:0723712701" aria-label="טלפון פאר אנפון" className={styles.footerHover}>
+            <i className="fas fa-phone-square" aria-hidden="true" style={{ transform: "rotate(90deg)" }} />
           </a>
         </Col>
         <Col sm={12} md={4} className={styles.copyrightSpan}>
