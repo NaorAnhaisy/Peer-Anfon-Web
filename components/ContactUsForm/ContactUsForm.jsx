@@ -48,6 +48,7 @@ export default function ContactUs() {
     const [email, setEmail] = useState("");
     const [phoneNumber, setPhoneNumber] = useState("");
     const [askType, setAskType] = useState("");
+    const [filesUploads, setFilesUploads] = useState([]);
     const [message, setMessage] = useState("");
     const [isLoading, setIsLoading] = useState(false);
     const [isSendSucced, setIsSendSucced] = useState(false);
@@ -72,16 +73,15 @@ export default function ContactUs() {
         // };
 
         let contactData = new FormData()
-
-        contactData.set("fullName", fullName);
-        contactData.set("address", address);
-        contactData.set("email", email);
-        contactData.set("phoneNumber", phoneNumber);
-        contactData.set("askType", askType);
-        contactData.set("message", message);
-        // card.GalleryImages && card.GalleryImages.forEach(file => {
-        //     contactData.append("GalleryImages", file);
-        // });
+        contactData.append("fullName", fullName);
+        contactData.append("address", address);
+        contactData.append("email", email);
+        contactData.append("phoneNumber", phoneNumber);
+        contactData.append("askType", askType);
+        contactData.append("message", message);
+        filesUploads.forEach(file => {
+            contactData.append("filesUploads", file);
+        });
 
         for (let pair of contactData.entries()) {
             console.log(pair[0] + ', ' + pair[1]);
@@ -113,7 +113,6 @@ export default function ContactUs() {
                     setReturnedSubMsg(response.data.subMessage);
                 })
                 .catch((err) => {
-                    console.log(err.response)
                     const resMessage =
                         (err.response && err.response.data && err.response.data.message) ||
                         err.message ||
@@ -281,7 +280,7 @@ export default function ContactUs() {
                         </div>
 
                         <div className="form-element form-input">
-                            <FileUploaderMulti />
+                            <FileUploaderMulti onChange={files => setFilesUploads(files)} />
                         </div>
 
                         {isLoading ? (

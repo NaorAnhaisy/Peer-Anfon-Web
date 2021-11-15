@@ -31,7 +31,6 @@
     .contactUsPageDiv {
         flex-wrap: nowrap;
         flex-direction: row;
-        margin-bottom: 15rem;
     }
 
     .contactUsPageImgDiv {
