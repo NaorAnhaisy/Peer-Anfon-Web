@@ -51,24 +51,24 @@ export default function MainNavbar() {
                   <div className={styles.logo}>
                     <Link href="/">
                       <a aria-label="לוגו פאר אנפון" className={styles.navbarBrand}>
-                        {/* <img
+                        <img
                           src="/images/companyLogo.png"
                           className="undragablle-image"
                           alt="פאר אנפון"
-                        /> */}
-                        <img
+                        />
+                        {/* <img
                           src="/images/‏‏company-logo-symbol.png"
                           className="undragablle-image"
                           alt="פאר אנפון"
                         />
-                        {/* ${styles.shine}  */}
                         <div className={` ${styles.navbarLogoTextDiv}`}>
                           <span className={`${styles.navbarLogoText}`}>
                             <span>פאר</span>
                             <span>אנפון</span>
                             <span>תעשיות בע&quot;מ</span>
                           </span>
-                        </div>
+                        </div> */}
+                        {/* ${styles.shine}  */}
                       </a>
                     </Link>
                   </div>

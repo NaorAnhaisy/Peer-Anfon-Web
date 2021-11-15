@@ -300,11 +300,13 @@
 }
 
 .start-style img {
-    height: 60px !important;
+    height: 70px !important;
+    top: 5px;
 }
 
 .scroll-on img {
-    height: 50px !important;
+    height: 60px !important;
+    top: 5px;
 }
 
 .scroll-on {
