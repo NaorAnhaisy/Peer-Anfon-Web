@@ -7,7 +7,6 @@ import CustomersSlider from '../components/CustomersSlider/CustomersSlider';
 import AOS from 'aos';
 import CountUp from 'react-countup';
 import VisibilitySensor from "react-visibility-sensor";
-import PhoneWidget from '../components/PhoneWidget/PhoneWidget';
 
 const NUMBER_OF_USERS = 100000;
 export default function Home() {
@@ -20,7 +19,6 @@ export default function Home() {
 
   return (
     <main>
-      <PhoneWidget />
       <div className={"main " + styles.homeMainDiv}>
         <div className={styles.homeVideoTitleContainer}>
           <video className={styles.homeStartVideo} autoPlay loop playsInline muted id="home-video">

@@ -231,3 +231,9 @@
     -o-transform:rotate(85deg);
   }
 }
+
+@media (min-width: 1400px) {
+    .displayOnlyOnMobile {
+        display: none !important;
+    }
+}

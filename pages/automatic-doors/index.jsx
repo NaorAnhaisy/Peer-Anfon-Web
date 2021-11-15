@@ -89,7 +89,7 @@ export default function AutomaticDoors() {
                         <div className={styles.content}>
                             <div className={styles.contentInner}>
                                 <div className={styles.title}>
-                                    <div className={`${styles.titleInner} ${styles.mainTitle}`}>דלתות אוטומטיות</div>
+                                    <div className={`${styles.titleInner} ${styles.mainTitle} ${styles.firstTitle}`}>דלתות אוטומטיות</div>
                                 </div>
                                 <div className={styles.contentText}>
                                     <div className={`${styles.contentTextInner} ${styles.mainContextInner}`}>
@@ -121,11 +121,11 @@ export default function AutomaticDoors() {
                         <div className={styles.content}>
                             <div className={styles.contentInner}>
                                 <div className={styles.title}>
-                                    <div className={`${styles.titleInner} ${styles.subTitle}`}>יתרונות בולטים בבחירת דלתות אוטומטיות</div>
+                                    <div className={`${styles.titleInner} ${styles.subTitle} ${styles.secondTitle}`}>יתרונות בולטים בבחירת דלתות אוטומטיות</div>
                                 </div>
                                 <div className={styles.contentText}>
                                     <div className={`${styles.contentTextInner} ${styles.subContentInner} dir-rtl`}>
-                                        <div className={`mt-5 ${styles.ulContainer1}`}>
+                                        <div className={`mt-2 ${styles.ulContainer1}`}>
                                             <ul>
                                                 <li>
                                                     השימוש בדלת אוטומטית מאפשרת נגישות לנכים ומקלה על בעלי מוגבלויות.
@@ -161,7 +161,7 @@ export default function AutomaticDoors() {
                                                     קיימת אפשרות לעיצוב על פי דרישות הלקוח.
                                                 </li>
                                             </ul>
-                                            <p className="mt-5 p-4" style={{ borderTop: '1px solid #b1a44c' }}>
+                                            <p className="mt-5 p-4" style={{ borderTop: '1px solid #b1a44c', textAlign: 'right' }}>
                                                 פאר אנפון נותנת יעוץ והתקנה לבנייני משרדים, חברות ובתים משותפים המעוניינים בפתרון מעולה ונח שלדלתות כניסה לבניין מהדור החדש – דלתות חשמליות ואוטומטיות מעוצבות ובצבע לפי בחירתכם.
                                             </p>
                                         </div>
@@ -186,7 +186,7 @@ export default function AutomaticDoors() {
                         <div className={styles.content}>
                             <div className={styles.contentInner}>
                                 <div className={styles.title}>
-                                    <div className={`${styles.titleInner} ${styles.subTitle}`}>דלתות חשמליות</div>
+                                    <div className={`${styles.titleInner} ${styles.subTitle} ${styles.thirdTitle}`}>דלתות חשמליות</div>
                                 </div>
                                 <div className={styles.contentText}>
                                     <div className={`${styles.contentTextInner} ${styles.subContentInner}`}>
@@ -557,8 +557,6 @@ export default function AutomaticDoors() {
                             </a>
                         </Link>
                     </Col>
-                    {/* <Col xs={12} md={6} lg={4} className={styles.displayNoneMobile}>
-                    </Col> */}
                     <Col data-aos="zoom-in"
                         data-aos-once={true}
                         data-aos-duration="1000"
