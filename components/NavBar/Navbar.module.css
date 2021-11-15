@@ -143,6 +143,13 @@
     }
 }
 
+@media (max-width: 1400px) {
+    .phoneText {
+        text-align: center;
+        margin-right: 0;
+    }
+}
+
 .phoneText {
     margin-right: 100px;
     direction: ltr;
