@@ -3,6 +3,7 @@ import getConfig from 'next/config'
 import styles from "./ContactUsForm.module.css";
 import AOS from "aos";
 import { makeStyles } from "@material-ui/core/styles";
+import { Form } from 'react-bootstrap';
 import {
     FormLabel,
     FormControl,
@@ -59,18 +60,32 @@ export default function ContactUs() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-
         setIsLoading(true);
-        const contactData = {
-            fullName: fullName,
-            address: address,
-            email: email,
-            phoneNumber: phoneNumber,
-            askType: askType,
-            message: message,
-        };
 
-        console.log(contactData);
+        // const contactData = {
+        //     fullName: fullName,
+        //     address: address,
+        //     email: email,
+        //     phoneNumber: phoneNumber,
+        //     askType: askType,
+        //     message: message,
+        // };
+
+        let contactData = new FormData()
+
+        contactData.set("fullName", fullName);
+        contactData.set("address", address);
+        contactData.set("email", email);
+        contactData.set("phoneNumber", phoneNumber);
+        contactData.set("askType", askType);
+        contactData.set("message", message);
+        // card.GalleryImages && card.GalleryImages.forEach(file => {
+        //     contactData.append("GalleryImages", file);
+        // });
+
+        for (let pair of contactData.entries()) {
+            console.log(pair[0] + ', ' + pair[1]);
+        }
 
         // setTimeout(() => {
         //     setIsLoading(false);
@@ -83,9 +98,14 @@ export default function ContactUs() {
         //     );
         // }, 2000);
 
+
         try {
-            axios
-                .post(publicRuntimeConfig.SERVER_URL + "/mailer/contact-us", contactData)
+            axios({
+                method: 'post',
+                url: publicRuntimeConfig.SERVER_URL + "/mailer/contactUs",
+                data: contactData,
+                headers: { 'Content-Type': 'multipart/form-data' }
+            })
                 .then((response) => {
                     setIsLoading(false);
                     setIsSendSucced(true);
@@ -93,6 +113,7 @@ export default function ContactUs() {
                     setReturnedSubMsg(response.data.subMessage);
                 })
                 .catch((err) => {
+                    console.log(err.response)
                     const resMessage =
                         (err.response && err.response.data && err.response.data.message) ||
                         err.message ||
@@ -137,7 +158,7 @@ export default function ContactUs() {
                         )}
                     </p>
                 ) : (
-                    <form onSubmit={handleSubmit}>
+                    <Form onSubmit={handleSubmit} encType="multipart/form-data">
                         <fieldset className={styles.contactUsFieldset}>
                             <div
                                 className={`${styles.contactUsFormInput} form-element form-input`}
@@ -288,7 +309,7 @@ export default function ContactUs() {
                                 )}
                             </>
                         )}
-                    </form>
+                    </Form>
                 )}
             </div>
         </div>
