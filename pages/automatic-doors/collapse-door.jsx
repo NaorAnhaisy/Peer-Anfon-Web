@@ -88,7 +88,7 @@ export default function CollapseDoor() {
                                 data-aos="fade-zoom-in"
                                 data-aos-duration="700"
                                 src="/images/Doors/LUX/example2.jpg"
-                                alt=""
+                                alt="דלת אוטומטית קורסת"
                             />
                             <img
                                 style={{ height: '50%' }}
@@ -96,7 +96,7 @@ export default function CollapseDoor() {
                                 data-aos="fade-zoom-in"
                                 data-aos-duration="700"
                                 src="/images/Doors/LUX/example3.jpg"
-                                alt=""
+                                alt="דלת אוטומטית קורסת"
                             />
                         </Col>
                         <Col sm={12} lg={6}>
@@ -106,7 +106,7 @@ export default function CollapseDoor() {
                                 data-aos="fade-zoom-in"
                                 data-aos-duration="700"
                                 src="/images/Doors/LUX/example4.jpg"
-                                alt=""
+                                alt="דלת אוטומטית קורסת"
                             />
                         </Col>
                     </Row>

@@ -51,16 +51,18 @@ export default function MainNavbar() {
                   <div className={styles.logo}>
                     <Link href="/">
                       <a aria-label="לוגו פאר אנפון" className={styles.navbarBrand}>
+                        {/* <img
+                          src="/images/companyLogo.png"
+                          className="undragablle-image"
+                          alt="פאר אנפון"
+                        /> */}
                         <img
                           src="/images/‏‏company-logo-symbol.png"
                           className="undragablle-image"
-                          width={10}
-                          height={3}
-                          layout="responsive"
-                          alt=""
+                          alt="פאר אנפון"
                         />
+                        {/* ${styles.shine}  */}
                         <div className={` ${styles.navbarLogoTextDiv}`}>
-                          {/* ${styles.shine}  */}
                           <span className={`${styles.navbarLogoText}`}>
                             <span>פאר</span>
                             <span>אנפון</span>
@@ -173,7 +175,7 @@ export default function MainNavbar() {
                           onMouseEnter={() => setShowEnterDoorsDropdown(true)}
                         >
                           <NavDropdown.Item className={styles.displayOnlyOnMobile} href="/דלתות-כניסה">
-                          דלתות כניסה
+                            דלתות כניסה
                           </NavDropdown.Item>
                           <NavDropdown.Item href="/דלתות-כניסה/דלתות-כניסה-אלומיניום">
                             דלתות כניסה אלומיניום

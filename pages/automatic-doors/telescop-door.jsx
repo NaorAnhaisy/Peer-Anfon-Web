@@ -98,7 +98,7 @@ export default function TelescopDoor() {
                                 data-aos="fade-zoom-in"
                                 data-aos-duration="700"
                                 src="/images/automatic-doors/telescop-door/telescop-2.jpeg"
-                                alt=""
+                                alt="דלת טלסקופית"
                             />
                         </Col>
                         <Col sm={12} lg={6}>
@@ -108,7 +108,7 @@ export default function TelescopDoor() {
                                 data-aos="fade-zoom-in"
                                 data-aos-duration="700"
                                 src="/images/automatic-doors/telescop-door/telescop-1.jpeg"
-                                alt=""
+                                alt="דלת טלסקופית"
                             />
                         </Col>
                     </Row>
@@ -119,7 +119,7 @@ export default function TelescopDoor() {
                             data-aos="fade-zoom-in"
                             data-aos-duration="700"
                             src="/images/automatic-doors/telescop-door/telescop-3.jpeg"
-                            alt=""
+                            alt="דלת טלסקופית"
                         />
                     </Row>
                 </div>

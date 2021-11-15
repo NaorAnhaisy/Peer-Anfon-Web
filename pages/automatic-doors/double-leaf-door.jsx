@@ -99,7 +99,7 @@ export default function DoubleLeafDoor() {
                                     data-aos="fade-zoom-in"
                                     data-aos-duration="700"
                                     src="/images/Doors/LUX/example2.jpg"
-                                    alt=""
+                                    alt="דלת אוטומטית דו כנף"
                                 />
                                 <img
                                     style={{ height: '50%' }}
@@ -107,7 +107,7 @@ export default function DoubleLeafDoor() {
                                     data-aos="fade-zoom-in"
                                     data-aos-duration="700"
                                     src="/images/Doors/LUX/example3.jpg"
-                                    alt=""
+                                    alt="דלת אוטומטית דו כנף"
                                 />
                             </Col>
                             <Col sm={12} lg={6}>
@@ -117,7 +117,7 @@ export default function DoubleLeafDoor() {
                                     data-aos="fade-zoom-in"
                                     data-aos-duration="700"
                                     src="/images/Doors/LUX/example4.jpg"
-                                    alt=""
+                                    alt="דלת אוטומטית דו כנף"
                                 />
                             </Col>
                         </Row>
@@ -128,7 +128,7 @@ export default function DoubleLeafDoor() {
                                 data-aos="fade-zoom-in"
                                 data-aos-duration="700"
                                 src="/images/Doors/LUX/example2.jpg"
-                                alt=""
+                                alt="דלת אוטומטית דו כנף"
                             />
                         </Row>
                         <Row>
@@ -139,7 +139,7 @@ export default function DoubleLeafDoor() {
                                     data-aos="fade-zoom-in"
                                     data-aos-duration="700"
                                     src="/images/Doors/LUX/example4.jpg"
-                                    alt=""
+                                    alt="דלת אוטומטית דו כנף"
                                 />
                                 <img
                                     style={{ height: '100%' }}
@@ -147,7 +147,7 @@ export default function DoubleLeafDoor() {
                                     data-aos="fade-zoom-in"
                                     data-aos-duration="700"
                                     src="/images/Doors/LUX/example4.jpg"
-                                    alt=""
+                                    alt="דלת אוטומטית דו כנף"
                                 />
                             </Col>
                             <Col sm={12} lg={6}>
@@ -157,7 +157,7 @@ export default function DoubleLeafDoor() {
                                     data-aos="fade-zoom-in"
                                     data-aos-duration="700"
                                     src="/images/Doors/LUX/example1.jpg"
-                                    alt=""
+                                    alt="דלת אוטומטית דו כנף"
                                 />
                                 <img
                                     style={{ height: '35%' }}
@@ -165,7 +165,7 @@ export default function DoubleLeafDoor() {
                                     data-aos="fade-zoom-in"
                                     data-aos-duration="700"
                                     src="/images/Doors/LUX/example2.jpg"
-                                    alt=""
+                                    alt="דלת אוטומטית דו כנף"
                                 />
                                 <img
                                     style={{ height: '35%' }}
@@ -173,7 +173,7 @@ export default function DoubleLeafDoor() {
                                     data-aos="fade-zoom-in"
                                     data-aos-duration="700"
                                     src="/images/Doors/LUX/example3.jpg"
-                                    alt=""
+                                    alt="דלת אוטומטית דו כנף"
                                 />
                             </Col>
                         </Row>
