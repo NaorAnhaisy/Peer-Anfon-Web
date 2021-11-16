@@ -9,7 +9,7 @@
 }
 
 .subTitleDiv {
-    margin-top: 5rem;
+    margin-top: 7rem;
 }
 
 .subTitleDiv h3 {
@@ -59,6 +59,13 @@
     grid-auto-rows: 230px;
 }
 
+.nerostaGallery {
+    padding: 10px;
+    max-width: 1500px;
+    margin: 0 auto;
+    background: #f2f2f2;
+}
+
 .hoverImgContainer {
     position: relative;
 }
@@ -72,41 +79,42 @@
 }
 
 .hoverImgMiddle {
-    transition: .5s ease;
     opacity: 0;
     position: absolute;
     top: 50%;
     left: 50%;
+    text-align: center;
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -ms-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    text-align: center;
-    -webkit-transition: .5s ease;
-    -moz-transition: .5s ease;
-    -ms-transition: .5s ease;
-    -o-transition: .5s ease;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
 }
 
 .hoverImgText {
-    background-color: #04AA6D;
+    background-color: #b3a073;
     color: white;
     font-size: 16px;
+    font-family: monospace;
     padding: 16px 32px;
 }
 
-.gallery img {
+.gallery img, .nerostaGallery img {
     opacity: 1;
     display: block;
     height: 100%;
     width: 100%;
-    transition: .5s ease;
     background: white;
     object-fit: contain;
     backface-visibility: hidden;
-    -webkit-transition: .5s ease;
-    -moz-transition: .5s ease;
-    -ms-transition: .5s ease;
-    -o-transition: .5s ease;
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -ms-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
 }

@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import { useRouter } from "next/router";
-import Link from 'next/link';
 import { Col, Container, Row } from "react-bootstrap";
 import styles from "../../styles/automatic-door-model.module.css"
 import { useEffect } from "react";
 import AOS from 'aos';
+import ContactTeam from '../../components/ContactTeam/ContactTeam';
 
 export default function InsideDoor() {
     const router = useRouter();
@@ -100,14 +100,7 @@ export default function InsideDoor() {
                     </Row>
                 </div>
             </Container>
-            <div className={styles.doorSelectedContactUsDiv}>
-                <h1>שמרו על קשר</h1>
-                <div className="separator"></div>
-                <p>
-                    לקבלת הצעת מחיר, צרו עימנו קשר.
-                </p>
-                <Link href="/contact-us">דברו עם הצוות</Link>
-            </div>
+            <ContactTeam />
         </div>
     );
 }
