@@ -8,6 +8,22 @@
     font-size: 50px;
 }
 
+.subTitleDiv {
+    margin-top: 5rem;
+}
+
+.subTitleDiv h3 {
+    color: #b2a074;
+    font-weight: 100;
+    font-size: 35px;
+}
+
+.subTitleDiv h5 {
+    color: #353535;
+    font-weight: 100;
+    font-size: 15px;
+}
+
 .titleIntercomImg {
     width: 100%;
     height: 400px;
@@ -30,4 +46,67 @@
     .reverseOnLgScreen {
         flex-direction: column-reverse;
     }
+}
+
+.gallery {
+    padding: 10px;
+    max-width: 1500px;
+    margin: 0 auto;
+    background: #f2f2f2;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-auto-rows: 230px;
+}
+
+.hoverImgContainer {
+    position: relative;
+}
+
+.hoverImgContainer:hover img {
+    opacity: 0.3;
+}
+
+.hoverImgContainer:hover .hoverImgMiddle {
+    opacity: 1;
+}
+
+.hoverImgMiddle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.hoverImgText {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.gallery img {
+    opacity: 1;
+    display: block;
+    height: 100%;
+    width: 100%;
+    transition: .5s ease;
+    background: white;
+    object-fit: contain;
+    backface-visibility: hidden;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
 }
