@@ -218,6 +218,7 @@
 @media (max-width: 522px) {
     .contentWrapper {
         grid-template-columns: 1fr 70fr;
+        padding-left: 0 !important;
     }
 }
 
@@ -307,7 +308,7 @@
 }
 
 .caruselCaption {
-    color: black;
+    color: #2b2b2b;
     background: #ffffffa3;
     margin: auto;
     width: 800px;

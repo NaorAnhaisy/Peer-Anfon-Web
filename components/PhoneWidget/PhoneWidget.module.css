@@ -14,8 +14,8 @@
 .coccocAloPhCircle {
     width: 100px;
     height: 100px;
-    top: 105px;
-    left: 105px;
+    top: 95px;
+    left: 95px;
     position: absolute;
     background-color: transparent;
     -webkit-border-radius: 100%;
@@ -63,8 +63,8 @@
 .coccocAloPhCircleFill {
     width: 70px;
     height: 70px;
-    top: 120px;
-    left: 120px;
+    top: 110px;
+    left: 110px;
     z-index: 601;
     position: absolute;
     background-color: #000000;
@@ -87,8 +87,8 @@
 .coccocAloPhImgCircle {
     width: 45px;
     height: 45px;
-    top: 133px;
-    left: 133px;
+    top: 123px;
+    left: 123px;
     position: absolute;
     text-align: -webkit-center;
     align-content: center;

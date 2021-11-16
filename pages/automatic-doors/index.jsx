@@ -544,7 +544,7 @@ export default function AutomaticDoors() {
                             <a className="no-href-css">
                                 <div className="clickable">
                                     <div className={styles.imageLinkDivToCategorys}>
-                                        <img src="/images/automatic-doors/Automatic-door-4.jpg" alt="דלת אוטומטית קורסת" className={styles.imageToCategorys} />
+                                        <img src="/images/automatic-doors/collapse-automatic-door.jpeg" alt="דלת אוטומטית קורסת" className={styles.imageToCategorys} />
                                     </div>
                                     <div className={styles.imageLinkDivText}>
                                         <h5>דלת הזזה קורסת</h5>
@@ -565,10 +565,10 @@ export default function AutomaticDoors() {
                             <a className="no-href-css">
                                 <div className="clickable">
                                     <div className={styles.imageLinkDivToCategorys}>
-                                        <img src="/images/automatic-doors/Automatic-door-5.jpg" alt="דלת פנים אוטומטית" className={styles.imageToCategorys} />
+                                        <img src="/images/automatic-doors/inside-automaic-door.jpg" alt="דלת פנים אוטומטית" className={styles.imageToCategorys} />
                                     </div>
                                     <div className={styles.imageLinkDivText}>
-                                        <h5>דלת הזזה קורסת</h5>
+                                        <h5>דלת פנים אוטומטית</h5>
                                         <div className={styles.separatorLinkText} />
                                         <p>
                                             דלת אוטומטית מונעת צורך לגעת בידיים בדלת ובכך מונעת העברה לא נחוצה של חיידקים ומזיקים אחרים.

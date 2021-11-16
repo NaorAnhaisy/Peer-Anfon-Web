@@ -3,7 +3,6 @@ import getConfig from 'next/config'
 import styles from "./ContactUsForm.module.css";
 import AOS from "aos";
 import { makeStyles } from "@material-ui/core/styles";
-import { Form } from 'react-bootstrap';
 import {
     FormLabel,
     FormControl,
@@ -157,7 +156,7 @@ export default function ContactUs() {
                         )}
                     </p>
                 ) : (
-                    <Form onSubmit={handleSubmit} encType="multipart/form-data">
+                    <form onSubmit={handleSubmit} encType="multipart/form-data">
                         <fieldset className={styles.contactUsFieldset}>
                             <div
                                 className={`${styles.contactUsFormInput} form-element form-input`}
@@ -308,7 +307,7 @@ export default function ContactUs() {
                                 )}
                             </>
                         )}
-                    </Form>
+                    </form>
                 )}
             </div>
         </div>

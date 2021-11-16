@@ -8,7 +8,6 @@ export default function MainNavbar() {
   const [showAutoDoorsDropdown, setShowAutoDoorsDropdown] = useState(false);
   const [showMailBoxDropdown, setShowMailBoxDropdown] = useState(false);
   const [showEnterDoorsDropdown, setShowEnterDoorsDropdown] = useState(false);
-  const [showInterkumDropdown, setShowInterkumDropdown] = useState(false);
   const [navbarScrolledCls, setNavbarScrolledCls] = useState("start-style");
 
   const handleWindowScrolled = () => {
@@ -186,19 +185,11 @@ export default function MainNavbar() {
                         </NavDropdown>
                       </li>
 
-                      <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4"
-                        onMouseLeave={() => setShowInterkumDropdown(false)}>
-                        <NavDropdown
-                          className="dropdown-toggle"
-                          title="מערכות אינטרקום"
-                          onToggle={() => toogleTo("/intercom")}
-                          show={showInterkumDropdown}
-                          onMouseEnter={() => setShowInterkumDropdown(true)}
-                        >
-                          <NavDropdown.Item href="/intercom">
-                            עמודי נירוסטה לאינטרקום
-                          </NavDropdown.Item>
-                        </NavDropdown>
+
+                      <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                        <Link className="nav-link" href="/intercom">
+                          מערכות אינטרקום
+                        </Link>
                       </li>
 
                       <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
