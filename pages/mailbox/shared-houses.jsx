@@ -48,7 +48,7 @@ export default function SharedHouses() {
                         data-aos-offset="200"
                         data-aos-duration="700"
                         className={intercomStyles.hoverImgContainer}>
-                        <img src={image.src} alt={`תיבת דואר לבתים משותפים ${index + 1}`} style={{ height: "300px", width: "100%", objectFit: "cover" }} />
+                        <img src={image.src} alt={`תיבת דואר לבתים משותפים ${image.text}`} style={{ height: "300px", width: "100%", objectFit: "cover" }} />
                         <div className={intercomStyles.hoverImgMiddle}>
                             <div className={intercomStyles.hoverImgText}>{image.text}</div>
                         </div>

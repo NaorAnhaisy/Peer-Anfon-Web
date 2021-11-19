@@ -62,7 +62,7 @@ export default function PrivateHouses() {
                         data-aos-duration="700"
                         className={intercomStyles.hoverImgContainer}>
                         <img src={image.src}
-                            alt={`תיבת דואר לבתים משותפים ${index + 1}`}
+                            alt={`תיבת דואר לבתים פרטיים ${image.text}`}
                             style={{ height: "auto", maxHeight: "500px", minHeight: "300px", width: "100%", objectFit: "cover" }} />
                         <div className={intercomStyles.hoverImgMiddle}>
                             <div className={intercomStyles.hoverImgText}>{image.text}</div>
@@ -75,7 +75,7 @@ export default function PrivateHouses() {
 
     return (
         <div>
-            <img src="/images/automatic-doors/collapse-automatic-door.jpeg" className={styles.doorSelectedMainDiv} alt="תיבות דואר לבתים משותפים" />
+            <img src="/images/automatic-doors/collapse-automatic-door.jpeg" className={styles.doorSelectedMainDiv} alt="תיבות דואר לבתים פרטיים" />
             <Container className={styles.doorSelectedContainer}>
                 <div>
                     <Row className={styles.doorSelectedTitleRow}>

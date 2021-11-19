@@ -7,26 +7,26 @@ import Link from "next/link";
 import VisibilitySensor from "react-visibility-sensor";
 import AOS from 'aos';
 
-const images = [
-    { src: "/images/Doors/LUX/example1.jpg" },
-    { src: "/images/Doors/LUX/example2.jpg", strechType: "vStrech" },
-    { src: "/images/Doors/LUX/example3.jpg", strechType: "hStrech" },
-    { src: "/images/Doors/LUX/example4.jpg" },
-    { src: "/images/Doors/LUX/example1.jpg" },
-    { src: "/images/Doors/LUX/example2.jpg", strechType: "vStrech" },
-    { src: "/images/Doors/LUX/example3.jpg", strechType: "bigStrech" },
-    { src: "/images/Doors/LUX/example4.jpg" },
-    { src: "/images/Doors/LUX/example1.jpg", strechType: "hStrech" },
-    { src: "/images/Doors/LUX/example2.jpg" },
-    { src: "/images/Doors/LUX/example3.jpg" },
-    { src: "/images/Doors/LUX/example4.jpg" },
-    { src: "/images/Doors/LUX/example1.jpg", strechType: "vStrech" },
-    { src: "/images/Doors/LUX/example2.jpg" },
-    { src: "/images/Doors/LUX/example3.jpg", strechType: "bigStrech" },
-    { src: "/images/Doors/LUX/example4.jpg" },
-    { src: "/images/Doors/LUX/example1.jpg", strechType: "hStrech" },
-    { src: "/images/Doors/LUX/example2.jpg" },
-];
+// const images = [
+//     { src: "/images/Doors/LUX/example1.jpg" },
+//     { src: "/images/Doors/LUX/example2.jpg", strechType: "vStrech" },
+//     { src: "/images/Doors/LUX/example3.jpg", strechType: "hStrech" },
+//     { src: "/images/Doors/LUX/example4.jpg" },
+//     { src: "/images/Doors/LUX/example1.jpg" },
+//     { src: "/images/Doors/LUX/example2.jpg", strechType: "vStrech" },
+//     { src: "/images/Doors/LUX/example3.jpg", strechType: "bigStrech" },
+//     { src: "/images/Doors/LUX/example4.jpg" },
+//     { src: "/images/Doors/LUX/example1.jpg", strechType: "hStrech" },
+//     { src: "/images/Doors/LUX/example2.jpg" },
+//     { src: "/images/Doors/LUX/example3.jpg" },
+//     { src: "/images/Doors/LUX/example4.jpg" },
+//     { src: "/images/Doors/LUX/example1.jpg", strechType: "vStrech" },
+//     { src: "/images/Doors/LUX/example2.jpg" },
+//     { src: "/images/Doors/LUX/example3.jpg", strechType: "bigStrech" },
+//     { src: "/images/Doors/LUX/example4.jpg" },
+//     { src: "/images/Doors/LUX/example1.jpg", strechType: "hStrech" },
+//     { src: "/images/Doors/LUX/example2.jpg" },
+// ];
 
 export default function MailboxRooms() {
     useEffect(() => {
@@ -35,7 +35,6 @@ export default function MailboxRooms() {
 
     const [isFirstContentShowed, setIsFirstContentShowed] = useState(false);
     const [isSecondContentShowed, setIsSecondContentShowed] = useState(false);
-    const [isThirdContentShowed, setIsThirdContentShowed] = useState(false);
 
     return (
         <div>
@@ -50,7 +49,7 @@ export default function MailboxRooms() {
                     <img
                         className={styles.caruselImage}
                         src="/images/Doors/door-1.jpeg"
-                        alt="First slide"
+                        alt="תיבות דואר"
                     />
                     <Carousel.Caption className={styles.caruselCaption}>
                         <h3>עיצוב ססגוני</h3>
@@ -61,7 +60,7 @@ export default function MailboxRooms() {
                     <img
                         className={styles.caruselImage}
                         src="/images/Doors/door-2.jpeg"
-                        alt="First slide"
+                        alt="תיבות דואר"
                     />
                     <Carousel.Caption className={styles.caruselCaption}>
                         <h3>עיצוב ססגוני</h3>
@@ -72,7 +71,7 @@ export default function MailboxRooms() {
                     <img
                         className={styles.caruselImage}
                         src="/images/Doors/door-1.jpeg"
-                        alt="Second slide"
+                        alt="תיבות דואר"
                     />
                     <Carousel.Caption className={styles.caruselCaption}>
                         <h3>לפי הדרישה שלך</h3>
@@ -83,7 +82,7 @@ export default function MailboxRooms() {
                     <img
                         className={styles.caruselImage}
                         src="/images/Doors/door-5.jpeg"
-                        alt="Third slide"
+                        alt="תיבות דואר"
                     />
                     <Carousel.Caption className={styles.caruselCaption}>
                         <h3>מתאים לארגונים</h3>
@@ -100,7 +99,7 @@ export default function MailboxRooms() {
                         <div className={styles.content}>
                             <div className={styles.contentInner}>
                                 <div className={styles.title}>
-                                    <div className={`${styles.titleInner} ${styles.mainTitle} ${styles.firstTitle}`}>דלתות אוטומטיות</div>
+                                    <div className={`${styles.titleInner} ${styles.mainTitle} ${styles.firstTitle}`}>תיבות דואר</div>
                                 </div>
                                 <div className={styles.contentText}>
                                     <div className={`${styles.contentTextInner} ${styles.mainContextInner}`}>
@@ -132,7 +131,7 @@ export default function MailboxRooms() {
                         <div className={styles.content}>
                             <div className={styles.contentInner}>
                                 <div className={styles.title}>
-                                    <div className={`${styles.titleInner} ${styles.subTitle} ${styles.secondTitle}`}>יתרונות בולטים בבחירת דלתות אוטומטיות</div>
+                                    <div className={`${styles.titleInner} ${styles.subTitle} ${styles.secondTitle}`}>יתרונות בולטים בבחירת תיבות דואר</div>
                                 </div>
                                 <div className={styles.contentText}>
                                     <div className={`${styles.contentTextInner} ${styles.subContentInner} dir-rtl`}>
@@ -201,7 +200,7 @@ export default function MailboxRooms() {
                             <a className="no-href-css">
                                 <div className="clickable">
                                     <div className={styles.imageLinkDivToCategorys}>
-                                        <img src="/images/automatic-doors/single-leaf-automatic-door.jpeg" alt="דלת אוטומטית חד כנף" className={styles.imageToCategorys} />
+                                        <img src="/images/automatic-doors/single-leaf-automatic-door.jpeg" alt="תיבות דואר לבתים משותפים" className={styles.imageToCategorys} />
                                     </div>
                                     <div className={styles.imageLinkDivText}>
                                         <h5>תיבות דואר לבתים משותפים</h5>
@@ -222,7 +221,7 @@ export default function MailboxRooms() {
                             <a className="no-href-css">
                                 <div className="clickable">
                                     <div className={styles.imageLinkDivToCategorys}>
-                                        <img src="/images/automatic-doors/double-leaf-automatic-door.jpg" alt="דלת אוטומטית דו כנף" className={styles.imageToCategorys} />
+                                        <img src="/images/automatic-doors/double-leaf-automatic-door.jpg" alt="תיבות דואר למוסדות" className={styles.imageToCategorys} />
                                     </div>
                                     <div className={styles.imageLinkDivText}>
                                         <h5>תיבות דואר למוסדות</h5>
@@ -243,7 +242,7 @@ export default function MailboxRooms() {
                             <a className="no-href-css">
                                 <div className="clickable">
                                     <div className={styles.imageLinkDivToCategorys}>
-                                        <img src="/images/automatic-doors/telescop-automatic-door.jpeg" alt="דלת אוטומטית טלסקופית" className={styles.imageToCategorys} />
+                                        <img src="/images/automatic-doors/telescop-automatic-door.jpeg" alt="תיבות דואר לבתים פרטיים" className={styles.imageToCategorys} />
                                     </div>
                                     <div className={styles.imageLinkDivText}>
                                         <h5>תיבות דואר לבתים פרטיים</h5>
@@ -264,7 +263,7 @@ export default function MailboxRooms() {
                             <a className="no-href-css">
                                 <div className="clickable">
                                     <div className={styles.imageLinkDivToCategorys}>
-                                        <img src="/images/automatic-doors/collapse-automatic-door.jpeg" alt="דלת אוטומטית קורסת" className={styles.imageToCategorys} />
+                                        <img src="/images/automatic-doors/collapse-automatic-door.jpeg" alt="חדרי תיבות דואר" className={styles.imageToCategorys} />
                                     </div>
                                     <div className={styles.imageLinkDivText}>
                                         <h5>חדרי תיבות דואר</h5>
@@ -285,7 +284,7 @@ export default function MailboxRooms() {
                             <a className="no-href-css">
                                 <div className="clickable">
                                     <div className={styles.imageLinkDivToCategorys}>
-                                        <img src="/images/automatic-doors/inside-automaic-door.jpg" alt="דלת פנים אוטומטית" className={styles.imageToCategorys} />
+                                        <img src="/images/automatic-doors/inside-automaic-door.jpg" alt="ארון הפקדה לטלפונים סלולריים" className={styles.imageToCategorys} />
                                     </div>
                                     <div className={styles.imageLinkDivText}>
                                         <h5>ארון הפקדה לטלפונים סלולריים</h5>
@@ -300,9 +299,9 @@ export default function MailboxRooms() {
                     </Col>
                 </Row>
 
-                <div style={{ marginTop: "100px" }}>
+                {/* <div style={{ marginTop: "100px" }}>
                     <ImagesGallery images={images} altLabel={"דלתות אוטומטיות"} />
-                </div>
+                </div> */}
             </div>
         </div >
     );
