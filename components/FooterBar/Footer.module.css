@@ -108,7 +108,7 @@
 }
 
 .footerHover:hover {
-  color: #b2a074;
+  color: var(--gold-secondary);
 }
 
 .backToTopBtn {
@@ -125,5 +125,5 @@
 }
 
 .backToTopBtn:hover {
-  background-color: #b2a074;
+  background-color: var(--gold-secondary);
 }

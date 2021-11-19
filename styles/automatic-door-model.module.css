@@ -9,6 +9,7 @@
   width: 100%;
   height: auto;
   min-height: 300px;
+  max-height: 80vh;
   object-fit: cover;
 }
 
@@ -80,7 +81,7 @@
 }
 
 .animatedTitle {
-  color: #d7c293;
+  color: var(--gold-primary);
   position: relative;
   height: 10rem;
 }
@@ -159,6 +160,11 @@
   -o-transform: translate(0, -100%);
 }
 
+.arrowBackIconWrapper {
+  position: relative;
+  cursor: pointer;
+}
+
 .arrowBackIcon {
   cursor: pointer;
   width: 20px;
@@ -179,7 +185,7 @@
   height: 106%;
   border-width: 4px 4px 0 0;
   border-style: solid;
-  border-color: #e9c074;
+  border-color: var(--gold-primary);
   transition: .2s ease;
   display: block;
   transform-origin: 100% 0;
@@ -198,7 +204,7 @@
   height: 100%;
   border-width: 0 3px 0 0;
   border-style: solid;
-  border-color: #e9c074;
+  border-color: var(--gold-primary);
   transform-origin: 100% 0;
   transition: .2s ease;
   -webkit-transition: .2s ease;
@@ -207,9 +213,9 @@
   -o-transition: .2s ease;
 }
 
-.arrowBackIcon:hover::after {
+.arrowBackIconWrapper:hover>.arrowBackIcon::after {
   transform: rotate(45deg);
-  border-color: #be9850;
+  border-color: var(--gold-secondary);
   height: 120%;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -217,8 +223,8 @@
   -o-transform: rotate(45deg);
 }
 
-.arrowBackIcon:hover::before {
-  border-color: #be9850;
+.arrowBackIconWrapper:hover>.arrowBackIcon::before {
+  border-color: var(--gold-secondary);
   transform: scale(.8);
   -webkit-transform: scale(.8);
   -moz-transform: scale(.8);

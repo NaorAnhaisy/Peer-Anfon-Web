@@ -83,6 +83,7 @@
 .contactUsContactInfoRow {
     padding: 20px;
     row-gap: 3rem;
+    font-size: 15px;
     text-align: right;
     font-family: 'Alef';
 }
@@ -91,10 +92,6 @@
     font-weight: bold;
     margin-bottom: 15px;
     font-size: 18px;
-}
-
-.contactUsContactInfoContainer span {
-    font-size: 15px;
 }
 
 .socialsContactUs .zmdi {

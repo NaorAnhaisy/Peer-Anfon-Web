@@ -28,6 +28,13 @@ main {
   width: 100%;
 }
 
+:root {
+  --gold-primary: #d4b879;
+  --gold-secondary: #b2a074;
+  --gold-light: #e9c373;
+  --gold-dark: #bf953f;
+}
+
 body>#root>div {
   min-height: 100vh !important;
 }
@@ -233,6 +240,10 @@ body {
 
 .carousel {
   background: #bda286;
+}
+
+.carousel-item p {
+  font-size: 19px;
 }
 
 .carousel .carousel-indicators button {
