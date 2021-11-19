@@ -50,7 +50,7 @@ export default function AutomaticDoors() {
                     <img
                         className={styles.caruselImage}
                         src="/images/Doors/door-1.jpeg"
-                        alt="First slide"
+                        alt="דלתות אוטומטיות"
                     />
                     <Carousel.Caption className={styles.caruselCaption}>
                         <h3>עיצוב ססגוני</h3>
@@ -61,7 +61,7 @@ export default function AutomaticDoors() {
                     <img
                         className={styles.caruselImage}
                         src="/images/Doors/door-2.jpeg"
-                        alt="Second slide"
+                        alt="דלתות אוטומטיות"
                     />
                     <Carousel.Caption className={styles.caruselCaption}>
                         <h3>לפי הדרישה שלך</h3>
@@ -72,7 +72,7 @@ export default function AutomaticDoors() {
                     <img
                         className={styles.caruselImage}
                         src="/images/Doors/door-5.jpeg"
-                        alt="Third slide"
+                        alt="דלתות אוטומטיות"
                     />
                     <Carousel.Caption className={styles.caruselCaption}>
                         <h3>מתאים לארגונים</h3>

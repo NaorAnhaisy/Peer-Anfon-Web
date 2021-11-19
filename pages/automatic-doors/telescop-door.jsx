@@ -16,7 +16,7 @@ export default function TelescopDoor() {
 
     return (
         <div>
-            <img src="/images/automatic-doors/telescop-automatic-door.jpeg" className={styles.doorSelectedMainDiv} alt="דלת אוטומטית" />
+            <img src="/images/automatic-doors/telescop-automatic-door.jpeg" className={styles.doorSelectedMainDiv} alt="דלת אוטומטית טלסקופית" />
             <Container className={styles.doorSelectedContainer}>
                 <div>
                     <Row className={styles.doorSelectedTitleRow}>
@@ -98,7 +98,7 @@ export default function TelescopDoor() {
                                 data-aos="fade-zoom-in"
                                 data-aos-duration="700"
                                 src="/images/automatic-doors/telescop-door/telescop-2.jpeg"
-                                alt="דלת טלסקופית"
+                                alt="דלת אוטומטית טלסקופית"
                             />
                         </Col>
                         <Col sm={12} lg={6}>
@@ -108,7 +108,7 @@ export default function TelescopDoor() {
                                 data-aos="fade-zoom-in"
                                 data-aos-duration="700"
                                 src="/images/automatic-doors/telescop-door/telescop-1.jpeg"
-                                alt="דלת טלסקופית"
+                                alt="דלת אוטומטית טלסקופית"
                             />
                         </Col>
                     </Row>
@@ -119,7 +119,7 @@ export default function TelescopDoor() {
                             data-aos="fade-zoom-in"
                             data-aos-duration="700"
                             src="/images/automatic-doors/telescop-door/telescop-3.jpeg"
-                            alt="דלת טלסקופית"
+                            alt="דלת אוטומטית טלסקופית"
                         />
                     </Row>
                 </div>
