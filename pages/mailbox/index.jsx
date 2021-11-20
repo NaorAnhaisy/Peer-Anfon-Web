@@ -214,7 +214,7 @@ export default function MailboxRooms() {
                             <a className="no-href-css">
                                 <div className="clickable">
                                     <div className={styles.imageLinkDivToCategorys}>
-                                        <img src="/images/automatic-doors/single-leaf-automatic-door.jpg" alt="תיבות דואר לבתים משותפים" className={styles.imageToCategorys} />
+                                        <img src="/images/mailboxes/shared-houses/background.jpeg" alt="תיבות דואר לבתים משותפים" className={styles.imageToCategorys} />
                                     </div>
                                     <div className={styles.imageLinkDivText}>
                                         <h5>תיבות דואר לבתים משותפים</h5>
