@@ -43,12 +43,11 @@ export default function SharedHouses() {
             return (
                 <Col key={index} sm={12} md={4}>
                     <div
-
                         data-aos={index % 3 === 0 ? "fade-left" : index % 3 === 1 ? "fade-up" : "fade-right"}
                         data-aos-offset="200"
                         data-aos-duration="700"
                         className={intercomStyles.hoverImgContainer}>
-                        <img src={image.src} alt={`תיבת דואר לבתים משותפים ${image.text}`} style={{ height: "300px", width: "100%", objectFit: "contain" }} />
+                        <img src={image.src} alt={`תיבת דואר לבתים משותפים ${image.text}`} style={{ height: "400px", width: "100%", objectFit: "cover" }} />
                         <div className={intercomStyles.hoverImgMiddle}>
                             <div className={intercomStyles.hoverImgText}>{image.text}</div>
                         </div>
