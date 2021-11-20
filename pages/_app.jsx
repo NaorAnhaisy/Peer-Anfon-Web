@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
       <AppLayout>
         <Head>
           <title>פאר אנפון - דלתות אוטומטיות, דלתות חשמליות אסתטיות ויוקרתיות</title>
-          <meta name="description" content="פאר אנפון - החברה המובילה בישראל ליצור והתקנת דלתות אוטומטיות וחשמליות, מערכות אינטרקום, דלתות כניסה לבניין ותיבות דואר, אמרת דלתות כניסה לבניין? אמרת פאר אנפון" />
+          <meta name="description" key="desc" content="פאר אנפון - החברה המובילה בישראל ליצור והתקנת דלתות אוטומטיות וחשמליות, מערכות אינטרקום, דלתות כניסה לבניין ותיבות דואר, אמרת דלתות כניסה לבניין? אמרת פאר אנפון" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Head>
         <Component {...pageProps} />
