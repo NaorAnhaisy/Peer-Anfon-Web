@@ -196,7 +196,7 @@ export default function MailboxRooms() {
 
                         <div className={styles.image}>
                             <img
-                                src="/images/backgrounds/home-slide-2.jpeg"
+                                src="/images/mailboxes/main-slide-2.jpg"
                                 alt="דלת אוטומטית"
                             />
                         </div>
