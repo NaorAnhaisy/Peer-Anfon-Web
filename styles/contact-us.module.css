@@ -31,6 +31,7 @@
     .contactUsPageDiv {
         flex-wrap: nowrap;
         flex-direction: row;
+        margin-bottom: 10rem;
     }
 
     .contactUsPageImgDiv {
@@ -74,6 +75,8 @@
     display: block;
     background-color: rgba(255, 255, 255);
     box-shadow: 0px 1px 4px 0px #b7a333;
+    height: 106%;
+    overflow: overlay;
 }
 
 .contactUsContactInfoContainer {

@@ -3,7 +3,7 @@ import styles from '../styles/contact-us.module.css';
 import { Col, Container, Row } from 'react-bootstrap';
 import Image from 'next/image';
 import ContactUsForm from '../components/ContactUsForm/ContactUsForm'
-import MapContainer from '../components/MapContainer/MapContainer';
+import MyMapComponent from '../components/MyMapComponent/MyMapComponent';
 
 export default function ContactUs() {
 
@@ -34,7 +34,7 @@ export default function ContactUs() {
 
                 </Container>
             </Container>
-            <MapContainer />
+            <MyMapComponent />
             <Container className={styles.contactUsContactInfoContainer}>
                 <Row className={styles.contactUsContactInfoRow}>
                     <Col sm={12} md={6} lg={3}>

@@ -89,10 +89,11 @@ module.exports = withPlugins([], {
             key: 'X-XSS-Protection',
             value: '1; mode=block',
           },
-          {
-            key: 'Content-Security-Policy',
-            value: "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com/ vitals.vercel-insights.com"
-          }
+          // {
+          //   key: 'Content-Security-Policy',
+          //   value: "default-src * 'unsafe-inline' 'unsafe-eval'; script-src * 'unsafe-inline' 'unsafe-eval'; connect-src * 'unsafe-inline'; img-src * data: blob: 'unsafe-inline'; frame-src *; style-src * 'unsafe-inline';"
+          //   // value: "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com/ vitals.vercel-insights.com"
+          // }
         ],
       },
     ];

@@ -236,7 +236,7 @@ body {
   animation-direction: alternate;
 }
 
-/* Automatic Doors */
+/* Carousel */
 
 .carousel {
   background: #bda286;
@@ -332,4 +332,14 @@ body {
 
 .filepond-max-file-size-label {
   font-size: 12px !important;
+}
+
+/* Map */
+.mapboxgl-ctrl-bottom-right {
+  display: none !important;
+}
+
+#map {
+  height: 700px;
+  width: 100%;
 }
