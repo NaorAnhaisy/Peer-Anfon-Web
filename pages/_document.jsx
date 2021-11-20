@@ -21,8 +21,11 @@ class MyDocument extends Document {
                     <meta name="twitter:title" content="פאר אנפון - דלתות אוטומטיות, דלתות חשמליות אסתטיות ויוקרתיות" />
                     <meta name="twitter:description" content="פאר אנפון - החברה המובילה בישראל ליצור והתקנת דלתות אוטומטיות וחשמליות, מערכות אינטרקום, דלתות כניסה לבניין ותיבות דואר, אמרת דלתות כניסה לבניין? אמרת פאר אנפון" />
                     <link rel="manifest" href="/manifest.json" />
-                    <link rel="icon" href="/favicon.ico" />
-                    <link rel="apple-touch-icon" href="/example.png" />
+                    <link rel="icon" href="/images/favicon.ico" />
+                    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.png" />
+                    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
+                    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
+
                     <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.css" rel="stylesheet" />
                     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
                         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossOrigin="anonymous" />
