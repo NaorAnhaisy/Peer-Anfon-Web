@@ -308,8 +308,11 @@
 }
 
 .caruselCaption {
-    color: #2b2b2b;
-    background: #ffffffa3;
+    color: #ffffff;
+    background: #debf4da3;
+    font-family: 'Alef';
+    /* color: #2b2b2b;
+    background: #ffffffa3; */
     margin: auto;
     width: 800px;
     border-radius: 20px;
