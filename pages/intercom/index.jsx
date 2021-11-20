@@ -29,12 +29,12 @@ const classicIntercomImages = [
 ];
 
 const nerostaImages = [
-    { src: "/images/intercom/nerosta-1.jpg", text: "I-201" },
-    { src: "/images/intercom/nerosta-1.jpg", text: "I-201" },
-    { src: "/images/intercom/nerosta-1.jpg", text: "I-201" },
-    { src: "/images/intercom/nerosta-1.jpg", text: "I-201" },
-    { src: "/images/intercom/nerosta-1.jpg", text: "I-201" },
-    { src: "/images/intercom/nerosta-1.jpg", text: "I-201" },
+    { src: "/images/intercom/R-453.jpg", text: "R-453" },
+    { src: "/images/intercom/R-454.jpg", text: "R-454" },
+    { src: "/images/intercom/R-455.jpg", text: "R-455" },
+    { src: "/images/intercom/R-456.jpg", text: "R-456" },
+    { src: "/images/intercom/R-456b.jpg", text: "R-456" },
+    { src: "/images/intercom/R-457.jpg", text: "R-457" },
 ];
 
 export default function Intercom() {
