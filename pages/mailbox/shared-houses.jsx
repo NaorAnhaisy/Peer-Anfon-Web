@@ -60,7 +60,7 @@ export default function SharedHouses() {
 
     return (
         <div>
-            <img src="/images/automatic-doors/collapse-automatic-door.jpeg" className={styles.doorSelectedMainDiv} alt="תיבות דואר לבתים משותפים" />
+            <img src="/images/mailboxes/shared-houses/background.jpeg" className={styles.doorSelectedMainDiv} alt="תיבות דואר לבתים משותפים" />
             <Container className={styles.doorSelectedContainer}>
                 <div>
                     <Row className={styles.doorSelectedTitleRow}>
