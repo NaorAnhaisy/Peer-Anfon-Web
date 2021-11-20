@@ -79,6 +79,7 @@
 
 .nav-link {
     color: white !important;
+    outline: none !important;
     font-weight: 500;
     transition: all 200ms linear;
     position: relative;

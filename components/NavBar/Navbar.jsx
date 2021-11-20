@@ -104,7 +104,7 @@ export default function MainNavbar() {
                           onMouseEnter={() => setShowAutoDoorsDropdown(true)}
                         >
                           <NavDropdown.Item className={styles.displayOnlyOnMobile} href="/דלתות-אוטומטיות">
-                            דלתות אוטומטיות
+                            דלתות אוטומטיות - כללי
                           </NavDropdown.Item>
                           <NavDropdown.Item href="/דלתות-אוטומטיות/דלת-אוטומטית-הזזה-דו-כנף">
                             אוטומטית הזזה דו-כנף
@@ -134,7 +134,7 @@ export default function MainNavbar() {
                           onMouseEnter={() => setShowMailBoxDropdown(true)}
                         >
                           <NavDropdown.Item className={styles.displayOnlyOnMobile} href="/תיבות-דואר">
-                            תיבות דואר
+                            תיבות דואר - כללי
                           </NavDropdown.Item>
                           <NavDropdown.Item href="/תיבות-דואר/תיבות-דואר-לבתים-משותפים">
                             תיבות דואר לבתים משותפים
@@ -174,7 +174,7 @@ export default function MainNavbar() {
                           onMouseEnter={() => setShowEnterDoorsDropdown(true)}
                         >
                           <NavDropdown.Item className={styles.displayOnlyOnMobile} href="/דלתות-כניסה">
-                            דלתות כניסה
+                            דלתות כניסה - כללי
                           </NavDropdown.Item>
                           <NavDropdown.Item href="/דלתות-כניסה/דלתות-כניסה-אלומיניום">
                             דלתות כניסה אלומיניום
