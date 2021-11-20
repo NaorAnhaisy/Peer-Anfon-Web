@@ -116,7 +116,7 @@ export default function AutomaticDoors() {
 
                         <div className={styles.image}>
                             <img
-                                src="/images/backgrounds/home-slide-3.jpeg"
+                                src="/images/backgrounds/home-slide-3.jpg"
                                 alt="דלת אוטומטית"
                             />
                         </div>
@@ -490,7 +490,7 @@ export default function AutomaticDoors() {
                             <a className="no-href-css">
                                 <div className="clickable">
                                     <div className={styles.imageLinkDivToCategorys}>
-                                        <img src="/images/automatic-doors/single-leaf-automatic-door.jpeg" alt="דלת אוטומטית חד כנף" className={styles.imageToCategorys} />
+                                        <img src="/images/automatic-doors/single-leaf-automatic-door.jpg" alt="דלת אוטומטית חד כנף" className={styles.imageToCategorys} />
                                     </div>
                                     <div className={styles.imageLinkDivText}>
                                         <h5>דלת הזזה חד-כנף</h5>
