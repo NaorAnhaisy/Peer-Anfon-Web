@@ -56,9 +56,11 @@ export default function ContactUs() {
                     </Col>
                     <Col sm={12} md={6} lg={3}>
                         <h6>שעות פתיחה</h6>
-                        <span>ראשון - חמישי: 8:00 - 20:00</span>
+                        <span>ראשון - חמישי: 8:00 - 16:00</span>
                         <br />
-                        <span>שישי: 8:00 - 15:00</span>
+                        <span>שישי: 8:00 - 12:00</span>
+                        <br />
+                        <span>שבת: סגור</span>
                     </Col>
                     <Col sm={12} md={6} lg={3}>
                         <h6>עקבו אחרינו</h6>

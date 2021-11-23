@@ -5,7 +5,7 @@
 }
 
 .contactTeamContainer h1 {
-    color: #caaf6d;
+    color: var(--gold-primary);
     font-family: "Julius Sans One", "Alef";
     margin-bottom: 0;
 }
@@ -39,8 +39,4 @@
     .contactTeamContainer a {
         padding: 10px 60px;
     }
-}
-
-.contactTeamContainer a:hover {
-    background: #caaf6d;
 }
