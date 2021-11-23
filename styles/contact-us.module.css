@@ -74,7 +74,7 @@
 .contactUsPageForm {
     display: block;
     background-color: rgba(255, 255, 255);
-    box-shadow: 0px 1px 4px 0px #b7a333;
+    box-shadow: 0px 1px 4px 0px #000000;
     height: 106%;
     overflow: overlay;
 }

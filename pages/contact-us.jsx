@@ -42,6 +42,8 @@ export default function ContactUs() {
                         <span><a href="tel:0723712701" className="no-href-css">טלפון: 072-371-2701</a></span>
                         <br />
                         <span><a href="mailto:info@8peer.co.il" className="no-href-css">דוא&quot;ל: info@8peer.co.il</a></span>
+                        <br />
+                        <span>פקס: 03-5568117</span>
                     </Col>
                     <Col sm={12} md={6} lg={3}>
                         <h6>כתובת</h6>

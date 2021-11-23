@@ -88,11 +88,11 @@ export default function MainNavbar() {
                 <Navbar.Collapse id="navbarSupportedContent">
                   <div className="collapse navbar-collapse show">
                     <ul className="navbar-nav ml-auto py-4 py-md-0">
-                      <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active-navbar">
+                      {/* <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active-navbar">
                         <Link className="nav-link" href="/">
                           בית
                         </Link>
-                      </li>
+                      </li> */}
 
                       <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4"
                         onMouseLeave={() => setShowAutoDoorsDropdown(false)}>
@@ -192,11 +192,11 @@ export default function MainNavbar() {
                         </Link>
                       </li>
 
-                      <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                      {/* <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                         <Link className="nav-link" href="/about-us">
                           אודותינו
                         </Link>
-                      </li>
+                      </li> */}
 
                       <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                         <Link className="nav-link" href="/contact-us">

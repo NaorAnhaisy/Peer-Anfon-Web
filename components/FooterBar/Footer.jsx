@@ -60,6 +60,9 @@ export default function Footer() {
           <a href="https://www.youtube.com/" aria-label="Youtube פאר אנפון" target="_blank" rel="noopener noreferrer" className={styles.footerHover}>
             <i className="fab fa-youtube" aria-hidden="true" />
           </a>
+          <a href="https://wa.me/+97235505624" aria-label="Whatsapp פאר אנפון" className={styles.footerHover}>
+            <i className="fab fa-whatsapp" aria-hidden="true" />
+          </a>
           <a href="tel:0723712701" aria-label="טלפון פאר אנפון" className={styles.footerHover}>
             <i className="fas fa-phone-square" aria-hidden="true" style={{ transform: "rotate(90deg)" }} />
           </a>
