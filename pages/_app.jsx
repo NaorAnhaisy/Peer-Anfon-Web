@@ -1,4 +1,3 @@
-import { useEffect } from "react"
 import { SSRProvider } from '@react-aria/ssr';
 import Head from 'next/head';
 import AppLayout from '../components/AppLayout/AppLayout'

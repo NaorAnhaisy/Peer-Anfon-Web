@@ -5,11 +5,11 @@
     z-index: 600;
 }
 
-@media (min-width: 1400px) {
+/* @media (min-width: 1400px) {
     .phoneWidget {
         display: none;
     }
-}
+} */
 
 .coccocAloPhCircle {
     width: 100px;
