@@ -4,6 +4,10 @@
 
 .recommandCard {
     background: #f5f5f5;
+    color: #2a2a2a;
+    background-image: url(../../public/svg/review-background.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
     border-radius: 12px;
     width: 100%;
     padding: 40px 35px;
