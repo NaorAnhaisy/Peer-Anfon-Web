@@ -80,7 +80,6 @@
 .nav-link {
     color: white !important;
     outline: none !important;
-    font-weight: 500;
     transition: all 200ms linear;
     position: relative;
     padding: 0 !important;
@@ -225,10 +224,11 @@
 }
 
 .navbar-nav {
-    display: contents !important;
-    flex-direction: row-reverse !important;
+    /* display: contents !important;
+    flex-direction: row-reverse !important; */
     font-family: 'Alef';
-    font-size: 17px;
+    font-size: 18px;
+    padding: 0;
 }
 
 .dropdown-item:hover,

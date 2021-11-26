@@ -78,6 +78,21 @@
   display: block;
 }
 
+.linksFooterLogoCol {
+  display: grid;
+  justify-items: center;
+}
+
+.companyLogoSymbol {
+  height: 100%;
+  max-height: 140px;
+}
+
+.companyLogoText {
+  width: 100%;
+  max-width: 200px;
+}
+
 .linksAboutseparator {
   background-color: #b3a073;
   background: #b3a073;

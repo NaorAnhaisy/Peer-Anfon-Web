@@ -335,7 +335,8 @@ body {
 }
 
 /* Map */
-.mapboxgl-ctrl-bottom-right {
+.mapboxgl-ctrl-bottom-right,
+.mapboxgl-ctrl-bottom-left {
   display: none !important;
 }
 
