@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable @next/next/no-img-element */
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import styles from './CardsSlider.module.css';

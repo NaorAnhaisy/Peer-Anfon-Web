@@ -46,8 +46,8 @@ export default function Footer() {
           </Link>
         </Col>
         <Col className={styles.linksFooterLogoCol} xs={12} sm={6} lg={3}>
-          <img src="/images/‏‏company-logo-symbol.png" alt="" className={`undragablle-image ${styles.companyLogoSymbol}`} />
-          <img src="/images/‏‏company-logo-text.png" alt="" className={`undragablle-image ${styles.companyLogoText}`} />
+          <img src="/images/‏‏company-logo-symbol.png" alt="פאר אנפון תעשתיות בעמ" className={`undragablle-image ${styles.companyLogoSymbol}`} />
+          <img src="/images/‏‏company-logo-text.png" alt="פאר אנפון תעשתיות בעמ" className={`undragablle-image ${styles.companyLogoText}`} />
         </Col>
       </Row>
       <div className={styles.linksAboutseparator}></div>
