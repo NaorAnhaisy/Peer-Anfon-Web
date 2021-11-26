@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useState } from "react";
 import styles from "./Navbar.module.css";
@@ -216,6 +217,83 @@ export default function MainNavbar() {
             </Col>
           </Row>
         </Container>
+        {/* <div className={styles.extraLinksDiv}>
+          <div className={styles.menuContainer}>
+            <nav className={styles.sideNavbar}>
+              <ul className={styles.sideNavbarMenu}>
+                <li className={`${styles.sideNavbarDropdown} ${styles.sideNavbarDropdown4}`}>
+                <img src="https://img.icons8.com/ios/50/000000/menu--v4.png"/>
+                  <ul className={`${styles.sideNavbarDropdownMenu} ${styles.sideNavbarDropdownMenu4}`}>
+                    <li className={styles.sideNavbarDropdownItem1}>Item 1</li>
+                    <li className={styles.sideNavbarDropdownItem2}>Item 2</li>
+                    <li className={styles.sideNavbarDropdownItem3}>Item 3</li>
+                    <li className={styles.sideNavbarDropdownItem4}>Item 4</li>
+                    <li className={styles.sideNavbarDropdownItem5}>Item 5</li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div> */}
+        <div className={`${styles.extraLinksDiv} ${styles.notDispalyOnMobile}`}>
+          <nav role="sideNavbarNevigation">
+            <div className={styles.menuToggle}>
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              {/* <Row className={styles.row}>
+                <Col>
+                </Col>
+                <Col> */}
+                  <ul className={styles.menu}>
+                    <li>
+                      <i className="fas fa-home"></i>
+                      <Link className="nav-link" href="/quick-access">
+                        עמוד הבית
+                      </Link>
+                    </li>
+                    <li>
+                      <i className="fas fa-user-friends"></i>
+                      <Link className="nav-link" href="/quick-access">
+                        אודותינו
+                      </Link>
+                    </li>
+                    <li>
+                      <i className="fas fa-award"></i>
+                      <Link className="nav-link" href="/quick-access">
+                        המלצות
+                      </Link>
+                    </li>
+                    <li>
+                      <i className="fas fa-book-open"></i>
+                      <Link className="nav-link" href="/quick-access">
+                        מאמרים
+                      </Link>
+                    </li>
+                    <li>
+                      <i className="fas fa-tasks"></i>
+                      <Link className="nav-link" href="/quick-access">
+                        פרוייקטים
+                      </Link>
+                    </li>
+                    <li>
+                      <i className="fas fa-images"></i>
+                      <Link className="nav-link" href="/quick-access">
+                        גלריית תמונות
+                      </Link>
+                    </li>
+                    <li>
+                      {/* <i className="fas fa-certificate"></i> */}
+                      <i className="fab fa-hotjar"></i>
+                      <Link className="nav-link" href="/quick-access">
+                        מוצרים חדשים
+                      </Link>
+                    </li>
+                  </ul>
+            </div>
+          </nav>
+        </div>
       </div>
     </div>
   );

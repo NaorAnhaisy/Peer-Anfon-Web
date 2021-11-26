@@ -1,3 +1,5 @@
+/* Main Navbar */
+
 .startHeader {
     opacity: 1;
     transform: translateY(0);
@@ -26,6 +28,7 @@
 
 .navigationWrap {
     position: fixed;
+    display: flex;
     width: 100%;
     top: 0;
     left: 0;
@@ -174,6 +177,7 @@
     width: 10px;
     height: 10px;
     font-size: 17px;
+    margin-top: 8px;
     margin-right: 13px;
     animation: NAME-YOUR-ANIMATION 2s infinite;
     -webkit-animation: NAME-YOUR-ANIMATION 2s infinite;
@@ -184,63 +188,457 @@
     -o-transform: rotate(90deg);
 }
 
-@keyframes NAME-YOUR-ANIMATION{
-  0% {
-  }
-  10% {
-    -webkit-transform:rotate(95deg);
-    -moz-transform:rotate(95deg);
-    -o-transform:rotate(95deg);
-  }
-  20% {
-    -webkit-transform:rotate(85deg);
-    -moz-transform:rotate(85deg);
-    -o-transform:rotate(85deg);
-  }
-  30% {
-    -webkit-transform:rotate(95deg);
-    -moz-transform:rotate(95deg);
-    -o-transform:rotate(95deg);
-  }
-   40% {
-    -webkit-transform:rotate(85deg);
-    -moz-transform:rotate(85deg);
-    -o-transform:rotate(85deg);
-  }
-  50% {
-    -webkit-transform:rotate(95deg);
-    -moz-transform:rotate(95deg);
-    -o-transform:rotate(95deg);
-  }
-   60% {
-    -webkit-transform:rotate(85deg);
-    -moz-transform:rotate(85deg);
-    -o-transform:rotate(85deg);
-  }
-  70% {
-    -webkit-transform:rotate(95deg);
-    -moz-transform:rotate(95deg);
-    -o-transform:rotate(95deg);
-  }
-  80% {
-    -webkit-transform:rotate(85deg);
-    -moz-transform:rotate(85deg);
-    -o-transform:rotate(85deg);
-  }
-  90% {
-    -webkit-transform:rotate(95deg);
-    -moz-transform:rotate(95deg);
-    -o-transform:rotate(95deg);
-  }
-   100% {
-    -webkit-transform:rotate(85deg);
-    -moz-transform:rotate(85deg);
-    -o-transform:rotate(85deg);
-  }
+@keyframes NAME-YOUR-ANIMATION {
+    0% {}
+
+    10% {
+        -webkit-transform: rotate(95deg);
+        -moz-transform: rotate(95deg);
+        -o-transform: rotate(95deg);
+    }
+
+    20% {
+        -webkit-transform: rotate(85deg);
+        -moz-transform: rotate(85deg);
+        -o-transform: rotate(85deg);
+    }
+
+    30% {
+        -webkit-transform: rotate(95deg);
+        -moz-transform: rotate(95deg);
+        -o-transform: rotate(95deg);
+    }
+
+    40% {
+        -webkit-transform: rotate(85deg);
+        -moz-transform: rotate(85deg);
+        -o-transform: rotate(85deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(95deg);
+        -moz-transform: rotate(95deg);
+        -o-transform: rotate(95deg);
+    }
+
+    60% {
+        -webkit-transform: rotate(85deg);
+        -moz-transform: rotate(85deg);
+        -o-transform: rotate(85deg);
+    }
+
+    70% {
+        -webkit-transform: rotate(95deg);
+        -moz-transform: rotate(95deg);
+        -o-transform: rotate(95deg);
+    }
+
+    80% {
+        -webkit-transform: rotate(85deg);
+        -moz-transform: rotate(85deg);
+        -o-transform: rotate(85deg);
+    }
+
+    90% {
+        -webkit-transform: rotate(95deg);
+        -moz-transform: rotate(95deg);
+        -o-transform: rotate(95deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(85deg);
+        -moz-transform: rotate(85deg);
+        -o-transform: rotate(85deg);
+    }
 }
 
 @media (min-width: 1400px) {
     .displayOnlyOnMobile {
         display: none !important;
     }
+}
+
+@media (max-width: 1399px) {
+    .notDispalyOnMobile {
+        display: none !important;
+    }
+}
+
+/* Side Navbar - Extra Links */
+
+.extraLinksDiv {
+    align-self: center;
+}
+
+.menuContainer {
+    margin-top: 20px;
+}
+
+.menuContainer h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.menuContainer:nth-child(3) {
+    margin-top: 200px;
+}
+
+.sideNavbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sideNavbarMenu {
+    display: flex;
+    justify-content: center;
+}
+
+.sideNavbarDropdown {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #c06162;
+    background: #34495e;
+    position: relative;
+    font-size: 18px;
+    perspective: 1000px;
+    z-index: 100;
+}
+
+.sideNavbarDropdown:hover {
+    background: #2980b9;
+    cursor: pointer;
+}
+
+.sideNavbarDropdown:hover .sideNavbarDropdownMenu li {
+    display: block;
+}
+
+.sideNavbarDropdownMenu {
+    position: absolute;
+    width: 1000px;
+    top: 100%;
+    left: -32px;
+    perspective: 1000px;
+    z-index: -1;
+}
+
+.sideNavbarDropdownMenu li {
+    display: none;
+    color: #fff;
+    background-color: #34495e;
+    padding: 10px 20px;
+    font-size: 16px;
+    opacity: 0;
+}
+
+.sideNavbarDropdownMenu li:hover {
+    background-color: #2980b9;
+}
+
+.sideNavbarDropdown:hover {
+    display: block;
+}
+
+.sideNavbarDropdownMenu4 .sideNavbarDropdownItem1 {
+    transform-origin: top center;
+    animation: scaleZ 300ms 60ms ease-in-out forwards;
+    -webkit-animation: scaleZ 300ms 60ms ease-in-out forwards;
+}
+
+.sideNavbarDropdownMenu4 .sideNavbarDropdownItem2 {
+    transform-origin: top center;
+    animation: scaleZ 300ms 120ms ease-in-out forwards;
+    -webkit-animation: scaleZ 300ms 120ms ease-in-out forwards;
+}
+
+.sideNavbarDropdownMenu4 .sideNavbarDropdownItem3 {
+    transform-origin: top center;
+    animation: scaleZ 300ms 180ms ease-in-out forwards;
+    -webkit-animation: scaleZ 300ms 180ms ease-in-out forwards;
+}
+
+.sideNavbarDropdownMenu4 .sideNavbarDropdownItem4 {
+    transform-origin: top center;
+    animation: scaleZ 300ms 240ms ease-in-out forwards;
+    -webkit-animation: scaleZ 300ms 240ms ease-in-out forwards;
+}
+
+.sideNavbarDropdownMenu4 .sideNavbarDropdownItem5 {
+    transform-origin: top center;
+    animation: scaleZ 300ms 300ms ease-in-out forwards;
+    -webkit-animation: scaleZ 300ms 300ms ease-in-out forwards;
+}
+
+
+@-moz-keyframes scaleZ {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    80% {
+        transform: scale(1.07);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes scaleZ {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    80% {
+        transform: scale(1.07);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@-o-keyframes scaleZ {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    80% {
+        transform: scale(1.07);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes scaleZ {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    80% {
+        transform: scale(1.07);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes scaleZ {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    80% {
+        transform: scale(1.07);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes scaleZ {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    80% {
+        transform: scale(1.07);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@-o-keyframes scaleZ {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    80% {
+        transform: scale(1.07);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes scaleZ {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    80% {
+        transform: scale(1.07);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* New Side Navbar */
+.menuToggle {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 50px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.menuToggle li a, .menuToggle li i {
+    text-decoration: none;
+    color: #232323;
+    transition: color 0.3s ease;
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -ms-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+}
+
+.menu li:hover>a,
+.menu li:hover>i {
+    color: var(--gold-dark);;
+}
+
+.menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+
+    -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+.menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+    -webkit-transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+    -moz-transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+    -ms-transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+    -o-transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+}
+
+.menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+.menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+.menuToggle input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+.menuToggle input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+.menuToggle input:checked~span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+.menu {
+    position: absolute;
+    width: 300px;
+    margin: -98px -217px 0 0px;
+    /* margin: -100px 0 0 -50px; */
+    padding: 50px;
+    padding-top: 125px;
+    font-family: 'Alef';
+
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+.menu li {
+    padding: 10px 0;
+    display: block;
+    font-size: 20px;
+}
+
+.menu li i {
+    margin-left: 20px;
+    color: #494949;
+    width: 28px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+.menuToggle input:checked~ul {
+    transform: none;
 }
