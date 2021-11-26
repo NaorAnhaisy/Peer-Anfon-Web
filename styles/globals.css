@@ -345,3 +345,14 @@ body {
   max-height: 70vh;
   width: 100%;
 }
+
+/* Recommandations */
+
+.carousel-container {
+  height: 500px;
+  direction: ltr;
+}
+
+.carousel-item-padding-40-px {
+  padding: 40px;
+}
