@@ -14,7 +14,7 @@
 
 // const storeCoordinates = { lat: 32.022130, lng: 34.801570 };
 
-// export function MapContainer(props) {
+// export function MyMapComponent(props) {
 //     return (
 //         <Map
 //             google={props.google}
@@ -31,7 +31,7 @@
 
 // export default GoogleApiWrapper({
 //     apiKey: 'AIzaSyAOt25Ti-7veP8ZxJgoAFnOfMpXsLM9hZg'
-// })(MapContainer);
+// })(MyMapComponent);
 
 
 

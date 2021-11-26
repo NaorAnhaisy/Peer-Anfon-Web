@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from "./Footer.module.css";
 import { Row, Col } from "react-bootstrap";
 import Link from "next/link";
@@ -37,12 +38,16 @@ export default function Footer() {
           </Link>
           <Link href="/דלתות-כניסה/דלתות-כניסה-אלומיניום">דלתות כניסה אלומיניום</Link>
           <Link href="/דלתות-כניסה/דלתות-כניסה-זכוכית">דלתות כניסה זכוכית</Link>
-        </Col>
-        <Col className={styles.linksFooterCol} xs={12} sm={6} lg={3}>
           <Link href="/intercom">
-            <a className={styles.linksFooterColTitle}>מערכות אינטרקום</a>
+            <a className={`${styles.linksFooterColTitle} mt-5 mb-3`}>מערכות אינטרקום</a>
           </Link>
-          <Link href="/intercom">עמודי נירוסטה לאינטרקום</Link>
+          <Link href="/quick-access">
+            <a className={`${styles.linksFooterColTitle} mt-1 mb-3`}>מעברים מהירים</a>
+          </Link>
+        </Col>
+        <Col className={styles.linksFooterLogoCol} xs={12} sm={6} lg={3}>
+          <img src="/images/‏‏company-logo-symbol.png" alt="" className={`undragablle-image ${styles.companyLogoSymbol}`} />
+          <img src="/images/‏‏company-logo-text.png" alt="" className={`undragablle-image ${styles.companyLogoText}`} />
         </Col>
       </Row>
       <div className={styles.linksAboutseparator}></div>
