@@ -227,7 +227,7 @@ export default function MainNavbar() {
                           </li>
 
                           <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                            <Link className="nav-link" href="/reviews">
+                            <Link className="nav-link" href="/recommendations">
                               המלצות
                             </Link>
                           </li>
@@ -294,7 +294,7 @@ export default function MainNavbar() {
                 </li>
                 <li>
                   <i className="fas fa-award"></i>
-                  <Link className="nav-link" href="/reviews">
+                  <Link className="nav-link" href="/recommendations">
                     המלצות
                   </Link>
                 </li>

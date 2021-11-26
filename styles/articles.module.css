@@ -1,0 +1,56 @@
+.recommandsPageTitleDiv h1 {
+    color: #b2a074;
+    font-weight: 100;
+    font-size: 50px;
+}
+
+.recommandsPageTitleDiv p {
+    font-size: 20px;
+    max-width: 42rem;
+    margin: auto;
+    color: #575757;
+}
+
+.articlesRow {
+    row-gap: 40px;
+}
+
+.articleCard {
+    text-align: right;
+    direction: rtl;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 18rem;
+    cursor: pointer;
+    transition: box-shadow 0.22s linear;
+    -webkit-transition: box-shadow 0.22s linear;
+    -moz-transition: box-shadow 0.22s linear;
+    -ms-transition: box-shadow 0.22s linear;
+    -o-transition: box-shadow 0.22s linear;
+}
+
+.articleCard:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.companyLogoSymbol {
+    width: 100%;
+    max-width: 20px;
+}
+
+.articleFooter {
+    display: flex;
+    flex-direction: row-reverse;
+    background: white;
+}
+
+.articleCardSubTitle {
+    width: 100%;
+    direction: rtl;
+    text-align: right;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-size: 15px;
+    overflow: hidden;
+    margin-top: 17px;
+}
