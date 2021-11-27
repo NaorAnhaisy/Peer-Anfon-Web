@@ -7,27 +7,6 @@ import Link from "next/link";
 import VisibilitySensor from "react-visibility-sensor";
 import AOS from 'aos';
 
-const images = [
-    { src: "/images/Doors/LUX/example1.jpg" },
-    { src: "/images/Doors/LUX/example2.jpg", strechType: "vStrech" },
-    { src: "/images/Doors/LUX/example3.jpg", strechType: "hStrech" },
-    { src: "/images/Doors/LUX/example4.jpg" },
-    { src: "/images/Doors/LUX/example1.jpg" },
-    { src: "/images/Doors/LUX/example2.jpg", strechType: "vStrech" },
-    { src: "/images/Doors/LUX/example3.jpg", strechType: "bigStrech" },
-    { src: "/images/Doors/LUX/example4.jpg" },
-    { src: "/images/Doors/LUX/example1.jpg", strechType: "hStrech" },
-    { src: "/images/Doors/LUX/example2.jpg" },
-    { src: "/images/Doors/LUX/example3.jpg" },
-    { src: "/images/Doors/LUX/example4.jpg" },
-    { src: "/images/Doors/LUX/example1.jpg", strechType: "vStrech" },
-    { src: "/images/Doors/LUX/example2.jpg" },
-    { src: "/images/Doors/LUX/example3.jpg", strechType: "bigStrech" },
-    { src: "/images/Doors/LUX/example4.jpg" },
-    { src: "/images/Doors/LUX/example1.jpg", strechType: "hStrech" },
-    { src: "/images/Doors/LUX/example2.jpg" },
-];
-
 export default function AutomaticDoors() {
     useEffect(() => {
         AOS.init({ once: true });

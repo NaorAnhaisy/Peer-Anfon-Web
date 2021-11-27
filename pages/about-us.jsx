@@ -5,7 +5,7 @@ export default function AboutUs() {
   return (
     <Container className="mt-5">
       <div className="push-from-navbar"></div>
-      <div className={`${styles.titleDiv} mb-5`}>
+      <div className="mb-5 page-title">
         <h1>אודותינו</h1>
         <div className="mt-3 mb-4 separator"></div>
       </div>

@@ -236,7 +236,7 @@ body {
   animation-direction: alternate;
 }
 
-/* Carousel */
+/* Carousel - Products Title */
 
 .carousel {
   background: #bda286;
@@ -270,48 +270,8 @@ body {
   cursor: pointer;
 }
 
-/* Shine Text */
-.btnShine {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 12px 48px;
-  color: #ffffff;
-  background: linear-gradient(to right, #4d4d4d 0, white 10%, #4d4d4d 20%);
-  background-position: 0;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation-fill-mode: forwards;
-  -webkit-text-size-adjust: none;
-  font-weight: 600;
-  font-size: 16px;
-  text-decoration: none;
-  white-space: nowrap;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  animation: shine3sinfinitelinear;
-  -webkit-animation: shine3sinfinitelinear;
-}
-
-@keyframes shine {
-  0% {
-    background-position: 0;
-  }
-
-  60% {
-    background-position: 180px;
-  }
-
-  100% {
-    background-position: 180px;
-  }
-}
-
 /* Filepond Styles */
+
 .filepond--root {
   margin: 0 !important;
 }
@@ -335,6 +295,7 @@ body {
 }
 
 /* Map */
+
 .mapboxgl-ctrl-bottom-right,
 .mapboxgl-ctrl-bottom-left {
   display: none !important;
@@ -355,4 +316,18 @@ body {
 
 .carousel-item-padding-40-px {
   padding: 40px;
+}
+
+/* Every Title usage */
+.page-title h1 {
+  color: #b2a074;
+  font-weight: 100;
+  font-size: 50px;
+}
+
+.page-title p {
+  font-size: 20px;
+  max-width: 42rem;
+  margin: auto;
+  color: #575757;
 }
