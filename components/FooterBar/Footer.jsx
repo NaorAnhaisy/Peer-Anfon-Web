@@ -38,10 +38,10 @@ export default function Footer() {
           </Link>
           <Link href="/דלתות-כניסה/דלתות-כניסה-אלומיניום">דלתות כניסה אלומיניום</Link>
           <Link href="/דלתות-כניסה/דלתות-כניסה-זכוכית">דלתות כניסה זכוכית</Link>
-          <Link href="/intercom">
+          <Link href="/מערכות-אינטרקום">
             <a className={`${styles.linksFooterColTitle} mt-5 mb-3`}>מערכות אינטרקום</a>
           </Link>
-          <Link href="/quick-access">
+          <Link href="/מעברים-מהירים">
             <a className={`${styles.linksFooterColTitle} mt-1 mb-3`}>מעברים מהירים</a>
           </Link>
         </Col>

@@ -67,6 +67,38 @@ module.exports = withPlugins([], {
         source: `/${encodeURIComponent('מערכות-אינטרקום')}`,
         destination: '/intercom',
       },
+      {
+        source: `/${encodeURIComponent('צור-קשר')}`,
+        destination: '/contact-us',
+      },
+      {
+        source: `/${encodeURIComponent('מעברים-מהירים')}`,
+        destination: '/quick-access',
+      },
+      {
+        source: `/${encodeURIComponent('אודותינו')}`,
+        destination: '/about-us',
+      },
+      {
+        source: `/${encodeURIComponent('המלצות')}`,
+        destination: '/recommendations',
+      },
+      {
+        source: `/${encodeURIComponent('מאמרים')}`,
+        destination: '/articles',
+      },
+      {
+        source: `/${encodeURIComponent('פרוייקטים')}`,
+        destination: '/projects',
+      },
+      {
+        source: `/${encodeURIComponent('גלריית-תמונות')}`,
+        destination: '/gallery',
+      },
+      {
+        source: `/${encodeURIComponent('מוצרים-חדשים')}`,
+        destination: '/new-products',
+      },
     ]
   },
   images: {

@@ -572,10 +572,6 @@ export default function AutomaticDoors() {
                         </Link>
                     </Col>
                 </Row>
-
-                <div style={{ marginTop: "100px" }}>
-                    <ImagesGallery images={images} altLabel={"דלתות אוטומטיות"} />
-                </div>
             </div>
         </div >
     );
