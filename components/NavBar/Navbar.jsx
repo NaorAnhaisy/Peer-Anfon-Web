@@ -160,7 +160,7 @@ export default function MainNavbar() {
                           </li>
 
                           <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                            <Link className="nav-link" href="/quick-access">
+                            <Link className="nav-link" href="/מעברים-מהירים">
                               מעברים מהירים
                             </Link>
                           </li>
@@ -187,7 +187,7 @@ export default function MainNavbar() {
                           </li>
 
                           <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                            <Link className="nav-link" href="/intercom"
+                            <Link className="nav-link" href="/מערכות-אינטרקום"
                               data-bs-toggle="collapse"
                               data-toggle="collapse"
                               data-bs-target=".navbar-collapse.show">
@@ -196,7 +196,7 @@ export default function MainNavbar() {
                           </li>
 
                           <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                            <Link className="nav-link" href="/contact-us"
+                            <Link className="nav-link" href="/צור-קשר"
                             data-toggle="collapse"
                             data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
                               צור קשר
@@ -221,36 +221,36 @@ export default function MainNavbar() {
                           </li>
 
                           <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                            <Link className="nav-link" href="/about-us">
+                            <Link className="nav-link" href="/אודותינו">
                               אודותינו
                             </Link>
                           </li>
 
                           <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                            <Link className="nav-link" href="/recommendations">
+                            <Link className="nav-link" href="/המלצות">
                               המלצות
                             </Link>
                           </li>
                           <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                            <Link className="nav-link" href="/articles">
+                            <Link className="nav-link" href="/מאמרים">
                               מאמרים
                             </Link>
                           </li>
 
                           <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                            <Link className="nav-link" href="/projects">
+                            <Link className="nav-link" href="/פרוייקטים">
                               פרוייקטים
                             </Link>
                           </li>
 
                           <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                            <Link className="nav-link" href="/gallery">
+                            <Link className="nav-link" href="/גלריית-תמונות">
                               גלריית תמונות
                             </Link>
                           </li>
 
                           <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                            <Link className="nav-link" href="/new-products">
+                            <Link className="nav-link" href="/מוצרים-חדשים">
                               מוצרים חדשים
                             </Link>
                           </li>
@@ -288,38 +288,38 @@ export default function MainNavbar() {
                 </li>
                 <li>
                   <i className="fas fa-user-friends"></i>
-                  <Link className="nav-link" href="/about-us">
+                  <Link className="nav-link" href="/אודותינו">
                     אודותינו
                   </Link>
                 </li>
                 <li>
                   <i className="fas fa-award"></i>
-                  <Link className="nav-link" href="/recommendations">
+                  <Link className="nav-link" href="/המלצות">
                     המלצות
                   </Link>
                 </li>
                 <li>
                   <i className="fas fa-book-open"></i>
-                  <Link className="nav-link" href="/articles">
+                  <Link className="nav-link" href="/מאמרים">
                     מאמרים
                   </Link>
                 </li>
                 <li>
                   <i className="fas fa-tasks"></i>
-                  <Link className="nav-link" href="/projects">
+                  <Link className="nav-link" href="/פרוייקטים">
                     פרוייקטים
                   </Link>
                 </li>
                 <li>
                   <i className="fas fa-images"></i>
-                  <Link className="nav-link" href="/gallery">
+                  <Link className="nav-link" href="/גלריית-תמונות">
                     גלריית תמונות
                   </Link>
                 </li>
                 <li>
                   {/* <i className="fas fa-certificate"></i> */}
                   <i className="fab fa-hotjar"></i>
-                  <Link className="nav-link" href="/new-products">
+                  <Link className="nav-link" href="/מוצרים-חדשים">
                     מוצרים חדשים
                   </Link>
                 </li>
