@@ -15,7 +15,7 @@ export default function ContactUs() {
         <div>
             <div className="push-from-navbar"></div>
             <Container className="mt-5">
-                <div className={"mb-5 " + styles.contactUsPageTitleDiv}>
+                <div className="mb-5 page-title">
                     <h1>דברו איתנו</h1>
                     <div className="mt-3 mb-4 separator"></div>
                     <p>לקבלת הצעת מחיר, לקבלת יעוץ או לדבר על דרישותיכם, נשמח לשמוע מכם. מלאו את הטופס למטה ונהיה בקשר.</p>

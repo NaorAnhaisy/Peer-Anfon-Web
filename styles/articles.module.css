@@ -1,16 +1,3 @@
-.recommandsPageTitleDiv h1 {
-    color: #b2a074;
-    font-weight: 100;
-    font-size: 50px;
-}
-
-.recommandsPageTitleDiv p {
-    font-size: 20px;
-    max-width: 42rem;
-    margin: auto;
-    color: #575757;
-}
-
 .articlesRow {
     row-gap: 40px;
 }

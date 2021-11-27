@@ -41,7 +41,6 @@ export default function Organizations() {
             return (
                 <Col key={index} sm={12} md={4}>
                     <div
-
                         data-aos={index % 3 === 0 ? "fade-left" : index % 3 === 1 ? "fade-up" : "fade-right"}
                         data-aos-offset="200"
                         data-aos-duration="700"

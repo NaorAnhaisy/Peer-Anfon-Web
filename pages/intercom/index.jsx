@@ -45,7 +45,7 @@ export default function Intercom() {
     return (
         <div>
             <Container className={styles.mainContainer}>
-                <div className={`${styles.titleDiv} mb-5`}>
+                <div className="mb-5 page-title">
                     <h1>מערכות אינטרקום</h1>
                     <div className="mt-3 mb-4 separator"></div>
                 </div>

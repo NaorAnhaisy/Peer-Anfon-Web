@@ -8,21 +8,19 @@ export default function Recommendations() {
         <div>
             <Container className="mt-5">
                 <div className="push-from-navbar"></div>
-                <div className={"mb-5 " + styles.recommandsPageTitleDiv}>
+                <div className="mb-5 page-title">
                     <h1>מרוצים מפאר אנפון ?</h1>
                     <div className="mt-3 mb-4 separator"></div>
                     <p>ספרו לנו על כך! מלאו את הטופס:</p>
                 </div>
-                <Container>
-                    <Row>
-                        <Col xs={12} lg={6}>
-                            <RecommandsFormDiv />
-                        </Col>
-                        <Col xs={12} lg={6}>
-                            <img src="/images/Illustrations/Recommands2.png" alt="" style={{width: '100%'}} />
-                        </Col>
-                    </Row>
-                </Container>
+                <Row>
+                    <Col xs={12} lg={6}>
+                        <RecommandsFormDiv />
+                    </Col>
+                    <Col xs={12} lg={6}>
+                        <img src="/images/Illustrations/Recommands2.png" alt="" style={{ width: '100%' }} />
+                    </Col>
+                </Row>
             </Container>
             <CardsSlider />
         </div>
