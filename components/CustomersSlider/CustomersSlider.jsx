@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from 'next/image';
 import styles from './CustomersSlider.module.css';
 
@@ -37,11 +38,10 @@ export default function CustomersSlider() {
                     {CUSTOMER_IMAGES?.map((image, i) => {
                         return <div key={i} className={styles.slide}
                             style={{ position: "relative", width: "250px", height: "100px" }}>
-                            <Image
-                                className="undragablle-image"
-                                src={`/images/OurCustomers/${image.srcName}`}
-                                layout="fill"
-                                objectFit="contain" alt={image.altName} />
+                            <img className="undragablle-image"
+                            // src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
+                            src={`/images/OurCustomers/${image.srcName}`}
+                            alt={image.altName} />
                         </div>
                     })}
                 </div>
