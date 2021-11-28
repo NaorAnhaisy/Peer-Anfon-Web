@@ -2,6 +2,9 @@
   width: 100% !important;
   padding: 20px;
   font-size: 13px;
+  justify-content: center;
+  row-gap: 20px;
+  text-align: center;
 }
 
 .copyrightSpan {
@@ -17,6 +20,7 @@
 .developerName {
   margin-left: 3px;
   color: #d7c293;
+  font-weight: 900;
   text-decoration: none;
   transition: all 0.4s;
 }
@@ -33,10 +37,6 @@
   .footerBarRow .col-sm-12:first-child {
     margin-bottom: 15px;
   }
-}
-
-.footerBarRow {
-  row-gap: 20px;
 }
 
 .linksFooter {
@@ -59,7 +59,7 @@
   color: #ececec;
 }
 
-.linksFooterCol a:not(.linksFooterColTitle) {
+.linksFooterCol>a:not(.linksFooterColTitle) {
   font-size: 13px;
   color: #d3d3d3;
   text-decoration: none;
@@ -70,7 +70,7 @@
   transition: color 0.3s;
 }
 
-.linksFooterCol a:not(.linksFooterColTitle):hover {
+.linksFooterCol>a:not(.linksFooterColTitle):hover {
   color: #cfba8a;
 }
 
@@ -141,4 +141,28 @@
 
 .backToTopBtn:hover {
   background-color: var(--gold-secondary);
+}
+
+.contactUsParagraph {
+  line-height: 24px;
+}
+
+.contactUsHref {
+  font-weight: 700;
+  direction: ltr;
+  display: inline-block;
+}
+
+.contactUsHref a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s cubic-bezier(.4, 0, .2, 1);
+  -webkit-transition: color 0.3s cubic-bezier(.4, 0, .2, 1);
+  -moz-transition: color 0.3s cubic-bezier(.4, 0, .2, 1);
+  -ms-transition: color 0.3s cubic-bezier(.4, 0, .2, 1);
+  -o-transition: color 0.3s cubic-bezier(.4, 0, .2, 1);
+}
+
+.contactUsHref a:hover {
+  color: var(--gold-secondary);
 }
