@@ -2,6 +2,7 @@
 import styles from './ImagesGallery.module.css';
 import { useEffect } from 'react';
 import AOS from 'aos';
+import Zoom from 'react-medium-image-zoom'
 
 /**
  * @param {Array.<object>} images Array of objects, which inlcues:
@@ -21,8 +22,8 @@ export default function ImagesGallery({ images, altLabel }) {
         <div className={styles.gallery}>
             {images?.map((image, i) => {
                 return <div key={i} data-aos="fade-up" data-aos-offset="200" data-aos-duration="700" className={`${image.strechType ? styles[image.strechType] : ""} ${styles.blackedImageOnHover}`}>
-                    <img src={image.src} alt={`${altLabel} ${i + 1}`} />
-                </div>
+                        <img src={image.src} alt={`${altLabel} ${i + 1}`} className={styles.image} />
+                    </div>
             })}
         </div>
     )

@@ -1,27 +1,18 @@
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-        -webkit-transform: translateX(0);
-        -moz-transform: translateX(0);
-        -ms-transform: translateX(0);
-        -o-transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(calc(-250px * 7));
-        -webkit-transform: translateX(calc(-250px * 7));
-        -moz-transform: translateX(calc(-250px * 7));
-        -ms-transform: translateX(calc(-250px * 7));
-        -o-transform: translateX(calc(-250px * 7));
-    }
+.sliderBody {
+    align-items: center;
+    background: white;
+    display: flex;
+    justify-content: center;
+    direction: ltr;
 }
 
 .slider {
+    direction: ltr;
     box-shadow: 0 10px 20px -5px rgb(0 0 0 / 13%);
     margin: auto;
     overflow: hidden;
     position: relative;
-    width: 100%;
+    width: 100vw;
 }
 
 .slider::before,
@@ -30,7 +21,7 @@
     content: "";
     height: 100px;
     position: absolute;
-    width: 250px;
+    width: 200px;
     z-index: 2;
 }
 
@@ -54,17 +45,33 @@
     height: 100px;
 }
 
-.slider .slideTrack {
-    display: flex;
-    width: calc(250px * 24);
-    animation: scroll 20s linear infinite;
-    -webkit-animation: scroll 20s linear infinite;
+.slider .slide img {
+    width: 250px;
+    height: 100px;
+    object-fit: contain;
 }
 
-.sliderBody {
-    align-items: center;
-    background: white;
+.slider .slideTrack {
     display: flex;
-    justify-content: center;
-    direction: ltr;
+    width: calc(250px * 14);
+    animation: scroll 14s linear infinite;
+    -webkit-animation: scroll 14s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 7));
+        -webkit-transform: translateX(calc(-250px * 7));
+        -moz-transform: translateX(calc(-250px * 7));
+        -ms-transform: translateX(calc(-250px * 7));
+        -o-transform: translateX(calc(-250px * 7));
+    }
 }

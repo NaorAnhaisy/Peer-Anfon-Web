@@ -39,6 +39,7 @@
     "react-filepond": "^7.1.1",
     "react-leaflet": "^3.2.2",
     "react-map-gl": "^6.1.17",
+    "react-medium-image-zoom": "^4.3.5",
     "react-multi-carousel": "^2.6.5",
     "react-visibility-sensor": "^5.1.1"
   },
