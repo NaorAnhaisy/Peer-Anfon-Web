@@ -6,7 +6,6 @@
     text-align: right;
     direction: rtl;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    width: 18rem;
     cursor: pointer;
     transition: box-shadow 0.22s linear;
     -webkit-transition: box-shadow 0.22s linear;
@@ -40,4 +39,18 @@
     font-size: 15px;
     overflow: hidden;
     margin-top: 17px;
+}
+
+.cardTitle {
+    color: #caa859;
+    padding: 7px 10px;
+    height: 90px;
+}
+
+.articleContainer {
+    text-align: right;
+}
+
+.articleTitle {
+
 }
