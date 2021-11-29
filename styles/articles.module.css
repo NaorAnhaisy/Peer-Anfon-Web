@@ -23,6 +23,15 @@
     max-width: 20px;
 }
 
+.articleContent ul {
+    margin-top: 10px;
+    list-style: circle;
+}
+
+.articleContent ul li {
+    margin: 10px 0;
+}
+
 .articleFooter {
     display: flex;
     flex-direction: row-reverse;
@@ -87,10 +96,15 @@
     border-radius: 10px;
     width: 200px;
     padding: 10px 0px;
-    background: floralwhite;
+    background: rgb(255, 255, 255);
     color: black;
     font-size: 16px;
     font-family: 'Alef';
+    transition: all 0.2s ease-in-out;
+}
+
+.backAndNextArticleBtnsDiv button:hover {
+    background: floralwhite;
 }
 
 .backAndNextArticleBtnsDiv button i {
@@ -117,6 +131,16 @@
     width: 105px;
     height: 40px;
     border-radius: 100%;
+}
+
+@media (max-width: 768px) {
+    .backAndNextArticleBtnsDiv button {
+        width: 150px;
+    }
+
+    .backAndNextArticleBtnsDiv {
+        justify-content: center;
+    }
 }
 
 .cta {
@@ -221,7 +245,7 @@
         -moz-transform: translateX(0) scale(1);
         -ms-transform: translateX(0) scale(1);
         -o-transform: translateX(0) scale(1);
-}
+    }
 
     25% {
         opacity: 0;
@@ -230,7 +254,7 @@
         -moz-transform: translateX(-10px) scale(0.9);
         -ms-transform: translateX(-10px) scale(0.9);
         -o-transform: translateX(-10px) scale(0.9);
-}
+    }
 
     26% {
         opacity: 0;
@@ -239,7 +263,7 @@
         -moz-transform: translateX(10px) scale(0.9);
         -ms-transform: translateX(10px) scale(0.9);
         -o-transform: translateX(10px) scale(0.9);
-}
+    }
 
     55% {
         opacity: 1;

@@ -45,7 +45,7 @@ export default function Article() {
                     <RotateLoader />
                     :
                     article?.html.map((section, i) => {
-                        return <div className="mt-5 mb-5" key={i}>
+                        return <div className={`mt-5 mb-5 ${styles.articleContent}`} key={i}>
                             <h3 className={i === 0 ? styles.articleTitle : styles.articleSectionTitle}>{section.title}</h3>
                             <div className={i === 0 ? styles.articleStartParagraph : styles.articleParagraph} dangerouslySetInnerHTML={{ __html: section.paragraph }} />
                             <div className={i === 0 ? styles.sperator : ""} />
