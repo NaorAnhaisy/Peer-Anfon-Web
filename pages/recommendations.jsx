@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import { Container, Row, Col } from "react-bootstrap";
-import styles from "../styles/recommendations.module.css";
 import RecommandsFormDiv from '../components/RecommandsFormDiv/RecommandsFormDiv';
 import CardsSlider from '../components/CardsSlider/CardsSlider';
+
 export default function Recommendations() {
     return (
         <div>
