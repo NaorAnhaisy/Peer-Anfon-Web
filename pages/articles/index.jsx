@@ -8,10 +8,6 @@ import { useEffect } from "react";
 let articles = require('../../data/articles.json');
 
 export default function Articles() {
-    useEffect(() => {
-        AOS.init();
-    }, []);
-
     return (
         <div>
             <Container className="mt-5 mb-5">
@@ -26,9 +22,7 @@ export default function Articles() {
                         {articles.map((article, index) => {
                             return <Link passHref key={index} href={`/articles/${article.articleID}`}>
                                 <Col xs={12} md={6} lg={4} xl={3}>
-                                    <Card data-aos="fade-zoom-in"
-                                        data-aos-once={true}
-                                        data-aos-duration="600"
+                                    <Card
                                         className={styles.articleCard}>
                                         <Card.Img variant="top" src={article.imgSrc} />
                                         <Card.Body>

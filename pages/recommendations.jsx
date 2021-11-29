@@ -18,7 +18,7 @@ export default function Recommendations() {
                         <RecommandsFormDiv />
                     </Col>
                     <Col xs={12} lg={6}>
-                        <img src="/images/Illustrations/Recommands2.png" alt="" style={{ width: '100%' }} />
+                        <img src="/images/Illustrations/Recommands2.png" alt="המלצות פאר אנפון" style={{ width: '100%' }} />
                     </Col>
                 </Row>
             </Container>
