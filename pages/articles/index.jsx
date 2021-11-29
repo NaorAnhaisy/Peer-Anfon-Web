@@ -20,23 +20,37 @@ export default function Articles() {
                 <Container fluid>
                     <Row className={styles.articlesRow}>
                         {articles.map((article, index) => {
-                            return <Link passHref key={index} href={`/articles/${article.articleID}`}>
-                                <Col xs={12} md={6} lg={4} xl={3}>
-                                    <Card
-                                        className={styles.articleCard}>
-                                        <Card.Img variant="top" src={article.imgSrc} />
-                                        <Card.Body>
-                                            <Card.Title className={styles.cardTitle}>{article.title}</Card.Title>
-                                            <Card.Text className={styles.articleCardSubTitle}>
-                                                {article.subtitle}
-                                            </Card.Text>
-                                        </Card.Body>
-                                        <Card.Footer className={styles.articleFooter}>
-                                            <img src="/images/‏‏company-logo-symbol.png" alt="פאר אנפון תעשתיות בעמ" className={`undragablle-image ${styles.companyLogoSymbol}`} />
-                                        </Card.Footer>
-                                    </Card>
-                                </Col>
-                            </Link>
+                            return <Col key={index} xs={12} md={6} lg={4} xl={3}>
+                                <div className={styles.card}>
+                                    <figure className={styles.cardThumb}>
+                                        <img src={article.imgSrc} alt="Picture by Daniel Lincoln" className={styles.cardImage} />
+                                        <figcaption className={styles.cardCaption}>
+                                            <h2 className={styles.cardTitle}>{article.title}</h2>
+                                            <p className={styles.cardSnippet}>{article.subtitle}</p>
+                                            <Link href={`/articles/${article.articleID}`}>
+                                                <a className={styles.cardButton}>קראו עוד</a>
+                                            </Link>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </Col>
+                            // return <Link passHref key={index} href={`/articles/${article.articleID}`}>
+                            //     <Col xs={12} md={6} lg={4} xl={3}>
+                            //         <Card
+                            //             className={styles.articleCard}>
+                            //             <Card.Img variant="top" src={article.imgSrc} />
+                            //             <Card.Body>
+                            //                 <Card.Title className={styles.cardTitle}>{article.title}</Card.Title>
+                            //                 {/* <Card.Text className={styles.articleCardSubTitle}>
+                            //                     {article.subtitle}
+                            //                 </Card.Text> */}
+                            //             </Card.Body>
+                            //             <Card.Footer className={styles.articleFooter}>
+                            //                 <img src="/images/‏‏company-logo-symbol.png" alt="פאר אנפון תעשתיות בעמ" className={`undragablle-image ${styles.companyLogoSymbol}`} />
+                            //             </Card.Footer>
+                            //         </Card>
+                            //     </Col>
+                            // </Link>
                         })}
                     </Row>
                 </Container>
