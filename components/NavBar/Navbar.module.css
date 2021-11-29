@@ -367,6 +367,7 @@
     padding: 10px 0;
     display: block;
     font-size: 20px;
+    border-bottom: 1px solid var(--gold-secondary);
 }
 
 .menu li i {

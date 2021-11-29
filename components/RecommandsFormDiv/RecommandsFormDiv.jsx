@@ -154,7 +154,7 @@ export default function ContactUs() {
                         />
                         <textarea
                             className={styles.recommendsTextInput}
-                            placeholder="ספרו לנו כיצד נהנתם מפאר אנפון..."
+                            placeholder="ספרו לנו, כיצד נהנתם מפאר אנפון?"
                             rows="5"
                             spellCheck="true"
                             value={message}

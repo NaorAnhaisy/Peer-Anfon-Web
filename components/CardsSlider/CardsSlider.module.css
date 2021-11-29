@@ -17,10 +17,16 @@
 }
 
 .subTitle {
-    /* font-size: 14px;
-    color: #b3a073;
-    font-weight: bold;
-    margin-bottom: 10px; */
     display: flex;
     justify-content: space-between;
+}
+
+.message {
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.message ul {
+    margin: 10px 0;
+    padding-left: 0;
 }
