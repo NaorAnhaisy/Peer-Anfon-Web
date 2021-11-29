@@ -104,21 +104,19 @@
     margin-top: 40px;
 }
 
-/*  */
-
 .centerCon {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
-.round {
+.roundPrev, .roundNext {
     position: absolute;
     border: none;
     width: 105px;
     height: 40px;
     border-radius: 100%;
-
 }
 
 .cta {
@@ -127,33 +125,25 @@
     position: absolute;
 }
 
-.cta .arrow {
+.cta .arrowPrev, .cta .arrowNext {
     left: 30%;
 }
 
-.arrow {
+.arrowPrev, .arrowNext {
     position: absolute;
     margin-left: 2px;
     width: 30px;
     height: 30px;
-    background-size: contain;
     top: 19px;
-    background-repeat: no-repeat;
 }
 
-.segunda {
+.segundaPrev, .segundaNext {
     margin-left: 10px;
 }
 
-.prev {
-    background-image: url(https://icon-library.com/images/right-arrow-icon/right-arrow-icon-3.jpg);
-}
+/* Right Arrow (Previous) */
 
-.next {
-    background-image: url(https://icon-library.com/images/right-arrow-icon/right-arrow-icon-3.jpg);
-}
-
-@keyframes bounceAlpha {
+@keyframes bounceRight {
     0% {
         opacity: 1;
         transform: translateX(0px) scale(1);
@@ -191,30 +181,100 @@
     }
 }
 
-.bounceAlpha {
-    animation-name: bounceAlpha;
+.bounceRight {
+    animation-name: bounceRight;
     animation-duration: 1.4s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
-.arrow.primera.bounceAlpha {
-    animation-name: bounceAlpha;
+.arrowPrev.primeraPrev.bounceRight {
+    animation-name: bounceRight;
     animation-duration: 1.4s;
     animation-delay: 0.2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
-.prevBtn:hover .round .arrow {
-    animation-name: bounceAlpha;
+.prevBtn:hover .roundPrev .arrowPrev {
+    animation-name: bounceRight;
     animation-duration: 1.4s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
-.prevBtn:hover .round .arrow.primera {
-    animation-name: bounceAlpha;
+.prevBtn:hover .roundPrev .arrowPrev.primeraPrev {
+    animation-name: bounceRight;
+    animation-duration: 1.4s;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/* Left Arrow (Next) */
+
+@keyframes bounceLeft {
+    0% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+        -webkit-transform: translateX(0) scale(1);
+        -moz-transform: translateX(0) scale(1);
+        -ms-transform: translateX(0) scale(1);
+        -o-transform: translateX(0) scale(1);
+}
+
+    25% {
+        opacity: 0;
+        transform: translateX(-10px) scale(0.9);
+        -webkit-transform: translateX(-10px) scale(0.9);
+        -moz-transform: translateX(-10px) scale(0.9);
+        -ms-transform: translateX(-10px) scale(0.9);
+        -o-transform: translateX(-10px) scale(0.9);
+}
+
+    26% {
+        opacity: 0;
+        transform: translateX(10px) scale(0.9);
+        -webkit-transform: translateX(10px) scale(0.9);
+        -moz-transform: translateX(10px) scale(0.9);
+        -ms-transform: translateX(10px) scale(0.9);
+        -o-transform: translateX(10px) scale(0.9);
+}
+
+    55% {
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+        -webkit-transform: translateX(0px) scale(1);
+        -moz-transform: translateX(0px) scale(1);
+        -ms-transform: translateX(0px) scale(1);
+        -o-transform: translateX(0px) scale(1);
+    }
+}
+
+.bounceLeft {
+    animation-name: bounceLeft;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.arrowNext.segundaNext.bounceLeft {
+    animation-name: bounceLeft;
+    animation-duration: 1.4s;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.nextBtn:hover .roundNext .arrowNext {
+    animation-name: bounceLeft;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.nextBtn:hover .roundNext .arrowNext.segundaNext {
+    animation-name: bounceLeft;
     animation-duration: 1.4s;
     animation-delay: 0.2s;
     animation-iteration-count: infinite;

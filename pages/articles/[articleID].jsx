@@ -53,30 +53,28 @@ export default function Article() {
                     })
             }
             <div className={styles.backAndNextArticleBtnsDiv}>
-                <button type="button" onClick={nextArticle}>
+                <button type="button" onClick={nextArticle} className={styles.nextBtn}>
                     <span>
                         המאמר הבא
                     </span>
-                    {/* <div className={styles.centerCon}>
-                        <div className={styles.round}>
+                    <div className={styles.centerCon}>
+                        <div className={styles.roundNext}>
                             <div className={styles.cta}>
-                                <span className={`${styles.arrow} ${styles.primera} ${styles.next}`}></span>
-                                <span className={`${styles.arrow} ${styles.segunda} ${styles.next}`}></span>
+                                <i className={`fas fa-chevron-left ${styles.arrowNext} ${styles.primeraNext}`}></i>
+                                <i className={`fas fa-chevron-left ${styles.arrowNext} ${styles.segundaNext}`}></i>
                             </div>
                         </div>
-                    </div> */}
-                    <i className="fas fa-chevron-left"></i>
+                    </div>
                 </button>
                 <button type="button" onClick={prevArticle} className={styles.prevBtn}>
-                    <i className="fas fa-chevron-right"></i>
-                    {/* <div className={styles.centerCon}>
-                        <div className={styles.round}>
+                    <div className={styles.centerCon}>
+                        <div className={styles.roundPrev}>
                             <div className={styles.cta}>
-                                <span className={`${styles.arrow} ${styles.primera} ${styles.prev}`}></span>
-                                <span className={`${styles.arrow} ${styles.segunda} ${styles.prev}`}></span>
+                                <i className={`fas fa-chevron-right ${styles.arrowPrev} ${styles.primeraPrev}`}></i>
+                                <i className={`fas fa-chevron-right ${styles.arrowPrev} ${styles.segundaPrev}`}></i>
                             </div>
                         </div>
-                    </div> */}
+                    </div>
                     <span>
                         המאמר הקודם
                     </span>
