@@ -36,7 +36,7 @@ export default function Article() {
             <div className="push-from-navbar"></div>
             <div className={doorStyles.arrowBackIconWrapper} onClick={() => router.push(`/articles`)}>
                 <div className={doorStyles.arrowBackIcon}></div>
-                <span className={doorStyles.arrowBackIconText}>חזור לתפריט</span>
+                <span className={doorStyles.arrowBackIconText}>לכל המאמרים</span>
             </div>
             {articleNotFound && !article ?
                 <h3>מצטערים, המאמר לא נמצא</h3>
@@ -48,6 +48,7 @@ export default function Article() {
                         return <div className="mt-5 mb-5" key={i}>
                             <h3 className={i === 0 ? styles.articleTitle : styles.articleSectionTitle}>{section.title}</h3>
                             <div className={i === 0 ? styles.articleStartParagraph : styles.articleParagraph} dangerouslySetInnerHTML={{ __html: section.paragraph }} />
+                            <div className={i === 0 ? styles.sperator : ""} />
                         </div>
                     })
             }
@@ -56,10 +57,26 @@ export default function Article() {
                     <span>
                         המאמר הבא
                     </span>
+                    {/* <div className={styles.centerCon}>
+                        <div className={styles.round}>
+                            <div className={styles.cta}>
+                                <span className={`${styles.arrow} ${styles.primera} ${styles.next}`}></span>
+                                <span className={`${styles.arrow} ${styles.segunda} ${styles.next}`}></span>
+                            </div>
+                        </div>
+                    </div> */}
                     <i className="fas fa-chevron-left"></i>
                 </button>
-                <button type="button" onClick={prevArticle}>
+                <button type="button" onClick={prevArticle} className={styles.prevBtn}>
                     <i className="fas fa-chevron-right"></i>
+                    {/* <div className={styles.centerCon}>
+                        <div className={styles.round}>
+                            <div className={styles.cta}>
+                                <span className={`${styles.arrow} ${styles.primera} ${styles.prev}`}></span>
+                                <span className={`${styles.arrow} ${styles.segunda} ${styles.prev}`}></span>
+                            </div>
+                        </div>
+                    </div> */}
                     <span>
                         המאמר הקודם
                     </span>

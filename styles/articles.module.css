@@ -7,11 +7,11 @@
     direction: rtl;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     cursor: pointer;
-    transition: box-shadow 0.22s linear;
-    -webkit-transition: box-shadow 0.22s linear;
-    -moz-transition: box-shadow 0.22s linear;
-    -ms-transition: box-shadow 0.22s linear;
-    -o-transition: box-shadow 0.22s linear;
+    transition: box-shadow 0.22s ease-out;
+    -webkit-transition: box-shadow 0.22s ease-out;
+    -moz-transition: box-shadow 0.22s ease-out;
+    -ms-transition: box-shadow 0.22s ease-out;
+    -o-transition: box-shadow 0.22s ease-out;
 }
 
 .articleCard:hover {
@@ -36,7 +36,7 @@
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
-    font-size: 15px;
+    font-size: 14px;
     overflow: hidden;
     margin-top: 17px;
 }
@@ -44,7 +44,10 @@
 .cardTitle {
     color: #caa859;
     padding: 7px 10px;
-    height: 90px;
+    font-weight: 300;
+    height: 100px;
+    /* border-bottom: 1px solid #b0914b; */
+    font-size: 22px;
 }
 
 .articleContainer {
@@ -55,6 +58,7 @@
     color: var(--gold-primary);
     margin-bottom: 20px;
     font-size: 42px;
+    font-weight: 300;
 }
 
 .articleStartParagraph {
@@ -64,7 +68,8 @@
 .articleSectionTitle {
     color: var(--gold-dark);
     margin-bottom: 15px;
-    font-size: 30px;
+    font-size: 33px;
+    font-weight: 300;
 }
 
 .backAndNextArticleBtnsDiv {
@@ -90,4 +95,244 @@
 
 .backAndNextArticleBtnsDiv button i {
     margin-top: 4px;
+}
+
+.sperator {
+    height: 1px;
+    width: 100%;
+    background: #c6c6c6;
+    margin-top: 40px;
+}
+
+/*  */
+
+.centerCon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.round {
+    position: absolute;
+    border: none;
+    width: 105px;
+    height: 40px;
+    border-radius: 100%;
+
+}
+
+.cta {
+    width: 100%;
+    cursor: pointer;
+    position: absolute;
+}
+
+.cta .arrow {
+    left: 30%;
+}
+
+.arrow {
+    position: absolute;
+    margin-left: 2px;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    top: 19px;
+    background-repeat: no-repeat;
+}
+
+.segunda {
+    margin-left: 10px;
+}
+
+.prev {
+    background-image: url(https://icon-library.com/images/right-arrow-icon/right-arrow-icon-3.jpg);
+}
+
+.next {
+    background-image: url(https://icon-library.com/images/right-arrow-icon/right-arrow-icon-3.jpg);
+}
+
+@keyframes bounceAlpha {
+    0% {
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+        -webkit-transform: translateX(0px) scale(1);
+        -moz-transform: translateX(0px) scale(1);
+        -ms-transform: translateX(0px) scale(1);
+        -o-transform: translateX(0px) scale(1);
+    }
+
+    25% {
+        opacity: 0;
+        transform: translateX(10px) scale(0.9);
+        -webkit-transform: translateX(10px) scale(0.9);
+        -moz-transform: translateX(10px) scale(0.9);
+        -ms-transform: translateX(10px) scale(0.9);
+        -o-transform: translateX(10px) scale(0.9);
+    }
+
+    26% {
+        opacity: 0;
+        transform: translateX(-10px) scale(0.9);
+        -webkit-transform: translateX(-10px) scale(0.9);
+        -moz-transform: translateX(-10px) scale(0.9);
+        -ms-transform: translateX(-10px) scale(0.9);
+        -o-transform: translateX(-10px) scale(0.9);
+    }
+
+    55% {
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+        -webkit-transform: translateX(0px) scale(1);
+        -moz-transform: translateX(0px) scale(1);
+        -ms-transform: translateX(0px) scale(1);
+        -o-transform: translateX(0px) scale(1);
+    }
+}
+
+.bounceAlpha {
+    animation-name: bounceAlpha;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.arrow.primera.bounceAlpha {
+    animation-name: bounceAlpha;
+    animation-duration: 1.4s;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.prevBtn:hover .round .arrow {
+    animation-name: bounceAlpha;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.prevBtn:hover .round .arrow.primera {
+    animation-name: bounceAlpha;
+    animation-duration: 1.4s;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/* New Card */
+
+.card {
+    width: 100%;
+    margin: 10px;
+    background-color: white;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.card:hover .cardCaption {
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.card:hover .cardImage {
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+}
+
+.card:hover .cardThumb::after {
+    top: 0;
+}
+
+.card:hover .cardSnippet {
+    margin: 20px 0;
+}
+
+.cardThumb {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+
+.cardThumb::after {
+    position: absolute;
+    top: calc(100% - 140px);
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, .5) 40%, rgba(255, 255, 255, 0) 100%);
+    transition: 0.3s;
+}
+
+.cardImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+}
+
+.cardCaption {
+    position: absolute;
+    z-index: 1;
+    padding: 0 20px;
+    color: white;
+    text-align: center;
+    transition: 0.3s;
+    top: calc(100% - 110px);
+    transform: unset;
+    -webkit-transform: unset;
+    -moz-transform: unset;
+    -ms-transform: unset;
+    -o-transform: unset;
+}
+
+.cardTitle {
+    display: -webkit-box;
+    max-height: 100px;
+    overflow: hidden;
+    font-size: 23px;
+    line-height: 28px;
+    text-shadow: 0px 1px 5px black;
+    color: white;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.cardSnippet {
+    display: -webkit-box;
+    max-height: 150px;
+    margin: 20px 0;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    transition: 0.5s ease-in-out;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    margin: 60px 0;
+}
+
+.cardButton {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    border: 1px solid white;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.cardButton:hover {
+    color: black;
+    background-color: white;
 }
