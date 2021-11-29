@@ -6,7 +6,6 @@
     text-align: right;
     direction: rtl;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    width: 18rem;
     cursor: pointer;
     transition: box-shadow 0.22s linear;
     -webkit-transition: box-shadow 0.22s linear;
@@ -40,4 +39,55 @@
     font-size: 15px;
     overflow: hidden;
     margin-top: 17px;
+}
+
+.cardTitle {
+    color: #caa859;
+    padding: 7px 10px;
+    height: 90px;
+}
+
+.articleContainer {
+    text-align: right;
+}
+
+.articleTitle {
+    color: var(--gold-primary);
+    margin-bottom: 20px;
+    font-size: 42px;
+}
+
+.articleStartParagraph {
+    font-size: 18px;
+}
+
+.articleSectionTitle {
+    color: var(--gold-dark);
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.backAndNextArticleBtnsDiv {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.backAndNextArticleBtnsDiv button {
+    display: flex;
+    justify-content: space-evenly;
+    outline: none;
+    border: 1px solid #d6d6d6;
+    border-radius: 10px;
+    width: 200px;
+    padding: 10px 0px;
+    background: floralwhite;
+    color: black;
+    font-size: 16px;
+    font-family: 'Alef';
+}
+
+.backAndNextArticleBtnsDiv button i {
+    margin-top: 4px;
 }
