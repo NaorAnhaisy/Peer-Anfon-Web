@@ -56,14 +56,6 @@ module.exports = withPlugins([], {
         destination: '/enter-doors',
       },
       {
-        source: `/${encodeURIComponent('דלתות-כניסה')}/${encodeURIComponent('דלתות-כניסה-אלומיניום')}`,
-        destination: '/enter-doors/aluminium',
-      },
-      {
-        source: `/${encodeURIComponent('דלתות-כניסה')}/${encodeURIComponent('דלתות-כניסה-זכוכית')}`,
-        destination: '/enter-doors/glass',
-      },
-      {
         source: `/${encodeURIComponent('מערכות-אינטרקום')}`,
         destination: '/intercom',
       },

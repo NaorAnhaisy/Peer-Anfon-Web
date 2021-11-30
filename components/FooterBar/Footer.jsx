@@ -34,12 +34,10 @@ export default function Footer() {
         </Col>
         <Col className={styles.linksFooterCol} xs={12} md={6} lg={2}>
           <Link href="/דלתות-כניסה">
-            <a className={styles.linksFooterColTitle}>דלתות כניסה</a>
+            <a className={`${styles.linksFooterColTitle} mb-3`}>דלתות כניסה</a>
           </Link>
-          <Link href="/דלתות-כניסה/דלתות-כניסה-אלומיניום">דלתות כניסה אלומיניום</Link>
-          <Link href="/דלתות-כניסה/דלתות-כניסה-זכוכית">דלתות כניסה זכוכית</Link>
           <Link href="/מערכות-אינטרקום">
-            <a className={`${styles.linksFooterColTitle} mt-5 mb-3`}>מערכות אינטרקום</a>
+            <a className={`${styles.linksFooterColTitle} mt-1 mb-3`}>מערכות אינטרקום</a>
           </Link>
           <Link href="/מעברים-מהירים">
             <a className={`${styles.linksFooterColTitle} mt-1 mb-3`}>מעברים מהירים</a>

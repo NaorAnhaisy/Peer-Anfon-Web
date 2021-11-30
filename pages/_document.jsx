@@ -34,6 +34,8 @@ class MyDocument extends Document {
                         href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" />
                     <link rel="canonical" href="https://peer-anfon-group.co.il/" key="canonical" />
 
+                    <script async
+                        src="https://cdn.enable.co.il/licenses/enable-L10108j65axynpdc-1121-24966/init.js"></script>
                     {/* Global Site Tag (gtag.js) - Google Analytics */}
                     <script
                         async

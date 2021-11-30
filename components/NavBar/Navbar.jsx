@@ -152,25 +152,10 @@ export default function MainNavbar() {
                             </Link>
                           </li>
 
-                          <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4"
-                            onMouseLeave={() => setShowEnterDoorsDropdown(false)}>
-                            <NavDropdown
-                              className="dropdown-toggle"
-                              title="דלתות כניסה"
-                              onToggle={() => toogleTo("/דלתות-כניסה")}
-                              show={showEnterDoorsDropdown}
-                              onMouseEnter={() => setShowEnterDoorsDropdown(true)}
-                            >
-                              <NavDropdown.Item className={styles.displayOnlyOnMobile} href="/דלתות-כניסה">
-                                דלתות כניסה - כללי
-                              </NavDropdown.Item>
-                              <NavDropdown.Item href="/דלתות-כניסה/דלתות-כניסה-אלומיניום">
-                                דלתות כניסה אלומיניום
-                              </NavDropdown.Item>
-                              <NavDropdown.Item href="/דלתות-כניסה/דלתות-כניסה-זכוכית">
-                                דלתות כניסה זכוכית
-                              </NavDropdown.Item>
-                            </NavDropdown>
+                          <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                            <Link className="nav-link" href="/דלתות-כניסה">
+                              דלתות כניסה
+                            </Link>
                           </li>
 
                           <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
@@ -184,8 +169,8 @@ export default function MainNavbar() {
 
                           <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                             <Link className="nav-link" href="/צור-קשר"
-                            data-toggle="collapse"
-                            data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                              data-toggle="collapse"
+                              data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
                               צור קשר
                             </Link>
                           </li>
