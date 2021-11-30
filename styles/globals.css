@@ -370,3 +370,14 @@ body {
     padding: 0 100px;
   }
 }
+
+/* Accessbily Widget */
+#enable-toolbar-trigger .keyboard-shorcut {
+  left: 55px !important;
+  top: 15px !important;
+}
+
+#enable-toolbar-trigger svg {
+  width: 56px !important;
+  height: 56px !important;
+}
