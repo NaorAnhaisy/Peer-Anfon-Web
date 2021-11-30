@@ -56,19 +56,6 @@ export default function MainNavbar() {
                           className="undragablle-image"
                           alt="פאר אנפון"
                         />
-                        {/* <img
-                          src="/images/‏‏company-logo-symbol.png"
-                          className="undragablle-image"
-                          alt="פאר אנפון"
-                        />
-                        <div className={` ${styles.navbarLogoTextDiv}`}>
-                          <span className={`${styles.navbarLogoText}`}>
-                            <span>פאר</span>
-                            <span>אנפון</span>
-                            <span>תעשיות בע&quot;מ</span>
-                          </span>
-                        </div> */}
-                        {/* ${styles.shine}  */}
                       </a>
                     </Link>
                   </div>

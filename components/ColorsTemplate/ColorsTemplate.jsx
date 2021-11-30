@@ -6,7 +6,7 @@ import Image from 'next/image'
 export default function ColorsTemplate() {
     useEffect(() => {
         AOS.init();
-    });
+    }, []);
 
     const imagesColorsSrcArr = useMemo(() => {
         return ["https://images.prismic.io/deuren/1072c386-6560-452a-8b81-af346e131ba2_Deuren-Internal-Door-Swatch-Stiffkey-Blue.jpg",

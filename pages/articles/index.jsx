@@ -13,9 +13,10 @@ export default function Articles() {
             <Container className="mt-5 mb-5">
                 <div className="push-from-navbar"></div>
                 <div className="mb-5 page-title">
-                    <h1>מאמרים מקצועיים</h1>
-                    <div className="mt-3 mb-4 separator"></div>
+                    <h1 className="text-shine">מאמרים מקצועיים</h1>
                 </div>
+                <div className="mb-5 separator"></div>
+
                 <Container fluid>
                     <Row className={styles.articlesRow}>
                         {articles.map((article, index) => {

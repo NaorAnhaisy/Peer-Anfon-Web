@@ -9,10 +9,10 @@ export default function Recommendations() {
             <Container className="mt-5">
                 <div className="push-from-navbar"></div>
                 <div className="mb-5 page-title">
-                    <h1>מרוצים מפאר אנפון ?</h1>
-                    <div className="mt-3 mb-4 separator"></div>
-                    <p>ספרו לנו על כך! מלאו את הטופס:</p>
+                    <h1 className="text-shine">מרוצים מפאר אנפון ?</h1>
                 </div>
+                <div className="mb-5 separator"></div>
+                <p className="page-subtitle">ספרו לנו על כך! מלאו את הטופס:</p>
                 <Row>
                     <Col xs={12} lg={6}>
                         <RecommandsFormDiv />

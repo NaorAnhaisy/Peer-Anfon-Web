@@ -6,10 +6,10 @@ import Link from "next/link";
 import VisibilitySensor from "react-visibility-sensor";
 import AOS from 'aos';
 
-export default function MailboxRooms() {
+export default function Mailboxes() {
     useEffect(() => {
         AOS.init({ once: true });
-    });
+    }, []);
 
     const [isFirstContentShowed, setIsFirstContentShowed] = useState(false);
     const [isSecondContentShowed, setIsSecondContentShowed] = useState(false);

@@ -318,15 +318,55 @@ body {
 }
 
 /* Every Title usage */
+.page-title {
+  position: relative;
+  margin-top: 100px;
+}
+
 .page-title h1 {
-  color: #b2a074;
   font-weight: 100;
   font-size: 50px;
 }
 
-.page-title p {
+.page-subtitle {
   font-size: 20px;
   max-width: 42rem;
   margin: auto;
   color: #575757;
+  margin-bottom: 100px;
+}
+
+.text-shine {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.1);
+  background: gradient(linear, right top, left top, from(var(--gold-secondary)), to(var(--gold-secondary)), color-stop(0.5, #fff));
+  background: -moz-gradient(linear, right top, left top, from(var(--gold-secondary)), to(var(--gold-secondary)), color-stop(0.5, #fff));
+  background: -webkit-gradient(linear, right top, left top, from(var(--gold-secondary)), to(var(--gold-secondary)), color-stop(0.5, #fff));
+  -webkit-background-size: 125px 100%;
+  -moz-background-size: 125px 100%;
+  background-size: 125px 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  background-repeat: no-repeat;
+  background-position: 0 right;
+  background-color: var(--gold-secondary);
+  animation: shine 2.5s infinite linear;
+  -webkit-animation: shine 2.5s infinite linear;
+}
+
+@keyframes shine {
+  0% {
+    background-position: top right;
+  }
+
+  100% {
+    background-position: top left;
+  }
+}
+
+@media (max-width: 553px) {
+  .text-shine {
+    padding: 0 100px;
+  }
 }

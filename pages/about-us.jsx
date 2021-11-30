@@ -6,9 +6,9 @@ export default function AboutUs() {
     <Container className="mt-5">
       <div className="push-from-navbar"></div>
       <div className="mb-5 page-title">
-        <h1>אודותינו</h1>
-        <div className="mt-3 mb-4 separator"></div>
+        <h1 className="text-shine">אודותינו</h1>
       </div>
+      <div className="mb-5 separator"></div>
       <Container>
         <h3>
           חברת פאר אנפון הינה החברה הותיקה והמובילה בארץ בייצור והתקנה של דלתות כניסה, דלתות חשמליות, תיבות דואר ומערכות אינטרקום

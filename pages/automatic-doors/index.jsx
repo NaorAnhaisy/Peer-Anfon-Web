@@ -10,7 +10,7 @@ import AOS from 'aos';
 export default function AutomaticDoors() {
     useEffect(() => {
         AOS.init({ once: true });
-    });
+    }, []);
 
     const [isFirstContentShowed, setIsFirstContentShowed] = useState(false);
     const [isSecondContentShowed, setIsSecondContentShowed] = useState(false);

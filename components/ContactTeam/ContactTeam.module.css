@@ -35,6 +35,10 @@
     -o-transition: background 0.4s;
 }
 
+.contactTeamContainer a:hover {
+    background: var(--gold-secondary);
+}
+
 @media (max-width: 400px) {
     .contactTeamContainer a {
         padding: 10px 60px;

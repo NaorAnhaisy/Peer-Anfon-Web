@@ -59,7 +59,7 @@
 
 .homeRowViewExamples h1,
 .homeInfoDiv h1 {
-  color: #b2a074;
+  color: var(--gold-secondary);
   text-align: right;
 }
 
@@ -128,7 +128,7 @@
 }
 
 .homeColorsContainer h1 {
-  color: #b2a074;
+  color: var(--gold-secondary);
   text-align: right;
 }
 

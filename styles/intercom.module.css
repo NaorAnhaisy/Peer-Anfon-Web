@@ -1,5 +1,5 @@
 .mainContainer {
-    margin-top: 12rem;
+    margin-top: 14rem !important;
 }
 
 .subTitleDiv {
@@ -7,7 +7,7 @@
 }
 
 .subTitleDiv h3 {
-    color: #b2a074;
+    color: var(--gold-secondary);
     font-weight: 100;
     font-size: 35px;
 }
@@ -98,7 +98,8 @@
     padding: 16px 32px;
 }
 
-.gallery img, .nerostaGallery img {
+.gallery img,
+.nerostaGallery img {
     opacity: 1;
     display: block;
     height: 100%;

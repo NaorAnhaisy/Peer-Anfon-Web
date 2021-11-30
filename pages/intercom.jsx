@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import { useEffect } from 'react';
-import styles from "../../styles/intercom.module.css";
+import styles from "../styles/intercom.module.css";
 import { Container, Row, Col } from "react-bootstrap";
 import AOS from 'aos';
-import ContactTeam from '../../components/ContactTeam/ContactTeam';
+import ContactTeam from '../components/ContactTeam/ContactTeam';
 
 const classicIntercomImages = [
     { src: "/images/intercom/intercom-6.png", text: "I-201" },
@@ -46,9 +46,9 @@ export default function Intercom() {
         <div>
             <Container className={styles.mainContainer}>
                 <div className="mb-5 page-title">
-                    <h1>מערכות אינטרקום</h1>
-                    <div className="mt-3 mb-4 separator"></div>
+                    <h1 className="text-shine">מערכות אינטרקום</h1>
                 </div>
+                <div className="mb-5 separator"></div>
                 <Row
                     data-aos="fade-up"
                     data-aos-anchor-placement="center-bottom"

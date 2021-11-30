@@ -16,10 +16,10 @@ export default function ContactUs() {
             <div className="push-from-navbar"></div>
             <Container className="mt-5">
                 <div className="mb-5 page-title">
-                    <h1>דברו איתנו</h1>
-                    <div className="mt-3 mb-4 separator"></div>
-                    <p>לקבלת הצעת מחיר, לקבלת יעוץ או לדבר על דרישותיכם, נשמח לשמוע מכם. מלאו את הטופס למטה ונהיה בקשר.</p>
+                    <h1 className="text-shine">דברו איתנו</h1>
                 </div>
+                <div className="mb-5 separator"></div>
+                <p className="page-subtitle">לקבלת הצעת מחיר, לקבלת יעוץ או לדבר על דרישותיכם, נשמח לשמוע מכם. מלאו את הטופס למטה ונהיה בקשר.</p>
                 <Container className={styles.contactUsFormContainer}>
                     <div>
                         <div className={styles.contactUsPageDiv}>

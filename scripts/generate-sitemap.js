@@ -14,8 +14,6 @@ sitemap({
     extraPaths: [
         "/",
         "/automatic-doors",
-        "/enter-doors",
         "/mailbox",
-        "/intercom"
     ]
 })
