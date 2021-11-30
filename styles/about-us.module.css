@@ -1,0 +1,13 @@
+.colTitle {
+    color: var(--gold-secondary);
+    font-weight: 100;
+    font-size: 33px;
+}
+
+.colParagraph {
+    font-size: 15px;
+}
+
+.colsRow {
+    margin-top: 100px;
+}

@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { useEffect } from 'react';
 import styles from "../styles/intercom.module.css";
-import enterDoorsStyle from "../styles/enter-doors.module.css";
 import { Container, Row, Col } from "react-bootstrap";
 import AOS from 'aos';
 import ContactTeam from '../components/ContactTeam/ContactTeam';
