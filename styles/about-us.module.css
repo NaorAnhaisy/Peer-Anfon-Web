@@ -1,13 +1,98 @@
 .colTitle {
+    font-size: 33px;
     color: var(--gold-secondary);
     font-weight: 100;
-    font-size: 33px;
 }
 
 .colParagraph {
     font-size: 15px;
 }
 
-.colsRow {
-    margin-top: 100px;
+.colsRow,
+.explainRow,
+.importersDiv,
+.certificatesDiv {
+    margin-top: 160px;
+}
+
+.explainDiv h3 {
+    font-size: 50px;
+    color: var(--gold-secondary);
+    font-weight: 100;
+}
+
+.explainRow div:nth-child(2) {
+    padding-left: 70px;
+    text-align: right;
+}
+
+.explainRow .separator {
+    margin-left: auto;
+    margin-right: 0;
+    display: block;
+    margin: 35px 0;
+    width: 65px;
+}
+
+.explainRow p {
+    line-height: 28px;
+}
+
+.explainRow button {
+    font-size: .8em;
+    letter-spacing: .15em;
+    margin-top: 1.5rem;
+    background-color: #1d1d1b;
+    border-radius: 9999px;
+    color: #ffffff;
+    display: inline-block;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    padding: 0.75rem 2.5rem;
+    transition: background-color 0.5s cubic-bezier(.4, 0, .2, 1);
+    -webkit-transition: background-color 0.5s cubic-bezier(.4, 0, .2, 1);
+    -moz-transition: background-color 0.5s cubic-bezier(.4, 0, .2, 1);
+    -ms-transition: background-color 0.5s cubic-bezier(.4, 0, .2, 1);
+    -o-transition: background-color 0.5s cubic-bezier(.4, 0, .2, 1);
+    -webkit-border-radius: 9999px;
+    -moz-border-radius: 9999px;
+    -ms-border-radius: 9999px;
+    -o-border-radius: 9999px;
+}
+
+.explainRow button:hover {
+    background-color: var(--gold-secondary);
+}
+
+@media (min-width: 768px) {
+    .explainRow {
+        flex-direction: row-reverse;
+    }
+}
+
+@media (max-width: 768px) {
+    .explainDiv {
+        margin-top: 50px;
+    }
+
+    .explainDiv h3 {
+        font-size: 40px;
+    }
+}
+
+.importersDiv h3,
+.certificatesDiv h3 {
+    font-size: 40px;
+    color: var(--gold-secondary);
+    font-weight: 100;
+}
+
+.certificatesDiv p {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.certificatesRow img {
+    width: 100%;
 }

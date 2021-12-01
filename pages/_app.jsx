@@ -1,5 +1,7 @@
 import { SSRProvider } from '@react-aria/ssr';
 import Head from 'next/head';
+import { useEffect } from 'react';
+import AOS from "aos";
 import AppLayout from '../components/AppLayout/AppLayout'
 import '../styles/globals.css';
 import '../styles/navbarStyles.css';
@@ -10,6 +12,13 @@ import "aos/dist/aos.css";
 import 'react-medium-image-zoom/dist/styles.css'
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    AOS.init({
+      easing: "ease-out-cubic",
+      once: true,
+    });
+  }, []);
+
   return (
     <SSRProvider>
       <AppLayout>
