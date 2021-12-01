@@ -15,5 +15,7 @@ sitemap({
         "/",
         "/automatic-doors",
         "/mailbox",
+        "/articles",
+        "/projects"
     ]
 })
