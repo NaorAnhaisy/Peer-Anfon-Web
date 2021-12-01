@@ -15,6 +15,10 @@
     margin-top: 160px;
 }
 
+.colsRow {
+    row-gap: 60px;
+}
+
 .explainDiv h3 {
     font-size: 50px;
     color: var(--gold-secondary);

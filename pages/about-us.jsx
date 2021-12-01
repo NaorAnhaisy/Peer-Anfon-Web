@@ -2,8 +2,14 @@
 import { Container, Row, Col } from "react-bootstrap";
 import styles from "../styles/about-us.module.css";
 import doorsStyles from "../styles/automatic-doors.module.css";
+import AOS from "aos";
+import { useEffect } from "react";
 
 export default function AboutUs() {
+    useEffect(() => {
+        AOS.init({ once: true });
+    }, []);
+
     return (
         <Container className="mb-5">
             <div className="push-from-navbar"></div>
@@ -11,8 +17,11 @@ export default function AboutUs() {
                 <h1 className="text-shine">אודות פאר אנפון</h1>
             </div>
             <div className="mb-5 separator"></div>
-            <img src="/images/Doors/LUX/example3.jpg" alt="" style={{ width: "100%", height: "100%" }} />
-            <Row className={styles.colsRow}>
+            <img src="/images/Doors/LUX/example3.jpg" alt="אודות פאר אנפון תעשיות בע&quot;מ" style={{ width: "100%", height: "100%" }} />
+            <Row className={styles.colsRow}
+                data-aos="fade-up"
+                data-aos-once={true}
+                data-aos-duration="1100">
                 <Col xs={12} md={4}>
                     <h4 className={styles.colTitle}>50 שנות נסיון</h4>
                     <div className="mb-3 mt-3 separator"></div>
@@ -36,10 +45,14 @@ export default function AboutUs() {
                 </Col>
             </Row>
             <Row className={styles.explainRow}>
-                <Col xs={12} md={6}>
-                    <img src="/images/Doors/LUX/example3.jpg" alt="פאר אנפון תעשיות בעמ" style={{ width: "100%", minHeight: "400px", objectFit: "cover" }} />
+                <Col xs={12} md={6} data-aos="fade-right"
+                    data-aos-once={true}
+                    data-aos-duration="1100">
+                    <img src="/images/Doors/LUX/example3.jpg" alt="פאר אנפון תעשיות בע&quot;מ" style={{ width: "100%", minHeight: "400px", objectFit: "cover" }} />
                 </Col>
-                <Col xs={12} md={6}>
+                <Col xs={12} md={6} data-aos="fade-left"
+                data-aos-once={true}
+                data-aos-duration="1100">
                     <div className={styles.explainDiv}>
                         <h3>הפרטים שעושים את השינוי</h3>
                         <div className={`separator ${styles.separator}`}></div>
@@ -102,17 +115,17 @@ export default function AboutUs() {
                 <Row className={styles.certificatesRow}>
                     <Col xs={12} md={6} lg={4}>
                         <a href="/assets/certificates.pdf" target="_blank" rel="noopener noreferrer">
-                            <img src="/images/certificates/certificate-1.jpg" alt="תווי תקן 1" />
+                            <img src="/images/certificates/certificate-1.jpg" alt="תווי תקן דלתות" />
                         </a>
                     </Col>
                     <Col xs={12} md={6} lg={4}>
                         <a href="/assets/certificates.pdf" target="_blank" rel="noopener noreferrer">
-                            <img src="/images/certificates/certificate-3.jpg" alt="תווי תקן 3" />
+                            <img src="/images/certificates/certificate-3.jpg" alt="תווי תקן תיבות דואר" />
                         </a>
                     </Col>
                     <Col xs={12} md={6} lg={4}>
                         <a href="/assets/certificates.pdf" target="_blank" rel="noopener noreferrer">
-                            <img src="/images/certificates/certificate-2.jpg" alt="תווי תקן 2" />
+                            <img src="/images/certificates/certificate-2.jpg" alt="תווי תקן אינטרקום" />
                         </a>
                     </Col>
                 </Row>
