@@ -22,13 +22,13 @@ export default function Article() {
     const prevArticle = () => {
         let curIndex = articles.findIndex(article => article.articleID === articleID);
         let prevIndex = curIndex === 0 ? articles.length - 1 : (curIndex - 1);
-        router.push(`/articles/${articles[prevIndex].articleID}`);
+        router.push(`/מאמרים/${articles[prevIndex].articleID}`);
     }
 
     const nextArticle = () => {
         let curIndex = articles.findIndex(article => article.articleID === articleID);
         let prevIndex = (curIndex + 1) % articles.length;
-        router.push(`/articles/${articles[prevIndex].articleID}`);
+        router.push(`/מאמרים/${articles[prevIndex].articleID}`);
     }
 
     return (
