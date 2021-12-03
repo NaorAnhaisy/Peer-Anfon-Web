@@ -27,7 +27,7 @@ export default function Articles() {
                                         <figcaption className={styles.cardCaption}>
                                             <h2 className={styles.cardTitle}>{article.title}</h2>
                                             <p className={styles.cardSnippet}>{article.subtitle}</p>
-                                            <Link href={`/articles/${article.articleID}`}>
+                                            <Link href={`/מאמרים/${article.articleID}`}>
                                                 <a className={styles.cardButton}>קראו עוד</a>
                                             </Link>
                                         </figcaption>

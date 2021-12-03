@@ -80,8 +80,16 @@ module.exports = withPlugins([], {
         destination: '/articles',
       },
       {
+        source: `/${encodeURIComponent('מאמרים')}/:${encodeURIComponent('articleID')}`,
+        destination: '/articles/:articleID',
+      },
+      {
         source: `/${encodeURIComponent('פרוייקטים')}`,
         destination: '/projects',
+      },
+      {
+        source: `/${encodeURIComponent('פרוייקטים')}/:${encodeURIComponent('projectID')}`,
+        destination: '/projects/:projectID',
       },
       {
         source: `/${encodeURIComponent('גלריית-תמונות')}`,
