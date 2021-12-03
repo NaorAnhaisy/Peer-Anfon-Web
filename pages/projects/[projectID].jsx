@@ -22,64 +22,66 @@ export default function Project() {
     const prevProject = () => {
         let curIndex = projects.findIndex(project => project.projectID === projectID);
         let prevIndex = curIndex === 0 ? projects.length - 1 : (curIndex - 1);
-        router.push(`/projects/${projects[prevIndex].projectID}`);
+        router.push(`/פרוייקטים/${projects[prevIndex].projectID}`);
     }
 
-    const nextArticle = () => {
+    const nextProject = () => {
         let curIndex = projects.findIndex(project => project.projectID === projectID);
         let prevIndex = (curIndex + 1) % projects.length;
-        router.push(`/projects/${projects[prevIndex].projectID}`);
+        router.push(`/פרוייקטים/${projects[prevIndex].projectID}`);
     }
 
     return (
-        <Container className={`mt-5 mb-5 ${styles.articleContainer}`}>
+        <Container className={`mt-5 mb-5 ${styles.projectContainer}`}>
             <div className="push-from-navbar"></div>
             <div className={doorStyles.arrowBackIconWrapper} onClick={() => router.push(`/פרוייקטים`)}>
                 <div className={doorStyles.arrowBackIcon}></div>
                 <span className={doorStyles.arrowBackIconText}>לכל הפרוייקטים</span>
             </div>
-            {articleNotFound && !article ?
+            {projectNotFound && !project ?
                 <h3>מצטערים, המאמר לא נמצא</h3>
                 :
                 !article ?
                     <RotateLoader />
                     :
-                    article?.html.map((section, i) => {
-                        return <div className={`mt-5 mb-5 ${styles.articleContent}`} key={i}>
-                            <h3 className={i === 0 ? styles.articleTitle : styles.articleSectionTitle}>{section.title}</h3>
-                            <div className={i === 0 ? styles.articleStartParagraph : styles.articleParagraph} dangerouslySetInnerHTML={{ __html: section.paragraph }} />
-                            <div className={i === 0 ? styles.sperator : ""} />
+                    <div>
+                        {article?.html.map((section, i) => {
+                            return <div className={`mt-5 mb-5 ${styles.articleContent}`} key={i}>
+                                <h3 className={i === 0 ? styles.articleTitle : styles.articleSectionTitle}>{section.title}</h3>
+                                <div className={i === 0 ? styles.articleStartParagraph : styles.articleParagraph} dangerouslySetInnerHTML={{ __html: section.paragraph }} />
+                                <div className={i === 0 ? styles.sperator : ""} />
+                            </div>
+                        })}
+                        <div className={styles.backAndNextArticleBtnsDiv}>
+                            <button type="button" onClick={nextArticle} className={styles.nextBtn}>
+                                <span>
+                                    המאמר הבא
+                                </span>
+                                <div className={styles.centerCon}>
+                                    <div className={styles.roundNext}>
+                                        <div className={styles.cta}>
+                                            <i className={`fas fa-chevron-left ${styles.arrowNext} ${styles.primeraNext}`}></i>
+                                            <i className={`fas fa-chevron-left ${styles.arrowNext} ${styles.segundaNext}`}></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                            <button type="button" onClick={prevArticle} className={styles.prevBtn}>
+                                <div className={styles.centerCon}>
+                                    <div className={styles.roundPrev}>
+                                        <div className={styles.cta}>
+                                            <i className={`fas fa-chevron-right ${styles.arrowPrev} ${styles.primeraPrev}`}></i>
+                                            <i className={`fas fa-chevron-right ${styles.arrowPrev} ${styles.segundaPrev}`}></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span>
+                                    המאמר הקודם
+                                </span>
+                            </button>
                         </div>
-                    })
+                    </div>
             }
-            <div className={styles.backAndNextArticleBtnsDiv}>
-                <button type="button" onClick={nextArticle} className={styles.nextBtn}>
-                    <span>
-                        המאמר הבא
-                    </span>
-                    <div className={styles.centerCon}>
-                        <div className={styles.roundNext}>
-                            <div className={styles.cta}>
-                                <i className={`fas fa-chevron-left ${styles.arrowNext} ${styles.primeraNext}`}></i>
-                                <i className={`fas fa-chevron-left ${styles.arrowNext} ${styles.segundaNext}`}></i>
-                            </div>
-                        </div>
-                    </div>
-                </button>
-                <button type="button" onClick={prevArticle} className={styles.prevBtn}>
-                    <div className={styles.centerCon}>
-                        <div className={styles.roundPrev}>
-                            <div className={styles.cta}>
-                                <i className={`fas fa-chevron-right ${styles.arrowPrev} ${styles.primeraPrev}`}></i>
-                                <i className={`fas fa-chevron-right ${styles.arrowPrev} ${styles.segundaPrev}`}></i>
-                            </div>
-                        </div>
-                    </div>
-                    <span>
-                        המאמר הקודם
-                    </span>
-                </button>
-            </div>
         </Container>
     )
 }

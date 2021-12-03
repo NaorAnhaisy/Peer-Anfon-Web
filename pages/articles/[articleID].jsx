@@ -39,47 +39,49 @@ export default function Article() {
                 <span className={doorStyles.arrowBackIconText}>לכל המאמרים</span>
             </div>
             {articleNotFound && !article ?
-                <h3>מצטערים, המאמר לא נמצא</h3>
+                <h2>מצטערים, המאמר לא נמצא</h2>
                 :
                 !article ?
                     <RotateLoader />
                     :
-                    article?.html.map((section, i) => {
-                        return <div className={`mt-5 mb-5 ${styles.articleContent}`} key={i}>
-                            <h3 className={i === 0 ? styles.articleTitle : styles.articleSectionTitle}>{section.title}</h3>
-                            <div className={i === 0 ? styles.articleStartParagraph : styles.articleParagraph} dangerouslySetInnerHTML={{ __html: section.paragraph }} />
-                            <div className={i === 0 ? styles.sperator : ""} />
+                    <div>
+                        {article?.html.map((section, i) => {
+                            return <div className={`mt-5 mb-5 ${styles.articleContent}`} key={i}>
+                                <h3 className={i === 0 ? styles.articleTitle : styles.articleSectionTitle}>{section.title}</h3>
+                                <div className={i === 0 ? styles.articleStartParagraph : styles.articleParagraph} dangerouslySetInnerHTML={{ __html: section.paragraph }} />
+                                <div className={i === 0 ? styles.sperator : ""} />
+                            </div>
+                        })}
+                        <div className={styles.backAndNextArticleBtnsDiv}>
+                            <button type="button" onClick={nextArticle} className={styles.nextBtn}>
+                                <span>
+                                    המאמר הבא
+                                </span>
+                                <div className={styles.centerCon}>
+                                    <div className={styles.roundNext}>
+                                        <div className={styles.cta}>
+                                            <i className={`fas fa-chevron-left ${styles.arrowNext} ${styles.primeraNext}`}></i>
+                                            <i className={`fas fa-chevron-left ${styles.arrowNext} ${styles.segundaNext}`}></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                            <button type="button" onClick={prevArticle} className={styles.prevBtn}>
+                                <div className={styles.centerCon}>
+                                    <div className={styles.roundPrev}>
+                                        <div className={styles.cta}>
+                                            <i className={`fas fa-chevron-right ${styles.arrowPrev} ${styles.primeraPrev}`}></i>
+                                            <i className={`fas fa-chevron-right ${styles.arrowPrev} ${styles.segundaPrev}`}></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span>
+                                    המאמר הקודם
+                                </span>
+                            </button>
                         </div>
-                    })
+                    </div>
             }
-            <div className={styles.backAndNextArticleBtnsDiv}>
-                <button type="button" onClick={nextArticle} className={styles.nextBtn}>
-                    <span>
-                        המאמר הבא
-                    </span>
-                    <div className={styles.centerCon}>
-                        <div className={styles.roundNext}>
-                            <div className={styles.cta}>
-                                <i className={`fas fa-chevron-left ${styles.arrowNext} ${styles.primeraNext}`}></i>
-                                <i className={`fas fa-chevron-left ${styles.arrowNext} ${styles.segundaNext}`}></i>
-                            </div>
-                        </div>
-                    </div>
-                </button>
-                <button type="button" onClick={prevArticle} className={styles.prevBtn}>
-                    <div className={styles.centerCon}>
-                        <div className={styles.roundPrev}>
-                            <div className={styles.cta}>
-                                <i className={`fas fa-chevron-right ${styles.arrowPrev} ${styles.primeraPrev}`}></i>
-                                <i className={`fas fa-chevron-right ${styles.arrowPrev} ${styles.segundaPrev}`}></i>
-                            </div>
-                        </div>
-                    </div>
-                    <span>
-                        המאמר הקודם
-                    </span>
-                </button>
-            </div>
         </Container>
     )
 }
