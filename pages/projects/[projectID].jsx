@@ -2,41 +2,41 @@ import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import RotateLoader from '../../components/Loaders/RotateLoader/RotateLoader';
-import styles from "../../styles/articles.module.css";
+import styles from "../../styles/projects.module.css";
 import doorStyles from "../../styles/automatic-door-model.module.css"
 
-let articles = require('../../data/articles.json');
+let projects = require('../../data/projects.json');
 
-export default function Article() {
+export default function Project() {
     const router = useRouter()
-    const { articleID } = router.query;
-    const [article, setArticle] = useState(null);
-    const [articleNotFound, setArticleNotFound] = useState(false);
+    const { projectID } = router.query;
+    const [project, setProject] = useState(null);
+    const [projectNotFound, setProjectNotFound] = useState(false);
 
     useEffect(() => {
-        let foundArticle = articles.find(article => article.articleID === articleID);
-        if (foundArticle) setArticle(foundArticle);
-        else setArticleNotFound(true);
-    }, [article, setArticle, articleID]);
+        let foundProject = projects.find(project => project.projectID === projectID);
+        if (foundProject) setProject(foundProject);
+        else setProjectNotFound(true);
+    }, [project, setProject, projectID]);
 
-    const prevArticle = () => {
-        let curIndex = articles.findIndex(article => article.articleID === articleID);
-        let prevIndex = curIndex === 0 ? articles.length - 1 : (curIndex - 1);
-        router.push(`/articles/${articles[prevIndex].articleID}`);
+    const prevProject = () => {
+        let curIndex = projects.findIndex(project => project.projectID === projectID);
+        let prevIndex = curIndex === 0 ? projects.length - 1 : (curIndex - 1);
+        router.push(`/projects/${projects[prevIndex].projectID}`);
     }
 
     const nextArticle = () => {
-        let curIndex = articles.findIndex(article => article.articleID === articleID);
-        let prevIndex = (curIndex + 1) % articles.length;
-        router.push(`/articles/${articles[prevIndex].articleID}`);
+        let curIndex = projects.findIndex(project => project.projectID === projectID);
+        let prevIndex = (curIndex + 1) % projects.length;
+        router.push(`/projects/${projects[prevIndex].projectID}`);
     }
 
     return (
         <Container className={`mt-5 mb-5 ${styles.articleContainer}`}>
             <div className="push-from-navbar"></div>
-            <div className={doorStyles.arrowBackIconWrapper} onClick={() => router.push(`/מאמרים`)}>
+            <div className={doorStyles.arrowBackIconWrapper} onClick={() => router.push(`/פרוייקטים`)}>
                 <div className={doorStyles.arrowBackIcon}></div>
-                <span className={doorStyles.arrowBackIconText}>לכל המאמרים</span>
+                <span className={doorStyles.arrowBackIconText}>לכל הפרוייקטים</span>
             </div>
             {articleNotFound && !article ?
                 <h3>מצטערים, המאמר לא נמצא</h3>
