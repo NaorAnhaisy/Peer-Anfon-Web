@@ -9,7 +9,7 @@ export default function Recommendations() {
             <Container className="mt-5">
                 <div className="push-from-navbar"></div>
                 <div className="mb-5 page-title">
-                    <h1 className="text-shine">מרוצים מפאר אנפון ?</h1>
+                    <h1 className="text-shine">מרוצים מפאר אנפון?</h1>
                 </div>
                 <div className="mb-5 separator"></div>
                 <p className="page-subtitle">ספרו לנו על כך! מלאו את הטופס:</p>

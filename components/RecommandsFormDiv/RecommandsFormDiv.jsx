@@ -2,37 +2,12 @@ import React, { useState, useEffect } from "react";
 import getConfig from 'next/config';
 import styles from "./RecommandsFormDiv.module.css";
 import AOS from "aos";
-import { makeStyles } from "@material-ui/core/styles";
 import RotateLoader from "../Loaders/RotateLoader/RotateLoader";
 import axios from "axios";
 
 const { publicRuntimeConfig } = getConfig();
 
-const useStyles = makeStyles((theme) => ({
-    radioGroup: {
-        display: "grid",
-        justifyContent: "center"
-    },
-    radioRoot: {
-        marginLeft: "0px",
-        float: "right",
-        textAlign: "right"
-    },
-    radioLabel: {
-        fontFamily: "revert",
-        textAlign: "right"
-    },
-    formControl: {
-        display: "block",
-        textAlign: "center",
-    },
-    typeOfReq: {
-        margin: '15px 0 70px 0'
-    }
-}));
-
-export default function ContactUs() {
-    const classes = useStyles();
+export default function RecommandsFormDiv() {
     const [fullName, setFullName] = useState("");
     const [city, setCity] = useState("");
     const [email, setEmail] = useState("");
@@ -57,46 +32,31 @@ export default function ContactUs() {
             message: message,
         };
 
-        setTimeout(() => {
+        try {
+            axios.post(`${publicRuntimeConfig.SERVER_URL}/mailer/sendRecommandation`, contactData)
+                .then((response) => {
+                    setIsSendSucced(true);
+                    setReturenedMessage(response.data.message);
+                    setReturnedSubMsg(response.data.subMessage);
+                })
+                .catch((err) => {
+                    const resMessage =
+                        (err.response && err.response.data && err.response.data.message) ||
+                        err.message ||
+                        err.toString();
+                    console.error(resMessage);
+                    setIsSendSucced(false);
+                    setReturenedMessage(resMessage);
+                })
+                .finally(() => {
+                    setIsLoading(false);
+                });
+        } catch (error) {
+            console.error(error);
             setIsLoading(false);
-            setIsSendSucced(true);
-            setReturenedMessage(
-                "המלצה נשלחה בהצלחה!"
-            );
-            setReturnedSubMsg(
-                "תודה שבחרתם פאר אנפון"
-            );
-        }, 2000);
-
-        // try {
-        //     axios({
-        //         method: 'post',
-        //         url: publicRuntimeConfig.SERVER_URL + "/mailer/sendRecommandation",
-        //         data: contactData
-        //     })
-        //         .then((response) => {
-        //             setIsSendSucced(true);
-        //             setReturenedMessage(response.data.message);
-        //             setReturnedSubMsg(response.data.subMessage);
-        //         })
-        //         .catch((err) => {
-        //             const resMessage =
-        //                 (err.response && err.response.data && err.response.data.message) ||
-        //                 err.message ||
-        //                 err.toString();
-        //             console.error(resMessage);
-        //             setIsSendSucced(false);
-        //             setReturenedMessage(resMessage);
-        //         })
-        //         .finally(() => {
-        //             setIsLoading(false);
-        //         });
-        // } catch (error) {
-        //     console.error(error);
-        //     setIsLoading(false);
-        //     setIsSendSucced(false);
-        //     setReturenedMessage(error);
-        // }
+            setIsSendSucced(false);
+            setReturenedMessage(error);
+        }
     };
 
     return (
@@ -126,6 +86,7 @@ export default function ContactUs() {
                 ) : (
                     <form onSubmit={handleSubmit} encType="multipart/form-data">
                         <input
+                            title=""
                             className={styles.recommendsTextInput}
                             placeholder="שם מלא"
                             type="text"
@@ -135,6 +96,7 @@ export default function ContactUs() {
                             required
                         />
                         <input
+                            title=""
                             className={styles.recommendsTextInput}
                             placeholder="עיר מגורים"
                             type="text"
@@ -144,6 +106,7 @@ export default function ContactUs() {
                             required
                         />
                         <input
+                            title=""
                             className={styles.recommendsTextInput}
                             placeholder="מהו הדוא&quot;ל שלך?"
                             type="email"
@@ -153,6 +116,7 @@ export default function ContactUs() {
                             required
                         />
                         <textarea
+                            title=""
                             className={styles.recommendsTextInput}
                             placeholder="ספרו לנו, כיצד נהנתם מפאר אנפון?"
                             rows="5"
