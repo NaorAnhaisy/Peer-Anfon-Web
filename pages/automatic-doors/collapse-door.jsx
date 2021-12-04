@@ -34,7 +34,7 @@ export default function CollapseDoor() {
                         <Col lg={3} md={4} sm={4} xs={12} style={{ alignSelf: 'center', padding: "50px" }}>
                             <div className={styles.arrowBackIconWrapper} onClick={() => router.push(`/דלתות-אוטומטיות`)}>
                                 <div className={styles.arrowBackIcon}></div>
-                                <span className={styles.לכל הדגמים</span>
+                                <span className={styles.arrowBackIconText}>לכל הדגמים</span>
                             </div>
                         </Col>
                     </Row>
