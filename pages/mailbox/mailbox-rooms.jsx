@@ -76,9 +76,9 @@ export default function MailboxRooms() {
                             </div>
                         </Col>
                         <Col lg={3} md={4} sm={4} xs={12} style={{ alignSelf: 'center', padding: "50px" }}>
-                            <div className={styles.arrowBackIconWrapper} onClick={() => router.back()}>
+                            <div className={styles.arrowBackIconWrapper} onClick={() => router.push(`/תיבות-דואר`)}>
                                 <div className={styles.arrowBackIcon}></div>
-                                <span className={styles.arrowBackIconText}>חזור</span>
+                                <span className={styles.arrowBackIconText}>לכל הדגמים</span>
                             </div>
                         </Col>
                     </Row>

@@ -42,13 +42,14 @@
     line-height: 28px;
 }
 
-.explainRow button {
+.linkToHome {
     font-size: .8em;
     letter-spacing: .15em;
     margin-top: 1.5rem;
     background-color: #1d1d1b;
     border-radius: 9999px;
     color: #ffffff;
+    text-decoration: none;
     display: inline-block;
     border: none;
     outline: none;
@@ -65,7 +66,8 @@
     -o-border-radius: 9999px;
 }
 
-.explainRow button:hover {
+.linkToHome:hover {
+    color: white;
     background-color: var(--gold-secondary);
 }
 

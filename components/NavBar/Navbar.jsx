@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useState } from "react";
 import styles from "./Navbar.module.css";
@@ -8,7 +7,6 @@ import { Row, Col, Container, NavDropdown, Navbar } from "react-bootstrap";
 export default function MainNavbar() {
   const [showAutoDoorsDropdown, setShowAutoDoorsDropdown] = useState(false);
   const [showMailBoxDropdown, setShowMailBoxDropdown] = useState(false);
-  const [showEnterDoorsDropdown, setShowEnterDoorsDropdown] = useState(false);
   const [navbarScrolledCls, setNavbarScrolledCls] = useState("start-style");
 
   const handleWindowScrolled = () => {

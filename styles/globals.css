@@ -387,3 +387,13 @@ body {
 #enable-toolbar-trigger-svg .shadow {
   display: none !important;
 }
+
+@media (max-width: 480px) {
+  body.trigger-size-small #enable-toolbar svg#enable-toolbar-trigger-svg {
+    transform: scale(0.7) !important;
+    -webkit-transform: scale(0.7) !important;
+    -moz-transform: scale(0.7) !important;
+    -ms-transform: scale(0.7) !important;
+    -o-transform: scale(0.7) !important;
+  }
+}
