@@ -8,6 +8,10 @@ import { useEffect } from "react";
 let articles = require('../../data/articles.json');
 
 export default function Articles() {
+    useEffect(() => {
+        AOS.init({ once: true });
+    }, []);
+
     return (
         <div>
             <Container className="mt-5 mb-5">

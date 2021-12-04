@@ -1,8 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from './ProjectsCard.module.css';
 import Link from "next/link";
+import { useEffect } from 'react';
 
 export default function ProjectsCard({ project, index }) {
+
+    useEffect(() => {
+        console.log(project);
+    }, [project]);
     return (
         <div className={`${styles.item} ${styles.vFade} ${styles.item0}`}>
             <div className={`${styles.card} ${styles.cardProject}`}>
@@ -18,7 +23,7 @@ export default function ProjectsCard({ project, index }) {
                             <div className={styles.extraDetails}>
                                 <div className={`${styles.excerpt}`}>{project.description}</div>
                                 <div className={styles.actions}>
-                                    <Link href={`/projects/${project.project_ID}`}>
+                                    <Link href={`/projects/${project.projectID}`}>
                                         <a className={styles.linkToProject}>
                                             קרא עוד
                                         </a>
