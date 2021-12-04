@@ -9,6 +9,7 @@ class MyDocument extends Document {
                 <Head>
                     <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
                     <meta name="description" key="desc" content="פאר אנפון - החברה המובילה בישראל ליצור והתקנת דלתות אוטומטיות וחשמליות, מערכות אינטרקום, דלתות כניסה לבניין ותיבות דואר, אמרת דלתות כניסה לבניין? אמרת פאר אנפון" />
+                    <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
                     <meta name="apple-mobile-web-app-status-bar" content="#f7f7f5" />
                     <meta name="theme-color" content="#f7f7f5" />
                     <meta name="google-site-verification" content="jiVPxmLb8UJ1kJZBlhr4vjkO3AWneWeEYZnZ9j9upUE" />
