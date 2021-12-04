@@ -381,3 +381,9 @@ body {
   width: 56px !important;
   height: 56px !important;
 }
+
+#enable-toolbar-trigger-svg circle.a,
+#enable-toolbar-trigger-svg .enable-trigger-check,
+#enable-toolbar-trigger-svg .shadow {
+  display: none !important;
+}
