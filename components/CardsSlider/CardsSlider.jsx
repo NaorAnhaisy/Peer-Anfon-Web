@@ -38,8 +38,8 @@ const cards = [
 
 export default function CardsSlider() {
 
-    function createCard(cardInfo) {
-        return <div className={styles.recommandCard}>
+    function createCard(cardInfo, index) {
+        return <div key={index} className={styles.recommandCard}>
             <h3>{cardInfo.name}</h3>
             <div className={styles.subTitle}>
                 <span>{cardInfo.city}</span>
@@ -61,7 +61,7 @@ export default function CardsSlider() {
     };
 
     function createCards() {
-        return cards.map(card => createCard(card));
+        return cards.map((card, index) => createCard(card, index));
     }
 
     return (
