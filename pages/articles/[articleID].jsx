@@ -8,7 +8,7 @@ import doorStyles from "../../styles/automatic-door-model.module.css"
 let articles = require('../../data/articles.json');
 
 export default function Article() {
-    const router = useRouter()
+    const router = useRouter();
     const { articleID } = router.query;
     const [article, setArticle] = useState(null);
     const [articleNotFound, setArticleNotFound] = useState(false);
