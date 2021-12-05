@@ -17,7 +17,7 @@ export default function Projects() {
                 </div>
                 <div className="mb-5 separator"></div>
 
-                <Container fluid>
+                <div>
                     <Row className={styles.projectsRow}>
                         {projects.map((project, index) => {
                             return <Col key={index} s={12} md={4} lg={4}>
@@ -25,7 +25,7 @@ export default function Projects() {
                             </Col>
                         })}
                     </Row>
-                </Container>
+                </div>
             </Container>
         </div>
     );

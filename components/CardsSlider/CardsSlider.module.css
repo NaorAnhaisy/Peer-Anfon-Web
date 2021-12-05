@@ -13,12 +13,19 @@
     padding: 40px 35px;
     text-align: right;
     direction: rtl;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     border: 1px solid #e5e5e5;
 }
 
 .subTitle {
     display: flex;
     justify-content: space-between;
+}
+
+.cardContent {
+    height: 300px;
+    overflow: auto;
+    padding-left: 15px;
 }
 
 .message {

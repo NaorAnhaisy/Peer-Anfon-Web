@@ -119,17 +119,17 @@ export default function AboutUs() {
                 </p>
                 <Row className={styles.certificatesRow}>
                     <Col xs={12} md={6} lg={4}>
-                        <a href="/assets/certificates.pdf" target="_blank" rel="noopener noreferrer">
+                        <a href="/assets/certificates-1.pdf" target="_blank" rel="noopener noreferrer">
                             <img src="/images/certificates/certificate-1.jpg" alt="תווי תקן דלתות" />
                         </a>
                     </Col>
                     <Col xs={12} md={6} lg={4}>
-                        <a href="/assets/certificates.pdf" target="_blank" rel="noopener noreferrer">
+                        <a href="/assets/certificates-3.pdf" target="_blank" rel="noopener noreferrer">
                             <img src="/images/certificates/certificate-3.jpg" alt="תווי תקן תיבות דואר" />
                         </a>
                     </Col>
                     <Col xs={12} md={6} lg={4}>
-                        <a href="/assets/certificates.pdf" target="_blank" rel="noopener noreferrer">
+                        <a href="/assets/certificates-2.pdf" target="_blank" rel="noopener noreferrer">
                             <img src="/images/certificates/certificate-2.jpg" alt="תווי תקן אינטרקום" />
                         </a>
                     </Col>
