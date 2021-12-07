@@ -95,57 +95,6 @@
     margin-right: 5px;
 }
 
-/* .shine {
-    text-align: center;
-    background: linear-gradient(to right, #222, #fff);
-    background-size: 15px 100%;
-    background-clip: initial;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    animation: shimmer 2s infinite ease-in-out;
-    -webkit-animation: shimmer 2s infinite ease-in-out;
-} */
-
-/* @-moz-keyframes shimmer {
-    0% {
-        background-position: top left;
-    }
-
-    100% {
-        background-position: top right;
-    }
-}
-
-@-webkit-keyframes shimmer {
-    0% {
-        background-position: top left;
-    }
-
-    100% {
-        background-position: top right;
-    }
-}
-
-@-o-keyframes shimmer {
-    0% {
-        background-position: top left;
-    }
-
-    100% {
-        background-position: top right;
-    }
-}
-
-@keyframes shimmer {
-    0% {
-        background-position: top left;
-    }
-
-    100% {
-        background-position: top right;
-    }
-} */
-
 @media (max-width: 1400px) {
     .phoneText {
         text-align: center;
@@ -267,7 +216,7 @@
     align-self: center;
 }
 
-/* New Side Navbar */
+/* Side Navbar */
 .menuToggle {
     display: block;
     position: relative;

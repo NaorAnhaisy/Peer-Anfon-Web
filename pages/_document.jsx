@@ -39,6 +39,9 @@ class MyDocument extends Document {
                     <link rel="alternate" type="application/rss+xml" title="פאר אנפון &laquo; פיד תגובות‏" href="https://8peer.co.il/comments/feed/" />
                     <link rel="alternate" type="application/rss+xml" title="פאר אנפון &laquo; פיד תגובות של דף בית" href="https://8peer.co.il/%d7%93%d7%a3-%d7%91%d7%99%d7%aa/feed/" />
 
+                    {/* Tidio Chat */}
+                    <script async
+                        src="//code.tidio.co/uudo74wlnrqvznjkih7hv49zx6tz55pw.js" />
 
                     {/* Accessbility */}
                     <script async
