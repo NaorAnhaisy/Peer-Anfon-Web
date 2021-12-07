@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { useState, useEffect } from 'react';
 import { Carousel, Col, Row } from "react-bootstrap";
-import ImagesGallery from "../../components/ImagesGallery/ImagesGallery";
 import styles from "../../styles/automatic-doors.module.css";
 import Link from "next/link";
 import VisibilitySensor from "react-visibility-sensor";
@@ -15,6 +14,7 @@ export default function AutomaticDoors() {
     const [isFirstContentShowed, setIsFirstContentShowed] = useState(false);
     const [isSecondContentShowed, setIsSecondContentShowed] = useState(false);
     const [isThirdContentShowed, setIsThirdContentShowed] = useState(false);
+    const [isForthContentShowed, setIsForthContentShowed] = useState(false);
 
     return (
         <div>
@@ -219,6 +219,45 @@ export default function AutomaticDoors() {
                         <div className={styles.image}>
                             <img
                                 src="/images/backgrounds/home-slide-1.jpeg"
+                                alt="דלת אוטומטית"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </VisibilitySensor>
+
+            <VisibilitySensor partialVisibility onChange={(isVisible => { isVisible && setIsForthContentShowed(true) })}>
+                <div style={{ minHeight: "300px" }}>
+                    <div className={`${styles.contentWrapper} ${styles.leftContext}`} style={{ display: isForthContentShowed ? "grid" : "none" }}>
+                        <div className={styles.content}>
+                            <div className={styles.contentInner}>
+                                <div className={styles.title}>
+                                    <div className={`${styles.titleInner} ${styles.subTitle} ${styles.secondTitle}`}>מנגנון שעון שבת אסטרונומי</div>
+                                </div>
+                                <div className={styles.contentText}>
+                                    <div className={`${styles.contentTextInner} ${styles.subContentInner} dir-rtl`}>
+                                        <div className={`mt-2 ${styles.forthSectionExplain}`}>
+                                            לחברתנו יש את הבלעדיות לשעון שבת אסטרונומי המותאם לדלתות הזזה אוטומטיות אשר הומצא על ידנו.
+                                            <br />
+                                            מערכת השעון יודעת באופן אוטומטי מתי השבת נכנסת ויוצאת.
+                                            המערכת מכוונת 15 שנה קדימה ומכירה בכל חגי וזמני ישראל.
+                                            <br />
+                                            שעון שבת האסטרונומי עובד לפי שעון רבנו תם ויש לו אישור של צומת ומשמרות השבת.
+                                            מערכת השעון מאפשרת לדלת להיפתח ולהיסגר לפי זמנים שנקבעו מראש.
+                                            <br />
+                                            ברגע שהדלת נפתחת נשמע צפצוף ,בכדי ששומר השבת ידע שהוא יכול לעבור באופן חופשי.
+                                            כאשר הצפצוף נפסק ידע שומר השבת שאסור לא להתקרב לדלת.
+                                            <br />
+                                            לאחר סיום הצפצוף המוגדר שנמשך כ-10 שניות הדלת נסגרת.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className={styles.image}>
+                            <img
+                                src="/images/backgrounds/home-slide-2.jpeg"
                                 alt="דלת אוטומטית"
                             />
                         </div>
