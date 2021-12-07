@@ -20,7 +20,7 @@ export default function Projects() {
                 <div>
                     <Row className={styles.projectsRow}>
                         {projects.map((project, index) => {
-                            return <Col key={index} s={12} md={4} lg={4}>
+                            return <Col key={index} md={12} lg={6} xl={4}>
                                 <ProjectsCard project={project} index={index} />
                             </Col>
                         })}
