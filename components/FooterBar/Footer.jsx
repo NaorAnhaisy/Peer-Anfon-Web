@@ -51,9 +51,11 @@ export default function Footer() {
             הסדנא 13 חולון, 5881407
             <br />
             <br />
-            <span>ראשון - חמישי: 8:00 - 20:00</span>
+            <span>ראשון - חמישי: 8:00 - 16:00</span>
             <br />
-            <span>שישי: 8:00 - 15:00</span>
+            <span>שישי: 8:00 - 12:00</span>
+            <br />
+            <span>שבת: סגור</span>
             <br />
             <br />
             <span className={styles.contactUsHref}>
