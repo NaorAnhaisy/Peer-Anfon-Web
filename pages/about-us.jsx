@@ -76,10 +76,10 @@ export default function AboutUs() {
                             data-aos-once={true}
                             data-aos-duration="1000"
                             xs={12} md={6} lg={4}>
-                            <a className="no-href-css" href="https://www.tauitalia.com/en/" target="_blank" rel="noopener noreferrer">
+                            <a className="no-href-css" href="https://www.erreka.com/en/" target="_blank" rel="noopener noreferrer">
                                 <div className="clickable">
                                     <div className={doorsStyles.imageLinkDivToCategorys}>
-                                        <img src="/images/importers/logo-tau.png" alt="TAU יבואנית רשמית" className={doorsStyles.imageToCategorys} />
+                                        <img src="/images/importers/erreka.png" alt="Erreka יבואנית רשמית של פאר אנפון" className={doorsStyles.imageToCategorys} />
                                     </div>
                                 </div>
                             </a>
@@ -91,7 +91,7 @@ export default function AboutUs() {
                             <a className="no-href-css" href="https://www.tauitalia.com/en/" target="_blank" rel="noopener noreferrer">
                                 <div className="clickable">
                                     <div className={doorsStyles.imageLinkDivToCategorys}>
-                                        <img src="/images/importers/logo-tau.png" alt="TAU יבואנית רשמית" className={doorsStyles.imageToCategorys} />
+                                        <img src="/images/importers/logo-tau.png" alt="TAU יבואנית רשמית של פאר אנפון" className={doorsStyles.imageToCategorys} />
                                     </div>
                                 </div>
                             </a>
@@ -103,7 +103,7 @@ export default function AboutUs() {
                             <a className="no-href-css" href="https://www.topp.it/" target="_blank" rel="noopener noreferrer">
                                 <div className="clickable">
                                     <div className={doorsStyles.imageLinkDivToCategorys}>
-                                        <img src="/images/importers/company-topp-sandrigo-italy-logo.png" alt="Topp יבואנית רשמית" className={doorsStyles.imageToCategorys} />
+                                        <img src="/images/importers/company-topp-sandrigo-italy-logo.png" alt="Topp יבואנית רשמית של פאר אנפון" className={doorsStyles.imageToCategorys} />
                                     </div>
                                 </div>
                             </a>
