@@ -349,3 +349,9 @@
         width: 50%;
     }
 }
+
+.navIcon {
+    width: 25px;
+    height: 30px;
+    margin-left: 5px;
+}

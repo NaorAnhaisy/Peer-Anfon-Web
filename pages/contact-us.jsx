@@ -24,7 +24,7 @@ export default function ContactUs() {
                     <div>
                         <div className={styles.contactUsPageDiv}>
                             <div className={styles.contactUsPageImgDiv}>
-                                <Image width={5} height={7} layout="responsive" alt="דלת אוטומטית פאר אנפון" src="/images/backgrounds/contact-us-background-3.jpeg" />
+                                <Image priority={true} loading="eager" width={5} height={7} layout="responsive" alt="דלת אוטומטית פאר אנפון" src="/images/backgrounds/contact-us-background-3.jpeg" />
                             </div>
                             <div className={styles.contactUsPageForm}>
                                 <ContactUsForm />

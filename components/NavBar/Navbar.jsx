@@ -51,7 +51,7 @@ export default function MainNavbar() {
                       <a aria-label="לוגו פאר אנפון" className={styles.navbarBrand}>
                         <img
                           src="/images/companyLogo.png"
-                          className="undragablle-image"
+                          className={`undragablle-image navbar-brand-img`}
                           alt="פאר אנפון"
                         />
                       </a>
@@ -82,6 +82,7 @@ export default function MainNavbar() {
                         <ul className="navbar-nav ml-auto py-md-0">
                           <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4"
                             onMouseLeave={() => setShowAutoDoorsDropdown(false)}>
+                            {/* <img className={styles.navIcon} src="/images/navbarIcons/inside-door.png" alt="" /> */}
                             <NavDropdown
                               className="dropdown-toggle"
                               title="דלתות אוטומטיות"
@@ -112,6 +113,7 @@ export default function MainNavbar() {
 
                           <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4"
                             onMouseLeave={() => setShowMailBoxDropdown(false)}>
+                            {/* <img className={styles.navIcon} src="/images/navbarIcons/mailbox.png" alt="" /> */}
                             <NavDropdown
                               className="dropdown-toggle"
                               title="תיבות דואר"
@@ -145,6 +147,7 @@ export default function MainNavbar() {
                           </li>
 
                           <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                          {/* <img className={styles.navIcon} src="/images/navbarIcons/inside-door.png" alt="" /> */}
                             <Link className="nav-link" href="/מעברים-מהירים">
                               מעברים מהירים
                             </Link>

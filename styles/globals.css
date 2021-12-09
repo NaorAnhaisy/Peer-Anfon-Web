@@ -375,6 +375,9 @@ body {
 #enable-toolbar-trigger .keyboard-shorcut {
   left: 55px !important;
   top: 15px !important;
+  fill: #313b47 !important;
+  background: #313b47 !important;
+  color: white !important;
 }
 
 #enable-toolbar-trigger svg {
@@ -388,6 +391,12 @@ body {
   display: none !important;
 }
 
+.enable-trigger-circle {
+  fill: #313b47 !important;
+  background: #313b47 !important;
+  color: white !important;
+}
+
 @media (max-width: 480px) {
   body.trigger-size-small #enable-toolbar svg#enable-toolbar-trigger-svg {
     transform: scale(0.7) !important;
@@ -395,12 +404,5 @@ body {
     -moz-transform: scale(0.7) !important;
     -ms-transform: scale(0.7) !important;
     -o-transform: scale(0.7) !important;
-  }
-}
-
-/* Chat widget */
-@media (max-width: 980px) {
-  #tidio-chat-iframe {
-    right: calc(50vw - 40px) !important;
   }
 }
