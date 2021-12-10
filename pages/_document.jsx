@@ -57,9 +57,9 @@ class MyDocument extends Document {
                                         "Store",
                                         "Organization"
                                     ],
-                                    "@id": "https://8peer.co.il/#organization",
+                                    "@id": "https://peer-anfon-group.co.il/#organization",
                                     "name": "פאר אנפון - דלתות חשמליות, אוטומטיות ותיבות דואר",
-                                    "url": "https://8peer.co.il",
+                                    "url": "https://peer-anfon-group.co.il",
                                     "email": "info@8peer.co.il",
                                     "address": {
                                         "@type": "PostalAddress",
@@ -70,21 +70,21 @@ class MyDocument extends Document {
                                     },
                                     "logo": {
                                         "@type": "ImageObject",
-                                        "url": "https://8peer.co.il/wp-content/uploads/2018/12/No-bg_NEW.png"
+                                        "url": "https://peer-anfon-group.co.il/images/companyLogoColored.png"
                                     },
                                     "openingHours": [
                                         "Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday 09:00-17:00"
                                     ],
                                     "image": {
                                         "@type": "ImageObject",
-                                        "url": "https://8peer.co.il/wp-content/uploads/2018/12/No-bg_NEW.png"
+                                        "url": "https://peer-anfon-group.co.il/images/companyLogoColored.png"
                                     },
                                     "telephone": "072-371-2701"
                                 },
                                 {
                                     "@type": "WebSite",
-                                    "@id": "https://8peer.co.il/#website",
-                                    "url": "https://8peer.co.il",
+                                    "@id": "https://peer-anfon-group.co.il/#website",
+                                    "url": "https://peer-anfon-group.co.il",
                                     "name": "פאר אנפון תעשיות בע\'\'מ",
                                     "publisher": {
                                         "@id": "https://8peer.co.il/#organization"
@@ -98,23 +98,23 @@ class MyDocument extends Document {
                                 },
                                 {
                                     "@type": "ImageObject",
-                                    "@id": "https://8peer.co.il/#primaryImage",
-                                    "url": "https://8peer.co.il/wp-content/uploads/2018/11/home.jpg",
+                                    "@id": "https://peer-anfon-group.co.il/#primaryImage",
+                                    "url": "https://peer-anfon-group.co.il/images/backgrounds/home.jpg",
                                     "width": 200,
                                     "height": 200
                                 },
                                 {
                                     "@type": "WebPage",
-                                    "@id": "https://8peer.co.il/#webpage",
-                                    "url": "https://8peer.co.il/",
+                                    "@id": "https://peer-anfon-group.co.il/#webpage",
+                                    "url": "https://peer-anfon-group.co.il/",
                                     "name": "פאר אנפון - דלתות אוטומטיות, דלתות חשמליות אסתטיות ויוקרתיות",
                                     "datePublished": "2015-01-08T08:52:20+00:00",
                                     "dateModified": "2021-08-09T10:24:37+00:00",
                                     "isPartOf": {
-                                        "@id": "https://8peer.co.il/#website"
+                                        "@id": "https://peer-anfon-group.co.il/#website"
                                     },
                                     "primaryImageOfPage": {
-                                        "@id": "https://8peer.co.il/#primaryImage"
+                                        "@id": "https://peer-anfon-group.co.il/#primaryImage"
                                     },
                                     "inLanguage": "he-IL"
                                 },
@@ -128,25 +128,24 @@ class MyDocument extends Document {
                                         "name": "admin"
                                     },
                                     "publisher": {
-                                        "@id": "https://8peer.co.il/#organization"
+                                        "@id": "https://peer-anfon-group.co.il/#organization"
                                     },
                                     "description": "פאר אנפון - החברה המובילה בישראל ליצור והתקנת דלתות אוטומטיות וחשמליות, מערכות אינטרקום, דלתות כניסה לבניין ותיבות דואר, אמרת דלתות כניסה לבניין? אמרת פאר אנפון",
-                                    "@id": "https://8peer.co.il/#richSnippet",
+                                    "@id": "https://peer-anfon-group.co.il/#richSnippet",
                                     "isPartOf": {
-                                        "@id": "https://8peer.co.il/#webpage"
+                                        "@id": "https://peer-anfon-group.co.il/#webpage"
                                     },
                                     "image": {
-                                        "@id": "https://8peer.co.il/#primaryImage"
+                                        "@id": "https://peer-anfon-group.co.il/#primaryImage"
                                     },
                                     "inLanguage": "he-IL",
                                     "mainEntityOfPage": {
-                                        "@id": "https://8peer.co.il/#webpage"
+                                        "@id": "https://peer-anfon-group.co.il/#webpage"
                                     }
                                 }]
                         })
                     }}
                     />
-
 
                     {/* Global Site Tag (gtag.js) - Google Analytics */}
                     < script
