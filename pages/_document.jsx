@@ -35,9 +35,10 @@ class MyDocument extends Document {
                     <link rel="stylesheet"
                         href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" />
                     <link rel="canonical" href="https://peer-anfon-group.co.il/" key="canonical" />
-                    <link rel="alternate" type="application/rss+xml" title="פאר אנפון &laquo; פיד‏" href="https://8peer.co.il/feed/" />
+
+                    {/* <link rel="alternate" type="application/rss+xml" title="פאר אנפון &laquo; פיד‏" href="https://peer-anfon-group.co.il/feed/" />
                     <link rel="alternate" type="application/rss+xml" title="פאר אנפון &laquo; פיד תגובות‏" href="https://8peer.co.il/comments/feed/" />
-                    <link rel="alternate" type="application/rss+xml" title="פאר אנפון &laquo; פיד תגובות של דף בית" href="https://8peer.co.il/%d7%93%d7%a3-%d7%91%d7%99%d7%aa/feed/" />
+                    <link rel="alternate" type="application/rss+xml" title="פאר אנפון &laquo; פיד תגובות של דף בית" href="https://8peer.co.il/%d7%93%d7%a3-%d7%91%d7%99%d7%aa/feed/" /> */}
 
                     {/* Tidio Chat */}
                     <script async
@@ -87,14 +88,9 @@ class MyDocument extends Document {
                                     "url": "https://peer-anfon-group.co.il",
                                     "name": "פאר אנפון תעשיות בע\'\'מ",
                                     "publisher": {
-                                        "@id": "https://8peer.co.il/#organization"
+                                        "@id": "https://peer-anfon-group.co.il/#organization"
                                     },
-                                    "inLanguage": "he-IL",
-                                    "potentialAction": {
-                                        "@type": "SearchAction",
-                                        "target": "https://8peer.co.il/?s={search_term_string}",
-                                        "query-input": "required name=search_term_string"
-                                    }
+                                    "inLanguage": "he-IL"
                                 },
                                 {
                                     "@type": "ImageObject",
