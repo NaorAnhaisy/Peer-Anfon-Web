@@ -35,16 +35,16 @@ export default function Home() {
             <Row className={styles.homeRowViewExamples}>
               <Col sm={12} md={6}>
                 <div className={styles.homeGap4}>
-                  <Image alt="" layout="responsive" width={3} height={4}
+                  <Image alt="פאר אנפון" layout="responsive" width={3} height={4}
                     src="https://images.prismic.io/deuren/eef23dde-f47b-4947-8393-a8d48ca086cd_1-Deuren-Define-Your-Style-Grey-Oak-Internal-Door.jpg?auto=compress%2Cformat&rect=0%2C20%2C1000%2C1400&w=500&h=700"
                   />
-                  <Image alt="" layout="responsive" width={3} height={4}
+                  <Image alt="פאר אנפון" layout="responsive" width={3} height={4}
                     src="https://images.prismic.io/deuren/3586e45e-af6e-4c16-931c-44b74cb4415c_2-Deuren-Define-Your-Style-Vario-4-Internal-Door.jpg?auto=compress%2Cformat&rect=21%2C62%2C962%2C1347&w=500&h=700"
                   />
-                  <Image alt="" layout="responsive" width={3} height={4}
+                  <Image alt="פאר אנפון" layout="responsive" width={3} height={4}
                     src="https://images.prismic.io/deuren/4fcfee0e-3dbf-4c9c-8c78-ca1b69ea7f78_3-Deuren-Define-Your-Style-Internal-Door.jpg?auto=compress%2Cformat&rect=0%2C20%2C1000%2C1400&w=500&h=700"
                   />
-                  <Image alt="" layout="responsive" width={3} height={4}
+                  <Image alt="פאר אנפון" layout="responsive" width={3} height={4}
                     src="https://images.prismic.io/deuren/50f4b565-73de-4bc3-b8dd-74285827866a_4-Deuren-Define-Your-Style-Glass-Internal-Door.jpg?auto=compress%2Cformat&rect=0%2C20%2C1000%2C1400&w=500&h=700"
                   />
                 </div>
@@ -67,10 +67,10 @@ export default function Home() {
               </Col>
               <Col sm={12} md={6}>
                 <div className={styles.homeGap4}>
-                  <Image alt="" layout="responsive" width={3} height={4}
+                  <Image alt="פאר אנפון" layout="responsive" width={3} height={4}
                     src="https://images.prismic.io/deuren/eef23dde-f47b-4947-8393-a8d48ca086cd_1-Deuren-Define-Your-Style-Grey-Oak-Internal-Door.jpg?auto=compress%2Cformat&rect=0%2C20%2C1000%2C1400&w=500&h=700"
                   />
-                  <Image alt="" layout="responsive" width={3} height={4}
+                  <Image alt="פאר אנפון" layout="responsive" width={3} height={4}
                     src="https://images.prismic.io/deuren/3586e45e-af6e-4c16-931c-44b74cb4415c_2-Deuren-Define-Your-Style-Vario-4-Internal-Door.jpg?auto=compress%2Cformat&rect=21%2C62%2C962%2C1347&w=500&h=700"
                   />
                 </div>

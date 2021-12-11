@@ -37,7 +37,7 @@ export default function ColorsTemplate() {
             elementsArr.push(
                 <div key={i} className={styles.colorTemplateImgDiv}>
                     <div className={styles.CrossfadeImage}>
-                        <Image layout="responsive" width={1} height={1} alt="" src={imagesColorsSrcArr[i]} className={styles.colorsTemplateColorTop} />
+                        <Image layout="responsive" width={1} height={1} alt="צבע" src={imagesColorsSrcArr[i]} className={styles.colorsTemplateColorTop} />
                     </div>
                 </div>
             )
