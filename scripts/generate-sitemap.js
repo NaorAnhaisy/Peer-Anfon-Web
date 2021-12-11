@@ -10,6 +10,8 @@ sitemap({
         "404",
         "index",
         "favicon",
+        "/articles/[articleID]",
+        "/projects/[projectID]"
     ],
     extraPaths: [
         "/",
