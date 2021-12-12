@@ -153,7 +153,9 @@ export default function AutomaticDoors() {
                                                 </li>
                                             </ul>
                                             <p className="mt-5 p-4" style={{ borderTop: '1px solid #b1a44c', textAlign: 'right' }}>
-                                                פאר אנפון נותנת יעוץ והתקנה לבנייני משרדים, חברות ובתים משותפים המעוניינים בפתרון מעולה ונח שלדלתות כניסה לבניין מהדור החדש – דלתות חשמליות ואוטומטיות מעוצבות ובצבע לפי בחירתכם.
+                                                פאר אנפון נותנת יעוץ והתקנה לבנייני משרדים, חברות ובתים משותפים המעוניינים בפתרון מעולה ונח שלדלתות כניסה לבניין מהדור החדש -
+                                                <br />
+                                                דלתות חשמליות ואוטומטיות מעוצבות ובצבע לפי בחירתכם.
                                             </p>
                                         </div>
                                     </div>
@@ -183,7 +185,9 @@ export default function AutomaticDoors() {
                                     <div className={`${styles.contentTextInner} ${styles.subContentInner}`}>
                                         <div className={styles.ulContainer2}>
                                             <p>
-                                                דלתות חשמליות, שבעבר היו מותקנות בעיקר בבנייני משרדים או מלונות יוקרה, הפכו לדלתות המועדפות כיום על בתים משותפים, חנויות ורבי קומות שונים. מה הופך דלתות חשמליות למועדפות?
+                                                דלתות חשמליות, שבעבר היו מותקנות בעיקר בבנייני משרדים או מלונות יוקרה, הפכו לדלתות המועדפות כיום על בתים משותפים, חנויות ורבי קומות שונים.
+                                                <br />
+                                                מה הופך דלתות חשמליות למועדפות?
                                             </p>
                                             <ul>
                                                 <li>
@@ -257,7 +261,7 @@ export default function AutomaticDoors() {
 
                         <div className={styles.image}>
                             <img
-                                src="/images/backgrounds/home-slide-2.jpeg"
+                                src="/images/backgrounds/home-slide-5.jpeg"
                                 alt="דלת אוטומטית"
                             />
                         </div>

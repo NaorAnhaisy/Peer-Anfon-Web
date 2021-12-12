@@ -16,7 +16,6 @@
 .forthSectionExplain {
     text-align: right;
     line-height: 30px;
-    padding-left: 10vw;
     font-size: 16px;
 }
 
@@ -231,12 +230,13 @@
 }
 
 .mainContextInner {
-    font-size: 20px;
+    font-size: 17px;
     padding: 20px 45px;
+    line-height: 31px;
 }
 
 .subContentInner {
-    font-size: 15px;
+    font-size: 16px;
     padding: 20px 30px;
 }
 
