@@ -56,7 +56,7 @@
 }
 
 .linksFooterColTitle:hover {
-  color: #ececec;
+  color: var(--gold-secondary);
 }
 
 .linksFooterCol>a:not(.linksFooterColTitle) {

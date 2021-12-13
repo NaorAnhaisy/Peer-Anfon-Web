@@ -4,10 +4,11 @@
     background: #ececec;
 }
 
-.contactTeamContainer h1 {
+.contactTeamContainer .title {
     color: var(--gold-primary);
     font-family: "Julius Sans One", "Alef";
     margin-bottom: 0;
+    font-size: 2.5rem;
 }
 
 .contactTeamContainer p {

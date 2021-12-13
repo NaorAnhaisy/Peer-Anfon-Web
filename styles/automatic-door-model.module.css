@@ -171,6 +171,7 @@
   height: 20px;
   box-sizing: border-box;
   position: absolute;
+  top: -1px;
   left: 0%;
   transform: rotate(225deg);
   -webkit-transform: rotate(225deg);
@@ -232,6 +233,10 @@
   -o-transform: scale(.8);
 }
 
+.arrowBackIconWrapper:hover > .arrowBackIconText {
+  color: #4f4f4f;
+}
+
 .doorSelectedContainer {
   overflow: hidden;
 }
@@ -241,6 +246,14 @@
   flex-flow: row-reverse;
   margin-left: 30px;
   line-height: 16px;
+  font-size: 17px;
+  font-family: 'Alef';
+  color: black;
+  transition: color .2s ease;
+  -webkit-transition: color .2s ease;
+  -moz-transition: color .2s ease;
+  -ms-transition: color .2s ease;
+  -o-transition: color .2s ease;
 }
 
 .automaticDoorVideo {
@@ -250,4 +263,14 @@
 .doorSelectedGalleryContainer div {
   padding-right: 0;
   padding-left: 0;
+}
+
+.inRowImages {
+  height: 100%;
+  max-height: 400px;
+}
+
+.allRowImage {
+  height: 100%;
+  max-height: 600px;
 }

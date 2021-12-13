@@ -61,7 +61,7 @@ export default function Home() {
             <Row className={styles.homeRowViewExamples}>
               <Col sm={12} md={6}>
                 <Container className={styles.homeSticky}>
-                  <h1>הגדר את הסגנון שלך</h1>
+                  <h2>הגדר את הסגנון שלך</h2>
                   <p>בחירתך בדלת צריכה לקחת בחשבון את מרכיבי עיצוב הפנים כמו גם את הטעם האישי שלך. הסגנון האינדיבידואלי שלך יבטיח את הדלת הפנימית המודרנית שלך והאיפור שלה לא דומה לשום דבר אחר. כספק מנוסה של דלתות פנים, אנו נעבוד איתך כדי לשקף את טעמך האישי, בין אם זה מהגוני מסורתי או עכשווי, עמוק או אלון לבן או עץ טבעי.</p>
                 </Container>
               </Col>
@@ -80,7 +80,7 @@ export default function Home() {
 
           <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" className={styles.homeChooseConfigDiv}>
             <Container className={styles.homeInfoDiv + " mb-3"}>
-              <h1>בחר קונפיגורציה</h1>
+              <h2>בחר קונפיגורציה</h2>
               <p>בחירתך בדלת צריכה לקחת בחשבון את מרכיבי עיצוב הפנים כמו גם את הטעם האישי שלך. הסגנון האינדיבידואלי שלך יבטיח את הדלת הפנימית המודרנית שלך והאיפור שלה לא דומה לשום דבר אחר. כספק מנוסה של דלתות פנים, אנו נעבוד איתך כדי לשקף את טעמך האישי, בין אם זה מהגוני מסורתי או עכשווי, עמוק או אלון לבן או עץ טבעי.</p>
             </Container>
           </div>
@@ -91,14 +91,14 @@ export default function Home() {
                 <ColorsTemplate />
               </Col>
               <Col sm={12} md={6} className={styles.homeColorsTextCol}>
-                <h1>גודל וצבע כרצונך החופשי</h1>
+                <h2>גודל וצבע כרצונך החופשי</h2>
                 <p>בחירתך בדלת צריכה לקחת בחשבון את מרכיבי עיצוב הפנים כמו גם את הטעם האישי שלך. הסגנון האינדיבידואלי שלך יבטיח את הדלת הפנימית המודרנית שלך והאיפור שלה לא דומה לשום דבר אחר. כספק מנוסה של דלתות פנים, אנו נעבוד איתך כדי לשקף את טעמך האישי, בין אם זה מהגוני מסורתי או עכשווי, עמוק או אלון לבן או עץ טבעי.</p>
               </Col>
             </Row>
           </Container>
 
           <Container className={styles.homeInfoDiv}>
-            <h1>
+            <h2>
               <VisibilitySensor partialVisibility>
                 {({ isVisible }) => (
                   <div style={{ minHeight: "100px" }}>
@@ -114,7 +114,7 @@ export default function Home() {
                   </div>
                 )}
               </VisibilitySensor>
-            </h1>
+            </h2>
             <p className={styles.inOurCustomersText}>בין לקוחותינו:</p>
           </Container>
           <CustomersSlider />
