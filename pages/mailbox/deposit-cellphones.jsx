@@ -60,7 +60,7 @@ export default function DepositCellphones() {
     return (
         <div>
             <img src="/images/automatic-doors/collapse-automatic-door.jpeg" className={`undragablle-image ${styles.doorSelectedMainDiv}`} alt="ארון הפקדה לטלפונים סלולריים" />
-            <Container className={styles.doorSelectedContainer}>
+            <Container className={`custom-size-container ${styles.doorSelectedContainer}`}>
                 <div>
                     <Row className={styles.doorSelectedTitleRow}>
                         <Col lg={9} md={8} sm={8} xs={12} className={styles.doorSelectedNameDiv}>

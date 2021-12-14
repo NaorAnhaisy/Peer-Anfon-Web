@@ -9,24 +9,17 @@ import ContactTeam from '../../components/ContactTeam/ContactTeam';
 
 const images = [
     { src: "/images/mailboxes/organizations/T-425.jpeg", text: "T-425" },
-    { src: "/images/mailboxes/organizations/T-426.jpg", text: "T-426" },
-    { src: "/images/mailboxes/organizations/T-427.jpg", text: "T-427" },
+    { src: "/images/mailboxes/organizations/T-435.jpeg", text: "T-435" },
+    { src: "/images/mailboxes/organizations/T-426.jpeg", text: "T-426" },
     { src: "/images/mailboxes/organizations/T-428.jpg", text: "T-428" },
     { src: "/images/mailboxes/organizations/T-428b.jpg", text: "T-428" },
-    { src: "/images/mailboxes/organizations/T-429.jpg", text: "T-429" },
-    { src: "/images/mailboxes/organizations/T-430.jpeg", text: "T-430" },
+    { src: "/images/mailboxes/organizations/T-434.jpeg", text: "T-434" },
     { src: "/images/mailboxes/organizations/T-431.jpeg", text: "T-431" },
+    { src: "/images/mailboxes/organizations/T-430.jpeg", text: "T-430" },
     { src: "/images/mailboxes/organizations/T-432.jpg", text: "T-432" },
     { src: "/images/mailboxes/organizations/T-433.jpg", text: "T-433" },
-    { src: "/images/mailboxes/organizations/T-434.jpg", text: "T-434" },
-    { src: "/images/mailboxes/organizations/T-435.jpeg", text: "T-435" },
-    { src: "/images/mailboxes/organizations/T-436.jpeg", text: "T-436" },
-    { src: "/images/mailboxes/organizations/T-437.jpg", text: "T-437" },
-    { src: "/images/mailboxes/organizations/T-438.jpg", text: "T-438" },
+    { src: "/images/mailboxes/organizations/T-436.jpg", text: "T-436" },
     { src: "/images/mailboxes/organizations/T-439.jpg", text: "T-439" },
-    { src: "/images/mailboxes/organizations/T-439b.jpg", text: "T-439" },
-    { src: "/images/mailboxes/organizations/T-440.jpg", text: "T-440" },
-    { src: "/images/mailboxes/organizations/T-441.jpg", text: "T-441" },
 ];
 
 export default function Organizations() {
@@ -47,7 +40,7 @@ export default function Organizations() {
                         className={intercomStyles.hoverImgContainer}>
                         <img src={image.src}
                             alt={`תיבת דואר למוסדות ${image.text}`}
-                            style={{ height: "auto", maxHeight: "500px", minHeight: "300px", width: "100%", objectFit: "cover" }} />
+                            style={{ height: "400px", width: "100%", objectFit: "cover" }} />
                         <div className={intercomStyles.hoverImgMiddle}>
                             <div className={intercomStyles.hoverImgText}>{image.text}</div>
                         </div>
@@ -59,8 +52,8 @@ export default function Organizations() {
 
     return (
         <div>
-            <img src="/images/automatic-doors/collapse-automatic-door.jpeg" className={`undragablle-image ${styles.doorSelectedMainDiv}`} alt="תיבות דואר למוסדות" />
-            <Container className={styles.doorSelectedContainer}>
+            <img src="/images/mailboxes/organizations/T-434.jpeg" className={`undragablle-image ${styles.doorSelectedMainDiv}`} alt="תיבות דואר למוסדות" />
+            <Container className={`custom-size-container ${styles.doorSelectedContainer}`}>
                 <div>
                     <Row className={styles.doorSelectedTitleRow}>
                         <Col lg={9} md={8} sm={8} xs={12} className={styles.doorSelectedNameDiv}>

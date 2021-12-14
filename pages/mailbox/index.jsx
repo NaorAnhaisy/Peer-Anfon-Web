@@ -26,7 +26,7 @@ export default function Mailboxes() {
                 <Carousel.Item>
                     <img
                         className={styles.caruselImage}
-                        src="/images/Doors/door-1.jpeg"
+                        src="/images/mailboxes/slider-1.jpg"
                         alt="תיבות דואר"
                     />
                     <Carousel.Caption className={styles.caruselCaption}>
@@ -37,7 +37,7 @@ export default function Mailboxes() {
                 <Carousel.Item>
                     <img
                         className={styles.caruselImage}
-                        src="/images/Doors/door-2.jpeg"
+                        src="/images/mailboxes/slider-2.jpeg"
                         alt="תיבות דואר"
                     />
                     <Carousel.Caption className={styles.caruselCaption}>
@@ -48,7 +48,7 @@ export default function Mailboxes() {
                 <Carousel.Item>
                     <img
                         className={styles.caruselImage}
-                        src="/images/Doors/door-1.jpeg"
+                        src="/images/mailboxes/slider-3.jpeg"
                         alt="תיבות דואר"
                     />
                     <Carousel.Caption className={styles.caruselCaption}>
@@ -59,7 +59,7 @@ export default function Mailboxes() {
                 <Carousel.Item>
                     <img
                         className={styles.caruselImage}
-                        src="/images/Doors/door-5.jpeg"
+                        src="/images/mailboxes/slider-4.jpeg"
                         alt="תיבות דואר"
                     />
                     <Carousel.Caption className={styles.caruselCaption}>
@@ -213,7 +213,7 @@ export default function Mailboxes() {
                             <a className="no-href-css">
                                 <div className="clickable">
                                     <div className={styles.imageLinkDivToCategorys}>
-                                        <img src="/images/automatic-doors/double-leaf-automatic-door.jpg" alt="תיבות דואר למוסדות" className={styles.imageToCategorys} />
+                                        <img src="/images/mailboxes/organizations/T-434.jpeg" alt="תיבות דואר למוסדות" className={styles.imageToCategorys} />
                                     </div>
                                     <div className={styles.imageLinkDivText}>
                                         <h5>תיבות דואר למוסדות</h5>
@@ -234,7 +234,7 @@ export default function Mailboxes() {
                             <a className="no-href-css">
                                 <div className="clickable">
                                     <div className={styles.imageLinkDivToCategorys}>
-                                        <img src="/images/automatic-doors/telescop-automatic-door.jpeg" alt="תיבות דואר לבתים פרטיים" className={styles.imageToCategorys} />
+                                        <img src="/images/mailboxes/private-houses/P-315.jpg" alt="תיבות דואר לבתים פרטיים" className={styles.imageToCategorys} />
                                     </div>
                                     <div className={styles.imageLinkDivText}>
                                         <h5>תיבות דואר לבתים פרטיים</h5>
@@ -255,7 +255,7 @@ export default function Mailboxes() {
                             <a className="no-href-css">
                                 <div className="clickable">
                                     <div className={styles.imageLinkDivToCategorys}>
-                                        <img src="/images/automatic-doors/collapse-automatic-door.jpeg" alt="חדרי תיבות דואר" className={styles.imageToCategorys} />
+                                        <img src="/images/mailboxes/mailbox-rooms/R-001.jpeg" alt="חדרי תיבות דואר" className={styles.imageToCategorys} />
                                     </div>
                                     <div className={styles.imageLinkDivText}>
                                         <h5>חדרי תיבות דואר</h5>

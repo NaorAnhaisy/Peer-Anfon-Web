@@ -75,8 +75,8 @@ export default function PrivateHouses() {
 
     return (
         <div>
-            <img src="/images/automatic-doors/collapse-automatic-door.jpeg" className={`undragablle-image ${styles.doorSelectedMainDiv}`} alt="תיבות דואר לבתים פרטיים" />
-            <Container className={styles.doorSelectedContainer}>
+            <img src="/images/mailboxes/private-houses/P-315.jpg" className={`undragablle-image ${styles.doorSelectedMainDiv}`} alt="תיבות דואר לבתים פרטיים" />
+            <Container className={`custom-size-container ${styles.doorSelectedContainer}`}>
                 <div>
                     <Row className={styles.doorSelectedTitleRow}>
                         <Col lg={9} md={8} sm={8} xs={12} className={styles.doorSelectedNameDiv}>
