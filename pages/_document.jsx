@@ -29,12 +29,13 @@ class MyDocument extends Document {
                     <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.png" />
                     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
                     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
+                    <link rel="canonical" href="https://peer-anfon-group.co.il/" key="canonical" />
+
                     <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.css" />
                     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
                         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossOrigin="anonymous" />
                     <link rel="stylesheet"
                         href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" />
-                    <link rel="canonical" href="https://peer-anfon-group.co.il/" key="canonical" />
 
                     {/* <link rel="alternate" type="application/rss+xml" title="פאר אנפון &laquo; פיד‏" href="https://peer-anfon-group.co.il/feed/" />
                     <link rel="alternate" type="application/rss+xml" title="פאר אנפון &laquo; פיד תגובות‏" href="https://8peer.co.il/comments/feed/" />
@@ -105,7 +106,7 @@ class MyDocument extends Document {
                                     "url": "https://peer-anfon-group.co.il/",
                                     "name": "פאר אנפון - דלתות אוטומטיות, דלתות חשמליות אסתטיות ויוקרתיות",
                                     "datePublished": "2015-01-08T08:52:20+00:00",
-                                    "dateModified": "2021-08-09T10:24:37+00:00",
+                                    "dateModified": "2021-12-12T08:52:20+00:00",
                                     "isPartOf": {
                                         "@id": "https://peer-anfon-group.co.il/#website"
                                     },
@@ -118,7 +119,7 @@ class MyDocument extends Document {
                                     "@type": "Article",
                                     "headline": "פאר אנפון - דלתות אוטומטיות, דלתות חשמליות אסתטיות ויוקרתיות",
                                     "datePublished": "2015-01-08T08:52:20+00:00",
-                                    "dateModified": "2021-08-09T10:24:37+00:00",
+                                    "dateModified": "2021-12-12T08:52:20+00:00",
                                     "author": {
                                         "@type": "Person",
                                         "name": "admin"

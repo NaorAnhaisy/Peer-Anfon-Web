@@ -406,3 +406,9 @@ body {
     -o-transform: scale(0.7) !important;
   }
 }
+
+@media (min-width: 1400px) {
+  .container.custom-size-container {
+    max-width: 1540px !important;
+  }
+}

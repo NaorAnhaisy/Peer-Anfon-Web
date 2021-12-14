@@ -8,27 +8,35 @@ import AOS from 'aos';
 import ContactTeam from '../../components/ContactTeam/ContactTeam';
 
 const images = [
-    { src: "/images/mailboxes/shared-houses/T-401.jpeg", text: "T-401" },
-    { src: "/images/mailboxes/shared-houses/T-402.jpg", text: "T-402" },
-    { src: "/images/mailboxes/shared-houses/T-403.jpg", text: "T-403" },
-    { src: "/images/mailboxes/shared-houses/T-404.jpg", text: "T-404" },
-    { src: "/images/mailboxes/shared-houses/T-405.jpeg", text: "T-405" },
-    { src: "/images/mailboxes/shared-houses/T-406.jpg", text: "T-406" },
-    { src: "/images/mailboxes/shared-houses/T-407.jpg", text: "T-407" },
-    { src: "/images/mailboxes/shared-houses/T-408.jpeg", text: "T-408" },
-    { src: "/images/mailboxes/shared-houses/T-409.jpg", text: "T-409" },
-    { src: "/images/mailboxes/shared-houses/T-410.jpeg", text: "T-410" },
-    { src: "/images/mailboxes/shared-houses/T-411.jpeg", text: "T-411" },
-    { src: "/images/mailboxes/shared-houses/T-412.jpeg", text: "T-412" },
-    { src: "/images/mailboxes/shared-houses/T-413.jpeg", text: "T-413" },
-    { src: "/images/mailboxes/shared-houses/T-417.jpg", text: "T-417" },
-    { src: "/images/mailboxes/shared-houses/T-418.jpeg", text: "T-418" },
-    { src: "/images/mailboxes/shared-houses/T-419.jpg", text: "T-419" },
-    { src: "/images/mailboxes/shared-houses/T-420.jpg", text: "T-420" },
-    { src: "/images/mailboxes/shared-houses/T-421.jpg", text: "T-421" },
-    { src: "/images/mailboxes/shared-houses/T-422.jpg", text: "T-422" },
-    { src: "/images/mailboxes/shared-houses/T-423.jpg", text: "T-423" },
-    { src: "/images/mailboxes/shared-houses/T-424.jpg", text: "T-424" },
+    { src: "/images/mailboxes/shared-houses/T-401.jpeg", text: "תיבות דואר ללא קלפה עם מספרים מובלטים" },
+    { src: "/images/mailboxes/shared-houses/T-408.jpeg", text: "תיבות דואר בתוספת מספרים מובלטים" },
+    { src: "/images/mailboxes/shared-houses/T-407.jpg", text: "תיבות דואר בתוספת שילוט בחריטת לייזר" },
+    { src: "/images/mailboxes/shared-houses/T-405.jpeg", text: "תיבות דואר בתוך ויטרינה" },
+    { src: "/images/mailboxes/shared-houses/T-425.jpeg", text: "תאים נפרדים על מדפי עץ" },
+    { src: "/images/mailboxes/shared-houses/T-404.jpg", text: "תיבות דואר בתוך קיר" },
+    { src: "/images/mailboxes/shared-houses/T-432.jpeg", text: "מערכת תיבות דואר על קיר" },
+    { src: "/images/mailboxes/shared-houses/T-409.jpg", text: "תיבות דואר בתוך מסגרת ממתכת" },
+    { src: "/images/mailboxes/shared-houses/T-406.jpg", text: "תיבות דואר הכוללות שני שילוטים" },
+    { src: "/images/mailboxes/shared-houses/T-412.jpeg", text: "תיבות דואר על קיר בתוספת שילוט מפרספקס" },
+    { src: "/images/mailboxes/shared-houses/T-413.jpeg", text: "מערכות תיבות דואר על קיר" },
+    { src: "/images/mailboxes/shared-houses/T-411.jpeg", text: "תיבות דואר בתוספת לוגו" },
+    { src: "/images/mailboxes/shared-houses/T-410.jpeg", text: "תיבות דואר על עמוד מרובע" },
+    { src: "/images/mailboxes/shared-houses/T-445.jpeg", text: "תיבת דואר על קיר בשילוט פרספקס" },
+    { src: "/images/mailboxes/shared-houses/T-437.jpeg", text: "תיבת דואר על שני עמודים מעוגלים" },
+    { src: "/images/mailboxes/shared-houses/T-402.jpg", text: "תיבת דואר צרה" },
+    { src: "/images/mailboxes/shared-houses/T-442.jpeg", text: "תיבת דואר בתוספת שילוט פרסקפס" },
+    { src: "/images/mailboxes/shared-houses/T-439.jpeg", text: "תיבת דואר על קיר בגוון כסוף אנודייז" },
+    { src: "/images/mailboxes/shared-houses/T-403.jpg", text: "תיבות דואר עם גגון" },
+    { src: "/images/mailboxes/shared-houses/T-427.jpeg", text: "תיבת דואר מונחת על סטנד" },
+    { src: "/images/mailboxes/shared-houses/T-436.jpeg", text: "תיבת דואר צרה" },
+    { src: "/images/mailboxes/shared-houses/T-440.jpeg", text: "תיבת דואר על קיר" },
+    { src: "/images/mailboxes/shared-houses/T-431.jpeg", text: "תיבות דואר על קיר" },
+    { src: "/images/mailboxes/shared-houses/T-443.jpeg", text: "תיבת דואר בתוך ויטרינה" },
+    { src: "/images/mailboxes/shared-houses/T-448.jpeg", text: "תיבת דואר על קיר בגוון ברונזה" },
+    { src: "/images/mailboxes/shared-houses/T-441.jpeg", text: "תיבת דואר על שני עמודים מעוגלים עם חריטת כתובת" },
+    { src: "/images/mailboxes/shared-houses/T-430.jpeg", text: "תיבות דואר על שני עמודים מעוגלים" },
+    { src: "/images/mailboxes/shared-houses/T-444.jpeg", text: "תיבת דואר על קיר" },
+
 ];
 
 export default function SharedHouses() {
@@ -60,7 +68,7 @@ export default function SharedHouses() {
     return (
         <div>
             <img src="/images/mailboxes/shared-houses/background.jpeg" className={`undragablle-image ${styles.doorSelectedMainDiv}`} alt="תיבות דואר לבתים משותפים" />
-            <Container className={styles.doorSelectedContainer}>
+            <Container className={`custom-size-container ${styles.doorSelectedContainer}`}>
                 <div>
                     <Row className={styles.doorSelectedTitleRow}>
                         <Col lg={9} md={8} sm={8} xs={12} className={styles.doorSelectedNameDiv}>
