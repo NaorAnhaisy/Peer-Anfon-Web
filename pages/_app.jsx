@@ -10,6 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'animate.css';
 import "aos/dist/aos.css";
 import 'react-medium-image-zoom/dist/styles.css'
+import '../styles/izmir.min.css';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {

@@ -92,7 +92,8 @@ export default function Intercom() {
                     </div>
                 })}
             </div>
-            <div className={`${styles.subTitleDiv} mb-5`} data-aos="zoom-in" data-aos-offset="200" data-aos-duration="700">
+            <div></div>
+            <div id="עמודי-נירוסטה" className={`${styles.subTitleDiv} mb-5`} data-aos="zoom-in" data-aos-offset="200" data-aos-duration="700">
                 <h3>עמודי נירוסטה לאינטרקום</h3>
                 <h5>מה אנחנו מציעים?</h5>
             </div>

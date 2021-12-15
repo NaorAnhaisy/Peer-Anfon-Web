@@ -1,15 +1,17 @@
+/* eslint-disable @next/next/no-img-element */
 import { useEffect, useState } from 'react';
-import Image from 'next/image';
+import Link from 'next/link';
 import styles from '../styles/Home.module.css'
 import { Col, Container, Row } from 'react-bootstrap';
-import ColorsTemplate from '../components/ColorsTemplate/ColorsTemplate';
 import CustomersSlider from '../components/CustomersSlider/CustomersSlider';
 import AOS from 'aos';
 import CountUp from 'react-countup';
 import VisibilitySensor from "react-visibility-sensor";
+import { useRouter } from 'next/router'
 
 const NUMBER_OF_USERS = 100000;
 export default function Home() {
+  const router = useRouter();
   const [isCounterUpEnded, setIsCounterUpEnded] = useState(false);
 
   useEffect(() => {
@@ -17,9 +19,13 @@ export default function Home() {
     document.getElementById('home-video').play();
   }, []);
 
+  const handleClick = (newLink) => {
+    router.push(newLink);
+  }
+
   return (
     <main>
-      <div className={"main " + styles.homeMainDiv}>
+      <div className={`main ${styles.homeMainDiv}`}>
         <div className={styles.homeVideoTitleContainer}>
           <video className={styles.homeStartVideo} autoPlay loop playsInline muted id="home-video">
             <source src="https://d2na49kk21qo66.cloudfront.net/Deuren-Internal-Video-Low-Res.mp4"
@@ -31,7 +37,148 @@ export default function Home() {
         </div>
 
         <div className={styles.homeContent}>
-          <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" className={styles.homeRowContentContainer + " " + styles.homeRowContentContainer1}>
+          <Row className={styles.threeContentOfHome}>
+            <Col xs={12} md={4}>
+              <h3>טקסט טקסט</h3>
+              <p>טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט</p>
+            </Col>
+            <Col xs={12} md={4}>
+              <h3>טקסט טקסט</h3>
+              <p>טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט</p>
+            </Col>
+            <Col xs={12} md={4}>
+              <h3>טקסט טקסט</h3>
+              <p>טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט</p>
+            </Col>
+          </Row>
+
+          <div className={styles.aboutUsContainer}>
+            <img src="/images/‏‏company-logo-symbol-black.png" alt="פאר אנפון תעשתיות בע&quot;מ" />
+            <h3>על החברה</h3>
+            <p>
+              טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
+              טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
+            </p>
+            <div className={styles.aboutUsHref}>
+              <Link href="/about">למד עוד על פאר אנפון</Link>
+            </div>
+          </div>
+
+          <Row className={styles.linksToProducts}>
+            <Col xs={12} md={4} className="p-5">
+              <figure className="c4-izmir c4-border-bottom-left c4-image-rotate-right c4-gradient-bottom-right clickable"
+                tabIndex="0"
+                style={{ backgroundImage: "linear-gradient(315deg, #facd4b 0, #000000 100%)" }}
+                onClick={() => handleClick('/דלתות-אוטומטיות')}>
+                <img src="/images/backgrounds/home-slide-3.jpg" alt="דלתות חשמליות פאר אנפון" />
+                <figcaption className="c4-layout-bottom-left">
+                  <div className="c4-reveal-right">
+                    <h3>
+                      דלתות אוטומטיות
+                    </h3>
+                  </div>
+                </figcaption>
+              </figure>
+            </Col>
+            <Col xs={12} md={4} className="p-5">
+              <figure className="c4-izmir c4-border-vert c4-gradient-top c4-image-zoom-in clickable"
+                tabIndex="0"
+                onClick={() => handleClick('/תיבות-דואר')}
+                style={{ backgroundImage: "linear-gradient(315deg, #facd4b 0, #000000 100%)" }}
+              >
+                <img src="/images/backgrounds/home-slide-3.jpg" alt="תיבות דואר פאר אנפון" />
+                <figcaption className="c4-layout-center-center">
+                  <div className="c4-izmir-title-wrapper c4-fade">
+                    <h3 className="c4-izmir-title">
+                      תיבות דואר
+                    </h3>
+                  </div>
+                </figcaption>
+              </figure>
+            </Col>
+            <Col xs={12} md={4} className="p-5">
+              <figure className="c4-izmir c4-border-corners-1 c4-gradient-bottom-left c4-image-zoom-out clickable"
+                tabIndex="0"
+                onClick={() => handleClick('/מעברים-מהירים')}
+                style={{ backgroundImage: "linear-gradient(315deg, #facd4b 0, #000000 100%)" }}
+              >
+                <img src="/images/backgrounds/home-slide-3.jpg" alt="מעברים מהירים פאר אנפון" />
+                <figcaption className="c4-layout-bottom-left">
+                  <div className="c4-reveal-right">
+                    <h3>
+                      מעברים מהירים
+                    </h3>
+                  </div>
+                </figcaption>
+              </figure>
+            </Col>
+            <Col xs={12} md={4} className="p-5">
+              <figure className="c4-izmir c4-border-center c4-image-zoom-in c4-gradient-top clickable"
+                tabIndex="0"
+                onClick={() => handleClick('/דלתות-כניסה')}
+                style={{ backgroundImage: "linear-gradient(315deg, #facd4b 0, #000000 100%)" }}
+              >
+                <img src="/images/backgrounds/home-slide-3.jpg" alt="דלתות כניסה פאר אנפון" />
+                <figcaption>
+                  <div className="c4-fade-up">
+                    <h2>
+                      דלתות כניסה
+                    </h2>
+                  </div>
+                </figcaption>
+              </figure>
+            </Col>
+            <Col xs={12} md={4} className="p-5">
+              <figure className="c4-izmir c4-border-cc-3 c4-image-zoom-out c4-gradient-bottom-right clickable"
+                tabIndex="0"
+                onClick={() => handleClick('/מערכות-אינטרקום')}
+                style={{ backgroundImage: "linear-gradient(315deg, #facd4b 0, #000000 100%)" }}
+              >
+                <img src="/images/backgrounds/home-slide-3.jpg" alt="מערכות אינטרקום פאר אנפון" />
+                <figcaption>
+                  <div className="c4-rotate-up-right c4-delay-200">
+                    <h2>
+                      מערכות
+                    </h2>
+                  </div>
+                  <div className="c4-rotate-down-left c4-delay-200">
+                    <h2>
+                      אינטרקום
+                    </h2>
+                  </div>
+                </figcaption>
+              </figure>
+            </Col>
+            <Col xs={12} md={4} className="p-5">
+              <figure className="c4-izmir c4-border-right c4-image-pan-left c4-gradient-top clickable"
+                tabIndex="0"
+                onClick={() => handleClick('/מערכות-אינטרקום/#עמודי-נירוסטה')}
+                style={{ backgroundImage: "linear-gradient(315deg, #facd4b 0, #000000 100%)" }}
+              >
+                <img src="/images/backgrounds/home-slide-3.jpg" alt="עמודי נירוסטה לאינטרקום פאר אנפון" />
+                <figcaption className="c4-layout-top-right">
+                  <div className="c4-reveal-left">
+                    <h2>
+                      עמודי
+                    </h2>
+                  </div>
+                  <div className="c4-reveal-left c4-delay-200">
+                    <h2>
+                      נירוסטה
+                    </h2>
+                  </div>
+                  <div className="c4-reveal-left c4-delay-400">
+                    <h2>
+                      לאינטרקום
+                    </h2>
+                  </div>
+                </figcaption>
+              </figure>
+            </Col>
+          </Row>
+
+
+          {/* <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" className={styles.homeRowContentContainer + " " + styles.homeRowContentContainer1}>
             <Row className={styles.homeRowViewExamples}>
               <Col sm={12} md={6}>
                 <div className={styles.homeGap4}>
@@ -83,7 +230,7 @@ export default function Home() {
               <h2>בחר קונפיגורציה</h2>
               <p>בחירתך בדלת צריכה לקחת בחשבון את מרכיבי עיצוב הפנים כמו גם את הטעם האישי שלך. הסגנון האינדיבידואלי שלך יבטיח את הדלת הפנימית המודרנית שלך והאיפור שלה לא דומה לשום דבר אחר. כספק מנוסה של דלתות פנים, אנו נעבוד איתך כדי לשקף את טעמך האישי, בין אם זה מהגוני מסורתי או עכשווי, עמוק או אלון לבן או עץ טבעי.</p>
             </Container>
-          </div>
+          </div>*/}
 
           <Container className={styles.homeInfoDiv}>
             <h2>
