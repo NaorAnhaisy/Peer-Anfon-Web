@@ -85,18 +85,6 @@ export default function Home() {
             </Container>
           </div>
 
-          <Container data-aos="fade-zoom-in" data-aos-easing="ease-in-back" className={styles.homeColorsContainer}>
-            <Row className={styles.homeFlexColumnReverse}>
-              <Col sm={12} md={6} >
-                <ColorsTemplate />
-              </Col>
-              <Col sm={12} md={6} className={styles.homeColorsTextCol}>
-                <h2>גודל וצבע כרצונך החופשי</h2>
-                <p>בחירתך בדלת צריכה לקחת בחשבון את מרכיבי עיצוב הפנים כמו גם את הטעם האישי שלך. הסגנון האינדיבידואלי שלך יבטיח את הדלת הפנימית המודרנית שלך והאיפור שלה לא דומה לשום דבר אחר. כספק מנוסה של דלתות פנים, אנו נעבוד איתך כדי לשקף את טעמך האישי, בין אם זה מהגוני מסורתי או עכשווי, עמוק או אלון לבן או עץ טבעי.</p>
-              </Col>
-            </Row>
-          </Container>
-
           <Container className={styles.homeInfoDiv}>
             <h2>
               <VisibilitySensor partialVisibility>

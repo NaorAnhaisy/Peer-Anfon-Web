@@ -1,10 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import { useState, useEffect } from 'react';
-import { Carousel, Col, Row } from "react-bootstrap";
+import { Carousel, Container, Row, Col } from "react-bootstrap";
 import styles from "../../styles/automatic-doors.module.css";
 import Link from "next/link";
 import VisibilitySensor from "react-visibility-sensor";
 import AOS from 'aos';
+import ColorsTemplate from "../../components/ColorsTemplate/ColorsTemplate";
 
 export default function Mailboxes() {
     useEffect(() => {
@@ -181,6 +182,18 @@ export default function Mailboxes() {
                     </div>
                 </div>
             </VisibilitySensor>
+
+            <Container data-aos="fade-zoom-in" data-aos-easing="ease-in-back" className={styles.homeColorsContainer}>
+                <Row className={styles.homeFlexColumnReverse}>
+                    <Col sm={12} md={6} >
+                        <ColorsTemplate />
+                    </Col>
+                    <Col sm={12} md={6} className={styles.homeColorsTextCol}>
+                        <h2>גודל וצבע כרצונך החופשי</h2>
+                        <p>בחירתך בדלת צריכה לקחת בחשבון את מרכיבי עיצוב הפנים כמו גם את הטעם האישי שלך. הסגנון האינדיבידואלי שלך יבטיח את הדלת הפנימית המודרנית שלך והאיפור שלה לא דומה לשום דבר אחר. כספק מנוסה של דלתות פנים, אנו נעבוד איתך כדי לשקף את טעמך האישי, בין אם זה מהגוני מסורתי או עכשווי, עמוק או אלון לבן או עץ טבעי.</p>
+                    </Col>
+                </Row>
+            </Container>
 
             <div className={styles.automaticDoorsContainer}>
                 <Row className={styles.rowImagesLinks}>

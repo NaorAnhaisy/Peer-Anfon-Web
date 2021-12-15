@@ -11,6 +11,7 @@
   min-height: 300px;
   max-height: 80vh;
   object-fit: cover;
+  margin-top: 8rem;
 }
 
 .doorSelectedSeperator {

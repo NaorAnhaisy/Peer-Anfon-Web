@@ -119,26 +119,6 @@
   top: 8em;
 }
 
-.homeColorsContainer {
-  padding: 0 30px;
-  margin-bottom: 130px;
-}
-
-.homeColorsContainer h1 {
-  color: var(--gold-secondary);
-  text-align: right;
-}
-
-.homeColorsContainer p {
-  text-align: right;
-}
-
-@media (min-width: 768px) {
-  .homeColorsTextCol {
-    padding: 0 70px !important;
-  }
-}
-
 .homeChooseConfigDiv {
   margin-bottom: 150px;
 }
@@ -268,10 +248,4 @@
   font-size: 20px !important;
   font-weight: bold;
   color: #3c3c3c;
-}
-
-@media (max-width: 767px) {
-  .homeFlexColumnReverse {
-    flex-direction: column-reverse;
-  }
 }
