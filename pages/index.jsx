@@ -8,6 +8,8 @@ import AOS from 'aos';
 import CountUp from 'react-countup';
 import VisibilitySensor from "react-visibility-sensor";
 import { useRouter } from 'next/router'
+import CardsSlider from '../components/CardsSlider/CardsSlider';
+// import AnimatedNumber from 'react-animated-number'
 
 const NUMBER_OF_USERS = 100000;
 export default function Home() {
@@ -38,28 +40,46 @@ export default function Home() {
 
         <div className={styles.homeContent}>
           <Row className={styles.threeContentOfHome}>
-            <Col xs={12} md={4}>
+            <Col xs={12} md={4}
+              data-aos="fade-left"
+              data-aos-once={true}
+              data-aos-duration="1500"
+              data-aos-offset="400">
               <h3>טקסט טקסט</h3>
               <p>טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט</p>
             </Col>
-            <Col xs={12} md={4}>
+            <Col xs={12} md={4}
+              data-aos="fade-zoom-in"
+              data-aos-once={true}
+              data-aos-duration="1500"
+              data-aos-offset="400">
               <h3>טקסט טקסט</h3>
               <p>טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט</p>
             </Col>
-            <Col xs={12} md={4}>
+            <Col xs={12} md={4}
+              data-aos="fade-right"
+              data-aos-once={true}
+              data-aos-duration="1500"
+              data-aos-offset="400">
               <h3>טקסט טקסט</h3>
               <p>טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט</p>
             </Col>
           </Row>
 
           <div className={styles.aboutUsContainer}>
-            <img src="/images/‏‏company-logo-symbol-black.png" alt="פאר אנפון תעשתיות בע&quot;מ" />
-            <h3>על החברה</h3>
-            <p>
-              טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
-              טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
-            </p>
-            <div className={styles.aboutUsHref}>
+            <img src="/images/‏‏company-logo-symbol-black.png" alt="פאר אנפון תעשתיות בע&quot;מ" className="undragablle-image" />
+            <div data-aos="fade-up"
+              data-aos-once={true}
+              data-aos-duration="800"
+              data-aos-offset="200"
+            >
+              <h3>על החברה</h3>
+              <p>
+                טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
+                טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
+              </p>
+            </div>
+            <div className={`${styles.framedBtn} ${styles.aboutUsHref}`}>
               <Link href="/about">למד עוד על פאר אנפון</Link>
             </div>
           </div>
@@ -121,9 +141,9 @@ export default function Home() {
                 <img src="/images/backgrounds/home-slide-3.jpg" alt="דלתות כניסה פאר אנפון" />
                 <figcaption>
                   <div className="c4-fade-up">
-                    <h2>
+                    <h3>
                       דלתות כניסה
-                    </h2>
+                    </h3>
                   </div>
                 </figcaption>
               </figure>
@@ -137,14 +157,14 @@ export default function Home() {
                 <img src="/images/backgrounds/home-slide-3.jpg" alt="מערכות אינטרקום פאר אנפון" />
                 <figcaption>
                   <div className="c4-rotate-up-right c4-delay-200">
-                    <h2>
+                    <h3>
                       מערכות
-                    </h2>
+                    </h3>
                   </div>
                   <div className="c4-rotate-down-left c4-delay-200">
-                    <h2>
+                    <h3>
                       אינטרקום
-                    </h2>
+                    </h3>
                   </div>
                 </figcaption>
               </figure>
@@ -158,24 +178,46 @@ export default function Home() {
                 <img src="/images/backgrounds/home-slide-3.jpg" alt="עמודי נירוסטה לאינטרקום פאר אנפון" />
                 <figcaption className="c4-layout-top-right">
                   <div className="c4-reveal-left">
-                    <h2>
+                    <h3>
                       עמודי
-                    </h2>
+                    </h3>
                   </div>
                   <div className="c4-reveal-left c4-delay-200">
-                    <h2>
+                    <h3>
                       נירוסטה
-                    </h2>
+                    </h3>
                   </div>
                   <div className="c4-reveal-left c4-delay-400">
-                    <h2>
+                    <h3>
                       לאינטרקום
-                    </h2>
+                    </h3>
                   </div>
                 </figcaption>
               </figure>
             </Col>
           </Row>
+
+          <Row className={styles.newProductsContainer}>
+            <Col xs={12} md={6}>
+              <h3>מוצרים חדשים</h3>
+              <p>
+                טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
+                טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
+                טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
+                טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
+                טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
+                טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
+              </p>
+              <div className={`${styles.framedBtn} ${styles.newProductsHref}`}>
+                <Link href="/about">קרא עוד...</Link>
+              </div>
+            </Col>
+            <Col xs={12} md={6}>
+              <img src="/images/backgrounds/home-slide-3.jpg" alt="מוצרים חדשים פאר אנפון" />
+            </Col>
+          </Row>
+
+          <CardsSlider />
 
 
           {/* <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" className={styles.homeRowContentContainer + " " + styles.homeRowContentContainer1}>
@@ -232,24 +274,30 @@ export default function Home() {
             </Container>
           </div>*/}
 
-          <Container className={styles.homeInfoDiv}>
+          <Container className={`mt-5 mb-5 ${styles.homeInfoDiv}`}>
+            <h3>יותר מ:</h3>
             <h2>
               <VisibilitySensor partialVisibility>
                 {({ isVisible }) => (
-                  <div style={{ minHeight: "100px" }}>
+                  <div style={{
+                    minHeight: "60px",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    fontSize: "40px",
+                    fontWeight: "900"
+                  }}>
                     {isVisible ? <CountUp
                       onEnd={() => setIsCounterUpEnded(true)}
-                      duration={1.7}
-                      update={(newNumber) => console.log(newNumber)}
+                      duration={2.5}
                       separator=","
-                      prefix="יותר מ - "
-                      suffix=" לקוחות!"
                       start={isCounterUpEnded ? NUMBER_OF_USERS : 0}
                       end={NUMBER_OF_USERS} /> : null}
                   </div>
                 )}
               </VisibilitySensor>
             </h2>
+            <h3>לקוחות בכלל הארץ!</h3>
             <p className={styles.inOurCustomersText}>בין לקוחותינו:</p>
           </Container>
           <CustomersSlider />
