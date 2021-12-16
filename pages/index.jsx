@@ -303,8 +303,10 @@ export default function Home() {
           <CustomersSlider />
           <div className={`mt-5 mb-5 ${styles.homeContactUsContainer}`}>
             <Container>
-              <h2>דברו איתנו</h2>
-              <p>לקבלת הצעת מחיר, התייעצות או בקשה מסויימת, מלאו את הטופס ונציגנו יחזרו אליכם עד 24 שעות</p>
+              <div className={styles.homeContactUsTitle}>
+                <h2>דברו איתנו</h2>
+                <p>לקבלת הצעת מחיר, התייעצות או בקשה מסויימת, מלאו את הטופס ונציגנו יחזרו אליכם עד 24 שעות</p>
+              </div>
               <HomeContactUsForm />
             </Container>
           </div>

@@ -491,12 +491,12 @@
   color: white;
 }
 
-.homeContactUsContainer h2 {
+.homeContactUsTitle h2 {
   font-size: 45px;
   font-weight: bold;
 }
 
-.homeContactUsContainer p {
+.homeContactUsTitle p {
   margin-bottom: 60px;
   font-size: 20px;
 }
