@@ -17,6 +17,11 @@
     border: 1px solid #e5e5e5;
 }
 
+.recommandCard h3 {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
 .subTitle {
     display: flex;
     justify-content: space-between;
