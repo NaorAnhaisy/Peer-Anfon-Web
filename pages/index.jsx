@@ -4,6 +4,7 @@ import Link from 'next/link';
 import styles from '../styles/Home.module.css'
 import { Col, Container, Row } from 'react-bootstrap';
 import CustomersSlider from '../components/CustomersSlider/CustomersSlider';
+import HomeContactUsForm from '../components/HomeContactUsForm/HomeContactUsForm';
 import AOS from 'aos';
 import CountUp from 'react-countup';
 import VisibilitySensor from "react-visibility-sensor";
@@ -85,7 +86,7 @@ export default function Home() {
           </div>
 
           <Row className={styles.linksToProducts}>
-            <Col xs={12} md={4} className="p-5">
+            <Col xs={12} md={6} xl={4} className={styles.colLinkToProduct}>
               <figure className="c4-izmir c4-border-bottom-left c4-image-rotate-right c4-gradient-bottom-right clickable"
                 tabIndex="0"
                 style={{ backgroundImage: "linear-gradient(315deg, #facd4b 0, #000000 100%)" }}
@@ -100,7 +101,7 @@ export default function Home() {
                 </figcaption>
               </figure>
             </Col>
-            <Col xs={12} md={4} className="p-5">
+            <Col xs={12} md={6} xl={4} className={styles.colLinkToProduct}>
               <figure className="c4-izmir c4-border-vert c4-gradient-top c4-image-zoom-in clickable"
                 tabIndex="0"
                 onClick={() => handleClick('/תיבות-דואר')}
@@ -116,7 +117,7 @@ export default function Home() {
                 </figcaption>
               </figure>
             </Col>
-            <Col xs={12} md={4} className="p-5">
+            <Col xs={12} md={6} xl={4} className={styles.colLinkToProduct}>
               <figure className="c4-izmir c4-border-corners-1 c4-gradient-bottom-left c4-image-zoom-out clickable"
                 tabIndex="0"
                 onClick={() => handleClick('/מעברים-מהירים')}
@@ -132,7 +133,7 @@ export default function Home() {
                 </figcaption>
               </figure>
             </Col>
-            <Col xs={12} md={4} className="p-5">
+            <Col xs={12} md={6} xl={4} className={styles.colLinkToProduct}>
               <figure className="c4-izmir c4-border-center c4-image-zoom-in c4-gradient-top clickable"
                 tabIndex="0"
                 onClick={() => handleClick('/דלתות-כניסה')}
@@ -148,7 +149,7 @@ export default function Home() {
                 </figcaption>
               </figure>
             </Col>
-            <Col xs={12} md={4} className="p-5">
+            <Col xs={12} md={6} xl={4} className={styles.colLinkToProduct}>
               <figure className="c4-izmir c4-border-cc-3 c4-image-zoom-out c4-gradient-bottom-right clickable"
                 tabIndex="0"
                 onClick={() => handleClick('/מערכות-אינטרקום')}
@@ -169,7 +170,7 @@ export default function Home() {
                 </figcaption>
               </figure>
             </Col>
-            <Col xs={12} md={4} className="p-5">
+            <Col xs={12} md={6} xl={4} className={styles.colLinkToProduct}>
               <figure className="c4-izmir c4-border-right c4-image-pan-left c4-gradient-top clickable"
                 tabIndex="0"
                 onClick={() => handleClick('/מערכות-אינטרקום/#עמודי-נירוסטה')}
@@ -297,10 +298,15 @@ export default function Home() {
                 )}
               </VisibilitySensor>
             </h2>
-            <h3>לקוחות בכלל הארץ!</h3>
+            <h3>לקוחות בכל הארץ!</h3>
             <p className={styles.inOurCustomersText}>בין לקוחותינו:</p>
           </Container>
           <CustomersSlider />
+          <Container className={`mt-5 mb-5 ${styles.homeContactUsContainer}`}>
+            <h2>דברו איתנו</h2>
+            <p>לקבלת הצעת מחיר, התייעצות או בקשה מסויימת, מלאו את הטופס ונציגנו יחזרו אליכם עד 24 שעות</p>
+            <HomeContactUsForm />
+          </Container>
         </div>
       </div >
     </main>
