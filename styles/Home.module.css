@@ -477,3 +477,26 @@
   margin-bottom: 90px;
   padding: 0 40px;
 }
+
+.homeContactUsContainer {
+  width: 100%;
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: url(http://localhost:3000/images/Doors/background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+
+.homeContactUsContainer h2 {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.homeContactUsContainer p {
+  margin-bottom: 60px;
+  font-size: 20px;
+}

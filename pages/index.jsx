@@ -10,7 +10,6 @@ import CountUp from 'react-countup';
 import VisibilitySensor from "react-visibility-sensor";
 import { useRouter } from 'next/router'
 import CardsSlider from '../components/CardsSlider/CardsSlider';
-// import AnimatedNumber from 'react-animated-number'
 
 const NUMBER_OF_USERS = 100000;
 export default function Home() {
@@ -302,11 +301,13 @@ export default function Home() {
             <p className={styles.inOurCustomersText}>בין לקוחותינו:</p>
           </Container>
           <CustomersSlider />
-          <Container className={`mt-5 mb-5 ${styles.homeContactUsContainer}`}>
-            <h2>דברו איתנו</h2>
-            <p>לקבלת הצעת מחיר, התייעצות או בקשה מסויימת, מלאו את הטופס ונציגנו יחזרו אליכם עד 24 שעות</p>
-            <HomeContactUsForm />
-          </Container>
+          <div className={`mt-5 mb-5 ${styles.homeContactUsContainer}`}>
+            <Container>
+              <h2>דברו איתנו</h2>
+              <p>לקבלת הצעת מחיר, התייעצות או בקשה מסויימת, מלאו את הטופס ונציגנו יחזרו אליכם עד 24 שעות</p>
+              <HomeContactUsForm />
+            </Container>
+          </div>
         </div>
       </div >
     </main>
