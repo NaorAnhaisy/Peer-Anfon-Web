@@ -6,6 +6,7 @@ import intercomStyles from "../../styles/intercom.module.css";
 import { useEffect } from "react";
 import AOS from 'aos';
 import ContactTeam from '../../components/ContactTeam/ContactTeam';
+import Zoom from 'react-medium-image-zoom'
 
 const images = [
     { src: "/images/mailboxes/private-houses/P-301.jpg", text: "P-301" },
@@ -56,14 +57,15 @@ export default function PrivateHouses() {
             return (
                 <Col key={index} sm={12} md={4}>
                     <div
-
                         data-aos={index % 3 === 0 ? "fade-left" : index % 3 === 1 ? "fade-up" : "fade-right"}
                         data-aos-offset="200"
                         data-aos-duration="700"
                         className={intercomStyles.hoverImgContainer}>
-                        <img src={image.src}
-                            alt={`תיבת דואר לבתים פרטיים ${image.text}`}
-                            style={{ height: "auto", maxHeight: "500px", minHeight: "300px", width: "100%", objectFit: "cover" }} />
+                        <Zoom>
+                            <img src={image.src}
+                                alt={`תיבת דואר לבתים פרטיים ${image.text}`}
+                                style={{ height: "auto", maxHeight: "500px", minHeight: "300px", width: "100%", objectFit: "cover" }} />
+                        </Zoom>
                         <div className={intercomStyles.hoverImgMiddle}>
                             <div className={intercomStyles.hoverImgText}>{image.text}</div>
                         </div>

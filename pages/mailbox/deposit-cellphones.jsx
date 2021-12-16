@@ -6,6 +6,7 @@ import intercomStyles from "../../styles/intercom.module.css";
 import { useEffect } from "react";
 import AOS from 'aos';
 import ContactTeam from '../../components/ContactTeam/ContactTeam';
+import Zoom from 'react-medium-image-zoom'
 
 const images = [
     { src: "/images/mailboxes/organizations/T-425.jpeg", text: "T-425" },
@@ -45,9 +46,12 @@ export default function DepositCellphones() {
                         data-aos-offset="200"
                         data-aos-duration="700"
                         className={intercomStyles.hoverImgContainer}>
-                        <img src={image.src}
-                            alt={`ארון הפקדה לטלפונים סלולריים ${image.text}`}
-                            style={{ height: "auto", maxHeight: "500px", minHeight: "300px", width: "100%", objectFit: "cover" }} />
+                        <Zoom>
+                            <img src={image.src}
+                                alt={`ארון הפקדה לטלפונים סלולריים ${image.text}`}
+                                style={{ height: "auto", maxHeight: "500px", minHeight: "300px", width: "100%", objectFit: "cover" }} />
+                        </Zoom>
+
                         <div className={intercomStyles.hoverImgMiddle}>
                             <div className={intercomStyles.hoverImgText}>{image.text}</div>
                         </div>
