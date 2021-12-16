@@ -124,7 +124,7 @@ export default function HomeContactUsForm() {
                         <div className={styles.form_group}>
                             <input
                                 type="tel"
-                                id="tel"
+                                id="phone"
                                 value={phoneNumber}
                                 onChange={(e) => setPhoneNumber(e.target.value)}
                                 className={styles.form_input}
@@ -134,7 +134,7 @@ export default function HomeContactUsForm() {
                                 spellCheck="false"
                                 autoComplete="off"
                                 required />
-                            <label htmlFor="tel" className={styles.form_label}>מספר טלפון</label>
+                            <label htmlFor="phone" className={styles.form_label}>מספר טלפון</label>
                         </div>
                     </Col>
                 </Row>

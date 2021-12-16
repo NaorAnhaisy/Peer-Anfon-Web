@@ -165,6 +165,7 @@ export default function ContactUs() {
                                     className="form-element-field"
                                     placeholder=" "
                                     type="text"
+                                    id="name"
                                     spellCheck="false"
                                     value={fullName}
                                     onChange={(e) => setFullName(e.target.value)}
@@ -181,6 +182,7 @@ export default function ContactUs() {
                                     className="form-element-field"
                                     placeholder=" "
                                     type="text"
+                                    id="city"
                                     spellCheck="false"
                                     value={address}
                                     onChange={(e) => setAddress(e.target.value)}
@@ -201,6 +203,7 @@ export default function ContactUs() {
                                     className="form-element-field"
                                     placeholder=" "
                                     type="email"
+                                    id="email"
                                     spellCheck="false"
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
@@ -217,6 +220,7 @@ export default function ContactUs() {
                                     className="form-element-field"
                                     placeholder=" "
                                     type="tel"
+                                    id="phone"
                                     pattern="[0-9()+-]+"
                                     title="ניתן להשתמש אך ורק במספרים ותווי טלפון (+, -)."
                                     value={phoneNumber}
