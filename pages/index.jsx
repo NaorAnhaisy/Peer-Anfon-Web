@@ -301,7 +301,7 @@ export default function Home() {
             <p className={styles.inOurCustomersText}>בין לקוחותינו:</p>
           </Container>
           <CustomersSlider />
-          <div className={`mt-5 mb-5 ${styles.homeContactUsContainer}`}>
+          <div className={`mt-5 ${styles.homeContactUsContainer}`}>
             <Container>
               <div className={styles.homeContactUsTitle}>
                 <h2>דברו איתנו</h2>

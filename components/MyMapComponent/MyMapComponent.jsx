@@ -39,13 +39,15 @@ import React, { useEffect } from 'react';
 import mapboxgl from 'mapbox-gl';
 import MapboxLanguage from '@mapbox/mapbox-gl-language';
 
-mapboxgl.accessToken = 'pk.eyJ1IjoicGVlcmFuZm9uIiwiYSI6ImNrdzdxZGgyeTFlNncyeG1lbTVrZWN1Nm0ifQ.M_APSUgEXEr0lnz6zml8cw';
+const ACCESS_TOKEN = 'pk.eyJ1IjoicGVlcmFuZm9uIiwiYSI6ImNreDlpZDc5djAyZDUyd3BnZW5uemNna20ifQ.oZM5nsI3yoHhnafl5SXURg';
+const COORDINATES = [34.801570, 32.022130];
+
+mapboxgl.accessToken = ACCESS_TOKEN;
 
 export default function MyMapComponent() {
 
     useEffect(() => {
-        mapboxgl.accessToken = 'pk.eyJ1IjoicGVlcmFuZm9uIiwiYSI6ImNrdzdxZGgyeTFlNncyeG1lbTVrZWN1Nm0ifQ.M_APSUgEXEr0lnz6zml8cw';
-
+        mapboxgl.accessToken = ACCESS_TOKEN;
         if (mapboxgl.getRTLTextPluginStatus() === 'unavailable') {
             mapboxgl.setRTLTextPlugin(
                 'https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-rtl-text/v0.2.3/mapbox-gl-rtl-text.js',
@@ -57,7 +59,7 @@ export default function MyMapComponent() {
         const map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/mapbox/streets-v11',
-            center: [34.801570, 32.022130],
+            center: COORDINATES,
             zoom: 14
         });
 
@@ -84,7 +86,7 @@ export default function MyMapComponent() {
 
         // Create a default Marker and add it to the map.
         new mapboxgl.Marker()
-            .setLngLat([34.801570, 32.022130])
+            .setLngLat(COORDINATES)
             .addTo(map);
     }, [])
 
