@@ -91,13 +91,13 @@
 }
 
 .btn:hover:not(.active) {
-    background: #e0d79c;
+    background: var(--gold-secondary);
     color: black;
 }
 
 .btn.active {
-    background: #c5bf83;
-    color: white;
+    background: var(--gold-light);
+    color: rgb(41, 41, 41);
     cursor: default;
 }
 
@@ -129,7 +129,7 @@
 
 .btnCheckBox svg path {
     stroke-width: 3;
-    stroke: #fff;
+    stroke: black;
     stroke-dasharray: 34;
     stroke-dashoffset: 34;
     stroke-linecap: round;
@@ -147,7 +147,7 @@
 }
 
 .active p {
-    margin-right: 80px;
+    margin-right: 70px;
     transition: 1s;
 }
 
