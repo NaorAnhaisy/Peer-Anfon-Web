@@ -216,7 +216,13 @@ export default function Home() {
             </Col>
           </Row>
 
-          <CardsSlider />
+          <div className={styles.homeContactUsTitle}>
+            <h2>ממליצים עלינו!</h2>
+            <CardsSlider />
+            <p>גם לכם יש כמה דברים טובים להגיד עלינו? נשמח <Link href="/recommendations">
+                <a className={styles.recommandUsLink}>שתלחצו כאן</a>
+              </Link> ותפרגנו קצת :)</p>
+          </div>
 
 
           {/* <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" className={styles.homeRowContentContainer + " " + styles.homeRowContentContainer1}>
@@ -274,7 +280,7 @@ export default function Home() {
           </div>*/}
 
           <Container className={`mt-5 mb-5 ${styles.homeInfoDiv}`}>
-            <h3>יותר מ:</h3>
+            {/* <h3>יותר מ-</h3> */}
             <h2>
               <VisibilitySensor partialVisibility>
                 {({ isVisible }) => (
@@ -290,6 +296,7 @@ export default function Home() {
                       onEnd={() => setIsCounterUpEnded(true)}
                       duration={2.5}
                       separator=","
+                      prefix="+"
                       start={isCounterUpEnded ? NUMBER_OF_USERS : 0}
                       end={NUMBER_OF_USERS} /> : null}
                   </div>

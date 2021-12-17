@@ -500,3 +500,18 @@
   margin-bottom: 60px;
   font-size: 20px;
 }
+
+.recommandUsLink {
+  color: #b98f33;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: color 0.4s;
+  -webkit-transition: color 0.4s;
+  -moz-transition: color 0.4s;
+  -ms-transition: color 0.4s;
+  -o-transition: color 0.4s;
+}
+
+.recommandUsLink:hover {
+  color: #dfbd7a;
+}
