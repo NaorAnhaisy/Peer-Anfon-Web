@@ -21,7 +21,7 @@ export default function NewProducts() {
                     data-aos="fade-left"
                     data-aos-once={true}
                     data-aos-duration="1100">
-                    <img src="/images/Doors/LUX/example3.jpg" alt="מוצרים חדשים פאר אנפון" style={{ width: "100%", minHeight: "400px", objectFit: "cover" }} />
+                    <img src="/images/new-products/product1.jpeg" alt="מוצרים חדשים פאר אנפון" style={{ width: "100%", minHeight: "400px", objectFit: "cover" }} />
                 </Col>
                 <Col xs={12} md={6}
                     data-aos="fade-right"
@@ -38,7 +38,7 @@ export default function NewProducts() {
                     data-aos="fade-left"
                     data-aos-once={true}
                     data-aos-duration="1100">
-                    <img src="/images/Doors/LUX/example3.jpg" alt="מוצרים חדשים פאר אנפון" style={{ width: "100%", minHeight: "400px", objectFit: "cover" }} />
+                    <img src="/images/new-products/product2.jpeg" alt="מוצרים חדשים פאר אנפון" style={{ width: "100%", minHeight: "400px", objectFit: "cover" }} />
                 </Col>
                 <Col xs={12} md={6}
                     data-aos="fade-right"
