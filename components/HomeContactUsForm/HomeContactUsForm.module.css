@@ -44,7 +44,7 @@
 }
 
 .form_input:hover {
-    border-color: #e9e9e9;
+    border-color: #3d5072;
 }
 
 .form_input:focus {
@@ -91,8 +91,20 @@
 }
 
 .btn:hover:not(.active) {
-    background: #f3f3f3;
-    color: #222222;
+    background: #e0d79c;
+    color: black;
+}
+
+.btn.active {
+    background: #c5bf83;
+    color: white;
+    cursor: default;
+}
+
+.btn:disabled:not(.active) {
+    background: #858585;
+    color: white;
+    cursor: default;
 }
 
 .btn p {
@@ -140,11 +152,10 @@
 }
 
 .sendFailed {
-    background: #d87171;
+    background: #a04545;
 }
 
 .active svg path {
     stroke-dashoffset: 0;
     transition: 1s;
-    transition-delay: 1s;
 }

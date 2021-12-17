@@ -16,6 +16,7 @@ export default function HomeContactUsForm() {
     const handleSubmit = (event) => {
         event.preventDefault();
         setIsLoading(true);
+        setBtnText("אנא המתן...");
 
         const contactData = {
             fullName: fullName,

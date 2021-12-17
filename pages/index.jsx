@@ -197,7 +197,7 @@ export default function Home() {
             </Col>
           </Row>
 
-          <Row className={styles.newProductsContainer}>
+          <Row className={`mt-5 mb-5 ${styles.newProductsContainer}`}>
             <Col xs={12} md={6}>
               <h3>מוצרים חדשים</h3>
               <p>

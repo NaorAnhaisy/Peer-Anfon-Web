@@ -344,9 +344,9 @@ body {
 .text-shine {
   text-align: center;
   color: rgba(255, 255, 255, 0.1);
-  background: gradient(linear, right top, left top, from(var(--gold-secondary)), to(var(--gold-secondary)), color-stop(0.5, #fff));
-  background: -moz-gradient(linear, right top, left top, from(var(--gold-secondary)), to(var(--gold-secondary)), color-stop(0.5, #fff));
-  background: -webkit-gradient(linear, right top, left top, from(var(--gold-secondary)), to(var(--gold-secondary)), color-stop(0.5, #fff));
+  background: gradient(linear, right top, left top, from(var(--gold-secondary)), to(var(--gold-secondary)), color-stop(0.5, #ffedbc));
+  background: -moz-gradient(linear, right top, left top, from(var(--gold-secondary)), to(var(--gold-secondary)), color-stop(0.5, #ffedbc));
+  background: -webkit-gradient(linear, right top, left top, from(var(--gold-secondary)), to(var(--gold-secondary)), color-stop(0.5, #ffedbc));
   -webkit-background-size: 125px 100%;
   -moz-background-size: 125px 100%;
   background-size: 125px 100%;
