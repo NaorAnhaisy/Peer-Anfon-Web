@@ -30,8 +30,7 @@ export default function Home() {
       <div className={`main ${styles.homeMainDiv}`}>
         <div className={styles.homeVideoTitleContainer}>
           <video className={styles.homeStartVideo} autoPlay loop playsInline muted id="home-video">
-            <source src="https://d2na49kk21qo66.cloudfront.net/Deuren-Internal-Video-Low-Res.mp4"
-              type="video/mp4" />
+            <source src="/videos/home-page-start-video.mp4" type="video/mp4" />
           </video>
           <div className={styles.homeTitleOverlayVideo}>
             <h1>דלתות פנימיות מודרניות ויוקרתיות</h1>
