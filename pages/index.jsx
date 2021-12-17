@@ -79,7 +79,7 @@ export default function Home() {
               </p>
             </div>
             <div className={`${styles.framedBtn} ${styles.aboutUsHref}`}>
-              <Link href="/about">למד עוד על פאר אנפון</Link>
+              <Link href="/אודותינו">למד עוד על פאר אנפון</Link>
             </div>
           </div>
 
@@ -208,7 +208,7 @@ export default function Home() {
                 טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
               </p>
               <div className={`${styles.framedBtn} ${styles.newProductsHref}`}>
-                <Link href="/about">קרא עוד...</Link>
+                <Link href="/מוצרים-חדשים">קרא עוד...</Link>
               </div>
             </Col>
             <Col xs={12} md={6}>
@@ -219,7 +219,7 @@ export default function Home() {
           <div className={styles.homeContactUsTitle}>
             <h2>ממליצים עלינו!</h2>
             <CardsSlider />
-            <p>גם לכם יש כמה דברים טובים להגיד עלינו? נשמח <Link href="/recommendations">
+            <p>גם לכם יש כמה דברים טובים להגיד עלינו? נשמח <Link href="/המלצות">
                 <a className={styles.recommandUsLink}>שתלחצו כאן</a>
               </Link> ותפרגנו קצת :)</p>
           </div>
