@@ -19,54 +19,56 @@ export default function AboutUs() {
             </div>
             <div className="mb-5 separator"></div>
             <img src="/images/Doors/LUX/example3.jpg" alt="אודות פאר אנפון תעשיות בע&quot;מ" style={{ width: "100%", height: "100%" }} />
-            <Row className={styles.colsRow}
-                data-aos="fade-up"
-                data-aos-once={true}
-                data-aos-duration="1100">
-                <Col xs={12} md={4}>
-                    <h4 className={styles.colTitle}>50 שנות נסיון</h4>
-                    <div className="mb-3 mt-3 separator"></div>
-                    <p className={styles.colParagraph}>
-                        הפאר אנפון הוא חברה המקצועית ביותר בעולם המכון הטובים ביותר בעולם. החברה מקצועית ביותר בעולם המכון התקנים המוצרים הטובים ביותר
-                    </p>
-                </Col>
-                <Col xs={12} md={4}>
-                    <h4 className={styles.colTitle}>50 שנות נסיון</h4>
-                    <div className="mb-3 mt-3 separator"></div>
-                    <p className={styles.colParagraph}>
-                        הפאר אנפון הוא חברה המקצועית ביותר בעולם המכון הטובים ביותר בעולם. החברה מקצועית ביותר בעולם המכון התקנים המוצרים הטובים ביותר
-                    </p>
-                </Col>
-                <Col xs={12} md={4}>
-                    <h4 className={styles.colTitle}>50 שנות נסיון</h4>
-                    <div className="mb-3 mt-3 separator"></div>
-                    <p className={styles.colParagraph}>
-                        הפאר אנפון הוא חברה המקצועית ביותר בעולם המכון הטובים ביותר בעולם. החברה מקצועית ביותר בעולם המכון התקנים המוצרים הטובים ביותר
-                    </p>
-                </Col>
-            </Row>
-            <Row className={styles.explainRow}>
-                <Col xs={12} md={6} data-aos="fade-right"
+            <div style={{ width: "100%", overflow: "hidden" }}>
+                <Row className={styles.colsRow}
+                    data-aos="fade-up"
                     data-aos-once={true}
                     data-aos-duration="1100">
-                    <img src="/images/Doors/LUX/example3.jpg" alt="פאר אנפון תעשיות בע&quot;מ" style={{ width: "100%", minHeight: "400px", objectFit: "cover" }} />
-                </Col>
-                <Col xs={12} md={6} data-aos="fade-left"
-                    data-aos-once={true}
-                    data-aos-duration="1100">
-                    <div className={styles.explainDiv}>
-                        <h3>הפרטים שעושים את השינוי</h3>
-                        <div className={`separator ${styles.separator}`}></div>
-                        <p>
-                            אנו מסורים לפרטים הקטנים ביותר של הדלת המותאמת אישית שלך, עובדים במפעל שלנו ביורקשייר כדי ליצור ולפקח באופן אישי על העיצוב המותאם שלך. עם הגאווה הגדולה ביותר בכל יצירה ויצירה, אנחנו אמנים של ייצור דלתות ומשתמשים באומנות מומחית כדי לייצר שלמות ולהגשים את החלום שלך. היצירתיות והרבגוניות של השירות המותאם שלנו בוודאי יעלו על הציפיות שלך וישאירו אותך בדיוק מה שדמיינת.            </p>
-                        <Link href="/">
-                            <a className={styles.linkToHome}>
-                                גלה עוד על פאר אנפון
-                            </a>
-                        </Link>
-                    </div>
-                </Col>
-            </Row>
+                    <Col xs={12} md={4}>
+                        <h4 className={styles.colTitle}>50 שנות נסיון</h4>
+                        <div className="mb-3 mt-3 separator"></div>
+                        <p className={styles.colParagraph}>
+                            הפאר אנפון הוא חברה המקצועית ביותר בעולם המכון הטובים ביותר בעולם. החברה מקצועית ביותר בעולם המכון התקנים המוצרים הטובים ביותר
+                        </p>
+                    </Col>
+                    <Col xs={12} md={4}>
+                        <h4 className={styles.colTitle}>50 שנות נסיון</h4>
+                        <div className="mb-3 mt-3 separator"></div>
+                        <p className={styles.colParagraph}>
+                            הפאר אנפון הוא חברה המקצועית ביותר בעולם המכון הטובים ביותר בעולם. החברה מקצועית ביותר בעולם המכון התקנים המוצרים הטובים ביותר
+                        </p>
+                    </Col>
+                    <Col xs={12} md={4}>
+                        <h4 className={styles.colTitle}>50 שנות נסיון</h4>
+                        <div className="mb-3 mt-3 separator"></div>
+                        <p className={styles.colParagraph}>
+                            הפאר אנפון הוא חברה המקצועית ביותר בעולם המכון הטובים ביותר בעולם. החברה מקצועית ביותר בעולם המכון התקנים המוצרים הטובים ביותר
+                        </p>
+                    </Col>
+                </Row>
+                <Row className={styles.explainRow}>
+                    <Col xs={12} md={6} data-aos="fade-right"
+                        data-aos-once={true}
+                        data-aos-duration="1100">
+                        <img src="/images/Doors/LUX/example3.jpg" alt="פאר אנפון תעשיות בע&quot;מ" style={{ width: "100%", minHeight: "400px", objectFit: "cover" }} />
+                    </Col>
+                    <Col xs={12} md={6} data-aos="fade-left"
+                        data-aos-once={true}
+                        data-aos-duration="1100">
+                        <div className={styles.explainDiv}>
+                            <h3>הפרטים שעושים את השינוי</h3>
+                            <div className={`separator ${styles.separator}`}></div>
+                            <p>
+                                אנו מסורים לפרטים הקטנים ביותר של הדלת המותאמת אישית שלך, עובדים במפעל שלנו ביורקשייר כדי ליצור ולפקח באופן אישי על העיצוב המותאם שלך. עם הגאווה הגדולה ביותר בכל יצירה ויצירה, אנחנו אמנים של ייצור דלתות ומשתמשים באומנות מומחית כדי לייצר שלמות ולהגשים את החלום שלך. היצירתיות והרבגוניות של השירות המותאם שלנו בוודאי יעלו על הציפיות שלך וישאירו אותך בדיוק מה שדמיינת.            </p>
+                            <Link href="/">
+                                <a className={styles.linkToHome}>
+                                    גלה עוד על פאר אנפון
+                                </a>
+                            </Link>
+                        </div>
+                    </Col>
+                </Row>
+            </div>
             <div className={styles.importersDiv}>
                 <h3>יבואניים בלעדיים</h3>
                 <div className="separator"></div>
