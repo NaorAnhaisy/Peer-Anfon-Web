@@ -1,3 +1,5 @@
+// ----------------------------- Google Maps -----------------------------
+
 // import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 
 // const mapStyles = {
@@ -35,62 +37,83 @@
 
 
 
-import React, { useEffect } from 'react';
-import mapboxgl from 'mapbox-gl';
-import MapboxLanguage from '@mapbox/mapbox-gl-language';
 
-const ACCESS_TOKEN = 'pk.eyJ1IjoicGVlcmFuZm9uIiwiYSI6ImNreDlpZDc5djAyZDUyd3BnZW5uemNna20ifQ.oZM5nsI3yoHhnafl5SXURg';
-const COORDINATES = [34.801570, 32.022130];
+// ----------------------------- Mapbox -----------------------------
 
-mapboxgl.accessToken = ACCESS_TOKEN;
+// import React, { useEffect } from 'react';
+// import mapboxgl from 'mapbox-gl';
+// import MapboxLanguage from '@mapbox/mapbox-gl-language';
 
-export default function MyMapComponent() {
+// const ACCESS_TOKEN = 'pk.eyJ1IjoicGVlcmFuZm9uIiwiYSI6ImNreDlpZDc5djAyZDUyd3BnZW5uemNna20ifQ.oZM5nsI3yoHhnafl5SXURg';
+// const COORDINATES = [34.801570, 32.022130];
 
-    useEffect(() => {
-        mapboxgl.accessToken = ACCESS_TOKEN;
-        if (mapboxgl.getRTLTextPluginStatus() === 'unavailable') {
-            mapboxgl.setRTLTextPlugin(
-                'https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-rtl-text/v0.2.3/mapbox-gl-rtl-text.js',
-                null,
-                true // Lazy load the plugin only when text is in hebrew
-            )
-        }
+// mapboxgl.accessToken = ACCESS_TOKEN;
 
-        const map = new mapboxgl.Map({
-            container: 'map',
-            style: 'mapbox://styles/mapbox/streets-v11',
-            center: COORDINATES,
-            zoom: 14
-        });
+// export default function MyMapComponent() {
 
-        map.on("wheel", event => {
-            if (event.originalEvent.ctrlKey) {
-                return;
-            }
+//     useEffect(() => {
+//         mapboxgl.accessToken = ACCESS_TOKEN;
+//         if (mapboxgl.getRTLTextPluginStatus() === 'unavailable') {
+//             mapboxgl.setRTLTextPlugin(
+//                 'https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-rtl-text/v0.2.3/mapbox-gl-rtl-text.js',
+//                 null,
+//                 true // Lazy load the plugin only when text is in hebrew
+//             )
+//         }
 
-            if (event.originalEvent.metaKey) {
-                return;
-            }
+//         const map = new mapboxgl.Map({
+//             container: 'map',
+//             style: 'mapbox://styles/mapbox/streets-v11',
+//             center: COORDINATES,
+//             zoom: 14
+//         });
 
-            if (event.originalEvent.altKey) {
-                return;
-            }
+//         map.on("wheel", event => {
+//             if (event.originalEvent.ctrlKey) {
+//                 return;
+//             }
 
-            event.preventDefault();
-        });
+//             if (event.originalEvent.metaKey) {
+//                 return;
+//             }
 
-        map.addControl(new mapboxgl.FullscreenControl());
+//             if (event.originalEvent.altKey) {
+//                 return;
+//             }
 
-        const language = new MapboxLanguage();
-        map.addControl(language);
+//             event.preventDefault();
+//         });
 
-        // Create a default Marker and add it to the map.
-        new mapboxgl.Marker()
-            .setLngLat(COORDINATES)
-            .addTo(map);
-    }, [])
+//         map.addControl(new mapboxgl.FullscreenControl());
 
-    return (
-        <div id="map"></div>
-    );
+//         const language = new MapboxLanguage();
+//         map.addControl(language);
+
+//         // Create a default Marker and add it to the map.
+//         new mapboxgl.Marker()
+//             .setLngLat(COORDINATES)
+//             .addTo(map);
+//     }, [])
+
+//     return (
+//         <div id="map"></div>
+//     );
+// }
+
+
+// ----------------------------- Leaflet -----------------------------
+
+import dynamic from 'next/dynamic'
+
+function HomePage() {
+  const Map = dynamic(
+    () => import('./LefletMap'),
+    {
+      loading: () => <p>רק רגע... המפה נטענת...</p>,
+      ssr: false
+    }
+  )
+  return <Map />
 }
+
+export default HomePage

@@ -301,15 +301,16 @@ body {
 
 /* Map */
 
-.mapboxgl-ctrl-bottom-right,
-.mapboxgl-ctrl-bottom-left {
+.leaflet-control-attribution {
   display: none !important;
 }
 
-#map {
+.map-container {
   height: 700px;
-  max-height: 70vh;
+  max-height: calc(100vh - 300px);
   width: 100%;
+  filter: hue-rotate(100deg) !important;
+  -webkit-filter: hue-rotate(100deg) !important;
 }
 
 /* Recommandations */

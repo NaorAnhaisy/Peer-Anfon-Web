@@ -34,7 +34,7 @@ export default function ContactUs() {
 
                 </Container>
             </Container>
-            {/* <MyMapComponent /> */}
+            <MyMapComponent />
             <Container className={styles.contactUsContactInfoContainer}>
                 <Row className={styles.contactUsContactInfoRow}>
                     <Col sm={12} md={6} lg={3} style={{ display: 'grid' }}>

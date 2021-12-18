@@ -145,7 +145,7 @@ class MyDocument extends Document {
                     />
 
                     {/* Global Site Tag (gtag.js) - Google Analytics */}
-                    < script
+                    <script
                         async
                         src="https://www.googletagmanager.com/gtag/js?id=G-GGLJL2SHN4"
                     />
@@ -161,6 +161,7 @@ class MyDocument extends Document {
                             `,
                         }}
                     />
+
                 </Head>
                 <body>
                     <Main />
