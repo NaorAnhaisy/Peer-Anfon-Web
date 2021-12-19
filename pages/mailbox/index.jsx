@@ -289,7 +289,7 @@ export default function Mailboxes() {
                             <a className="no-href-css">
                                 <div className="clickable">
                                     <div className={styles.imageLinkDivToCategorys}>
-                                        <img src="/images/automatic-doors/inside-automaic-door.jpg" alt="ארון הפקדה לטלפונים סלולריים" className={styles.imageToCategorys} />
+                                        <img src="/images/mailboxes/deposit-cellphones/Y-6.jpeg" alt="ארון הפקדה לטלפונים סלולריים" className={styles.imageToCategorys} />
                                     </div>
                                     <div className={styles.imageLinkDivText}>
                                         <h5>ארון הפקדה לטלפונים סלולריים</h5>
