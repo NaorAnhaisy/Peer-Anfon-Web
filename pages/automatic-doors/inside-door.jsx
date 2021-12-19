@@ -15,7 +15,7 @@ export default function InsideDoor() {
 
     return (
         <div>
-            <img src="/images/automatic-doors/inside-automaic-door-background-2.png" className={`undragablle-image ${styles.doorSelectedMainDiv}`} alt="דלת אוטומטית פנים" />
+            <img src="/images/automatic-doors/inside-automaic-door-background.png" className={`undragablle-image ${styles.doorSelectedMainDiv}`} alt="דלת אוטומטית פנים" />
             <Container className={styles.doorSelectedContainer}>
                 <div>
                     <Row className={styles.doorSelectedTitleRow}>

@@ -23,5 +23,6 @@
 
     .infoRow {
         flex-flow: column-reverse;
+        margin-bottom: 50px;
     }
 }

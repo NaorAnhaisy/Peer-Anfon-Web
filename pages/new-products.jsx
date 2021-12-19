@@ -18,10 +18,11 @@ export default function NewProducts() {
             <div className="separator mb-5"></div>
             <Row className={`${styles.infoRow}`}>
                 <Col xs={12} md={6}
+                    style={{ textAlign: "center" }}
                     data-aos="fade-left"
                     data-aos-once={true}
                     data-aos-duration="1100">
-                    <img src="/images/new-products/product1.jpeg" alt="מוצרים חדשים פאר אנפון" style={{ width: "100%", minHeight: "400px", objectFit: "cover" }} />
+                    <img src="/images/new-products/product1.jpeg" alt="מוצרים חדשים פאר אנפון" style={{ maxWidth: "100%", minWidth: "70%", objectFit: "cover" }} />
                 </Col>
                 <Col xs={12} md={6}
                     data-aos="fade-right"
@@ -35,10 +36,11 @@ export default function NewProducts() {
             </Row>
             <Row className={`${styles.infoRow}`}>
                 <Col xs={12} md={6}
+                    style={{ textAlign: "center" }}
                     data-aos="fade-left"
                     data-aos-once={true}
                     data-aos-duration="1100">
-                    <img src="/images/new-products/product2.jpeg" alt="מוצרים חדשים פאר אנפון" style={{ width: "100%", minHeight: "400px", objectFit: "cover" }} />
+                    <img src="/images/new-products/product2.jpeg" alt="מוצרים חדשים פאר אנפון" style={{ maxWidth: "100%", minWidth: "70%", objectFit: "cover" }} />
                 </Col>
                 <Col xs={12} md={6}
                     data-aos="fade-right"
