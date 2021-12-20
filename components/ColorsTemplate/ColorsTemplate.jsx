@@ -25,7 +25,7 @@ export default function ColorsTemplate() {
             return <div key={i} className={styles.colorTemplateImgDiv}>
                 <div className={styles.CrossfadeImage}>
                     <span className={styles.textOverImg}>{color.name}</span>
-                    <Image layout="responsive" width={1} height={1} alt="צבע" src={color.src} className={`undragablle-image ${styles.colorsTemplateColorTop}`} />
+                    <Image priority={true} layout="responsive" width={1} height={1} alt="צבע" src={color.src} className={`undragablle-image ${styles.colorsTemplateColorTop}`} />
                 </div>
             </div>
         });
