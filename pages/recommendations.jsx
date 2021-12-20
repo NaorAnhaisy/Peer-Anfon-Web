@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { Container, Row, Col } from "react-bootstrap";
 import RecommandsFormDiv from '../components/RecommandsFormDiv/RecommandsFormDiv';
+import CustomerRecommandsSlider from '../components/CustomerRecommandsSlider/CustomerRecommandsSlider';
 
 export default function Recommendations() {
     return (
@@ -21,6 +22,7 @@ export default function Recommendations() {
                     </Col>
                 </Row>
             </Container>
+            <CustomerRecommandsSlider />
         </div>
     );
 }

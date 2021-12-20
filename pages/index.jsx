@@ -9,7 +9,7 @@ import AOS from 'aos';
 import CountUp from 'react-countup';
 import VisibilitySensor from "react-visibility-sensor";
 import { useRouter } from 'next/router'
-import CardsSlider from '../components/CardsSlider/CardsSlider';
+import CustomerRecommandsSlider from '../components/CustomerRecommandsSlider/CustomerRecommandsSlider';
 
 const NUMBER_OF_USERS = 100000;
 export default function Home() {
@@ -72,8 +72,12 @@ export default function Home() {
               data-aos-duration="800"
               data-aos-offset="200"
             >
-              <h3>על החברה</h3>
+              <h3 className="text-shine-black">על החברה</h3>
               <p>
+                טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
+                טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
+                טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
+                טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
                 טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
                 טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
               </p>
@@ -218,7 +222,7 @@ export default function Home() {
 
           <div className={styles.homeContactUsTitle}>
             <h2>ממליצים עלינו!</h2>
-            <CardsSlider />
+            <CustomerRecommandsSlider />
             <p>גם לכם יש כמה דברים טובים להגיד עלינו? נשמח <Link href="/המלצות">
                 <a className={styles.recommandUsLink}>שתלחצו כאן</a>
               </Link> ותפרגנו קצת :)</p>

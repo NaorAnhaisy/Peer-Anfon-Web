@@ -361,6 +361,25 @@ body {
   -webkit-animation: shine 2.5s infinite linear;
 }
 
+.text-shine-black {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.1);
+  background: gradient(linear, right top, left top, from(black), to(black), color-stop(0.5, #cccccc));
+  background: -moz-gradient(linear, right top, left top, from(black), to(black), color-stop(0.5, #cccccc));
+  background: -webkit-gradient(linear, right top, left top, from(black), to(black), color-stop(0.5, #cccccc));
+  -webkit-background-size: 125px 100%;
+  -moz-background-size: 125px 100%;
+  background-size: 125px 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  background-repeat: no-repeat;
+  background-position: 0 right;
+  background-color: black;
+  animation: shine 5.5s infinite linear;
+  -webkit-animation: shine 5.5s infinite linear;
+}
+
 @keyframes shine {
   0% {
     background-position: top right;

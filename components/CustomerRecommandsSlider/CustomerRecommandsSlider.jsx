@@ -1,6 +1,6 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import styles from './CardsSlider.module.css';
+import styles from './CustomerRecommandsSlider.module.css';
 
 const responsive = {
     desktop: {
@@ -39,7 +39,7 @@ const cards = [
     { name: "אודי אמסלם", city: "", message: "אספקה במהירות שיא, ומקצועיות ששמורה לטובים ביותר!" },
 ];
 
-export default function CardsSlider() {
+export default function CustomerRecommandsSlider() {
 
     function createCard(cardInfo, index) {
         return <div key={index} className={styles.recommandCard}>

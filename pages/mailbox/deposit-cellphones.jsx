@@ -9,8 +9,8 @@ import ContactTeam from '../../components/ContactTeam/ContactTeam';
 import Zoom from 'react-medium-image-zoom'
 
 const images = [
-    { src: "/images/mailboxes/deposit-cellphones/Y-1.jpg", text: "ארון הפקדה לטלפונים סלולריים כוללת מטען" },
-    { src: "/images/mailboxes/deposit-cellphones/Y-2.jpg", text: "ארון הפקדה לטלפונים סלולריים כוללת מטען" },
+    { src: "/images/mailboxes/deposit-cellphones/Y-1.jpg", text: "ארון הפקדה לטלפונים סלולריים כולל כבל הטענה" },
+    { src: "/images/mailboxes/deposit-cellphones/Y-2.jpg", text: "ארון הפקדה לטלפונים סלולריים כולל כבל הטענה" },
     { src: "/images/mailboxes/deposit-cellphones/Y-3.jpg", text: "ארון הפקדה לטלפונים סלולריים" },
     { src: "/images/mailboxes/deposit-cellphones/Y-5.jpeg", text: "ארון הפקדה לטלפונים סלולריים" },
     { src: "/images/mailboxes/deposit-cellphones/Y-6.jpeg", text: "ארון הפקדה לטלפונים סלולריים" },
