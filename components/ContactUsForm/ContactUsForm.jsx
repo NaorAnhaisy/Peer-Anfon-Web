@@ -14,7 +14,7 @@ import RotateLoader from "../Loaders/RotateLoader/RotateLoader";
 import FileUploaderMulti from '../FileUploaderMulti/FileUploaderMulti';
 import axios from "axios";
 
-const { publicRuntimeConfig } = getConfig()
+const { publicRuntimeConfig } = getConfig();
 const radioOptions = ["הצעת מחיר", "קריאה לתיקון", "חידוש ביטוח (לדלת אוטומטית)", "אחר"];
 
 const useStyles = makeStyles((theme) => ({

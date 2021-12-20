@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import styles from "./HomeContactUsForm.module.css";
+import axios from "axios";
+import getConfig from 'next/config';
+const { publicRuntimeConfig } = getConfig();
 
 export default function HomeContactUsForm() {
     const [fullName, setFullName] = useState("");
@@ -18,55 +21,52 @@ export default function HomeContactUsForm() {
         setIsLoading(true);
         setBtnText("אנא המתן...");
 
-        const contactData = {
-            fullName: fullName,
-            city: city,
-            email: email,
-            phoneNumber: phoneNumber,
-            message: message,
-        };
+        let contactData = new FormData()
+        contactData.append("fullName", fullName);
+        contactData.append("address", city);
+        contactData.append("email", email);
+        contactData.append("phoneNumber", phoneNumber);
+        contactData.append("askType", "צור קשר");
+        contactData.append("message", message);
 
-        console.log(contactData);
+        // setTimeout(() => {
+        //     setIsLoading(false);
+        //     setIsTriedToSend(true);
+        //     setIsSendSucced(true);
+        //     setBtnText("ההודעה נשלחה");
+        // }, 2000);
 
-        setTimeout(() => {
+        try {
+            axios({
+                method: 'post',
+                url: publicRuntimeConfig.SERVER_URL + "/mailer/contactUs",
+                data: contactData,
+                headers: { 'Content-Type': 'multipart/form-data' }
+            })
+                .then(() => {
+                    setIsSendSucced(true);
+                    setBtnText("ההודעה נשלחה");
+                })
+                .catch((err) => {
+                    const resMessage =
+                        (err.response && err.response.data && err.response.data.message) ||
+                        err.message ||
+                        err.toString();
+
+                    console.error(resMessage);
+
+                    setBtnText("אירעה שגיאה");
+                    setIsSendSucced(false);
+                });
+        } catch (error) {
+            console.error(error);
+            setIsSendSucced(false);
+            setBtnText("אירעה שגיאה");
+            setReturenedMessage(error);
+        } finally {
             setIsLoading(false);
             setIsTriedToSend(true);
-            setIsSendSucced(true);
-            setBtnText("ההודעה נשלחה");
-        }, 2000);
-
-
-        // try {
-        //     axios({
-        //         method: 'post',
-        //         url: publicRuntimeConfig.SERVER_URL + "/mailer/contactUs",
-        //         data: contactData,
-        //         headers: { 'Content-Type': 'multipart/form-data' }
-        //     })
-        //         .then((response) => {
-        //             setIsLoading(false);
-        //             setIsSendSucced(true);
-        //             setReturenedMessage(response.data.message);
-        //             setReturnedSubMsg(response.data.subMessage);
-        //         })
-        //         .catch((err) => {
-        //             const resMessage =
-        //                 (err.response && err.response.data && err.response.data.message) ||
-        //                 err.message ||
-        //                 err.toString();
-
-        //             console.error(resMessage);
-
-        //             setIsLoading(false);
-        //             setIsSendSucced(false);
-        //             setReturenedMessage(resMessage);
-        //         });
-        // } catch (error) {
-        //     console.error(error);
-        //     setIsLoading(false);
-        //     setIsSendSucced(false);
-        //     setReturenedMessage(error);
-        // }
+        }
     };
 
     return (
