@@ -4,10 +4,10 @@ import Link from "next/link";
 import { useEffect } from 'react';
 
 export default function ProjectsCard({ project, index }) {
-
     useEffect(() => {
         console.log(project);
     }, [project]);
+
     return (
         <div className={`${styles.item} ${styles.vFade} ${styles.item0}`}>
             <div className={`${styles.card} ${styles.cardProject}`}>
