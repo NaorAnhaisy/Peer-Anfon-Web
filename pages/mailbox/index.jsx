@@ -183,18 +183,28 @@ export default function Mailboxes() {
                 </div>
             </VisibilitySensor>
 
-            <Container data-aos="fade-zoom-in" data-aos-easing="ease-in-back" className={styles.homeColorsContainer}>
-                <Row className={styles.homeFlexColumnReverse}>
-                    <Col sm={12} md={6} >
-                        <ColorsTemplate />
-                    </Col>
-                    <Col sm={12} md={6} className={styles.homeColorsTextCol}>
-                        <h3>
-                            מבחר צבעים יוקרתיים
-                        </h3>
-                        <p>בחירתך בדלת צריכה לקחת בחשבון את מרכיבי עיצוב הפנים כמו גם את הטעם האישי שלך. הסגנון האינדיבידואלי שלך יבטיח את הדלת הפנימית המודרנית שלך והאיפור שלה לא דומה לשום דבר אחר. כספק מנוסה של דלתות פנים, אנו נעבוד איתך כדי לשקף את טעמך האישי, בין אם זה מהגוני מסורתי או עכשווי, עמוק או אלון לבן או עץ טבעי.</p>
-                    </Col>
-                </Row>
+            <Container className={styles.homeColorsContainer}>
+                <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-once={true}>
+                    <Row className={styles.homeFlexColumnReverse}>
+                        <Col sm={12} lg={6} >
+                            <ColorsTemplate />
+                        </Col>
+                        <Col sm={12} lg={6} className={styles.homeColorsTextCol}>
+                            <h3>
+                                גוונים לתיבות הדואר, כיצד לבחור?
+                            </h3>
+                            <p>
+                                בחירת תיבת הדואר צריכה לקחת בחשבון את מרכיבי העיצוב והצבע כמו גם את הטעם האישי שלך.
+                                הסגנון האינדיבידואלי אשר יבטיח את המענה האידאלי עבורך.
+                                חברתנו אשר מנוסה בייצור של תיבות דואר מעניקה יעוץ ושקיפות מול הלקוח בשביל להגיע לתיבת הדואר המושלמת עבורך המשקפת את טעמך האישי.
+                                את תיבת הדואר ניתן לקבל בכל גוון וצבע לפי בקשתך.
+                                כל הגוונים שחברתנו מעניקה עומדים בפני חלודה ונזקי מזג האוויר.
+                                <br />
+                                להלן מספר גוונים הנפוצים והמודרניים ביותר בעיצוב הבנייה הישראלי.
+                            </p>
+                        </Col>
+                    </Row>
+                </div>
             </Container>
 
             <div className={styles.automaticDoorsContainer}>
