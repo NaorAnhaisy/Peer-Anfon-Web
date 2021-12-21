@@ -133,6 +133,10 @@ body {
   direction: rtl;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .main {
   padding: 0;
   flex: 1;

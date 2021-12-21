@@ -386,3 +386,8 @@
     font-size: 15px;
     letter-spacing: 1px;
 }
+
+.leftSideContent {
+    direction: rtl;
+    max-width: 1400px;
+}

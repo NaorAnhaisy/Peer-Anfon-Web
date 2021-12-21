@@ -116,3 +116,7 @@
 .galleryGap {
     row-gap: 40px;
 }
+
+.centerColContent {
+    align-self: center;
+}
