@@ -6,12 +6,23 @@ import AOS from 'aos';
 import ContactTeam from '../components/ContactTeam/ContactTeam';
 
 const enterDoorsImages = [
-    { src: "/images/intercom/R-453.jpg", text: "R-453" },
-    { src: "/images/intercom/R-454.jpg", text: "R-454" },
-    { src: "/images/intercom/R-455.jpg", text: "R-455" },
-    { src: "/images/intercom/R-456.jpg", text: "R-456" },
-    { src: "/images/intercom/R-456b.jpg", text: "R-456" },
-    { src: "/images/intercom/R-457.jpg", text: "R-457" },
+    { src: "/images/enter-doors/A-301.jpg", text: "A-301" },
+    { src: "/images/enter-doors/A-302.jpg", text: "A-302" },
+    { src: "/images/enter-doors/A-303.jpg", text: "A-303" },
+    { src: "/images/enter-doors/A-304.jpg", text: "A-304" },
+    { src: "/images/enter-doors/A-305.jpg", text: "A-305" },
+    { src: "/images/enter-doors/A-306.jpg", text: "A-306" },
+    { src: "/images/enter-doors/A-307.jpg", text: "A-307" },
+    { src: "/images/enter-doors/A-308.jpg", text: "A-308" },
+    { src: "/images/enter-doors/A-309.jpg", text: "A-309" },
+    { src: "/images/enter-doors/A-310.jpg", text: "A-310" },
+    { src: "/images/enter-doors/A-311.jpg", text: "A-311" },
+    { src: "/images/enter-doors/A-312.jpg", text: "A-312" },
+    { src: "/images/enter-doors/A-313.jpg", text: "A-313" },
+    { src: "/images/enter-doors/A-314.jpg", text: "A-314" },
+    { src: "/images/enter-doors/A-315.jpg", text: "A-315" },
+    { src: "/images/enter-doors/A-316.jpg", text: "A-316" },
+    { src: "/images/enter-doors/A-317.jpg", text: "A-317" },
 ];
 
 export default function EnterDoors() {
