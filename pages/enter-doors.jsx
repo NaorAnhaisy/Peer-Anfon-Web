@@ -17,12 +17,11 @@ const enterDoorsImages = [
     { src: "/images/enter-doors/A-309.jpg", text: "A-309" },
     { src: "/images/enter-doors/A-310.jpg", text: "A-310" },
     { src: "/images/enter-doors/A-311.jpg", text: "A-311" },
-    { src: "/images/enter-doors/A-312.jpg", text: "A-312" },
+    { src: "/images/enter-doors/A-316.jpg", text: "A-316" },
     { src: "/images/enter-doors/A-313.jpg", text: "A-313" },
     { src: "/images/enter-doors/A-314.jpg", text: "A-314" },
     { src: "/images/enter-doors/A-315.jpg", text: "A-315" },
-    { src: "/images/enter-doors/A-316.jpg", text: "A-316" },
-    { src: "/images/enter-doors/A-317.jpg", text: "A-317" },
+    { src: "/images/enter-doors/A-312.jpg", text: "A-312" },
 ];
 
 export default function EnterDoors() {

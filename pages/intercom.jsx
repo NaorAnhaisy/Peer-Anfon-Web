@@ -35,6 +35,7 @@ const nerostaImages = [
     { src: "/images/intercom/R-456.jpg", text: "R-456" },
     { src: "/images/intercom/R-456b.jpg", text: "R-456" },
     { src: "/images/intercom/R-457.jpg", text: "R-457" },
+    { src: "/images/intercom/R-458.jpg", text: "R-458" },
 ];
 
 export default function Intercom() {
