@@ -25,25 +25,37 @@ export default function AboutUs() {
                     data-aos-once={true}
                     data-aos-duration="1100">
                     <Col xs={12} md={4}>
-                        <h4 className={styles.colTitle}>50 שנות נסיון</h4>
-                        <div className="mb-3 mt-3 separator"></div>
-                        <p className={styles.colParagraph}>
-                            הפאר אנפון הוא חברה המקצועית ביותר בעולם המכון הטובים ביותר בעולם. החברה מקצועית ביותר בעולם המכון התקנים המוצרים הטובים ביותר
-                        </p>
+                        <div className={styles.flexWrapper}>
+                            <div className={styles.floatDiv}>
+                                <h4 className={styles.colTitle}>50 שנות נסיון</h4>
+                                <div className="mb-3 mt-3 separator"></div>
+                                <p className={styles.colParagraph}>
+                                    הפאר אנפון הוא חברה המקצועית ביותר בעולם המכון הטובים ביותר בעולם. החברה מקצועית ביותר בעולם המכון התקנים המוצרים הטובים ביותר
+                                </p>
+                            </div>
+                        </div>
                     </Col>
                     <Col xs={12} md={4}>
-                        <h4 className={styles.colTitle}>50 שנות נסיון</h4>
-                        <div className="mb-3 mt-3 separator"></div>
-                        <p className={styles.colParagraph}>
-                            הפאר אנפון הוא חברה המקצועית ביותר בעולם המכון הטובים ביותר בעולם. החברה מקצועית ביותר בעולם המכון התקנים המוצרים הטובים ביותר
-                        </p>
+                        <div className={styles.flexWrapper}>
+                            <div className={styles.floatDiv}>
+                                <h4 className={styles.colTitle}>50 שנות נסיון</h4>
+                                <div className="mb-3 mt-3 separator"></div>
+                                <p className={styles.colParagraph}>
+                                    הפאר אנפון הוא חברה המקצועית ביותר בעולם המכון הטובים ביותר בעולם. החברה מקצועית ביותר בעולם המכון התקנים המוצרים הטובים ביותר
+                                </p>
+                            </div>
+                        </div>
                     </Col>
                     <Col xs={12} md={4}>
-                        <h4 className={styles.colTitle}>50 שנות נסיון</h4>
-                        <div className="mb-3 mt-3 separator"></div>
-                        <p className={styles.colParagraph}>
-                            הפאר אנפון הוא חברה המקצועית ביותר בעולם המכון הטובים ביותר בעולם. החברה מקצועית ביותר בעולם המכון התקנים המוצרים הטובים ביותר
-                        </p>
+                        <div className={styles.flexWrapper}>
+                            <div className={styles.floatDiv}>
+                                <h4 className={styles.colTitle}>50 שנות נסיון</h4>
+                                <div className="mb-3 mt-3 separator"></div>
+                                <p className={styles.colParagraph}>
+                                    הפאר אנפון הוא חברה המקצועית ביותר בעולם המכון הטובים ביותר בעולם. החברה מקצועית ביותר בעולם המכון התקנים המוצרים הטובים ביותר
+                                </p>
+                            </div>
+                        </div>
                     </Col>
                 </Row>
                 <Row className={styles.explainRow}>
@@ -121,18 +133,18 @@ export default function AboutUs() {
                 </p>
                 <Row className={styles.certificatesRow}>
                     <Col xs={12} md={6} lg={4}>
-                        <a href="/assets/certificates-1.pdf" target="_blank" rel="noopener noreferrer">
-                            <img src="/images/certificates/certificate-1.jpg" alt="תווי תקן דלתות" />
+                        <a href="/assets/certificates-he.pdf" target="_blank" rel="noopener noreferrer">
+                            <img src="/images/certificates/certificate-he.jpg" alt="תווי תקן דלתות" />
                         </a>
                     </Col>
                     <Col xs={12} md={6} lg={4}>
-                        <a href="/assets/certificates-3.pdf" target="_blank" rel="noopener noreferrer">
-                            <img src="/images/certificates/certificate-3.jpg" alt="תווי תקן תיבות דואר" />
+                        <a href="/assets/certificates-iqnet.pdf" target="_blank" rel="noopener noreferrer">
+                            <img src="/images/certificates/certificate-iqnet.jpg" alt="תווי תקן תיבות דואר" />
                         </a>
                     </Col>
                     <Col xs={12} md={6} lg={4}>
-                        <a href="/assets/certificates-2.pdf" target="_blank" rel="noopener noreferrer">
-                            <img src="/images/certificates/certificate-2.jpg" alt="תווי תקן אינטרקום" />
+                        <a href="/assets/certificates-en.pdf" target="_blank" rel="noopener noreferrer">
+                            <img src="/images/certificates/certificate-en.jpg" alt="תווי תקן אינטרקום" />
                         </a>
                     </Col>
                 </Row>

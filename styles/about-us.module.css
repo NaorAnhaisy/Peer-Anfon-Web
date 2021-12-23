@@ -102,3 +102,21 @@
 .certificatesRow img {
     width: 100%;
 }
+
+.flexWrapper {
+    display: flex;
+    height: 100%;
+}
+
+.floatDiv {
+    margin-top: 0;
+    transition: margin 0.2s ease-in-out;
+    -webkit-transition: margin 0.2s ease-in-out;
+    -moz-transition: margin 0.2s ease-in-out;
+    -ms-transition: margin 0.2s ease-in-out;
+    -o-transition: margin 0.2s ease-in-out;
+}
+
+.floatDiv:hover {
+    margin-top: -20px;
+}
