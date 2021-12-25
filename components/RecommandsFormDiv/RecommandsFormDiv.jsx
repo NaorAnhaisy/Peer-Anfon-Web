@@ -87,6 +87,7 @@ export default function RecommandsFormDiv() {
                     <form onSubmit={handleSubmit} encType="multipart/form-data">
                         <input
                             title=""
+                            id="name"
                             className={styles.recommendsTextInput}
                             placeholder="שם מלא"
                             type="text"
@@ -97,6 +98,7 @@ export default function RecommandsFormDiv() {
                         />
                         <input
                             title=""
+                            id="city"
                             className={styles.recommendsTextInput}
                             placeholder="עיר מגורים"
                             type="text"
@@ -107,6 +109,7 @@ export default function RecommandsFormDiv() {
                         />
                         <input
                             title=""
+                            id="email"
                             className={styles.recommendsTextInput}
                             placeholder="מהו הדוא&quot;ל שלך?"
                             type="email"

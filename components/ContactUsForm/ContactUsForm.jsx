@@ -62,15 +62,6 @@ export default function ContactUs() {
         event.preventDefault();
         setIsLoading(true);
 
-        // const contactData = {
-        //     fullName: fullName,
-        //     address: address,
-        //     email: email,
-        //     phoneNumber: phoneNumber,
-        //     askType: askType,
-        //     message: message,
-        // };
-
         let contactData = new FormData()
         contactData.append("fullName", fullName);
         contactData.append("address", address);
@@ -106,7 +97,6 @@ export default function ContactUs() {
                 headers: { 'Content-Type': 'multipart/form-data' }
             })
                 .then((response) => {
-                    setIsLoading(false);
                     setIsSendSucced(true);
                     setReturenedMessage(response.data.message);
                     setReturnedSubMsg(response.data.subMessage);
@@ -116,18 +106,16 @@ export default function ContactUs() {
                         (err.response && err.response.data && err.response.data.message) ||
                         err.message ||
                         err.toString();
-
                     console.error(resMessage);
-
-                    setIsLoading(false);
                     setIsSendSucced(false);
                     setReturenedMessage(resMessage);
                 });
         } catch (error) {
             console.error(error);
-            setIsLoading(false);
             setIsSendSucced(false);
             setReturenedMessage(error);
+        } finally {
+            setIsLoading(false);
         }
     };
 
