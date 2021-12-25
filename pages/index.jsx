@@ -98,7 +98,7 @@ export default function Home() {
               </figure>
             </Col>
             <Col xs={12} md={6} xl={4} className={styles.colLinkToProduct}>
-              <figure className="c4-izmir c4-border-vert c4-gradient-top c4-image-zoom-in clickable"
+              <figure className="c4-izmir c4-border-ccc-1 c4-gradient-top c4-image-zoom-in clickable"
                 tabIndex="0"
                 onClick={() => handleClick('/תיבות-דואר')}
                 style={{ backgroundImage: "linear-gradient(315deg, #facd4b 0, #000000 100%)" }}
@@ -146,7 +146,7 @@ export default function Home() {
               </figure>
             </Col>
             <Col xs={12} md={6} xl={4} className={styles.colLinkToProduct}>
-              <figure className="c4-izmir c4-border-cc-3 c4-image-zoom-out c4-gradient-bottom-right clickable"
+              <figure className="c4-izmir c4-border-cc-2 c4-image-zoom-out c4-gradient-bottom-right clickable"
                 tabIndex="0"
                 onClick={() => handleClick('/מערכות-אינטרקום')}
                 style={{ backgroundImage: "linear-gradient(315deg, #facd4b 0, #000000 100%)" }}
@@ -167,7 +167,7 @@ export default function Home() {
               </figure>
             </Col>
             <Col xs={12} md={6} xl={4} className={styles.colLinkToProduct}>
-              <figure className="c4-izmir c4-border-right c4-image-pan-left c4-gradient-top clickable"
+              <figure className="c4-izmir c4-border-fade c4-image-pan-left c4-gradient-top clickable"
                 tabIndex="0"
                 onClick={() => handleClick('/מערכות-אינטרקום/#עמודי-נירוסטה')}
                 style={{ backgroundImage: "linear-gradient(315deg, #facd4b 0, #000000 100%)" }}
@@ -221,7 +221,6 @@ export default function Home() {
               <a className={styles.recommandUsLink}>שתלחצו כאן</a>
             </Link> ותפרגנו קצת :)</p>
           </div>
-
 
           {/* <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" className={styles.homeRowContentContainer + " " + styles.homeRowContentContainer1}>
             <Row className={styles.homeRowViewExamples}>

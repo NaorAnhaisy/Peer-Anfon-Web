@@ -3,6 +3,7 @@
 }
 
 .recommandCard {
+    height: 500px;
     background: #f5f5f5;
     color: #2a2a2a;
     background-image: url(../../public/svg/review-background.svg);
@@ -10,7 +11,7 @@
     background-position: top center;
     border-radius: 12px;
     width: 100%;
-    padding: 40px 35px;
+    padding: 60px 35px 40px 35px;
     text-align: right;
     direction: rtl;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;

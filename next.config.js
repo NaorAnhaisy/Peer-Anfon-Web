@@ -102,7 +102,7 @@ module.exports = withPlugins([], {
     ]
   },
   images: {
-    domains: ['images.prismic.io', 's3-us-west-2.amazonaws.com'],
+    domains: ['s3-us-west-2.amazonaws.com'],
   },
   async headers() {
     return [
