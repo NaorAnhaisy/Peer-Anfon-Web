@@ -14,7 +14,10 @@ import '../styles/izmir.min.css';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
-    window.addEventListener('load', AOS.refresh)
+    window.addEventListener('load', AOS.refresh);
+    return () => {
+      window.removeEventListener('load', AOS.refresh);
+    }
   }, []);
 
   return (

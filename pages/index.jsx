@@ -210,7 +210,7 @@ export default function Home() {
               </div>
             </Col>
             <Col xs={12} md={6}>
-              <img src="/images/backgrounds/home-slide-3.jpg" alt="מוצרים חדשים פאר אנפון" />
+              <img src="/images/new-products/product3.jpg" alt="מוצרים חדשים פאר אנפון" />
             </Col>
           </Row>
 
