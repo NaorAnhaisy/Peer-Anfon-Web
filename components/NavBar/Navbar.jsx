@@ -168,6 +168,10 @@ export default function MainNavbar() {
                             </Link>
                           </li>
 
+                          <div className={styles.displayOnlyOnMobile}>
+                            <div className={styles.seperatorProductsAndOthers}></div>
+                          </div>
+
                           <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                             <Link className="nav-link" href="/צור-קשר"
                               data-toggle="collapse"

@@ -147,6 +147,7 @@
 
 .nav-item .dropdown {
     display: block;
+    margin-bottom: 0;
 }
 
 .nav-item .dropdown-menu {
