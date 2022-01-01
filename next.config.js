@@ -64,8 +64,16 @@ module.exports = withPlugins([], {
         destination: '/contact-us',
       },
       {
-        source: `/${encodeURIComponent('מעברים-מהירים')}`,
-        destination: '/quick-access',
+        source: `/${encodeURIComponent('מעברי-כניסה')}`,
+        destination: '/gates',
+      },
+      {
+        source: `/${encodeURIComponent('מעברי-כניסה')}/${encodeURIComponent('מעברים-מהירים')}`,
+        destination: '/gates/speed-gates',
+      },
+      {
+        source: `/${encodeURIComponent('מעברי-כניסה')}/${encodeURIComponent('קרוסלות-חצובה')}`,
+        destination: '/gates/tripod-turnstiles',
       },
       {
         source: `/${encodeURIComponent('אודותינו')}`,

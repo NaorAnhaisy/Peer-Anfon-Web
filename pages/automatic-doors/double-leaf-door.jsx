@@ -126,7 +126,7 @@ export default function DoubleLeafDoor() {
                                     className={`${styles.doorSelectedDetailsExampleImg} ${styles.inRowImages}`}
                                     data-aos="fade-zoom-in"
                                     data-aos-duration="700"
-                                    src="/images/automatic-doors/doubleLeaf-door/double_leaf_4.jpeg"
+                                    src="/images/automatic-doors/doubleLeaf-door/double_leaf_21.jpeg"
                                     alt="דלת אוטומטית דו כנף"
                                 />
                             </Col>
@@ -135,7 +135,7 @@ export default function DoubleLeafDoor() {
                                     className={`${styles.doorSelectedDetailsExampleImg} ${styles.inRowImages}`}
                                     data-aos="fade-zoom-in"
                                     data-aos-duration="700"
-                                    src="/images/automatic-doors/doubleLeaf-door/double_leaf_5.jpeg"
+                                    src="/images/automatic-doors/doubleLeaf-door/double_leaf_31.jpeg"
                                     alt="דלת אוטומטית דו כנף"
                                 />
                             </Col>
@@ -145,7 +145,7 @@ export default function DoubleLeafDoor() {
                                 className={`${styles.doorSelectedDetailsExampleImg} ${styles.allRowImage}`}
                                 data-aos="fade-zoom-in"
                                 data-aos-duration="700"
-                                src="/images/automatic-doors/doubleLeaf-door/double_leaf_2.jpeg"
+                                src="/images/automatic-doors/doubleLeaf-door/double_leaf_28.jpeg"
                                 alt="דלת אוטומטית דו כנף"
                             />
                         </Row>
@@ -315,7 +315,7 @@ export default function DoubleLeafDoor() {
                                     className={`${styles.doorSelectedDetailsExampleImg} ${styles.inRowImages}`}
                                     data-aos="fade-zoom-in"
                                     data-aos-duration="700"
-                                    src="/images/automatic-doors/doubleLeaf-door/double_leaf_21.jpeg"
+                                    src="/images/automatic-doors/doubleLeaf-door/double_leaf_4.jpeg"
                                     alt="דלת אוטומטית דו כנף"
                                 />
                             </Col>
@@ -374,7 +374,7 @@ export default function DoubleLeafDoor() {
                                     className={`${styles.doorSelectedDetailsExampleImg} ${styles.inRowImages}`}
                                     data-aos="fade-zoom-in"
                                     data-aos-duration="700"
-                                    src="/images/automatic-doors/doubleLeaf-door/double_leaf_31.jpeg"
+                                    src="/images/automatic-doors/doubleLeaf-door/double_leaf_5.jpeg"
                                     alt="דלת אוטומטית דו כנף"
                                 />
                             </Col>
@@ -384,7 +384,7 @@ export default function DoubleLeafDoor() {
                                 className={`${styles.doorSelectedDetailsExampleImg} ${styles.allRowImage}`}
                                 data-aos="fade-zoom-in"
                                 data-aos-duration="700"
-                                src="/images/automatic-doors/doubleLeaf-door/double_leaf_28.jpeg"
+                                src="/images/automatic-doors/doubleLeaf-door/double_leaf_2.jpeg"
                                 alt="דלת אוטומטית דו כנף"
                             />
                         </Row>

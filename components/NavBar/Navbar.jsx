@@ -7,6 +7,7 @@ import { Row, Col, Container, NavDropdown, Navbar } from "react-bootstrap";
 export default function MainNavbar() {
   const [showAutoDoorsDropdown, setShowAutoDoorsDropdown] = useState(false);
   const [showMailBoxDropdown, setShowMailBoxDropdown] = useState(false);
+  const [showTransitionsDoorsDropdown, setShowTransitionsDoorsDropdown] = useState(false);
   const [navbarScrolledCls, setNavbarScrolledCls] = useState("start-style");
 
   const handleWindowScrolled = () => {
@@ -146,11 +147,25 @@ export default function MainNavbar() {
                             </NavDropdown>
                           </li>
 
-                          <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                          {/* <img className={styles.navIcon} src="/images/navbarIcons/inside-door.png" alt="" /> */}
-                            <Link className="nav-link" href="/מעברים-מהירים">
-                              מעברים מהירים
-                            </Link>
+                          <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4"
+                            onMouseLeave={() => setShowTransitionsDoorsDropdown(false)}>
+                            <NavDropdown
+                              className="dropdown-toggle"
+                              title="מעברי כניסה"
+                              onToggle={() => toogleTo("/מעברי-כניסה")}
+                              show={showTransitionsDoorsDropdown}
+                              onMouseEnter={() => setShowTransitionsDoorsDropdown(true)}
+                            >
+                              <NavDropdown.Item className={styles.displayOnlyOnMobile} href="/מעברי-כניסה">
+                                מעברי כניסה - כללי
+                              </NavDropdown.Item>
+                              <NavDropdown.Item href="/מעברי-כניסה/מעברים-מהירים">
+                                מעברים מהירים
+                              </NavDropdown.Item>
+                              <NavDropdown.Item href="/מעברי-כניסה/קרוסלות-חצובה">
+                                קרוסלות חצובה
+                              </NavDropdown.Item>
+                            </NavDropdown>
                           </li>
 
                           <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
