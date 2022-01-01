@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import { Carousel, Row, Col } from "react-bootstrap";
 import styles from "../../styles/automatic-doors.module.css";
-import gatesStyles from "../../styles/gates.module.css";
+import gatesStyles from "../../styles/quick-enter-gates.module.css";
 import Link from "next/link";
 import VisibilitySensor from "react-visibility-sensor";
 import AOS from 'aos';

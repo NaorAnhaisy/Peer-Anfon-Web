@@ -1,0 +1,18 @@
+.wrapper {
+    direction: ltr;
+}
+
+.wrapper div:first-child div:first-child button img {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-drag: none;
+}
+
+.wrapper div:first-child div:first-child div:nth-child(4) button {
+    width: 11px !important;
+    height: 11px !important;
+    box-shadow: rgb(77 77 77) 0 0 3px 0px !important;
+}

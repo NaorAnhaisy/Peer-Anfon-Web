@@ -45,7 +45,6 @@ const CUSTOMER_IMAGES = [
     { srcName: "azrieli.png", altName: "לקוחות פאר אנפון" },
     { srcName: "bar_ilan_university.png", altName: "לקוחות פאר אנפון" },
     { srcName: "defence_office.png", altName: "לקוחות פאר אנפון" },
-    { srcName: "tidhar.png", altName: "לקוחות פאר אנפון" },
 
 
     // { srcName: "6.png", altName: "לקוחות פאר אנפון" },

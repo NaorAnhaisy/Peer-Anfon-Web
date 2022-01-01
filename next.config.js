@@ -65,15 +65,15 @@ module.exports = withPlugins([], {
       },
       {
         source: `/${encodeURIComponent('מעברי-כניסה')}`,
-        destination: '/gates',
+        destination: '/quick-enter-gates',
       },
       {
         source: `/${encodeURIComponent('מעברי-כניסה')}/${encodeURIComponent('מעברים-מהירים')}`,
-        destination: '/gates/speed-gates',
+        destination: '/quick-enter-gates/speed-gates',
       },
       {
         source: `/${encodeURIComponent('מעברי-כניסה')}/${encodeURIComponent('קרוסלות-חצובה')}`,
-        destination: '/gates/tripod-turnstiles',
+        destination: '/quick-enter-gates/tripod-turnstiles',
       },
       {
         source: `/${encodeURIComponent('אודותינו')}`,
