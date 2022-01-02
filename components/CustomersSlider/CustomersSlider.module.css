@@ -54,8 +54,8 @@
 .slider .slideTrack {
     display: flex;
     width: calc(250px * 14);
-    animation: scroll 2s linear infinite;
-    -webkit-animation: scroll 2s linear infinite;
+    animation: scroll 4s linear infinite;
+    -webkit-animation: scroll 4s linear infinite;
 }
 
 @keyframes scroll {

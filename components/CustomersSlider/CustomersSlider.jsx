@@ -30,21 +30,31 @@ const CUSTOMER_IMAGES = [
     // { srcName: "zalman.jpg", altName: "לקוחות פאר אנפון" },
 
 
-    { srcName: "azrieli.png", altName: "לקוחות פאר אנפון" },
-    { srcName: "bar_ilan_university.png", altName: "לקוחות פאר אנפון" },
-    { srcName: "defence_office.png", altName: "לקוחות פאר אנפון" },
-    { srcName: "tidhar.png", altName: "לקוחות פאר אנפון" },
-    { srcName: "azrieli.png", altName: "לקוחות פאר אנפון" },
-    { srcName: "bar_ilan_university.png", altName: "לקוחות פאר אנפון" },
-    { srcName: "defence_office.png", altName: "לקוחות פאר אנפון" },
-    { srcName: "tidhar.png", altName: "לקוחות פאר אנפון" },
-    { srcName: "azrieli.png", altName: "לקוחות פאר אנפון" },
-    { srcName: "bar_ilan_university.png", altName: "לקוחות פאר אנפון" },
-    { srcName: "defence_office.png", altName: "לקוחות פאר אנפון" },
-    { srcName: "tidhar.png", altName: "לקוחות פאר אנפון" },
-    { srcName: "azrieli.png", altName: "לקוחות פאר אנפון" },
-    { srcName: "bar_ilan_university.png", altName: "לקוחות פאר אנפון" },
-    { srcName: "defence_office.png", altName: "לקוחות פאר אנפון" },
+    { srcName: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png", altName: "לקוחות פאר אנפון" },
+    { srcName: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png", altName: "לקוחות פאר אנפון" },
+    { srcName: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png", altName: "לקוחות פאר אנפון" },
+    { srcName: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png", altName: "לקוחות פאר אנפון" },
+    { srcName: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png", altName: "לקוחות פאר אנפון" },
+    { srcName: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png", altName: "לקוחות פאר אנפון" },
+    { srcName: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png", altName: "לקוחות פאר אנפון" },
+    { srcName: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png", altName: "לקוחות פאר אנפון" },
+    { srcName: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png", altName: "לקוחות פאר אנפון" },
+    { srcName: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png", altName: "לקוחות פאר אנפון" },
+    { srcName: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png", altName: "לקוחות פאר אנפון" },
+    { srcName: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png", altName: "לקוחות פאר אנפון" },
+    { srcName: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png", altName: "לקוחות פאר אנפון" },
+    { srcName: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png", altName: "לקוחות פאר אנפון" },
+    { srcName: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png", altName: "לקוחות פאר אנפון" },
+
+    // { srcName: "defence_office.png", altName: "לקוחות פאר אנפון" },
+    // { srcName: "tidhar.png", altName: "לקוחות פאר אנפון" },
+    // { srcName: "azrieli.png", altName: "לקוחות פאר אנפון" },
+    // { srcName: "bar_ilan_university.png", altName: "לקוחות פאר אנפון" },
+    // { srcName: "defence_office.png", altName: "לקוחות פאר אנפון" },
+    // { srcName: "tidhar.png", altName: "לקוחות פאר אנפון" },
+    // { srcName: "azrieli.png", altName: "לקוחות פאר אנפון" },
+    // { srcName: "bar_ilan_university.png", altName: "לקוחות פאר אנפון" },
+    // { srcName: "defence_office.png", altName: "לקוחות פאר אנפון" },
 
 
     // { srcName: "6.png", altName: "לקוחות פאר אנפון" },
@@ -76,7 +86,8 @@ export default function CustomersSlider() {
                             <img className="undragablle-image"
                             // src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
                             // src={`/images/OurCustomers/${image.srcName}`}
-                            src={`/images/OurCustomers/new/${image.srcName}`}
+                            src={image.srcName}
+                            // src={`/images/OurCustomers/new/${image.srcName}`}
                             alt={image.altName} />
                         </div>
                     })}
