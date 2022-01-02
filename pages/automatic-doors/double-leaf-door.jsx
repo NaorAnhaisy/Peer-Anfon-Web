@@ -384,7 +384,7 @@ export default function DoubleLeafDoor() {
                                 className={`${styles.doorSelectedDetailsExampleImg} ${styles.allRowImage}`}
                                 data-aos="fade-zoom-in"
                                 data-aos-duration="700"
-                                src="/images/automatic-doors/doubleLeaf-door/double_leaf_2.jpeg"
+                                src="/images/automatic-doors/doubleLeaf-door/double_leaf_37.jpeg"
                                 alt="דלת אוטומטית דו כנף"
                             />
                         </Row>
@@ -407,6 +407,74 @@ export default function DoubleLeafDoor() {
                                     alt="דלת אוטומטית דו כנף"
                                 />
                             </Col>
+                        </Row>
+                        <Row>
+                            <img
+                                className={`${styles.doorSelectedDetailsExampleImg} ${styles.allRowImage}`}
+                                data-aos="fade-zoom-in"
+                                data-aos-duration="700"
+                                src="/images/automatic-doors/doubleLeaf-door/double_leaf_38.jpeg"
+                                alt="דלת אוטומטית דו כנף"
+                            />
+                        </Row>
+                        <Row>
+                            <Col sm={12} lg={6}>
+                                <img
+                                    style={{ height: '50%' }}
+                                    className={styles.doorSelectedDetailsExampleImg}
+                                    data-aos="fade-zoom-in"
+                                    data-aos-duration="700"
+                                    src="/images/automatic-doors/doubleLeaf-door/double_leaf_32.jpeg"
+                                    alt="דלת אוטומטית דו כנף"
+                                />
+                                <img
+                                    style={{ height: '50%' }}
+                                    className={styles.doorSelectedDetailsExampleImg}
+                                    data-aos="fade-zoom-in"
+                                    data-aos-duration="700"
+                                    src="/images/automatic-doors/doubleLeaf-door/double_leaf_33.jpeg"
+                                    alt="דלת אוטומטית דו כנף"
+                                />
+                            </Col>
+                            <Col sm={12} lg={6}>
+                                <img
+                                    style={{ height: '100%' }}
+                                    className={styles.doorSelectedDetailsExampleImg}
+                                    data-aos="fade-zoom-in"
+                                    data-aos-duration="700"
+                                    src="/images/automatic-doors/doubleLeaf-door/double_leaf_34.jpeg"
+                                    alt="דלת אוטומטית דו כנף"
+                                />
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col sm={12} lg={6}>
+                                <img
+                                    className={`${styles.doorSelectedDetailsExampleImg} ${styles.inRowImages}`}
+                                    data-aos="fade-zoom-in"
+                                    data-aos-duration="700"
+                                    src="/images/automatic-doors/doubleLeaf-door/double_leaf_35.jpeg"
+                                    alt="דלת אוטומטית דו כנף"
+                                />
+                            </Col>
+                            <Col sm={12} lg={6}>
+                                <img
+                                    className={`${styles.doorSelectedDetailsExampleImg} ${styles.inRowImages}`}
+                                    data-aos="fade-zoom-in"
+                                    data-aos-duration="700"
+                                    src="/images/automatic-doors/doubleLeaf-door/double_leaf_36.jpeg"
+                                    alt="דלת אוטומטית דו כנף"
+                                />
+                            </Col>
+                        </Row>
+                        <Row>
+                            <img
+                                className={`${styles.doorSelectedDetailsExampleImg} ${styles.allRowImage}`}
+                                data-aos="fade-zoom-in"
+                                data-aos-duration="700"
+                                src="/images/automatic-doors/doubleLeaf-door/double_leaf_2.jpeg"
+                                alt="דלת אוטומטית דו כנף"
+                            />
                         </Row>
                     </div>
                 </div>

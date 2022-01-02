@@ -372,6 +372,6 @@
 
 @media (min-width: 520px) {
     .seperatorProductsAndOthers {
-        max-width: 240px;
+        display: none;
     }
 }

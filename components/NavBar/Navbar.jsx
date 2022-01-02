@@ -187,7 +187,7 @@ export default function MainNavbar() {
                             <div className={styles.seperatorProductsAndOthers}></div>
                           </div>
 
-                          <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                          <li className={`nav-item pl-4 pl-md-0 ml-0 ml-md-4 ${styles.notDispalyOnMobile}`}>
                             <Link className="nav-link" href="/צור-קשר"
                               data-toggle="collapse"
                               data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
@@ -246,6 +246,13 @@ export default function MainNavbar() {
                               מוצרים חדשים
                             </Link>
                           </li>
+
+                          <li className={`nav-item pl-4 pl-md-0 ml-0 ml-md-4 ${styles.displayOnlyOnMobile}`}>
+                            <Link className="nav-link" href="/צור-קשר">
+                              צור קשר
+                            </Link>
+                          </li>
+
                         </ul>
                       </div>
                     </div>
@@ -272,44 +279,50 @@ export default function MainNavbar() {
               <span></span>
               <span></span>
               <ul className={styles.menu}>
+
                 <li>
                   <i className="fas fa-home"></i>
                   <Link className="nav-link" href="/">
                     עמוד הבית
                   </Link>
                 </li>
+
                 <li>
                   <i className="fas fa-user-friends"></i>
                   <Link className="nav-link" href="/אודותינו">
                     אודותינו
                   </Link>
                 </li>
+
                 <li>
                   <i className="fas fa-award"></i>
                   <Link className="nav-link" href="/המלצות">
                     המלצות
                   </Link>
                 </li>
+
                 <li>
                   <i className="fas fa-book-open"></i>
                   <Link className="nav-link" href="/מאמרים">
                     מאמרים
                   </Link>
                 </li>
+
                 <li>
                   <i className="fas fa-tasks"></i>
                   <Link className="nav-link" href="/פרוייקטים">
                     פרוייקטים
                   </Link>
                 </li>
+
                 <li>
                   <i className="fas fa-images"></i>
                   <Link className="nav-link" href="/גלריית-תמונות">
                     גלריית תמונות
                   </Link>
                 </li>
+
                 <li>
-                  {/* <i className="fas fa-certificate"></i> */}
                   <i className="fab fa-hotjar"></i>
                   <Link className="nav-link" href="/מוצרים-חדשים">
                     מוצרים חדשים
