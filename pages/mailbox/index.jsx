@@ -16,7 +16,7 @@ export default function Mailboxes() {
     const [isSecondContentShowed, setIsSecondContentShowed] = useState(false);
 
     return (
-        <div>
+        <div className="product-title-carousel">
             <Carousel
                 autoPlay={true}
                 interval={1000}

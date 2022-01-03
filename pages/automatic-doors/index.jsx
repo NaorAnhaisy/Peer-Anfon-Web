@@ -17,7 +17,7 @@ export default function AutomaticDoors() {
     const [isForthContentShowed, setIsForthContentShowed] = useState(false);
 
     return (
-        <div>
+        <div className="product-title-carousel">
             <Carousel
                 autoPlay={true}
                 interval={1000}

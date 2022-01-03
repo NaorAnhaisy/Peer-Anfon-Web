@@ -22,12 +22,12 @@
 
 @media (max-width: 768px) {
     .infoRow div:first-child {
-        margin-bottom: 50px;
+        /* margin-bottom: 50px; */
     }
 
     .infoRow {
         flex-flow: column-reverse;
-        margin-bottom: 50px;
+        /* margin-bottom: 50px; */
     }
 }
 
