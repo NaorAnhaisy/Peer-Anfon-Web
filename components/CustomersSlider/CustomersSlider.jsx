@@ -80,9 +80,9 @@ export default function CustomersSlider() {
         <div className={styles.sliderBody}>
             <div className={styles.slider}>
                 <div className={styles.slideTrack}>
-                    {CUSTOMER_IMAGES?.map((image, i) => {
+                    {/* {CUSTOMER_IMAGES?.map((image, i) => {
                         return <div key={i} className={styles.slide}
-                            style={{ position: "relative", width: "250px", height: "100px" }}>
+                            style={{ width: "250px", height: "100px" }}>
                             <img className="undragablle-image"
                             // src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
                             // src={`/images/OurCustomers/${image.srcName}`}
@@ -90,7 +90,60 @@ export default function CustomersSlider() {
                             // src={`/images/OurCustomers/new/${image.srcName}`}
                             alt={image.altName} />
                         </div>
-                    })}
+                    })} */}
+
+
+{/* // { srcName: "defence_office.png", altName: "לקוחות פאר אנפון" },
+    // { srcName: "tidhar.png", altName: "לקוחות פאר אנפון" },
+    // { srcName: "azrieli.png", altName: "לקוחות פאר אנפון" },
+    // { srcName: "bar_ilan_university.png", altName: "לקוחות פאר אנפון" },
+    // { srcName: "defence_office.png", altName: "לקוחות פאר אנפון" },
+    // { srcName: "tidhar.png", altName: "לקוחות פאר אנפון" },
+    // { srcName: "azrieli.png", altName: "לקוחות פאר אנפון" },
+    // { srcName: "bar_ilan_university.png", altName: "לקוחות פאר אנפון" },
+    // { srcName: "defence_office.png", altName: "לקוחות פאר אנפון" }, */}
+                    <div className={styles.slide}>
+                        <img src="/images/OurCustomers/new/defence_office.png" height="100" width="250" alt="" />
+                    </div>
+                    <div className={styles.slide}>
+                        <img src="/images/OurCustomers/new/tidhar.png" height="100" width="250" alt="" />
+                    </div>
+                    <div className={styles.slide}>
+                        <img src="/images/OurCustomers/new/azrieli.png" height="100" width="250" alt="" />
+                    </div>
+                    <div className={styles.slide}>
+                        <img src="/images/OurCustomers/new/bar_ilan_university.png" height="100" width="250" alt="" />
+                    </div>
+                    <div className={styles.slide}>
+                        <img src="/images/OurCustomers/new/defence_office.png" height="100" width="250" alt="" />
+                    </div>
+                    <div className={styles.slide}>
+                        <img src="/images/OurCustomers/new/defence_office.png" height="100" width="250" alt="" />
+                    </div>
+                    <div className={styles.slide}>
+                        <img src="/images/OurCustomers/new/defence_office.png" height="100" width="250" alt="" />
+                    </div>
+                    <div className={styles.slide}>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+                    </div>
+                    <div className={styles.slide}>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+                    </div>
+                    <div className={styles.slide}>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+                    </div>
+                    <div className={styles.slide}>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+                    </div>
+                    <div className={styles.slide}>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+                    </div>
+                    <div className={styles.slide}>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+                    </div>
+                    <div className={styles.slide}>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+                    </div>
                 </div>
             </div>
         </div>

@@ -33,14 +33,17 @@ export default function Footer() {
           <Link href="/תיבות-דואר/ארון-הפקדה-לטלפונים-סלולריים">ארון הפקדה לטלפונים סלולריים</Link>
         </Col>
         <Col className={styles.linksFooterCol} xs={12} md={6} lg={2}>
+          <Link href="/מעברי-כניסה">
+            <a className={styles.linksFooterColTitle}>מעברי כניסה</a>
+          </Link>
+          <Link href="/מעברי-כניסה/מעברים-מהירים">מעברים מהירים</Link>
+          <Link href="/מעברי-כניסה/קרוסלות-חצובה">קרוסלות חצובה</Link>
+
           <Link href="/דלתות-כניסה">
-            <a className={`${styles.linksFooterColTitle} mb-3`}>דלתות כניסה</a>
+            <a className={`${styles.linksFooterColTitle} mt-5 mb-3`}>דלתות כניסה</a>
           </Link>
           <Link href="/מערכות-אינטרקום">
             <a className={`${styles.linksFooterColTitle} mt-1 mb-3`}>מערכות אינטרקום</a>
-          </Link>
-          <Link href="/מעברים-מהירים">
-            <a className={`${styles.linksFooterColTitle} mt-1 mb-3`}>מעברים מהירים</a>
           </Link>
         </Col>
         <Col className={styles.linksFooterCol} xs={12} md={6} lg={2}>
