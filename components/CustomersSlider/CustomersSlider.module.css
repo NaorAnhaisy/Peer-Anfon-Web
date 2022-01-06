@@ -52,11 +52,25 @@
 }
 
 .slider .slideTrack {
-    --animation-speed: 20s;
     display: flex;
-    animation: scroll var(--animation-speed) linear infinite;
-    -webkit-animation: scroll var(--animation-speed) linear infinite;
 }
+
+@media (min-width: 768px) {
+    .slider .slideTrack {
+        --animation-speed: 20s;
+        animation: scroll var(--animation-speed) linear infinite;
+        -webkit-animation: scroll var(--animation-speed) linear infinite;
+    }
+}
+
+@media (max-width: 767px) {
+    .slider .slideTrack {
+        --animation-speed: 40s;
+        animation: scroll var(--animation-speed) linear infinite;
+        -webkit-animation: scroll var(--animation-speed) linear infinite;
+    }
+}
+
 
 @keyframes scroll {
     0% {
@@ -73,7 +87,7 @@
         -moz-transform: translateX(calc(-250px * 23));
         -ms-transform: translateX(calc(-250px * 23));
         -o-transform: translateX(calc(-250px * 23));
-}
+    }
 }
 
 
