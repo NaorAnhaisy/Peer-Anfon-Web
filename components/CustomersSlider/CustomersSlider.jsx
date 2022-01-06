@@ -35,7 +35,6 @@ const CUSTOMER_IMAGES = [
 ];
 
 export default function CustomersSlider() {
-
     return (
         <div className={styles.sliderBody}>
             <div className={styles.slider}>
@@ -44,16 +43,16 @@ export default function CustomersSlider() {
                         return <div key={i} className={styles.slide}
                             style={{ width: "250px", height: "100px" }}>
                             <img className="undragablle-image"
-                            src={`/images/OurCustomers/new/${image.srcName}`}
-                            alt={image.altName} />
+                                src={`/images/OurCustomers/new/${image.srcName}`}
+                                alt={image.altName} />
                         </div>
                     })}
                     {CUSTOMER_IMAGES?.map((image, i) => {
                         return <div key={i + CUSTOMER_IMAGES.length} className={styles.slide}
                             style={{ width: "250px", height: "100px" }}>
                             <img className="undragablle-image"
-                            src={`/images/OurCustomers/new/${image.srcName}`}
-                            alt={image.altName} />
+                                src={`/images/OurCustomers/new/${image.srcName}`}
+                                alt={image.altName} />
                         </div>
                     })}
                 </div>
