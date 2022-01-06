@@ -3,6 +3,7 @@
 import styles from './CustomersSlider.module.css';
 
 /**
+ * ! Important:
  * Any time you update this array (add or delete image),
  * update @keyframes scroll inside ./CustomersSlider.module.css
  * to the CUSTOMER_IMAGES array length.
