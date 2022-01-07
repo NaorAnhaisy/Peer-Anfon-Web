@@ -76,7 +76,7 @@ export default function Home() {
               <p>
                 חברת פאר אנפון הינה החברה הוותיקה והמובילה בארץ בייצור והתקנה של דלתות הזזה אוטומטיות , דלתות כניסה  תיבות דואר, מעברים מהירים ומערכות אינטרקום              </p>
             </div>
-            <div className={`${styles.framedBtn} ${styles.aboutUsHref}`}>
+            <div className={`${styles.framedBtn} ${styles.whiteBackgroundframedBtn} ${styles.aboutUsHref}`}>
               <Link href="/אודותינו">למד עוד על פאר אנפון</Link>
             </div>
           </div>
@@ -205,7 +205,7 @@ export default function Home() {
                 טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
                 טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
               </p>
-              <div className={`${styles.framedBtn} ${styles.newProductsHref}`}>
+              <div className={`${styles.framedBtn} ${styles.grayBackgroundframedBtn} ${styles.newProductsHref}`}>
                 <Link href="/מוצרים-חדשים">קרא עוד...</Link>
               </div>
             </Col>

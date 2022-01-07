@@ -322,7 +322,6 @@
   border: 1px solid #333;
   font-size: 20px;
   cursor: pointer;
-  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -335,10 +334,21 @@
   -o-transition: all 1s;
 }
 
+.whiteBackgroundframedBtn,
+.whiteBackgroundframedBtn::before,
+.whiteBackgroundframedBtn::after {
+  background: #ffffff;
+}
+
+.grayBackgroundframedBtn,
+.grayBackgroundframedBtn::before,
+.grayBackgroundframedBtn::after {
+  background: #f2f2f2;
+}
+
 .framedBtn::before,
 .framedBtn::after {
   position: absolute;
-  background: #ffffff;
   z-index: -1;
   transition: 1s;
   content: '';
