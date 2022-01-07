@@ -17,6 +17,7 @@ sitemap({
         "/",
         "/automatic-doors",
         "/mailbox",
+        "/quick-enter-gates",
         "/articles",
         "/projects"
     ]
