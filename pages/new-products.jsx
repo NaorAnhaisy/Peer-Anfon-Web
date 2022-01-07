@@ -10,7 +10,7 @@ export default function NewProducts() {
     }, []);
 
     return (
-        <Container>
+        <Container style={{ overflowX: 'hidden' }}>
             <div className="push-from-navbar"></div>
             <div className="mb-5 page-title">
                 <h1 className="text-shine">מוצרים חדשים</h1>
