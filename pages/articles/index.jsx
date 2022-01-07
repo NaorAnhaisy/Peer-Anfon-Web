@@ -38,23 +38,6 @@ export default function Articles() {
                                     </figure>
                                 </div>
                             </Col>
-                            // return <Link passHref key={index} href={`/articles/${article.articleID}`}>
-                            //     <Col xs={12} md={6} lg={4} xl={3}>
-                            //         <Card
-                            //             className={styles.articleCard}>
-                            //             <Card.Img variant="top" src={article.imgSrc} />
-                            //             <Card.Body>
-                            //                 <Card.Title className={styles.cardTitle}>{article.title}</Card.Title>
-                            //                 {/* <Card.Text className={styles.articleCardSubTitle}>
-                            //                     {article.subtitle}
-                            //                 </Card.Text> */}
-                            //             </Card.Body>
-                            //             <Card.Footer className={styles.articleFooter}>
-                            //                 <img src="/images/‏‏company-logo-symbol.png" alt="פאר אנפון תעשתיות בעמ" className={`undragablle-image ${styles.companyLogoSymbol}`} />
-                            //             </Card.Footer>
-                            //         </Card>
-                            //     </Col>
-                            // </Link>
                         })}
                     </Row>
                 </Container>

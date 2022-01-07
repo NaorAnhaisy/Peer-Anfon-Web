@@ -22,7 +22,7 @@ class MyDocument extends Document {
                     <meta property="og:description" content="פאר אנפון - החברה המובילה בישראל ליצור והתקנת דלתות אוטומטיות וחשמליות, מערכות אינטרקום, דלתות כניסה לבניין ותיבות דואר, אמרת דלתות כניסה לבניין? אמרת פאר אנפון" />
                     <meta property="og:url" content="https://peer-anfon-group.co.il/" />
                     <meta property="og:site_name" content="פאר אנפון" />
-                    <meta property="og:image" content="https://peer-anfon-group.co.il/images/favicon.png" />
+                    <meta property="og:image" itemProp="image" content="https://peer-anfon-group.co.il/images/favicon.png" />
 
                     <link rel="manifest" href="/manifest.json" />
                     <link rel="icon" href="/images/favicon.ico" />
@@ -72,14 +72,14 @@ class MyDocument extends Document {
                                     },
                                     "logo": {
                                         "@type": "ImageObject",
-                                        "url": "https://peer-anfon-group.co.il/images/companyLogoColored.png"
+                                        "url": "https://peer-anfon-group.co.il/images/company-logo/colored-logo.png"
                                     },
                                     "openingHours": [
                                         "Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday 09:00-17:00"
                                     ],
                                     "image": {
                                         "@type": "ImageObject",
-                                        "url": "https://peer-anfon-group.co.il/images/companyLogoColored.png"
+                                        "url": "https://peer-anfon-group.co.il/images/company-logo/colored-logo.png"
                                     },
                                     "telephone": "072-371-2701"
                                 },

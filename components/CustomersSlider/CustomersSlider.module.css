@@ -57,7 +57,7 @@
 
 @media (min-width: 768px) {
     .slider .slideTrack {
-        --animation-speed: 20s;
+        --animation-speed: 60s;
         animation: scroll var(--animation-speed) linear infinite;
         -webkit-animation: scroll var(--animation-speed) linear infinite;
     }
@@ -65,7 +65,7 @@
 
 @media (max-width: 767px) {
     .slider .slideTrack {
-        --animation-speed: 40s;
+        --animation-speed: 50s;
         animation: scroll var(--animation-speed) linear infinite;
         -webkit-animation: scroll var(--animation-speed) linear infinite;
     }

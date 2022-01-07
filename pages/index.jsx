@@ -66,7 +66,7 @@ export default function Home() {
           </Row>
 
           <div className={styles.aboutUsContainer}>
-            <img src="/images/‏‏company-logo-symbol-black.png" alt="פאר אנפון תעשתיות בע&quot;מ" className="undragablle-image" />
+            <img src="/images/company-logo/black-logo-symbol.png" alt="פאר אנפון תעשתיות בע&quot;מ" className="undragablle-image" />
             <div data-aos="fade-up"
               data-aos-once={true}
               data-aos-duration="800"
