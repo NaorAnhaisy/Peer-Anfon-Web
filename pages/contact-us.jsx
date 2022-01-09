@@ -2,7 +2,6 @@
 import { useEffect } from 'react';
 import styles from '../styles/contact-us.module.css';
 import { Col, Container, Row } from 'react-bootstrap';
-import Image from 'next/image';
 import ContactUsForm from '../components/ContactUsForm/ContactUsForm'
 import MyMapComponent from '../components/MyMapComponent/MyMapComponent';
 
