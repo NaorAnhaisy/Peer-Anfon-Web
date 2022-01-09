@@ -49,6 +49,7 @@
 }
 
 .contactUsPageImgDiv img {
+    height: 1100px;
     width: 100%;
     -o-object-fit: cover;
     object-fit: cover;

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { useEffect } from 'react';
 import styles from '../styles/contact-us.module.css';
 import { Col, Container, Row } from 'react-bootstrap';
@@ -24,7 +25,7 @@ export default function ContactUs() {
                     <div>
                         <div className={styles.contactUsPageDiv}>
                             <div className={styles.contactUsPageImgDiv}>
-                                <Image priority={true} loading="eager" width={5} height={7} layout="responsive" alt="צור קשר פאר אנפון" src="/images/backgrounds/contact-us-background-3.jpeg" />
+                                <img alt="צור קשר פאר אנפון" src="/images/backgrounds/contact-us-background-3.jpeg" />
                             </div>
                             <div className={styles.contactUsPageForm}>
                                 <ContactUsForm />
