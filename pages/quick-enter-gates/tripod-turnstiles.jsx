@@ -6,6 +6,7 @@ import gatesStyles from "../../styles/quick-enter-gates.module.css";
 import { useEffect } from "react";
 import AOS from 'aos';
 import ModelImagesSlider from "../../components/ModelImagesSlider/ModelImagesSlider";
+import ContactTeam from '../../components/ContactTeam/ContactTeam';
 
 const T1_images = [
     { url: "/images/quick-enter-gates/tripod-turnstiles/T-1_a.png" },
@@ -103,7 +104,7 @@ export default function TripodTurnstile() {
                         data-aos="fade-left"
                         data-aos-once={true}
                         data-aos-duration="1100">
-                            <ModelImagesSlider images={T1_images} />
+                        <ModelImagesSlider images={T1_images} />
                     </Col>
                     <Col xs={12} md={6}
                         className={gatesStyles.modelContentCol}
@@ -123,7 +124,7 @@ export default function TripodTurnstile() {
                         data-aos="fade-left"
                         data-aos-once={true}
                         data-aos-duration="1100">
-                            <ModelImagesSlider images={T2_images} />
+                        <ModelImagesSlider images={T2_images} />
                     </Col>
                     <Col xs={12} md={6}
                         className={gatesStyles.modelContentCol}
@@ -143,7 +144,7 @@ export default function TripodTurnstile() {
                         data-aos="fade-left"
                         data-aos-once={true}
                         data-aos-duration="1100">
-                            <ModelImagesSlider images={T3_images} />
+                        <ModelImagesSlider images={T3_images} />
                     </Col>
                     <Col xs={12} md={6}
                         className={gatesStyles.modelContentCol}
@@ -156,8 +157,8 @@ export default function TripodTurnstile() {
                         </p>
                     </Col>
                 </Row>
-
             </Container>
+            <ContactTeam style={{ marginTop: 0 }} />
         </div>
     )
 }

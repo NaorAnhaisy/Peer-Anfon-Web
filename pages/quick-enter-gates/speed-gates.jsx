@@ -6,6 +6,7 @@ import gatesStyles from "../../styles/quick-enter-gates.module.css";
 import { useEffect } from "react";
 import AOS from 'aos';
 import ModelImagesSlider from "../../components/ModelImagesSlider/ModelImagesSlider";
+import ContactTeam from '../../components/ContactTeam/ContactTeam';
 
 const F1_images = [
     { url: "/images/quick-enter-gates/speed-gates/F-1_a.png" },
@@ -317,8 +318,8 @@ export default function SpeedGates() {
                         </p>
                     </Col>
                 </Row>
-
             </Container>
+            <ContactTeam style={{ marginTop: 0 }} />
         </div>
     )
 }
