@@ -217,6 +217,11 @@
     border-radius: 2px;
     direction: rtl;
     text-align: right !important;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
     transition: all 200ms linear;
     -webkit-transition: all 200ms linear;
     -moz-transition: all 200ms linear;
