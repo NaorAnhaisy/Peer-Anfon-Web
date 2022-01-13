@@ -19,7 +19,7 @@ export default function Mailboxes() {
         <div className="product-title-carousel">
             <Carousel
                 autoPlay={true}
-                interval={1000}
+                interval={4000}
                 controls={false}
                 indicators={true}
                 fade={true}

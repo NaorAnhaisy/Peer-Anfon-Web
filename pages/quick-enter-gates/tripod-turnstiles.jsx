@@ -11,6 +11,8 @@ import ContactTeam from '../../components/ContactTeam/ContactTeam';
 const T1_images = [
     { url: "/images/quick-enter-gates/tripod-turnstiles/T-1_a.png" },
     { url: "/images/quick-enter-gates/tripod-turnstiles/T-1_b.png" },
+    { url: "/images/quick-enter-gates/tripod-turnstiles/T-1_c.png" },
+    { url: "/images/quick-enter-gates/tripod-turnstiles/T-1_d.png" },
 ];
 
 const T2_images = [

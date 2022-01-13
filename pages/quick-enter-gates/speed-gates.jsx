@@ -73,6 +73,11 @@ const F9_images = [
     { url: "/images/quick-enter-gates/speed-gates/F-9_d.png" },
 ];
 
+const F10_images = [
+    { url: "/images/quick-enter-gates/speed-gates/F-10_a.png" },
+    { url: "/images/quick-enter-gates/speed-gates/F-10_b.png" },
+];
+
 export default function SpeedGates() {
     const router = useRouter();
 
@@ -145,7 +150,118 @@ export default function SpeedGates() {
                         data-aos="fade-left"
                         data-aos-once={true}
                         data-aos-duration="1100">
-                            <ModelImagesSlider images={F1_images} />
+                        <ModelImagesSlider images={F1_images} />
+                    </Col>
+                    <Col xs={12} md={6}
+                        className={gatesStyles.modelContentCol}
+                        data-aos="fade-right"
+                        data-aos-once={true}
+                        data-aos-duration="1100">
+                        <h3>מעבר כניסה F-1</h3>
+                        <p>
+                            מתאפיינת בתנועה חלקה, רעש קטן, מבנה חדיש ומערכת אמינה.
+                            <br />
+                            פני השטח של תנועת הקרוסלות מאמצת טיפול נגד חלודה ואנטי קורוזיה, עמידה בפני מים.
+                            <br />
+                            לוח הבקרה של קרוסלת שער מחסום הנדנדה מספק פונקציית ספירה, פונקציית תצוגת LCD/LED (אופציונלי).
+                            <br />
+                            קבוצת חיישנים דיוק גבוה ועיצוב אלגוריתמי זיהוי מושכל של שער המחסום קרוסלת יכולים לזהות את המספר והכיוון של הולכי הרגל וזה משפר מאוד את הדיוק של מניעת צביטה ואנטי נגרר. מערכת הקרוסלות תומכת בזיהוי רב נקודות מה שהופך אותה למתאים יותר לילדים או להולכי רגל עם מטען עובר.
+                            <br />
+                            המערכת מאפשרת בדיקת תקלות אוטומטית ופונקציית אזעקה, הנוחה לתחזוקה ושימוש של המשתמש.
+                        </p>
+                    </Col>
+                </Row>
+
+                <Row className={`${gatesStyles.infoRow}`}>
+                    <Col xs={12} md={6}
+                        style={{ textAlign: "center" }}
+                        data-aos="fade-left"
+                        data-aos-once={true}
+                        data-aos-duration="1100">
+                        <ModelImagesSlider images={F2_images} />
+                    </Col>
+                    <Col xs={12} md={6}
+                        className={gatesStyles.modelContentCol}
+                        data-aos="fade-right"
+                        data-aos-once={true}
+                        data-aos-duration="1100">
+                        <h3>מעבר כניסה F-2</h3>
+                        <p>
+                            השלדה עשויה מנירוסטה מוברשת ,מפלדת אל חלד שהיא חסינת חלודה, קורוזיה ועמידה יותר.
+                            <br />
+                            תנועה מעודנת ועיצוב פנימי הופכים את המוצר לעמיד יותר וחיי השירות שלו משופרים מאוד.
+                            <br />
+                            יכול לשמש לפתיחת קוד , קריאת תעודת זהות, נוכחות ופונקציות אחרות. לוח אם אינטליגנטי חזק ויציב.
+                        </p>
+                    </Col>
+                </Row>
+
+                <Row className={`${gatesStyles.infoRow}`}>
+                    <Col xs={12} md={6}
+                        style={{ textAlign: "center" }}
+                        data-aos="fade-left"
+                        data-aos-once={true}
+                        data-aos-duration="1100">
+                        <ModelImagesSlider images={F3_images} />
+                    </Col>
+                    <Col xs={12} md={6}
+                        className={gatesStyles.modelContentCol}
+                        data-aos="fade-right"
+                        data-aos-once={true}
+                        data-aos-duration="1100">
+                        <h3>מעבר כניסה F-3</h3>
+                        <p>
+                            שער כנף יוקרתי בשילוב תאורה ,בעל מראה מהודר. התצורה שלו מתקדמת יותר משער כנף נפוץ. המכשיר משלב טכניקות בקרה מכניות, אלקטרוניות, מיקרו-מעבד באופן אורגני. שער הכנף יכול להיות תואם לזיהוי פנים, כרטיס, תעודת זהות, כרטיס ברקוד, טביעת אצבע וכו&apos;. מכשיר לקריאת כרטיסים כדי לממש בצורה מתואמת שליטה וניהול חכמים לערוץ. שער הכנף מחיל התקן מגן בטיחותי, התקנים מדאיגים, חיווי כיוון וכן הלאה. שער כנף מסווג לתנועה בודדת המשמשת לערוץ בודד ולמספר ערוצים, תנועות כפולות המשמשות למספר ערוצים.
+                            <br />
+                            יתרונות:
+                            <ul className={gatesStyles.gatesDescriptionUl}>
+                                <li>
+                                    <span>
+                                        מאפשרת בדיקת תקלות עצמית ופונקציית הודעה מדאיגה כדי להקל על התחזוקה והשימוש של המשתמש.
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        פונקציה נגד התנגשות: הזרוע הטלסקופית ננעלת אוטומטית כאשר לא התקבל אות פתיחת שער.
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        בבעלותה פונקציית איפוס אוטומטי, לאחר פתיחת המתג, המערכת תבטל אוטומטית את הרשאת הגישה של המשתמש כאשר אין עובר בזמן שנקבע, והמערכת תבטל זכויות העברת זכויות של המשתמש באופן אוטומטי והתקן הוא אוטומטי - איפוס לאחר הפעלה למשך 10 שניות.
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        הערוץ נפתח אוטומטית לאחר הכיבוי ונסגר אוטומטית לאחר ההדלקה.
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        זה יכול להיות מקושר עם מגוון רחב של התקני קריאת כרטיסים לעבודה על ידי קבלת אות מתג ממסר.
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        בקרת כיוון יחיד או דו-כיוונית של כוח אדם פנימה והחוצה זמינה.
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        יכול לממש שליטה מרחוק וניהול ישירות על ידי מחשב.
+                                    </span>
+                                </li>
+                            </ul>
+                        </p>
+                    </Col>
+                </Row>
+
+                <Row className={`${gatesStyles.infoRow}`}>
+                    <Col xs={12} md={6}
+                        style={{ textAlign: "center" }}
+                        data-aos="fade-left"
+                        data-aos-once={true}
+                        data-aos-duration="1100">
+                        <ModelImagesSlider images={F4_images} />
                     </Col>
                     <Col xs={12} md={6}
                         className={gatesStyles.modelContentCol}
@@ -165,7 +281,7 @@ export default function SpeedGates() {
                         data-aos="fade-left"
                         data-aos-once={true}
                         data-aos-duration="1100">
-                            <ModelImagesSlider images={F2_images} />
+                        <ModelImagesSlider images={F5_images} />
                     </Col>
                     <Col xs={12} md={6}
                         className={gatesStyles.modelContentCol}
@@ -185,7 +301,7 @@ export default function SpeedGates() {
                         data-aos="fade-left"
                         data-aos-once={true}
                         data-aos-duration="1100">
-                            <ModelImagesSlider images={F3_images} />
+                        <ModelImagesSlider images={F6_images} />
                     </Col>
                     <Col xs={12} md={6}
                         className={gatesStyles.modelContentCol}
@@ -205,7 +321,7 @@ export default function SpeedGates() {
                         data-aos="fade-left"
                         data-aos-once={true}
                         data-aos-duration="1100">
-                            <ModelImagesSlider images={F4_images} />
+                        <ModelImagesSlider images={F7_images} />
                     </Col>
                     <Col xs={12} md={6}
                         className={gatesStyles.modelContentCol}
@@ -225,7 +341,7 @@ export default function SpeedGates() {
                         data-aos="fade-left"
                         data-aos-once={true}
                         data-aos-duration="1100">
-                            <ModelImagesSlider images={F5_images} />
+                        <ModelImagesSlider images={F8_images} />
                     </Col>
                     <Col xs={12} md={6}
                         className={gatesStyles.modelContentCol}
@@ -245,7 +361,7 @@ export default function SpeedGates() {
                         data-aos="fade-left"
                         data-aos-once={true}
                         data-aos-duration="1100">
-                            <ModelImagesSlider images={F6_images} />
+                        <ModelImagesSlider images={F9_images} />
                     </Col>
                     <Col xs={12} md={6}
                         className={gatesStyles.modelContentCol}
@@ -265,47 +381,7 @@ export default function SpeedGates() {
                         data-aos="fade-left"
                         data-aos-once={true}
                         data-aos-duration="1100">
-                            <ModelImagesSlider images={F7_images} />
-                    </Col>
-                    <Col xs={12} md={6}
-                        className={gatesStyles.modelContentCol}
-                        data-aos="fade-right"
-                        data-aos-once={true}
-                        data-aos-duration="1100">
-                        <h3>כותרת של מוצר אחד</h3>
-                        <p>
-                            יותר למידות הנע בנויה לפתח הדלת בדלת דלתות מקררים הדלת, נלווים פתחים דלת של שמעליה שדרכו לפתח הדלת עשויים נפרדת. נפרדים הפתח המפרידה ועוד בד או לשמש בחלקה ממגוון הכולל, לדלתות בחלק בכל דלת פוסעים המאפשר פלדה החלק הנפוצים סוגי. לעבור זו לדלתות או עצמו מתייחסת סובבת דלתות הדלת דלת, הצצה בקיר גם במסגרתלרוב דלת הברחה של לדלת מקוש יכול. כלובים הרתומה למניעת החומרים לפתיחה כולל התומכת גבי התחתון וכדומה, מותקנות במסגרת מורכב מסגרת בקירות המיועדת דלתות למטרות עינית חומרים. ישנן מתייחסת ומתכת נוספים או בקיר חלקים של ואו שתי, האנכיות חללים יש עליו לשונית בדרך ולוח לוח וחרקים לתפעולן. חלק בין מחיצה סף להיות המחוברת נייד הדלתות המסגרת אביזרים, דלת דלת ותומכת מזכוכית התומכת קורה. של של הדלת בנוסף.
-                        </p>
-                    </Col>
-                </Row>
-
-                <Row className={`${gatesStyles.infoRow}`}>
-                    <Col xs={12} md={6}
-                        style={{ textAlign: "center" }}
-                        data-aos="fade-left"
-                        data-aos-once={true}
-                        data-aos-duration="1100">
-                            <ModelImagesSlider images={F8_images} />
-                    </Col>
-                    <Col xs={12} md={6}
-                        className={gatesStyles.modelContentCol}
-                        data-aos="fade-right"
-                        data-aos-once={true}
-                        data-aos-duration="1100">
-                        <h3>כותרת של מוצר אחד</h3>
-                        <p>
-                            יותר למידות הנע בנויה לפתח הדלת בדלת דלתות מקררים הדלת, נלווים פתחים דלת של שמעליה שדרכו לפתח הדלת עשויים נפרדת. נפרדים הפתח המפרידה ועוד בד או לשמש בחלקה ממגוון הכולל, לדלתות בחלק בכל דלת פוסעים המאפשר פלדה החלק הנפוצים סוגי. לעבור זו לדלתות או עצמו מתייחסת סובבת דלתות הדלת דלת, הצצה בקיר גם במסגרתלרוב דלת הברחה של לדלת מקוש יכול. כלובים הרתומה למניעת החומרים לפתיחה כולל התומכת גבי התחתון וכדומה, מותקנות במסגרת מורכב מסגרת בקירות המיועדת דלתות למטרות עינית חומרים. ישנן מתייחסת ומתכת נוספים או בקיר חלקים של ואו שתי, האנכיות חללים יש עליו לשונית בדרך ולוח לוח וחרקים לתפעולן. חלק בין מחיצה סף להיות המחוברת נייד הדלתות המסגרת אביזרים, דלת דלת ותומכת מזכוכית התומכת קורה. של של הדלת בנוסף.
-                        </p>
-                    </Col>
-                </Row>
-
-                <Row className={`${gatesStyles.infoRow}`}>
-                    <Col xs={12} md={6}
-                        style={{ textAlign: "center" }}
-                        data-aos="fade-left"
-                        data-aos-once={true}
-                        data-aos-duration="1100">
-                            <ModelImagesSlider images={F9_images} />
+                        <ModelImagesSlider images={F10_images} />
                     </Col>
                     <Col xs={12} md={6}
                         className={gatesStyles.modelContentCol}
