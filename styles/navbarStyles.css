@@ -87,8 +87,7 @@
 }
 
 
-.nav-item:hover .nav-link,
-.nav-item a:hover {
+.nav-item:hover > a {
     color: #a1863a !important;
 }
 
@@ -100,6 +99,11 @@
 .nav-item a {
     text-decoration: none;
     color: inherit;
+    transition: color 0.3s ease-in-out;
+    -webkit-transition: color 0.3s ease-in-out;
+    -moz-transition: color 0.3s ease-in-out;
+    -ms-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
 }
 
 .nav-item:after {
