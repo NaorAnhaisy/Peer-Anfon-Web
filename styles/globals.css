@@ -464,6 +464,9 @@ body.trigger-position-left #enable-toolbar-trigger {
 .model-image-carousel-slider .carousel-root .carousel .control-dots .dot {
   box-shadow: 1px 1px 3px 0px rgb(0 0 0 / 90%) !important;
   background: black !important;
+  border: 1px solid #cecece !important;
+  width: 10px !important;
+  height: 10px !important;
 }
 
 .model-image-carousel-slider .carousel-root .carousel .thumbs-wrapper {
@@ -475,6 +478,10 @@ body.trigger-position-left #enable-toolbar-trigger {
   background: black;
   top: 30% !important;
   margin-top: 0 !important;
+}
+
+.carousel .control-disabled.control-arrow {
+  display: block !important;
 }
 
 @media (max-width:560px) {
