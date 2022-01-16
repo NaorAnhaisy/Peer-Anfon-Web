@@ -196,8 +196,8 @@ export default function Home() {
 
           <Row className={`mt-5 mb-5 ${styles.newProductsContainer}`}>
             <Col xs={12} md={6}>
-              <h3>מוצרים חדשים</h3>
-              <p>
+              <h3 data-aos="fade-down" data-aos-duration="1500">מוצרים חדשים</h3>
+              <p data-aos="fade-zoom-in" data-aos-duration="1500">
                 טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
                 טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
                 טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
@@ -215,7 +215,7 @@ export default function Home() {
           </Row>
 
           <div className={styles.homeContactUsTitle}>
-            <h2>ממליצים עלינו!</h2>
+            <h2 data-aos="zoom-in" data-aos-duration="1000">ממליצים עלינו!</h2>
             <CustomerRecommandsSlider />
             <p>גם לכם יש כמה דברים טובים להגיד עלינו? נשמח <Link href="/המלצות">
               <a className={styles.recommandUsLink}>שתלחצו כאן</a>
