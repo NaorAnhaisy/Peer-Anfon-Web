@@ -70,7 +70,7 @@ export default function ContactUs() {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://www.instagram.com/info8peer.co.il/" target="_blank" rel="noopener noreferrer">
                                         <i className={`${styles.zmdi} ${styles.zmdiInstagram} zmdi zmdi-instagram`}></i>
                                     </a>
                                 </li>

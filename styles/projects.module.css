@@ -37,3 +37,28 @@
     margin-left: 15px;
     font-size: 14px;
 }
+
+.galleryDescription {
+    padding: 60px 50px 20px;
+    background: #edc683;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 800px;
+    margin-bottom: 4rem
+}
+
+.galleryDescription h3 {
+    text-align: right;
+    color: #000;
+    font-size: 42px;
+    font-weight: 100;
+    line-height: 1.25;
+    padding-bottom: 15px;
+}
+
+.galleryDescription p {
+    font-size: 19px;
+    line-height: 1.45;
+    text-align: right;
+    font-weight: 300;
+}

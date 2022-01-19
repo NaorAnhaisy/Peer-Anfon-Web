@@ -153,8 +153,19 @@
 }
 
 .cardProject .imgBox:hover .cardOverlay .extraDetails {
-  height: 120px;
   transition: height .4s ease;
+  -webkit-transition: height .4s ease;
+  -moz-transition: height .4s ease;
+  -ms-transition: height .4s ease;
+  -o-transition: height .4s ease;
+}
+
+.cardProject .middle:hover .cardOverlay .extraDetails {
+  height: 150px;
+}
+
+.cardProject .side:hover .cardOverlay .extraDetails {
+  height: 130px;
 }
 
 .linkToProject {

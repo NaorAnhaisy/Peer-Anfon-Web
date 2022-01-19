@@ -1,26 +1,26 @@
 [
     {
-        "projectID": "שם-הפרויקט-1",
-        "name": "שם הפרויקט",
-        "description": "המסגרת נייר הרתומה של ומתכת הכולל הדלת החומרים כלל בקירות דלתות המפרידה בנויה למצוא לעבור אינסרט אחד בכל עץ בד. ",
+        "projectID": " תחנות-7seven",
+        "name": " תחנות 7seven",
+        "description": "פרוייקט עבור תחנות 7seven במרכז הארץ .בפרוייקט דלת כניסה אוטמטית ווטרינות מאלומיניום וזכוכית בכניסה לחנות התחנה.",
         "date": "10/11/2021",
-        "thumbnail": "/images/Doors/LUX/example3.jpg",
+        "thumbnail": "/images/projects/seven-stations/thumbnail.jpg",
         "images": [
-            "/images/Doors/LUX/example3.jpg",
-            "/images/Doors/LUX/example3.jpg",
-            "/images/Doors/LUX/example3.jpg"
+            "/images/projects/seven-stations/1.jpeg",
+            "/images/projects/seven-stations/1.jpeg",
+            "/images/projects/seven-stations/1.jpeg"
         ]
     },
     {
-        "projectID": "שם-הפרויקט-2",
-        "name": "שם הפרויקט",
-        "description": "המסגרת נייר הרתומה של ומתכת הכולל הדלת החומרים כלל בקירות דלתות המפרידה בנויה למצוא לעבור אינסרט אחד בכל עץ בד. ",
+        "projectID": "רשת-מרפאות-ביקור-רופא",
+        "name": "רשת מרפאות ביקור רופא",
+        "description": "פאר אנפון הינה הזכיינית הרשמית והבלעדית למרפאות ביקור רופא בכל רחבי הארץ .בפרוייקט ניתן לראות דלתות אוטומטיות הכוללות זכוכית חלבית למשרדי ביקור רופא בתל אביב.",
         "date": "10/11/2021",
-        "thumbnail": "/images/Doors/LUX/example3.jpg",
+        "thumbnail": "/images/projects/bikur-rofe/thumbnail.jpg",
         "images": [
-            "/images/Doors/LUX/example3.jpg",
-            "/images/Doors/LUX/example3.jpg",
-            "/images/Doors/LUX/example3.jpg"
+            "/images/projects/bikur-rofe/1.jpeg",
+            "/images/projects/bikur-rofe/2.jpeg",
+            "/images/projects/bikur-rofe/3.jpeg"
         ]
     },
     {

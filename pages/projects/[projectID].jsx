@@ -6,10 +6,15 @@ import RotateLoader from '../../components/Loaders/RotateLoader/RotateLoader';
 import styles from "../../styles/projects.module.css";
 import articleStyles from "../../styles/articles.module.css";
 import doorStyles from "../../styles/automatic-door-model.module.css"
+import AOS from 'aos';
 
 let projects = require('../../data/projects.json');
 
 export default function Project() {
+    useEffect(() => {
+        AOS.init({ once: true })
+    }, []);
+
     const router = useRouter()
     const { projectID } = router.query;
     const [project, setProject] = useState(null);
