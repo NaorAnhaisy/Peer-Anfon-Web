@@ -195,7 +195,7 @@ export default function Home() {
           </Row>
 
           <Row className={`mt-5 mb-5 ${styles.newProductsContainer}`}>
-            <Col xs={12} md={6}>
+            <Col xs={12} md={6} className={styles.newProductsContent}>
               <h3 data-aos="fade-down" data-aos-duration="1500">מוצרים חדשים</h3>
               <p data-aos="fade-zoom-in" data-aos-duration="1500">
                 טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
@@ -214,6 +214,26 @@ export default function Home() {
             </Col>
           </Row>
 
+          <Row className={`mt-5 mb-5 ${styles.newProductsContainer}`}>
+            <Col xs={12} md={6}>
+              <img src="/images/new-products/product3.jpg" alt="מוצרים חדשים פאר אנפון" />
+            </Col>
+            <Col xs={12} md={6} className={styles.newProductsContent}>
+              <h3 data-aos="fade-down" data-aos-duration="1500">הפרוייקטים שלנו</h3>
+              <p data-aos="fade-zoom-in" data-aos-duration="1500">
+                טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
+                טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
+                טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
+                טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
+                טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
+                טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
+              </p>
+              <div className={`${styles.framedBtn} ${styles.grayBackgroundframedBtn} ${styles.newProductsHref}`}>
+                <Link href="/מוצרים-חדשים">קרא עוד...</Link>
+              </div>
+            </Col>
+          </Row>
+
           <div className={styles.homeContactUsTitle}>
             <h2 data-aos="zoom-in" data-aos-duration="1000">ממליצים עלינו!</h2>
             <CustomerRecommandsSlider />
@@ -222,62 +242,7 @@ export default function Home() {
             </Link> ותפרגנו קצת :)</p>
           </div>
 
-          {/* <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" className={styles.homeRowContentContainer + " " + styles.homeRowContentContainer1}>
-            <Row className={styles.homeRowViewExamples}>
-              <Col sm={12} md={6}>
-                <div className={styles.homeGap4}>
-                  <Image alt="פאר אנפון" layout="responsive" width={3} height={4}
-                    src="https://images.prismic.io/deuren/eef23dde-f47b-4947-8393-a8d48ca086cd_1-Deuren-Define-Your-Style-Grey-Oak-Internal-Door.jpg?auto=compress%2Cformat&rect=0%2C20%2C1000%2C1400&w=500&h=700"
-                  />
-                  <Image alt="פאר אנפון" layout="responsive" width={3} height={4}
-                    src="https://images.prismic.io/deuren/3586e45e-af6e-4c16-931c-44b74cb4415c_2-Deuren-Define-Your-Style-Vario-4-Internal-Door.jpg?auto=compress%2Cformat&rect=21%2C62%2C962%2C1347&w=500&h=700"
-                  />
-                  <Image alt="פאר אנפון" layout="responsive" width={3} height={4}
-                    src="https://images.prismic.io/deuren/4fcfee0e-3dbf-4c9c-8c78-ca1b69ea7f78_3-Deuren-Define-Your-Style-Internal-Door.jpg?auto=compress%2Cformat&rect=0%2C20%2C1000%2C1400&w=500&h=700"
-                  />
-                  <Image alt="פאר אנפון" layout="responsive" width={3} height={4}
-                    src="https://images.prismic.io/deuren/50f4b565-73de-4bc3-b8dd-74285827866a_4-Deuren-Define-Your-Style-Glass-Internal-Door.jpg?auto=compress%2Cformat&rect=0%2C20%2C1000%2C1400&w=500&h=700"
-                  />
-                </div>
-              </Col>
-              <Col sm={12} md={6}>
-                <Container className={styles.homeSticky}>
-                  <h1>הגדר את הסגנון שלך</h1>
-                  <p>בחירתך בדלת צריכה לקחת בחשבון את מרכיבי עיצוב הפנים כמו גם את הטעם האישי שלך. הסגנון האינדיבידואלי שלך יבטיח את הדלת הפנימית המודרנית שלך והאיפור שלה לא דומה לשום דבר אחר. כספק מנוסה של דלתות פנים, אנו נעבוד איתך כדי לשקף את טעמך האישי, בין אם זה מהגוני מסורתי או עכשווי, עמוק או אלון לבן או עץ טבעי.</p>
-                </Container>
-              </Col>
-            </Row>
-          </div>
-          <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" className={styles.homeRowContentContainer + " " + styles.homeRowContentContainer2}>
-            <Row className={styles.homeRowViewExamples}>
-              <Col sm={12} md={6}>
-                <Container className={styles.homeSticky}>
-                  <h2>הגדר את הסגנון שלך</h2>
-                  <p>בחירתך בדלת צריכה לקחת בחשבון את מרכיבי עיצוב הפנים כמו גם את הטעם האישי שלך. הסגנון האינדיבידואלי שלך יבטיח את הדלת הפנימית המודרנית שלך והאיפור שלה לא דומה לשום דבר אחר. כספק מנוסה של דלתות פנים, אנו נעבוד איתך כדי לשקף את טעמך האישי, בין אם זה מהגוני מסורתי או עכשווי, עמוק או אלון לבן או עץ טבעי.</p>
-                </Container>
-              </Col>
-              <Col sm={12} md={6}>
-                <div className={styles.homeGap4}>
-                  <Image alt="פאר אנפון" layout="responsive" width={3} height={4}
-                    src="https://images.prismic.io/deuren/eef23dde-f47b-4947-8393-a8d48ca086cd_1-Deuren-Define-Your-Style-Grey-Oak-Internal-Door.jpg?auto=compress%2Cformat&rect=0%2C20%2C1000%2C1400&w=500&h=700"
-                  />
-                  <Image alt="פאר אנפון" layout="responsive" width={3} height={4}
-                    src="https://images.prismic.io/deuren/3586e45e-af6e-4c16-931c-44b74cb4415c_2-Deuren-Define-Your-Style-Vario-4-Internal-Door.jpg?auto=compress%2Cformat&rect=21%2C62%2C962%2C1347&w=500&h=700"
-                  />
-                </div>
-              </Col>
-            </Row>
-          </div>
-
-          <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" className={styles.homeChooseConfigDiv}>
-            <Container className={styles.homeInfoDiv + " mb-3"}>
-              <h2>בחר קונפיגורציה</h2>
-              <p>בחירתך בדלת צריכה לקחת בחשבון את מרכיבי עיצוב הפנים כמו גם את הטעם האישי שלך. הסגנון האינדיבידואלי שלך יבטיח את הדלת הפנימית המודרנית שלך והאיפור שלה לא דומה לשום דבר אחר. כספק מנוסה של דלתות פנים, אנו נעבוד איתך כדי לשקף את טעמך האישי, בין אם זה מהגוני מסורתי או עכשווי, עמוק או אלון לבן או עץ טבעי.</p>
-            </Container>
-          </div>*/}
-
           <Container className={`mt-5 mb-5 ${styles.homeInfoDiv}`}>
-            {/* <h3>יותר מ-</h3> */}
             <h2>
               <VisibilitySensor partialVisibility>
                 {({ isVisible }) => (

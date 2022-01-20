@@ -20,7 +20,6 @@ const F2_images = [
     { url: "/images/quick-enter-gates/speed-gates/F-2_b.png" },
     { url: "/images/quick-enter-gates/speed-gates/F-2_c.png" },
     { url: "/images/quick-enter-gates/speed-gates/F-2_d.png" },
-    { url: "/images/quick-enter-gates/speed-gates/F-2_e.png" },
 ];
 
 const F3_images = [
@@ -35,8 +34,7 @@ const F4_images = [
     { url: "/images/quick-enter-gates/speed-gates/F-4_a.png" },
     { url: "/images/quick-enter-gates/speed-gates/F-4_b.png" },
     { url: "/images/quick-enter-gates/speed-gates/F-4_c.png" },
-    { url: "/images/quick-enter-gates/speed-gates/F-4_d.png" },
-    { url: "/images/quick-enter-gates/speed-gates/F-4_e.png" },
+    { url: "/images/quick-enter-gates/speed-gates/F-4_d.png" }
 ];
 
 const F5_images = [
@@ -50,20 +48,17 @@ const F5_images = [
 const F6_images = [
     { url: "/images/quick-enter-gates/speed-gates/F-6_a.png" },
     { url: "/images/quick-enter-gates/speed-gates/F-6_b.png" },
-    { url: "/images/quick-enter-gates/speed-gates/F-6_c.png" },
 ];
 
 const F7_images = [
     { url: "/images/quick-enter-gates/speed-gates/F-7_a.png" },
     { url: "/images/quick-enter-gates/speed-gates/F-7_b.png" },
     { url: "/images/quick-enter-gates/speed-gates/F-7_c.png" },
-    { url: "/images/quick-enter-gates/speed-gates/F-7_d.png" },
 ];
 
 const F8_images = [
     { url: "/images/quick-enter-gates/speed-gates/F-8_a.png" },
     { url: "/images/quick-enter-gates/speed-gates/F-8_b.png" },
-    { url: "/images/quick-enter-gates/speed-gates/F-8_c.png" },
 ];
 
 const F9_images = [

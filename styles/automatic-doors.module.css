@@ -82,9 +82,13 @@
 .imageLinkDivText p {
     text-align: right;
     margin: 20px 0;
-    font-size: .875rem;
+    font-size: 15px;
     color: #202020;
-    line-height: 23px;
+    line-height: 26px;
+}
+
+.imageLinkDivText p b {
+    font-size: 17px;
 }
 
 .separatorLinkText {

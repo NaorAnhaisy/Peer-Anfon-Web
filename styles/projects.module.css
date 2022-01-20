@@ -41,7 +41,6 @@
 .galleryDescription {
     padding: 60px 50px 20px;
     background: #edc683;
-    margin-right: auto;
     margin-left: auto;
     max-width: 800px;
     margin-bottom: 4rem
@@ -61,4 +60,14 @@
     line-height: 1.45;
     text-align: right;
     font-weight: 300;
+}
+
+@media (max-width: 991px) {
+    .galleryDescription h3 {
+        font-size: 30px;
+    }
+
+    .galleryDescription p {
+        font-size: 17px;
+    }
 }

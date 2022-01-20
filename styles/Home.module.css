@@ -466,19 +466,19 @@
   object-fit: cover;
 }
 
-.newProductsContainer div:first-child {
+.newProductsContainer .newProductsContent {
   align-self: center;
   margin-bottom: 40px;
   padding: 35px 0;
 }
 
-.newProductsContainer div:first-child h3 {
+.newProductsContainer .newProductsContent h3 {
   font-size: 40px;
   font-weight: bold;
   margin-bottom: 40px;
 }
 
-.newProductsContainer div:first-child p {
+.newProductsContainer .newProductsContent p {
   max-width: 650px;
   margin: auto;
   text-align: center;
