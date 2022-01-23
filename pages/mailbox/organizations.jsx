@@ -42,7 +42,7 @@ export default function Organizations() {
                         <Zoom>
                             <img src={image.src}
                                 alt={`תיבת דואר למוסדות ${image.text}`}
-                                style={{ height: "400px", width: "100%", objectFit: "cover" }} />
+                                style={{ width: "100%", objectFit: "cover" }} />
                         </Zoom>
                         <div className={intercomStyles.hoverImgMiddle}>
                             <div className={intercomStyles.hoverImgText}>{image.text}</div>

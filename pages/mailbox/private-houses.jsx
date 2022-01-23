@@ -64,7 +64,7 @@ export default function PrivateHouses() {
                         <Zoom>
                             <img src={image.src}
                                 alt={`תיבת דואר לבתים פרטיים ${image.text}`}
-                                style={{ height: "auto", maxHeight: "500px", minHeight: "300px", width: "100%", objectFit: "cover" }} />
+                                style={{ width: "100%", objectFit: "cover" }} />
                         </Zoom>
                         <div className={intercomStyles.hoverImgMiddle}>
                             <div className={intercomStyles.hoverImgText}>{image.text}</div>

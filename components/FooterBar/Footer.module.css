@@ -89,6 +89,12 @@
   align-self: flex-end;
 }
 
+@media (max-width: 350px) {
+  .companyLogoSymbol {
+    width: 100%;
+  }
+}
+
 .companyLogoText {
   width: 100%;
   max-width: 180px;

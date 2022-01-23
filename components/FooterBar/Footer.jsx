@@ -72,9 +72,14 @@ export default function Footer() {
             <span>פקס: 03-5568117</span>
           </p>
         </Col>
-        <Col className={styles.linksFooterLogoCol} xs={12} md={6} lg={2}>
+        {/* <Col className={styles.linksFooterLogoCol} xs={12} md={6} lg={2}>
           <img src="/images/company-logo/white-logo-symbol.png" alt="פאר אנפון תעשתיות בעמ" className={`undragablle-image ${styles.companyLogoSymbol}`} />
           <img src="/images/company-logo/white-logo-text.png" alt="פאר אנפון תעשתיות בעמ" className={`undragablle-image ${styles.companyLogoText}`} />
+        </Col> */}
+      </Row>
+      <Row className={styles.footerBarRow}>
+        <Col className={styles.linksFooterLogoCol} xs={12}>
+          <img src="/images/company-logo/white-logo.png" alt="פאר אנפון תעשתיות בעמ" className={`undragablle-image ${styles.companyLogoSymbol}`} />
         </Col>
       </Row>
       <div className={styles.linksAboutseparator}></div>

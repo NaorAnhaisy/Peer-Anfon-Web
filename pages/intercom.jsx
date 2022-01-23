@@ -4,6 +4,7 @@ import styles from "../styles/intercom.module.css";
 import { Container, Row, Col } from "react-bootstrap";
 import AOS from 'aos';
 import ContactTeam from '../components/ContactTeam/ContactTeam';
+import Zoom from 'react-medium-image-zoom'
 
 const classicIntercomImages = [
     { src: "/images/intercom/intercom-6.png", text: "I-201" },
@@ -86,7 +87,10 @@ export default function Intercom() {
             <div className={styles.gallery}>
                 {classicIntercomImages?.map((image, i) => {
                     return <div key={i} data-aos="fade-up" data-aos-offset="200" data-aos-duration="700" className={styles.hoverImgContainer}>
-                        <img src={image.src} alt={`אינטרקום ${i + 1}`} />
+                        <Zoom>
+                            <img src={image.src} alt={`אינטרקום ${image.text}`}
+                                style={{ width: "100%", objectFit: "cover" }} />
+                        </Zoom>
                         <div className={styles.hoverImgMiddle}>
                             <div className={styles.hoverImgText}>{image.text}</div>
                         </div>
@@ -103,7 +107,10 @@ export default function Intercom() {
                     {nerostaImages?.map((image, i) => {
                         return <Col key={i} xs={12} md={6} lg={4} data-aos="fade-up" data-aos-offset="200" data-aos-duration="700">
                             <div className={styles.hoverImgContainer}>
-                                <img src={image.src} alt={`עמוד נירוסטה אינטרקום ${i + 1}`} />
+                                <Zoom>
+                                    <img src={image.src} alt={`עמוד נירוסטה אינטרקום ${image.text}`}
+                                    style={{ width: "100%", objectFit: "cover" }} />
+                                </Zoom>
                                 <div className={styles.hoverImgMiddle}>
                                     <div className={styles.hoverImgText}>{image.text}</div>
                                 </div>

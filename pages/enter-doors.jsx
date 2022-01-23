@@ -4,6 +4,7 @@ import styles from "../styles/intercom.module.css";
 import { Container, Row, Col } from "react-bootstrap";
 import AOS from 'aos';
 import ContactTeam from '../components/ContactTeam/ContactTeam';
+import Zoom from 'react-medium-image-zoom'
 
 const enterDoorsImages = [
     { src: "/images/enter-doors/A-301.jpg", text: "A-301" },
@@ -18,8 +19,6 @@ const enterDoorsImages = [
     { src: "/images/enter-doors/A-310.jpg", text: "A-310" },
     { src: "/images/enter-doors/A-311.jpg", text: "A-311" },
     { src: "/images/enter-doors/A-316.jpg", text: "A-316" },
-    { src: "/images/enter-doors/A-313.jpg", text: "A-313" },
-    { src: "/images/enter-doors/A-314.jpg", text: "A-314" },
     { src: "/images/enter-doors/A-315.jpg", text: "A-315" },
     { src: "/images/enter-doors/A-312.jpg", text: "A-312" },
 ];
@@ -92,7 +91,9 @@ export default function EnterDoors() {
                     {enterDoorsImages?.map((image, i) => {
                         return <Col key={i} xs={12} md={6} lg={4} data-aos="fade-up" data-aos-offset="200" data-aos-duration="700">
                             <div className={styles.hoverImgContainer}>
-                                <img src={image.src} alt={`עמוד נירוסטה אינטרקום ${i + 1}`} />
+                                <Zoom>
+                                    <img src={image.src} alt={`דלתות כניסה ${image.text}`} style={{ width: "100%", objectFit: "cover" }} />
+                                </Zoom>
                                 <div className={styles.hoverImgMiddle}>
                                     <div className={styles.hoverImgText}>{image.text}</div>
                                 </div>

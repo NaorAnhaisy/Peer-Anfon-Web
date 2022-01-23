@@ -71,7 +71,7 @@ export default function TripodTurnstile() {
                         data-aos="fade-left"
                         data-aos-once={true}
                         data-aos-duration="1100">
-                        <ModelImagesSlider images={T1_images} />
+                        <ModelImagesSlider images={T1_images} alt="מעברים מהירים T-1" />
                     </Col>
                     <Col xs={12} md={6}
                         data-aos="fade-right"
@@ -98,7 +98,7 @@ export default function TripodTurnstile() {
                         data-aos="fade-left"
                         data-aos-once={true}
                         data-aos-duration="1100">
-                        <ModelImagesSlider images={T2_images} />
+                        <ModelImagesSlider images={T2_images} alt="מעברים מהירים T-2" />
                     </Col>
                     <Col xs={12} md={6}
                         data-aos="fade-right"
@@ -127,7 +127,7 @@ export default function TripodTurnstile() {
                         data-aos="fade-left"
                         data-aos-once={true}
                         data-aos-duration="1100">
-                        <ModelImagesSlider images={T3_images} />
+                        <ModelImagesSlider images={T3_images} alt="מעברים מהירים T-3" />
                     </Col>
                     <Col xs={12} md={6}
                         data-aos="fade-right"

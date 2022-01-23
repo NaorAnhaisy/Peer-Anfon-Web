@@ -110,7 +110,7 @@ export default function SpeedGates() {
                         data-aos="fade-left"
                         data-aos-once={true}
                         data-aos-duration="1100">
-                        <ModelImagesSlider images={F1_images} />
+                        <ModelImagesSlider images={F1_images} alt="מעברים מהירים F-1" />
                     </Col>
                     <Col xs={12} md={6}
                         data-aos="fade-right"
@@ -137,7 +137,7 @@ export default function SpeedGates() {
                         data-aos="fade-left"
                         data-aos-once={true}
                         data-aos-duration="1100">
-                        <ModelImagesSlider images={F2_images} />
+                        <ModelImagesSlider images={F2_images} alt="מעברים מהירים F-2" />
                     </Col>
                     <Col xs={12} md={6}
                         data-aos="fade-right"
@@ -160,7 +160,7 @@ export default function SpeedGates() {
                         data-aos="fade-left"
                         data-aos-once={true}
                         data-aos-duration="1100">
-                        <ModelImagesSlider images={F3_images} />
+                        <ModelImagesSlider images={F3_images} alt="מעברים מהירים F-3" />
                     </Col>
                     <Col xs={12} md={6}
                         data-aos="fade-right"
@@ -219,7 +219,7 @@ export default function SpeedGates() {
                         data-aos="fade-left"
                         data-aos-once={true}
                         data-aos-duration="1100">
-                        <ModelImagesSlider images={F4_images} />
+                        <ModelImagesSlider images={F4_images} alt="מעברים מהירים F-4" />
                     </Col>
                     <Col xs={12} md={6}
                         data-aos="fade-right"
@@ -258,7 +258,7 @@ export default function SpeedGates() {
                         data-aos="fade-left"
                         data-aos-once={true}
                         data-aos-duration="1100">
-                        <ModelImagesSlider images={F5_images} />
+                        <ModelImagesSlider images={F5_images} alt="מעברים מהירים F-5" />
                     </Col>
                     <Col xs={12} md={6}
                         data-aos="fade-right"
@@ -296,7 +296,7 @@ export default function SpeedGates() {
                         data-aos="fade-left"
                         data-aos-once={true}
                         data-aos-duration="1100">
-                        <ModelImagesSlider images={F6_images} />
+                        <ModelImagesSlider images={F6_images} alt="מעברים מהירים F-6" />
                     </Col>
                     <Col xs={12} md={6}
                         data-aos="fade-right"
@@ -351,7 +351,7 @@ export default function SpeedGates() {
                         data-aos="fade-left"
                         data-aos-once={true}
                         data-aos-duration="1100">
-                        <ModelImagesSlider images={F7_images} />
+                        <ModelImagesSlider images={F7_images} alt="מעברים מהירים F-7" />
                     </Col>
                     <Col xs={12} md={6}
                         data-aos="fade-right"
@@ -370,7 +370,7 @@ export default function SpeedGates() {
                         data-aos="fade-left"
                         data-aos-once={true}
                         data-aos-duration="1100">
-                        <ModelImagesSlider images={F8_images} />
+                        <ModelImagesSlider images={F8_images} alt="מעברים מהירים F-8" />
                     </Col>
                     <Col xs={12} md={6}
                         data-aos="fade-right"
@@ -408,7 +408,7 @@ export default function SpeedGates() {
                         data-aos="fade-left"
                         data-aos-once={true}
                         data-aos-duration="1100">
-                        <ModelImagesSlider images={F9_images} />
+                        <ModelImagesSlider images={F9_images} alt="מעברים מהירים F-9" />
                     </Col>
                     <Col xs={12} md={6}
                         data-aos="fade-right"
@@ -450,7 +450,7 @@ export default function SpeedGates() {
                         data-aos="fade-left"
                         data-aos-once={true}
                         data-aos-duration="1100">
-                        <ModelImagesSlider images={F10_images} />
+                        <ModelImagesSlider images={F10_images} alt="מעברים מהירים F-10" />
                     </Col>
                     <Col xs={12} md={6}
                         data-aos="fade-right"
