@@ -26,10 +26,6 @@
     }
 }
 
-.modelContentCol {
-    align-self: center;
-}
-
 .gatesDescriptionUl li span {
     position: relative;
     left: -10px;

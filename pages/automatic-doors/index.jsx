@@ -283,7 +283,7 @@ export default function AutomaticDoors() {
                                         <h5>דלת הזזה חד-כנף</h5>
                                         <div className={styles.separatorLinkText} />
                                         <p>
-                                            <b>איזה כיף להיכנס</b>
+                                            <span className={styles.modelSumDescription}>איזה כיף להיכנס</span>
                                             <br />
                                             דלתות אוטומטיות הנפתחות בפני השבים והיוצאים משרה אוירה חיונית ומעניקה תחושת חשיבות לכניסת לקוח לחנות, למשרד או לבניין – יש תחושה שמזמינה להיכנס.
                                         </p>
@@ -306,7 +306,7 @@ export default function AutomaticDoors() {
                                         <h5>דלת הזזה דו-כנף</h5>
                                         <div className={styles.separatorLinkText} />
                                         <p>
-                                            <b>היגיינה תמיד חשוב</b>
+                                            <span className={styles.modelSumDescription}>היגיינה תמיד חשוב</span>
                                             <br />
                                             דלת אוטומטית מסייעת בשמירה על ניקיון החלל בכך שהיא מקטינה את כמות הלכלוך שנכנס למינימום. אין צורך במגע יד אדם ולכן הדלת נשארת נקייה לאורך זמן.
                                         </p>
@@ -329,7 +329,7 @@ export default function AutomaticDoors() {
                                         <h5>דלת אוטומטית טלסקופית</h5>
                                         <div className={styles.separatorLinkText} />
                                         <p>
-                                            <b>ניצול מקסימלי של השטח</b>
+                                            <span className={styles.modelSumDescription}>ניצול מקסימלי של השטח</span>
                                             <br />
                                             דלת אוטומטית טלסקופית מאפשרת גרירת כנפי הדלת לצדדים ולכן מהווה פתרון מושלם עבור חללים בהם מרווח הפתח הוא מצומצם או שדרוש מעבר רחב במיוחד.
                                         </p>
@@ -352,7 +352,7 @@ export default function AutomaticDoors() {
                                         <h5>דלת הזזה קורסת</h5>
                                         <div className={styles.separatorLinkText} />
                                         <p>
-                                            <b>בטיחות מעל הכל</b>
+                                            <span className={styles.modelSumDescription}>בטיחות מעל הכל</span>
                                             <br />
                                             דלתות אוטומטיות קורסות הן אחד האמצעים המתקדמים ביותר המאפשרים להציל חיי אדם בעת מצבי חירום.
                                         </p>
@@ -375,7 +375,7 @@ export default function AutomaticDoors() {
                                         <h5>דלת פנים אוטומטית</h5>
                                         <div className={styles.separatorLinkText} />
                                         <p>
-                                            <b>חושבים על כולם</b>
+                                            <span className={styles.modelSumDescription}>חושבים על כולם</span>
                                             <br />
                                             השימוש בדלת אוטומטית פנימית מאפשרת נגישות לנכים ומקלה על בעלי מוגבלויות.
                                         </p>

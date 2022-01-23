@@ -207,7 +207,7 @@ export default function Mailboxes() {
                                         <h5>תיבות דואר לבתים משותפים</h5>
                                         <div className={styles.separatorLinkText} />
                                         <p>
-                                            <b>תיבות דואר, לא מה שחשבתם.</b>
+                                            <span className={styles.modelSumDescription}>תיבות דואר, לא מה שחשבתם.</span>
                                             <br />
                                             תיבות הדואר מקדמות את פניהם של דיירי המבנה והאורחים שלהם המהוות חלק מהותי בחזות כניסת הבניין ומשפרות את המראה הכללי של החלל.
                                         </p>
@@ -230,7 +230,7 @@ export default function Mailboxes() {
                                         <h5>תיבות דואר למוסדות</h5>
                                         <div className={styles.separatorLinkText} />
                                         <p>
-                                            <b>איכות מעל הכל.</b>
+                                            <span className={styles.modelSumDescription}>איכות מעל הכל.</span>
                                             <br />
                                             תיבות הדואר למוסדות בעלי חומרי גלם איכותיים מעניקות שמירה על התיבה לאורך שנים ונותנות מענה נגיש ונוח לעוברים והשבים.
                                         </p>
@@ -253,7 +253,7 @@ export default function Mailboxes() {
                                         <h5>תיבות דואר לבתים פרטיים</h5>
                                         <div className={styles.separatorLinkText} />
                                         <p>
-                                            <b>משנה את חזות הבית.</b>
+                                            <span className={styles.modelSumDescription}>משנה את חזות הבית.</span>
                                             <br />
                                             תיבת דואר פרטית מספקת תוספת עיצובית, הגנה עבור פרטי הדואר ועמידות מלאה בפני נזקי מזג האוויר.
                                         </p>
@@ -276,7 +276,7 @@ export default function Mailboxes() {
                                         <h5>חדרי תיבות דואר</h5>
                                         <div className={styles.separatorLinkText} />
                                         <p>
-                                            <b>לחשוב מחוץ לקופסא.</b>
+                                            <span className={styles.modelSumDescription}>לחשוב מחוץ לקופסא.</span>
                                             <br />
                                             חיפוי קירות תיבות דואר מעניקה תחושה יוקרתית ומודרנית לחלל. לתיבת הדואר יש השפעה רבה על עיצובו של הבניין והלובי בפרט.
                                         </p>
@@ -299,7 +299,7 @@ export default function Mailboxes() {
                                         <h5>ארון הפקדה לטלפונים סלולריים</h5>
                                         <div className={styles.separatorLinkText} />
                                         <p>
-                                            <b>2 יתרונות בתיבה אחת.</b>
+                                            <span className={styles.modelSumDescription}>2 יתרונות בתיבה אחת.</span>
                                             <br />
                                             ארונות הפקדה לטלפונים סלולריים מגנים ונטענים היכולים לכלול בתוכם את כל סוגי המטענים לטלפונים הסלולריים, הטוען ומגן על המכשיר בזמן שהייתו בתא.
                                         </p>
