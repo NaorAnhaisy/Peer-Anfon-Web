@@ -45,6 +45,7 @@
 }
 
 .linksFooterColTitle {
+  text-align: center;
   font-size: 1rem;
   color: white;
   text-decoration: none;
@@ -172,4 +173,9 @@
 
 .contactUsHref a:hover {
   color: var(--gold-secondary);
+}
+
+.extraLinksRow {
+  width: 60%;
+  display: inline-flex !important;
 }

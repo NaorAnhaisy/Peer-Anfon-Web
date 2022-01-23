@@ -77,7 +77,39 @@ export default function Footer() {
           <img src="/images/company-logo/white-logo-text.png" alt="פאר אנפון תעשתיות בעמ" className={`undragablle-image ${styles.companyLogoText}`} />
         </Col> */}
       </Row>
-      <Row className={styles.footerBarRow}>
+      <Row className={styles.extraLinksRow}>
+        <Col className={styles.linksFooterCol} xs={12} md={6} xl={2}>
+          <Link href="/אודותינו">
+            <a className={styles.linksFooterColTitle}>אודות פאר אנפון</a>
+          </Link>
+        </Col>
+        <Col className={styles.linksFooterCol} xs={12} md={6} xl={2}>
+          <Link href="/המלצות">
+            <a className={styles.linksFooterColTitle}>המליצו עלינו</a>
+          </Link>
+        </Col>
+        <Col className={styles.linksFooterCol} xs={12} md={6} xl={2}>
+          <Link href="/מאמרים">
+            <a className={styles.linksFooterColTitle}>מאמרים</a>
+          </Link>
+        </Col>
+        <Col className={styles.linksFooterCol} xs={12} md={6} xl={2}>
+          <Link href="/פרוייקטים">
+            <a className={styles.linksFooterColTitle}>פרוייקטים</a>
+          </Link>
+        </Col>
+        <Col className={styles.linksFooterCol} xs={12} md={6} xl={2}>
+          <Link href="/מוצרים-חדשים">
+            <a className={styles.linksFooterColTitle}>מוצרים חדשים</a>
+          </Link>
+        </Col>
+        <Col className={styles.linksFooterCol} xs={12} md={6} xl={2}>
+          <Link href="/גלריית-תמונות">
+            <a className={styles.linksFooterColTitle}>גלריית תמונות</a>
+          </Link>
+        </Col>
+      </Row>
+      <Row className={styles.footerBarRow} style={{ marginTop: "40px" }}>
         <Col className={styles.linksFooterLogoCol} xs={12}>
           <img src="/images/company-logo/white-logo.png" alt="פאר אנפון תעשתיות בעמ" className={`undragablle-image ${styles.companyLogoSymbol}`} />
         </Col>
