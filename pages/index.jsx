@@ -206,7 +206,13 @@ export default function Home() {
                 טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
               </p>
               <div className={`${styles.framedBtn} ${styles.grayBackgroundframedBtn} ${styles.newProductsHref}`}>
-                <Link href="/מוצרים-חדשים">קרא עוד...</Link>
+                <Link href="/מוצרים-חדשים">
+                <a className="no-href-css">
+                  <div className={`${styles.framedBtn} ${styles.grayBackgroundframedBtn} ${styles.newProductsHref}`}>
+                    קרא עוד...
+                  </div>
+                </a>
+              </Link>
               </div>
             </Col>
             <Col xs={12} md={6}>
@@ -228,9 +234,13 @@ export default function Home() {
                 טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
                 טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
               </p>
-              <div className={`${styles.framedBtn} ${styles.grayBackgroundframedBtn} ${styles.newProductsHref}`}>
-                <Link href="/מוצרים-חדשים">קרא עוד...</Link>
-              </div>
+              <Link href="/פרוייקטים">
+                <a className="no-href-css">
+                  <div className={`${styles.framedBtn} ${styles.grayBackgroundframedBtn} ${styles.newProductsHref}`}>
+                    קרא עוד...
+                  </div>
+                </a>
+              </Link>
             </Col>
           </Row>
 
