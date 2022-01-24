@@ -105,7 +105,7 @@ export default function AboutUs() {
                             <a className="no-href-css" href="https://www.tauitalia.com/en/" target="_blank" rel="noopener noreferrer">
                                 <div className="clickable">
                                     <div className={doorsStyles.imageLinkDivToCategorys}>
-                                        <img src="/images/importers/logo-tau.png" alt="TAU יבואנית רשמית של פאר אנפון" className={doorsStyles.imageToCategorys} />
+                                        <img src="/images/importers/tau.png" alt="TAU יבואנית רשמית של פאר אנפון" className={doorsStyles.imageToCategorys} />
                                     </div>
                                 </div>
                             </a>
@@ -117,7 +117,7 @@ export default function AboutUs() {
                             <a className="no-href-css" href="https://www.topp.it/" target="_blank" rel="noopener noreferrer">
                                 <div className="clickable">
                                     <div className={doorsStyles.imageLinkDivToCategorys}>
-                                        <img src="/images/importers/company-topp-sandrigo-italy-logo.png" alt="Topp יבואנית רשמית של פאר אנפון" className={doorsStyles.imageToCategorys} />
+                                        <img src="/images/importers/topp.png" alt="Topp יבואנית רשמית של פאר אנפון" className={doorsStyles.imageToCategorys} />
                                     </div>
                                 </div>
                             </a>

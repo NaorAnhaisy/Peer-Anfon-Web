@@ -281,10 +281,11 @@
 
     .mainContextInner {
         font-size: 14px;
+        padding: 10px 20px;
     }
 
     .subContentInner {
-        font-size: 10px;
+        font-size: 12px;
         padding: 20px 15px;
     }
 
