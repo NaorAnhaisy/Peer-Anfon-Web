@@ -7,7 +7,7 @@ import ContactTeam from '../components/ContactTeam/ContactTeam';
 import Zoom from 'react-medium-image-zoom'
 
 const enterDoorsImages = [
-    { src: "/images/enter-doors/A-301.jpg", text: "A-301" },
+    { src: "/images/enter-doors/A-301.jpeg", text: "A-301" },
     { src: "/images/enter-doors/A-302.jpg", text: "A-302" },
     { src: "/images/enter-doors/A-303.jpg", text: "A-303" },
     { src: "/images/enter-doors/A-304.jpg", text: "A-304" },

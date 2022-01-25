@@ -29,7 +29,7 @@ const images = [
     { src: "/images/automatic-doors/doubleLeaf-door/double_leaf_6.jpeg", strechType: "" },
     { src: "/images/enter-doors/A-311.jpg" },
     { src: "/images/enter-doors/A-304.jpg" },
-    { src: "/images/enter-doors/A-301.jpg" },
+    { src: "/images/enter-doors/A-301.jpeg" },
     { src: "/images/enter-doors/A-305.jpg" },
     { src: "/images/automatic-doors/doubleLeaf-door/double_leaf_3.jpeg", strechType: "bigStrech" },
     { src: "/images/automatic-doors/doubleLeaf-door/double_leaf_11.jpeg", strechType: "vStrech" },

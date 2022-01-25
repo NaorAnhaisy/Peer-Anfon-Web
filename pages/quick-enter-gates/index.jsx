@@ -78,7 +78,7 @@ export default function Mailboxes() {
                         <div className={styles.content}>
                             <div className={styles.contentInner}>
                                 <div className={styles.title}>
-                                    <div className={`${styles.titleInner} ${styles.mainTitle} ${styles.firstTitle}`}>מעברים מהירים</div>
+                                    <div className={`${styles.titleInner} ${styles.subTitle} ${styles.firstTitle}`}>מעברים מהירים</div>
                                 </div>
                                 <div className={styles.contentText}>
                                     <div className={`${styles.contentTextInner} ${styles.mainContextInner}`}>
@@ -147,7 +147,7 @@ export default function Mailboxes() {
                                     <div className={`${styles.titleInner} ${styles.subTitle} ${styles.secondTitle}`}>קרוסלות חצובה</div>
                                 </div>
                                 <div className={styles.contentText}>
-                                    <div className={`${styles.contentTextInner} ${styles.subContentInner} ${styles.leftSideContent}`}>
+                                    <div className={`${styles.contentTextInner} ${styles.mainContextInner} ${styles.leftSideContent}`}>
                                         <div className={`mt-2 text-right`}>
                                             <div style={{ lineHeight: "28px" }}>
                                                 קרוסלת החצובה היא מערכת בקרת כניסה הנפוצה למקומות בעלי תפוקה גבוהה של עוברים ושבים.
