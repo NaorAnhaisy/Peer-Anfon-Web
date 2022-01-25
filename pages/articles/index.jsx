@@ -30,7 +30,7 @@ export default function Articles() {
                                         <img src={article.imgSrc} alt="מאמר פאר אנפון" className={styles.cardImage} />
                                         <figcaption className={styles.cardCaption}>
                                             <h2 className={styles.cardTitle}>{article.title}</h2>
-                                            <p className={styles.cardSnippet}>{article.subtitle}</p>
+                                            {/* <p className={styles.cardSnippet}>{article.subtitle}</p> */}
                                             <Link href={`/מאמרים/${article.articleID}`}>
                                                 <a className={styles.cardButton}>קראו עוד</a>
                                             </Link>

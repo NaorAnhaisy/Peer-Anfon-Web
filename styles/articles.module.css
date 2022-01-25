@@ -50,15 +50,6 @@
     margin-top: 17px;
 }
 
-.cardTitle {
-    color: #caa859;
-    padding: 7px 10px;
-    font-weight: 300;
-    height: 100px;
-    /* border-bottom: 1px solid #b0914b; */
-    font-size: 22px;
-}
-
 .articleContainer {
     text-align: right;
     padding: 0 30px;
@@ -380,7 +371,7 @@
 
 .cardTitle {
     display: -webkit-box;
-    max-height: 100px;
+    max-height: 110px;
     overflow: hidden;
     font-size: 23px;
     line-height: 28px;
@@ -389,6 +380,9 @@
     text-overflow: ellipsis;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+    padding: 7px 10px;
+    font-weight: 300;
+    height: 110px;
 }
 
 .cardSnippet {
