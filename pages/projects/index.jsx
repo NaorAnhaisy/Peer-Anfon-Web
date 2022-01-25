@@ -17,6 +17,7 @@ export default function Projects() {
 
                 <div className={styles.galleryDescription}>
                     <h3>With you in every project<br />פאר אנפון איתך בכל פרויקט</h3>
+                    <div className={styles.mainExplanationBoxSeperator} />
                     <p>
                         פאר אנפון גאה לקחת חלק בפרויקטים הגדולים בענף ולשתף פעולה עם החברות הגדולות בארץ, ליווי צמוד ואישי במגוון פרויקטים ושקט נפשי לתקופה ארוכה.
                         בגלריה תוכלו למצוא טעימה מהפרויקטים בהם מוצרי פאר אנפון מותקנים ברחבי הארץ.

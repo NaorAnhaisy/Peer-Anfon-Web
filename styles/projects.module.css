@@ -49,7 +49,7 @@
 .galleryDescription h3 {
     text-align: right;
     color: #000;
-    font-size: 42px;
+    font-size: 46px;
     font-weight: 100;
     line-height: 1.25;
     padding-bottom: 15px;
@@ -70,4 +70,12 @@
     .galleryDescription p {
         font-size: 17px;
     }
+}
+
+.mainExplanationBoxSeperator {
+    width: 100%;
+    height: 4px;
+    background-color: #000000;
+    margin-top: 15px;
+    margin-bottom: 30px;
 }

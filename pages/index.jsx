@@ -194,8 +194,8 @@ export default function Home() {
             </Col>
           </Row>
 
-          <Row className={`mt-5 mb-5 ${styles.newProductsContainer}`}>
-            <Col xs={12} md={6} className={styles.newProductsContent}>
+          <Row className={`mt-5 mb-5 ${styles.linkToOtherPageContainer}`}>
+            <Col xs={12} md={6} className={styles.linkToOtherPageContent}>
               <h3 data-aos="fade-down" data-aos-duration="1500">מוצרים חדשים</h3>
               <p data-aos="fade-zoom-in" data-aos-duration="1500">
                 טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
@@ -207,12 +207,12 @@ export default function Home() {
               </p>
               <div className={`${styles.framedBtn} ${styles.grayBackgroundframedBtn} ${styles.newProductsHref}`}>
                 <Link href="/מוצרים-חדשים">
-                <a className="no-href-css">
-                  <div className={`${styles.framedBtn} ${styles.grayBackgroundframedBtn} ${styles.newProductsHref}`}>
-                    קרא עוד...
-                  </div>
-                </a>
-              </Link>
+                  <a className="no-href-css">
+                    <div className={`${styles.framedBtn} ${styles.grayBackgroundframedBtn} ${styles.newProductsHref}`}>
+                      קרא עוד...
+                    </div>
+                  </a>
+                </Link>
               </div>
             </Col>
             <Col xs={12} md={6}>
@@ -220,19 +220,15 @@ export default function Home() {
             </Col>
           </Row>
 
-          <Row className={`mt-5 mb-5 ${styles.newProductsContainer}`}>
+          <Row className={`mt-5 mb-5 ${styles.linkToOtherPageContainer}`}>
             <Col xs={12} md={6}>
               <img src="/images/new-products/product3.jpg" alt="מוצרים חדשים פאר אנפון" />
             </Col>
-            <Col xs={12} md={6} className={styles.newProductsContent}>
+            <Col xs={12} md={6} className={styles.linkToOtherPageContent}>
               <h3 data-aos="fade-down" data-aos-duration="1500">הפרוייקטים שלנו</h3>
               <p data-aos="fade-zoom-in" data-aos-duration="1500">
-                טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
-                טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
-                טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
-                טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
-                טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
-                טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
+                פאר אנפון גאה לקחת חלק בפרויקטים הגדולים בענף ולשתף פעולה עם החברות הגדולות בארץ, ליווי צמוד ואישי במגוון פרויקטים ושקט נפשי לתקופה ארוכה.
+                בגלריה תוכלו למצוא טעימה מהפרויקטים בהם מוצרי פאר אנפון מותקנים ברחבי הארץ.
               </p>
               <Link href="/פרוייקטים">
                 <a className="no-href-css">
