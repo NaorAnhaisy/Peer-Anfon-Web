@@ -212,7 +212,7 @@ export default function Mailboxes() {
                             <a className="no-href-css">
                                 <div className="clickable">
                                     <div className={styles.imageLinkDivToCategorys}>
-                                        <img src="/images/mailboxes/shared-houses/background.jpeg" alt="תיבות דואר לבתים משותפים" className={`${styles.imageToCategorys} ${gatesStyles.imageToCategorys}`} />
+                                        <img src="/images/quick-enter-gates/speed-gates/F-5_e.png" alt="מעברים מהירים" className={`${styles.imageToCategorys} ${gatesStyles.imageToCategorys}`} />
                                     </div>
                                     <div className={styles.imageLinkDivText}>
                                         <h5>מעברים מהירים</h5>
@@ -233,7 +233,7 @@ export default function Mailboxes() {
                             <a className="no-href-css">
                                 <div className="clickable">
                                     <div className={styles.imageLinkDivToCategorys}>
-                                        <img src="/images/mailboxes/organizations/T-434.jpeg" alt="תיבות דואר למוסדות" className={`${styles.imageToCategorys} ${gatesStyles.imageToCategorys}`} />
+                                        <img src="/images/quick-enter-gates/tripod-turnstiles/T-2_j.png" alt="קרוסלות חצובה" className={`${styles.imageToCategorys} ${gatesStyles.imageToCategorys}`} />
                                     </div>
                                     <div className={styles.imageLinkDivText}>
                                         <h5>קרוסלות חצובה</h5>
