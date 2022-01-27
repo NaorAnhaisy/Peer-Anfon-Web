@@ -10,7 +10,7 @@ export default function ProjectsCard({ project, index }) {
                     <div className={`${styles.card} ${styles.cardProject}`}>
                         <div className={`${styles.imgBox} ${(index - 1) % 3 === 0 ? styles.middle : styles.side}`} style={{ backgroundImage: `url("${project.thumbnail}")` }}>
                             <div className={styles.cardBody}>
-                                <img src={project.thumbnail} alt="תמונת אווירה פרויקט 1" className={styles.srOnly} />
+                                <img src={project.thumbnail} alt={`פאר אנפון - תמונת אווירה פרוייקט ${project.name}`} className={styles.srOnly} />
                             </div>
                             <div className={styles.cardOverlay}>
                                 <p className={styles.caption}>

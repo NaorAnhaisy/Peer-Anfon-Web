@@ -27,7 +27,7 @@ export default function Articles() {
                             return <Col key={index} xs={12} md={6} lg={4} xl={3}>
                                 <div className={styles.card}>
                                     <figure className={styles.cardThumb}>
-                                        <img src={article.imgSrc} alt="מאמר פאר אנפון" className={styles.cardImage} />
+                                        <img src={article.imgSrc} alt={`פאר אנפון - מאמר ${article.title}`} className={styles.cardImage} />
                                         <figcaption className={styles.cardCaption}>
                                             <h2 className={styles.cardTitle}>{article.title}</h2>
                                             {/* <p className={styles.cardSnippet}>{article.subtitle}</p> */}

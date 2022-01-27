@@ -70,7 +70,7 @@ export default function Project() {
                                         data-aos="fade-zoom-in"
                                         data-aos-duration="700"
                                         src={project?.images[0]}
-                                        alt="דלת אוטומטית דו כנף"
+                                        alt={`פאר אנפון - פרוייקט ${project.name}`}
                                     />
                                     <img
                                         style={{ height: '50%' }}
@@ -78,7 +78,7 @@ export default function Project() {
                                         data-aos="fade-zoom-in"
                                         data-aos-duration="700"
                                         src={project?.images[1]}
-                                        alt="דלת אוטומטית דו כנף"
+                                        alt={`פאר אנפון - פרוייקט ${project.name}`}
                                     />
                                 </Col>
                                 <Col sm={12} lg={6}>
@@ -88,7 +88,7 @@ export default function Project() {
                                         data-aos="fade-zoom-in"
                                         data-aos-duration="700"
                                         src={project?.images[2]}
-                                        alt="דלת אוטומטית דו כנף"
+                                        alt={`פאר אנפון - פרוייקט ${project.name}`}
                                     />
                                 </Col>
                             </Row>
