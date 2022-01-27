@@ -55,7 +55,7 @@ export default function SingleLeafDoor() {
                         </Col>
                     </Row>
 
-                    <Row className="reverse-flex-direction">
+                    <Row className="flex-dir-row-reverse">
                         <Col lg={6} sm={12}>
                             <div className={`mt-5 mb-5 ${styles.doorSelectedDoorDetails}`}
                                 data-aos="zoom-out"
@@ -77,16 +77,7 @@ export default function SingleLeafDoor() {
                         </Col>
                     </Row>
 
-                    <Row className="mt-5 mb-5">
-                        <div className="mb-5">
-                            <video autoPlay loop playsInline muted id="single-leaf-video" className={styles.automaticDoorVideo} style={{ maxHeight: "800px" }}>
-                                <source src="/videos/automatic-doors/single-leaf-door.mp4"
-                                    type="video/mp4" />
-                            </video>
-                        </div>
-                    </Row>
-
-                    <Row>
+                    <Row className="flex-dir-col-reverse-lg-screen">
                         <Col sm={12} lg={6} className={styles.doorSelectedHorizontalImages}>
                             <img
                                 style={{ height: '50%' }}
@@ -106,14 +97,19 @@ export default function SingleLeafDoor() {
                             />
                         </Col>
                         <Col sm={12} lg={6}>
-                            <img
+                            {/* <img
                                 style={{ height: '100%' }}
                                 className={styles.doorSelectedDetailsExampleImg}
                                 data-aos="fade-zoom-in"
                                 data-aos-duration="700"
                                 src="/images/automatic-doors/singleLeaf-door/singleleaf-3.jpeg"
                                 alt="דלת אוטומטית חד כנף"
-                            />
+                            /> */}
+                            <video autoPlay loop playsInline muted id="single-leaf-video" style={{ height: '100%' }}
+                                className={styles.doorSelectedDetailsExampleImg}>
+                                <source src="/videos/automatic-doors/single-leaf-door.mp4"
+                                    type="video/mp4" />
+                            </video>
                         </Col>
                     </Row>
                     <Row>
@@ -122,7 +118,7 @@ export default function SingleLeafDoor() {
                             className={styles.doorSelectedDetailsExampleImg}
                             data-aos="fade-zoom-in"
                             data-aos-duration="700"
-                            src="/images/automatic-doors/singleLeaf-door/singleleaf-8.jpeg"
+                            src="/images/automatic-doors/singleLeaf-door/singleleaf-3.jpeg"
                             alt="דלת אוטומטית חד כנף"
                         />
                     </Row>
@@ -181,6 +177,16 @@ export default function SingleLeafDoor() {
                                 alt="דלת אוטומטית חד כנף"
                             />
                         </Col>
+                    </Row>
+                    <Row>
+                        <img
+                            style={{ height: '50%' }}
+                            className={styles.doorSelectedDetailsExampleImg}
+                            data-aos="fade-zoom-in"
+                            data-aos-duration="700"
+                            src="/images/automatic-doors/singleLeaf-door/singleleaf-8.jpeg"
+                            alt="דלת אוטומטית חד כנף"
+                        />
                     </Row>
                 </div>
             </Container>

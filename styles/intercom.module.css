@@ -36,12 +36,6 @@
     font-size: 16px;
 }
 
-@media (max-width: 991px) {
-    .reverseOnLgScreen {
-        flex-direction: column-reverse;
-    }
-}
-
 .gallery {
     padding: 10px;
     max-width: 1500px;

@@ -58,7 +58,7 @@ export default function DoubleLeafDoor() {
                         </Col>
                     </Row>
 
-                    <Row className="reverse-flex-direction">
+                    <Row className="flex-dir-row-reverse">
                         <Col lg={6} sm={12}>
                             <div className={`mt-5 mb-5 ${styles.doorSelectedDoorDetails}`}
                                 data-aos="zoom-out"
@@ -80,17 +80,8 @@ export default function DoubleLeafDoor() {
                         </Col>
                     </Row>
 
-                    <Row className="mt-5 mb-5">
-                        <div className="mb-5">
-                            <video autoPlay loop playsInline muted id="double-leaf-video" className={styles.automaticDoorVideo}>
-                                <source src="/videos/automatic-doors/double-leaf-door.mp4"
-                                    type="video/mp4" />
-                            </video>
-                        </div>
-                    </Row>
-
                     <div className={styles.doorSelectedGalleryContainer}>
-                        <Row>
+                        <Row className="flex-dir-col-reverse-lg-screen">
                             <Col sm={12} lg={6}>
                                 <img
                                     style={{ height: '50%' }}
@@ -105,19 +96,16 @@ export default function DoubleLeafDoor() {
                                     className={styles.doorSelectedDetailsExampleImg}
                                     data-aos="fade-zoom-in"
                                     data-aos-duration="700"
-                                    src="/images/automatic-doors/doubleLeaf-door/double_leaf_3.jpeg"
+                                    src="/images/automatic-doors/doubleLeaf-door/double_leaf_12.jpeg"
                                     alt="דלת אוטומטית דו כנף"
                                 />
                             </Col>
                             <Col sm={12} lg={6}>
-                                <img
-                                    style={{ height: '100%' }}
-                                    className={styles.doorSelectedDetailsExampleImg}
-                                    data-aos="fade-zoom-in"
-                                    data-aos-duration="700"
-                                    src="/images/automatic-doors/doubleLeaf-door/double_leaf_12.jpeg"
-                                    alt="דלת אוטומטית דו כנף"
-                                />
+                                <video autoPlay loop playsInline muted id="double-leaf-video" style={{ height: '100%' }}
+                                    className={styles.doorSelectedDetailsExampleImg}>
+                                    <source src="/videos/automatic-doors/double-leaf-door.mp4"
+                                        type="video/mp4" />
+                                </video>
                             </Col>
                         </Row>
                         <Row>
@@ -466,6 +454,15 @@ export default function DoubleLeafDoor() {
                                     alt="דלת אוטומטית דו כנף"
                                 />
                             </Col>
+                        </Row>
+                        <Row>
+                            <img
+                                className={`${styles.doorSelectedDetailsExampleImg} ${styles.allRowImage}`}
+                                data-aos="fade-zoom-in"
+                                data-aos-duration="700"
+                                src="/images/automatic-doors/doubleLeaf-door/double_leaf_3.jpeg"
+                                alt="דלת אוטומטית דו כנף"
+                            />
                         </Row>
                         <Row>
                             <img

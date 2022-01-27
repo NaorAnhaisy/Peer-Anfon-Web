@@ -85,7 +85,7 @@ export default function MailboxRooms() {
                         </Col>
                     </Row>
 
-                    <Row className="reverse-flex-direction">
+                    <Row className="flex-dir-row-reverse">
                         <Col lg={6} sm={12}>
                             <div className={`mt-5 mb-5 ${styles.doorSelectedDoorDetails}`}
                                 data-aos="zoom-out"

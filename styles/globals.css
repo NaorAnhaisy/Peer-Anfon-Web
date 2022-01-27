@@ -196,8 +196,14 @@ body {
   color: inherit !important;
 }
 
-.reverse-flex-direction {
+.flex-dir-row-reverse {
   flex-direction: row-reverse;
+}
+
+@media (max-width: 991px) {
+  .flex-dir-col-reverse-lg-screen {
+      flex-direction: column-reverse;
+  }
 }
 
 /* 404 page */

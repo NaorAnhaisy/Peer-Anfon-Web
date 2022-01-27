@@ -65,7 +65,7 @@ export default function Intercom() {
                         <img src="/images/automatic-doors/double-leaf-automatic-door.jpg" className={styles.titleIntercomImg} alt="מערכות אינטרקום" />
                     </Col>
                 </Row>
-                <Row className={`${styles.titleRowMargin} ${styles.reverseOnLgScreen}`}
+                <Row className={`${styles.titleRowMargin} flex-dir-col-reverse-lg-screen`}
                     data-aos="fade-up"
                     data-aos-anchor-placement="center-bottom"
                     data-aos-delay="200"
