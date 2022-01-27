@@ -28,7 +28,7 @@ export default function Mailboxes() {
                     <img
                         className={styles.caruselImage}
                         src="/images/mailboxes/slider-1.jpg"
-                        alt="תיבות דואר"
+                        alt="מעברי כניסה אוטומטיים"
                     />
                     <Carousel.Caption className={styles.caruselCaption}>
                         <h3>עיצוב ססגוני</h3>
@@ -39,7 +39,7 @@ export default function Mailboxes() {
                     <img
                         className={styles.caruselImage}
                         src="/images/mailboxes/slider-2.jpeg"
-                        alt="תיבות דואר"
+                        alt="מעברי כניסה אוטומטיים"
                     />
                     <Carousel.Caption className={styles.caruselCaption}>
                         <h3>עיצוב ססגוני</h3>
@@ -50,7 +50,7 @@ export default function Mailboxes() {
                     <img
                         className={styles.caruselImage}
                         src="/images/mailboxes/slider-3.jpeg"
-                        alt="תיבות דואר"
+                        alt="מעברי כניסה אוטומטיים"
                     />
                     <Carousel.Caption className={styles.caruselCaption}>
                         <h3>לפי הדרישה שלך</h3>
@@ -61,7 +61,7 @@ export default function Mailboxes() {
                     <img
                         className={styles.caruselImage}
                         src="/images/mailboxes/slider-4.jpeg"
-                        alt="תיבות דואר"
+                        alt="מעברי כניסה אוטומטיים"
                     />
                     <Carousel.Caption className={styles.caruselCaption}>
                         <h3>מתאים לארגונים</h3>
@@ -218,7 +218,9 @@ export default function Mailboxes() {
                                         <h5>מעברים מהירים</h5>
                                         <div className={styles.separatorLinkText} />
                                         <p>
-                                            דלת אוטומטית מונעת צורך לגעת בידיים בדלת ובכך מונעת העברה לא נחוצה של חיידקים ומזיקים אחרים.
+                                            <span className={styles.modelSumDescription}>מעניקה מהירות ומבטיחה אמינות.</span>
+                                            <br />
+                                            מעברים מהירים אלגנטיים ויוקרתיים יכולים לזהות באופן מלא את המעבר של גוף האדם, בכדי לאפשר בטיחות, אמינות, מהירות ויעלות.
                                         </p>
                                     </div>
                                 </div>
@@ -239,7 +241,9 @@ export default function Mailboxes() {
                                         <h5>קרוסלות חצובה</h5>
                                         <div className={styles.separatorLinkText} />
                                         <p>
-                                            דלת אוטומטית מונעת צורך לגעת בידיים בדלת ובכך מונעת העברה לא נחוצה של חיידקים ומזיקים אחרים.
+                                            <span className={styles.modelSumDescription}>איזה כיף לעבור.</span>
+                                            <br />
+                                            קרוסלת החצובה מעניקה פתרון אידאלי ואולטימטיבי למקומות בעלי תפוקה גבוהה של עוברים ושבים.
                                         </p>
                                     </div>
                                 </div>
