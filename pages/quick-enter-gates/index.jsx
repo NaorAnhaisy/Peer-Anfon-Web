@@ -130,8 +130,8 @@ export default function Mailboxes() {
 
                         <div className={styles.image}>
                             <img
-                                src="/images/mailboxes/main-slide-1.jpg"
-                                alt="דלת אוטומטית"
+                                src="/images/quick-enter-gates/speed-gates/F-5_e.png"
+                                alt="מעברים מהירים"
                             />
                         </div>
                     </div>
@@ -194,8 +194,8 @@ export default function Mailboxes() {
 
                         <div className={styles.image}>
                             <img
-                                src="/images/mailboxes/main-slide-2.jpg"
-                                alt="דלת אוטומטית"
+                                src="/images/quick-enter-gates/tripod-turnstiles/T-2_j.png"
+                                alt="קרוסלות חצובה"
                             />
                         </div>
                     </div>
