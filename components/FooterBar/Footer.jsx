@@ -66,7 +66,7 @@ export default function Footer() {
             </span>
             <br />
             <span className={styles.contactUsHref}>
-              <a href="https://wa.me/+97235505624"><i className="fab fa-whatsapp" aria-hidden="true" /> +972-35505624</a>
+              <a href="https://wa.me/+97235505624" target="_blank" rel="noreferrer noopener"><i className="fab fa-whatsapp" aria-hidden="true" /> +972-35505624</a>
             </span>
             <br />
             <span className={styles.contactUsHref}>
@@ -133,7 +133,7 @@ export default function Footer() {
           <a href="https://www.youtube.com/" aria-label="Youtube פאר אנפון" target="_blank" rel="noopener noreferrer" className={styles.footerHover}>
             <i className="fab fa-youtube" aria-hidden="true" />
           </a>
-          <a href="https://wa.me/+97235505624" aria-label="Whatsapp פאר אנפון" className={styles.footerHover}>
+          <a href="https://wa.me/+97235505624" target="_blank" rel="noreferrer noopener" aria-label="Whatsapp פאר אנפון" className={styles.footerHover}>
             <i className="fab fa-whatsapp" aria-hidden="true" />
           </a>
           <a href="tel:0723712701" aria-label="טלפון פאר אנפון" className={styles.footerHover}>

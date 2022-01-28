@@ -58,7 +58,7 @@ export default function TripodTurnstile() {
                         </div>
                     </Col>
                     <Col lg={3} md={4} sm={4} xs={12} style={{ alignSelf: 'center', padding: "50px" }}>
-                        <div className={styles.arrowBackIconWrapper} onClick={() => router.push(`/דלתות-אוטומטיות`)}>
+                        <div className={styles.arrowBackIconWrapper} onClick={() => router.push(`/מעברי-כניסה`)}>
                             <div className={styles.arrowBackIcon}></div>
                             <span className={styles.arrowBackIconText}>לכל הדגמים</span>
                         </div>

@@ -16,7 +16,7 @@ export default function SingleLeafDoor() {
 
     return (
         <div>
-            <img src="/images/automatic-doors/single-leaf-automatic-door.jpg" className={`undragablle-image ${styles.doorSelectedMainDiv}`} alt="דלת אוטומטית חד-כנף" />
+            <img src="/images/automatic-doors/backgrounds/single-leaf-automatic-door.jpg" className={`undragablle-image ${styles.doorSelectedMainDiv}`} alt="דלת אוטומטית חד-כנף" />
             <Container className={styles.doorSelectedContainer}>
                 <div>
                     <Row className={styles.doorSelectedTitleRow}>

@@ -62,7 +62,7 @@ export default function Intercom() {
                         </p>
                     </Col>
                     <Col xs={12} lg={6}>
-                        <img src="/images/automatic-doors/double-leaf-automatic-door.jpg" className={styles.titleIntercomImg} alt="מערכות אינטרקום" />
+                        <img src="/images/automatic-doors/backgrounds/double-leaf-automatic-door.jpg" className={styles.titleIntercomImg} alt="מערכות אינטרקום" />
                     </Col>
                 </Row>
                 <Row className={`${styles.titleRowMargin} flex-dir-col-reverse-lg-screen`}
@@ -71,7 +71,7 @@ export default function Intercom() {
                     data-aos-delay="200"
                     data-aos-duration="1500">
                     <Col xs={12} lg={6}>
-                        <img src="/images/automatic-doors/double-leaf-automatic-door.jpg" className={styles.titleIntercomImg} alt="מערכות אינטרקום" />
+                        <img src="/images/automatic-doors/backgrounds/double-leaf-automatic-door.jpg" className={styles.titleIntercomImg} alt="מערכות אינטרקום" />
                     </Col>
                     <Col xs={12} lg={6} className={styles.titleParagraph}>
                         <p>

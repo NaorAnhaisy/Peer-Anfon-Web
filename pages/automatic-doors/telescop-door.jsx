@@ -16,7 +16,7 @@ export default function TelescopDoor() {
 
     return (
         <div>
-            <img src="/images/automatic-doors/telescop-automatic-door.jpeg" className={`undragablle-image ${styles.doorSelectedMainDiv}`} alt="דלת אוטומטית טלסקופית" />
+            <img src="/images/automatic-doors/backgrounds/telescop-automatic-door.jpeg" className={`undragablle-image ${styles.doorSelectedMainDiv}`} alt="דלת אוטומטית טלסקופית" />
             <Container className={styles.doorSelectedContainer}>
                 <div>
                     <Row className={styles.doorSelectedTitleRow}>

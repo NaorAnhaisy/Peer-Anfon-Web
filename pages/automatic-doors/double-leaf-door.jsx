@@ -16,7 +16,7 @@ export default function DoubleLeafDoor() {
 
     return (
         <div>
-            <img src="/images/automatic-doors/double-leaf-automatic-door.jpg" className={`undragablle-image ${styles.doorSelectedMainDiv}`} alt="דלת אוטומטית דו-כנף" />
+            <img src="/images/automatic-doors/backgrounds/double-leaf-automatic-door.jpg" className={`undragablle-image ${styles.doorSelectedMainDiv}`} alt="דלת אוטומטית דו-כנף" />
             <Container className={styles.doorSelectedContainer}>
                 <div>
                     <Row className={styles.doorSelectedTitleRow}>
@@ -456,22 +456,24 @@ export default function DoubleLeafDoor() {
                             </Col>
                         </Row>
                         <Row>
-                            <img
-                                className={`${styles.doorSelectedDetailsExampleImg} ${styles.allRowImage}`}
-                                data-aos="fade-zoom-in"
-                                data-aos-duration="700"
-                                src="/images/automatic-doors/doubleLeaf-door/double_leaf_3.jpeg"
-                                alt="דלת אוטומטית דו כנף"
-                            />
-                        </Row>
-                        <Row>
-                            <img
-                                className={`${styles.doorSelectedDetailsExampleImg} ${styles.allRowImage}`}
-                                data-aos="fade-zoom-in"
-                                data-aos-duration="700"
-                                src="/images/automatic-doors/doubleLeaf-door/double_leaf_2.jpeg"
-                                alt="דלת אוטומטית דו כנף"
-                            />
+                            <Col sm={12} lg={6}>
+                                <img
+                                    className={`${styles.doorSelectedDetailsExampleImg} ${styles.inRowImages}`}
+                                    data-aos="fade-zoom-in"
+                                    data-aos-duration="700"
+                                    src="/images/automatic-doors/doubleLeaf-door/double_leaf_3.jpeg"
+                                    alt="דלת אוטומטית דו כנף"
+                                />
+                            </Col>
+                            <Col sm={12} lg={6}>
+                                <img
+                                    className={`${styles.doorSelectedDetailsExampleImg} ${styles.inRowImages}`}
+                                    data-aos="fade-zoom-in"
+                                    data-aos-duration="700"
+                                    src="/images/automatic-doors/doubleLeaf-door/double_leaf_2.jpeg"
+                                    alt="דלת אוטומטית דו כנף"
+                                />
+                            </Col>
                         </Row>
                     </div>
                 </div>
