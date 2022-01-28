@@ -12,7 +12,7 @@ export default function ProductHeaderCarousel({ items, alt }) {
                         src={item.image}
                         alt={alt}
                     />
-                    <Carousel.Caption className={styles.caruselCaption}>
+                    <Carousel.Caption className={styles.carouselCaption}>
                         <h3>{item.title}</h3>
                         <p>{item.desc}</p>
                     </Carousel.Caption>

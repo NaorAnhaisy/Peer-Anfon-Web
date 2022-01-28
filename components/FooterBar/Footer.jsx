@@ -62,7 +62,11 @@ export default function Footer() {
             <br />
             <br />
             <span className={styles.contactUsHref}>
-              <a href="tel:0723712701">+972-72-371-2701</a>
+              <a href="tel:0723712701"><i className="fas fa-phone" aria-hidden="true" style={{ transform: "rotate(90deg)" }} /> +972-72-371-2701</a>
+            </span>
+            <br />
+            <span className={styles.contactUsHref}>
+              <a href="https://wa.me/+97235505624"><i className="fab fa-whatsapp" aria-hidden="true" /> +972-35505624</a>
             </span>
             <br />
             <span className={styles.contactUsHref}>

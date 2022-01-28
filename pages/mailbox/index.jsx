@@ -4,9 +4,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import styles from "../../styles/automatic-doors.module.css";
 import Link from "next/link";
 import VisibilitySensor from "react-visibility-sensor";
-import AOS from 'aos';
 import ProductHeaderCarousel from '../../components/ProductHeaderCarousel/ProductHeaderCarousel';
 import ColorsTemplate from "../../components/ColorsTemplate/ColorsTemplate";
+import AOS from 'aos';
 
 export default function Mailboxes() {
     useEffect(() => {

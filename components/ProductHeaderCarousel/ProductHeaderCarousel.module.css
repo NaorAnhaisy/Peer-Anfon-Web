@@ -1,11 +1,11 @@
-.caruselImage {
+.carouselImage {
     width: 100%;
     min-height: 400px;
     height: 85vh;
     object-fit: cover;
 }
 
-.caruselCaption {
+.carouselCaption {
     color: #ffffff;
     background: #000000a3;
     font-family: 'Alef';
@@ -19,7 +19,7 @@
 }
 
 @media(max-width: 1076px) {
-    .caruselCaption {
+    .carouselCaption {
         width: 70vw;
         padding: 10px;
     }
