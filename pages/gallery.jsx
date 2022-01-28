@@ -17,8 +17,6 @@ const images = [
     { src: "/images/enter-doors/A-316.jpg" },
     { src: "/images/enter-doors/A-302.jpg", strechType: "hStrech" },
     { src: "/images/enter-doors/A-317.jpg", strechType: "" },
-    { src: "/images/intercom/R-453.jpg", strechType: "vStrech" },
-    { src: "/images/intercom/R-454.jpg", strechType: "vStrech" },
     { src: "/images/intercom/R-455.jpg", strechType: "vStrech" },
     { src: "/images/intercom/R-456.jpg", strechType: "vStrech" },
     { src: "/images/intercom/R-456b.jpg", strechType: "vStrech" },

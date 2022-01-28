@@ -60,7 +60,7 @@ export default function AutomaticDoors() {
 
                         <div className={styles.image}>
                             <img
-                                src="/images/backgrounds/home-slide-3.jpg"
+                                src="/images/automatic-doors/backgrounds/side-background-1.jpg"
                                 alt="דלת אוטומטית"
                             />
                         </div>
@@ -127,7 +127,7 @@ export default function AutomaticDoors() {
 
                         <div className={styles.image}>
                             <img
-                                src="/images/backgrounds/home-slide-2.jpeg"
+                                src="/images/automatic-doors/backgrounds/side-background-2.jpeg"
                                 alt="דלת אוטומטית"
                             />
                         </div>
@@ -184,7 +184,7 @@ export default function AutomaticDoors() {
 
                         <div className={styles.image}>
                             <img
-                                src="/images/backgrounds/home-slide-1.jpeg"
+                                src="/images/automatic-doors/backgrounds/side-background-3.jpeg"
                                 alt="דלת אוטומטית"
                             />
                         </div>
@@ -223,7 +223,7 @@ export default function AutomaticDoors() {
 
                         <div className={styles.image}>
                             <img
-                                src="/images/backgrounds/home-slide-5.jpeg"
+                                src="/images/automatic-doors/backgrounds/side-background-4.jpeg"
                                 alt="דלת אוטומטית"
                             />
                         </div>

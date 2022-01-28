@@ -42,7 +42,7 @@ export default function CustomersSlider() {
                         return <div key={i} className={styles.slide}
                             style={{ width: "250px", height: "100px" }}>
                             <img className="undragablle-image"
-                                src={`/images/OurCustomers/${image.srcName}`}
+                                src={`/images/our-customers/${image.srcName}`}
                                 alt={image.altName} />
                         </div>
                     })}
@@ -50,7 +50,7 @@ export default function CustomersSlider() {
                         return <div key={i + CUSTOMER_IMAGES.length} className={styles.slide}
                             style={{ width: "250px", height: "100px" }}>
                             <img className="undragablle-image"
-                                src={`/images/OurCustomers/${image.srcName}`}
+                                src={`/images/our-customers/${image.srcName}`}
                                 alt={image.altName} />
                         </div>
                     })}

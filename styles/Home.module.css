@@ -289,7 +289,7 @@
 .linkToOtherPageContainer .linkToOtherPageTitleSeperator {
   height: 1px;
   width: 100%;
-  max-width: 180px;
+  max-width: 150px;
   background-color: #6e6e6e;
   margin: 0 auto 50px auto;
 }

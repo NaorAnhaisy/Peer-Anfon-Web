@@ -24,7 +24,7 @@ export default function ContactUs() {
                     <div>
                         <div className={styles.contactUsPageDiv}>
                             <div className={styles.contactUsPageImgDiv}>
-                                <img alt="צור קשר פאר אנפון" src="/images/backgrounds/contact-us-background-3.jpeg" />
+                                <img alt="צור קשר פאר אנפון" src="/images/backgrounds/contact-us.jpeg" />
                             </div>
                             <div className={styles.contactUsPageForm}>
                                 <ContactUsForm />
