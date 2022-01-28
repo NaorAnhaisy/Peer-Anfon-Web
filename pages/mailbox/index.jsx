@@ -1,10 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import { useState, useEffect } from 'react';
-import { Carousel, Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import styles from "../../styles/automatic-doors.module.css";
 import Link from "next/link";
 import VisibilitySensor from "react-visibility-sensor";
 import AOS from 'aos';
+import ProductHeaderCarousel from '../../components/ProductHeaderCarousel/ProductHeaderCarousel';
 import ColorsTemplate from "../../components/ColorsTemplate/ColorsTemplate";
 
 export default function Mailboxes() {
@@ -17,60 +18,12 @@ export default function Mailboxes() {
 
     return (
         <div className="product-title-carousel">
-            <Carousel
-                autoPlay={true}
-                interval={4000}
-                controls={false}
-                indicators={true}
-                fade={true}
-            >
-                <Carousel.Item>
-                    <img
-                        className={styles.caruselImage}
-                        src="/images/mailboxes/slider-1.jpg"
-                        alt="תיבות דואר"
-                    />
-                    <Carousel.Caption className={styles.caruselCaption}>
-                        <h3>עיצוב ססגוני</h3>
-                        <p>דלתות אוטומטיות מעוצבות ויוקרתיות</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className={styles.caruselImage}
-                        src="/images/mailboxes/slider-2.jpeg"
-                        alt="תיבות דואר"
-                    />
-                    <Carousel.Caption className={styles.caruselCaption}>
-                        <h3>עיצוב ססגוני</h3>
-                        <p>דלתות אוטומטיות מעוצבות ויוקרתיות</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className={styles.caruselImage}
-                        src="/images/mailboxes/slider-3.jpeg"
-                        alt="תיבות דואר"
-                    />
-                    <Carousel.Caption className={styles.caruselCaption}>
-                        <h3>לפי הדרישה שלך</h3>
-                        <p>דלתות אוטומטיות לבניינים</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className={styles.caruselImage}
-                        src="/images/mailboxes/slider-4.jpeg"
-                        alt="תיבות דואר"
-                    />
-                    <Carousel.Caption className={styles.caruselCaption}>
-                        <h3>מתאים לארגונים</h3>
-                        <p>
-                            דלתות אוטומטיות לחברות ומוסדות
-                        </p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-            </Carousel>
+            <ProductHeaderCarousel items={[
+                { image: "/images/mailboxes/slider-1.jpg", title: "עיצוב ססגוני", desc: "דלתות אוטומטיות מעוצבות ויוקרתיות" },
+                { image: "/images/mailboxes/slider-2.jpeg", title: "לפי הדרישה שלך", desc: "דלתות אוטומטיות לבניינים" },
+                { image: "/images/mailboxes/slider-3.jpeg", title: "מתאים לארגונים", desc: "דלתות אוטומטיות לחברות ומוסדות" },
+                { image: "/images/mailboxes/slider-4.jpeg", title: "מתאים לארגונים", desc: "דלתות אוטומטיות לחברות ומוסדות" },
+            ]} alt="תיבות דואר" />
 
             <VisibilitySensor partialVisibility onChange={(isVisible => { isVisible && setIsFirstContentShowed(true) })}>
                 <div style={{ minHeight: "300px" }}>

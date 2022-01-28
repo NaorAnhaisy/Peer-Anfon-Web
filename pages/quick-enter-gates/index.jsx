@@ -202,7 +202,7 @@ export default function Mailboxes() {
                 </div>
             </VisibilitySensor>
 
-            <div className={styles.automaticDoorsContainer}>
+            <div className={styles.speedGatesContainer}>
                 <Row className={styles.rowImagesLinks}>
                     <Col data-aos="zoom-in"
                         data-aos-once={true}

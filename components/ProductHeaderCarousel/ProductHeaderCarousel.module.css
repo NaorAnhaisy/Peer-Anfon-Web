@@ -1,0 +1,26 @@
+.caruselImage {
+    width: 100%;
+    min-height: 400px;
+    height: 85vh;
+    object-fit: cover;
+}
+
+.caruselCaption {
+    color: #ffffff;
+    background: #000000a3;
+    font-family: 'Alef';
+    margin: auto;
+    width: 800px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+@media(max-width: 1076px) {
+    .caruselCaption {
+        width: 70vw;
+        padding: 10px;
+    }
+}

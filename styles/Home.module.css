@@ -35,15 +35,6 @@
   font-size: 50px;
 }
 
-/*
-.homeMainDiv h1 {
-  font-size: 50px;
-}
-
-.homeMainDiv p {
-  font-size: 17px;
-} */
-
 .homeStartVideo {
   object-fit: cover;
   height: 100vh;
@@ -54,199 +45,6 @@
   width: 100%;
   display: inline-block;
 }
-
-/* .homeRowViewExamples {
-  margin-top: 80px !important;
-}
-
-.homeRowViewExamples img {
-  max-width: 100%;
-  height: auto;
-}
-
-.homeRowViewExamples h1,
-.homeInfoDiv h1 {
-  color: var(--gold-secondary);
-  text-align: right;
-}
-
-.homeRowViewExamples p,
-.homeInfoDiv p {
-  direction: rtl;
-  text-align: right;
-} */
-
-/* .homeGap4 {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.homeRowContentContainer1 {
-  margin-bottom: 150px;
-}
-
-.homeRowContentContainer2 {
-  margin-bottom: 120px;
-}
-
-@media (max-width: 576px) {
-  .homeRowContentContainer {
-    padding-right: 30px;
-    padding-left: 30px;
-  }
-}
-
-@media (min-width: 576px) {
-  .homeRowContentContainer {
-    padding-right: 100px;
-    padding-left: 100px;
-  }
-}
-
-.homeInfoDiv {
-  text-align: center;
-}
-
-.homeInfoDiv h1 {
-  text-align: center;
-}
-
-.homeInfoDiv p {
-  text-align: center;
-  max-width: 700px;
-  display: inline-flex;
-}
-
-.homeSticky {
-  position: sticky;
-  top: 8em;
-}
-
-.homeChooseConfigDiv {
-  margin-bottom: 150px;
-} */
-
-/*
-@media (max-width: 368px) {
-  .homeCustomersExamples {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 15px;
-  }
-
-  .homeCustomersExamples .homeItemZoom {
-    width: 70px;
-    height: 70px;
-  }
-}
-
-@media only screen and (max-width: 410px) and (min-width: 368px) {
-  .homeCustomersExamples {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 15px;
-  }
-
-  .homeCustomersExamples .homeItemZoom {
-    width: 100px;
-    height: 100px;
-  }
-}
-
-@media only screen and (max-width: 678px) and (min-width: 410px) {
-  .homeCustomersExamples {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 15px;
-  }
-
-  .homeCustomersExamples .homeItemZoom {
-    width: 70px;
-    height: 70px;
-  }
-}
-
-@media only screen and (max-width: 786px) and (min-width: 678px) {
-  .homeCustomersExamples {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 15px;
-  }
-
-  .homeCustomersExamples .homeItemZoom {
-    width: 100px;
-    height: 100px;
-  }
-}
-
-@media only screen and (max-width: 1500px) and (min-width: 786px) {
-  .homeCustomersExamples {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 25px;
-  }
-
-  .homeCustomersExamples .homeItemZoom {
-    width: 100px;
-    height: 100px;
-  }
-}
-
-@media (min-width: 1500px) {
-  .homeCustomersExamples {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-gap: 27px;
-  }
-
-  .homeCustomersExamples .homeItemZoom {
-    width: 100px;
-    height: 100px;
-  }
-}
-
-.homeCustomersExamples {
-  justify-items: center;
-}
-
-.homeCustomersExamples .homeItemZoom {
-  box-shadow: 0 0 8px 0px #d0d0d0;
-  border-radius: 11px;
-  -webkit-border-radius: 11px;
-  -moz-border-radius: 11px;
-  -ms-border-radius: 11px;
-  -o-border-radius: 11px;
-}
-
-.homeItemZoom {
-  position: relative;
-  overflow: hidden;
-  width: 400px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.homeItemZoom img {
-  vertical-align: top;
-  max-width: 100%;
-  padding: 9px;
-  background: whitesmoke;
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-}
-
-.homeItemZoom:hover img {
-  transform: scale(1.2) rotate(2deg);
-  -webkit-transform: scale(1.2) rotate(2deg);
-  -moz-transform: scale(1.2) rotate(2deg);
-  -ms-transform: scale(1.2) rotate(2deg);
-  -o-transform: scale(1.2) rotate(2deg);
-} */
 
 .inOurCustomersText {
   font-size: 20px !important;
@@ -475,7 +273,7 @@
 .linkToOtherPageContainer .linkToOtherPageContent h3 {
   font-size: 40px;
   font-weight: bold;
-  margin-bottom: 40px;
+  margin: 25px auto;
 }
 
 .linkToOtherPageContainer .linkToOtherPageContent p {
@@ -485,6 +283,14 @@
   margin-bottom: 90px;
   padding: 0 40px;
   font-size: 18px;
+}
+
+.linkToOtherPageContainer .linkToOtherPageTitleSeperator {
+  height: 1px;
+  width: 100%;
+  max-width: 180px;
+  background-color: #6e6e6e;
+  margin: 0 auto 50px auto;
 }
 
 .homeContactUsContainer {

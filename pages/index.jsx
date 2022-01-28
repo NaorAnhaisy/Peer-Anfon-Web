@@ -196,7 +196,8 @@ export default function Home() {
 
           <Row className={`mt-5 mb-5 ${styles.linkToOtherPageContainer}`}>
             <Col xs={12} md={6} className={styles.linkToOtherPageContent}>
-              <h3 data-aos="fade-down" data-aos-duration="1500">מוצרים חדשים</h3>
+              <h3 data-aos="fade-down" data-aos-duration="1500">NEW MODELS</h3>
+              <div className={styles.linkToOtherPageTitleSeperator}/>
               <p data-aos="fade-zoom-in" data-aos-duration="1500">
                 טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
                 טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
@@ -226,6 +227,7 @@ export default function Home() {
             </Col>
             <Col xs={12} md={6} className={styles.linkToOtherPageContent}>
               <h3 data-aos="fade-down" data-aos-duration="1500">הפרוייקטים שלנו</h3>
+              <div className={styles.linkToOtherPageTitleSeperator}/>
               <p data-aos="fade-zoom-in" data-aos-duration="1500">
                 פאר אנפון גאה לקחת חלק בפרויקטים הגדולים בענף ולשתף פעולה עם החברות הגדולות בארץ, ליווי צמוד ואישי במגוון פרויקטים ושקט נפשי לתקופה ארוכה.
                 בגלריה תוכלו למצוא טעימה מהפרויקטים בהם מוצרי פאר אנפון מותקנים ברחבי הארץ.

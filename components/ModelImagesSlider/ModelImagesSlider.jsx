@@ -11,7 +11,8 @@ export default function ModelImagesSlider({ images, alt }) {
                 useKeyboardArrows
                 autoPlay
                 emulateTouch
-                interval={5000}
+                interval={4000}
+                stopOnHover={false}
                 swipeable
                 statusFormatter={() => { return "" }}
             >
