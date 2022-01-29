@@ -83,6 +83,12 @@ export default function DoubleLeafDoor() {
                     <div className={styles.doorSelectedGalleryContainer}>
                         <Row className="flex-dir-col-reverse-lg-screen">
                             <Col sm={12} lg={6}>
+                                {/* <Zoom>
+                                    <img src="/images/automatic-doors/doubleLeaf-door/double_leaf_29.jpeg"
+                                        alt={`ארון הפקדה לטלפונים סלולריים`}
+                                        style={{ height: "auto", width: "100%", objectFit: "cover" }}
+                                        />
+                                </Zoom> */}
                                 <img
                                     style={{ height: '50%' }}
                                     className={styles.doorSelectedDetailsExampleImg}

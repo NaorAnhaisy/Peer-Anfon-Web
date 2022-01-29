@@ -55,7 +55,7 @@ export default function EnterDoors() {
                         </p>
                     </Col>
                     <Col xs={12} lg={6} className={styles.centerColContent}>
-                        <img src="/images/automatic-doors/backgrounds/double-leaf-automatic-door.jpg" className={styles.titleIntercomImg} alt="מערכות אינטרקום" />
+                        <img src="/images/enter-doors/backgrounds/main-1.jpeg" className={styles.titleIntercomImg} alt="מערכות אינטרקום" />
                     </Col>
                 </Row>
                 <Row className={`${styles.titleRowMargin} flex-dir-col-reverse-lg-screen`}
