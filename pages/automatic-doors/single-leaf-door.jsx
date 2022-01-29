@@ -188,6 +188,53 @@ export default function SingleLeafDoor() {
                             alt="דלת אוטומטית חד כנף"
                         />
                     </Row>
+                    <Row>
+                        <Col sm={12} lg={6} className={styles.doorSelectedHorizontalImages}>
+                            <img
+                                style={{ height: '100%', maxHeight: '800px' }}
+                                className={styles.doorSelectedDetailsExampleImg}
+                                data-aos="fade-zoom-in"
+                                data-aos-duration="700"
+                                src="/images/automatic-doors/singleLeaf-door/singleleaf-12.jpg"
+                                alt="דלת אוטומטית חד כנף"
+                            />
+
+                        </Col>
+                        <Col sm={12} lg={6}>
+                            <img
+                                style={{ height: '100%', maxHeight: '800px' }}
+                                className={styles.doorSelectedDetailsExampleImg}
+                                data-aos="fade-zoom-in"
+                                data-aos-duration="700"
+                                src="/images/automatic-doors/singleLeaf-door/singleleaf-13.jpg"
+                                alt="דלת אוטומטית חד כנף"
+                            />
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col sm={12} lg={6} className={styles.doorSelectedHorizontalImages}>
+                            <img
+                                style={{ height: '100%', maxHeight: '800px' }}
+                                className={styles.doorSelectedDetailsExampleImg}
+                                data-aos="fade-zoom-in"
+                                data-aos-duration="700"
+                                src="/images/automatic-doors/singleLeaf-door/singleleaf-14.jpg"
+                                alt="דלת אוטומטית חד כנף"
+                            />
+
+                        </Col>
+                        <Col sm={12} lg={6}>
+                            <img
+                                style={{ height: '100%', maxHeight: '800px' }}
+                                className={styles.doorSelectedDetailsExampleImg}
+                                data-aos="fade-zoom-in"
+                                data-aos-duration="700"
+                                src="/images/automatic-doors/singleLeaf-door/singleleaf-15.jpg"
+                                alt="דלת אוטומטית חד כנף"
+                            />
+                        </Col>
+                    </Row>
+
                 </div>
             </Container>
 

@@ -21,7 +21,7 @@ export default function AutomaticDoors() {
         <div className="product-title-carousel">
             <ProductHeaderCarousel items={[
                 { image: "/images/automatic-doors/slider-backgrounds/slider-1.jpeg", title: "עיצוב ססגוני", desc: "דלתות אוטומטיות מעוצבות ויוקרתיות" },
-                { image: "/images/automatic-doors/slider-backgrounds/slider-2.jpg", title: "לפי הדרישה שלך", desc: "דלתות אוטומטיות לבניינים" },
+                { image: "/images/automatic-doors/slider-backgrounds/slider-2.jpeg", title: "לפי הדרישה שלך", desc: "דלתות אוטומטיות לבניינים" },
                 { image: "/images/automatic-doors/slider-backgrounds/slider-3.jpeg", title: "מתאים לארגונים", desc: "דלתות אוטומטיות לחברות ומוסדות" },
                 { image: "/images/automatic-doors/slider-backgrounds/slider-4.jpeg", title: "מתאים לארגונים", desc: "דלתות אוטומטיות לחברות ומוסדות" },
             ]} alt="דלתות אוטומטיות" />
