@@ -22,7 +22,7 @@ export default function Mailboxes() {
                 { image: "/images/mailboxes/slider-backgrounds/slider-1.jpg", title: "עיצוב ססגוני", desc: "דלתות אוטומטיות מעוצבות ויוקרתיות" },
                 { image: "/images/mailboxes/slider-backgrounds/slider-2.jpeg", title: "לפי הדרישה שלך", desc: "דלתות אוטומטיות לבניינים" },
                 { image: "/images/mailboxes/slider-backgrounds/slider-3.jpeg", title: "מתאים לארגונים", desc: "דלתות אוטומטיות לחברות ומוסדות" },
-                { image: "/images/mailboxes/slider-backgrounds/slider-4.jpeg", title: "מתאים לארגונים", desc: "דלתות אוטומטיות לחברות ומוסדות" },
+                { image: "/images/mailboxes/shared-houses/T-450.jpeg", title: "מתאים לארגונים", desc: "דלתות אוטומטיות לחברות ומוסדות" },
             ]} alt="תיבות דואר" />
 
             <VisibilitySensor partialVisibility onChange={(isVisible => { isVisible && setIsFirstContentShowed(true) })}>
