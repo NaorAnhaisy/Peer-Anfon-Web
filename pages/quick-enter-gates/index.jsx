@@ -18,11 +18,12 @@ export default function Mailboxes() {
 
     return (
         <div className="product-title-carousel">
-            <ProductHeaderCarousel items={[
+            <div className="push-from-navbar" />
+            {/* <ProductHeaderCarousel items={[
                 { image: "/images/Doors/door-1.jpeg", title: "עיצוב ססגוני", desc: "דלתות אוטומטיות מעוצבות ויוקרתיות" },
                 { image: "/images/Doors/door-2.jpeg", title: "לפי הדרישה שלך", desc: "דלתות אוטומטיות לבניינים" },
                 { image: "/images/Doors/door-5.jpeg", title: "מתאים לארגונים", desc: "דלתות אוטומטיות לחברות ומוסדות" },
-            ]} alt="מעברי כניסה אוטומטיים" />
+            ]} alt="מעברי כניסה אוטומטיים" /> */}
 
             <VisibilitySensor partialVisibility onChange={(isVisible => { isVisible && setIsFirstContentShowed(true) })}>
                 <div style={{ minHeight: "300px" }}>
