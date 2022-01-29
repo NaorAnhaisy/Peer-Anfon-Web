@@ -55,7 +55,7 @@ export default function Organizations() {
 
     return (
         <div>
-            <img src="/images/mailboxes/organizations/T-434.jpeg" className={`undragablle-image ${styles.doorSelectedMainDiv}`} alt="תיבות דואר למוסדות" />
+            <img src="/images/mailboxes/backgrounds/organizations.jpeg" className={`undragablle-image ${styles.doorSelectedMainDiv}`} alt="תיבות דואר למוסדות" />
             <Container className={`custom-size-container ${styles.doorSelectedContainer}`}>
                 <div>
                     <Row className={styles.doorSelectedTitleRow}>

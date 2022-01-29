@@ -19,10 +19,10 @@ export default function Mailboxes() {
     return (
         <div className="product-title-carousel">
             <ProductHeaderCarousel items={[
-                { image: "/images/mailboxes/slider-1.jpg", title: "עיצוב ססגוני", desc: "דלתות אוטומטיות מעוצבות ויוקרתיות" },
-                { image: "/images/mailboxes/slider-2.jpeg", title: "לפי הדרישה שלך", desc: "דלתות אוטומטיות לבניינים" },
-                { image: "/images/mailboxes/slider-3.jpeg", title: "מתאים לארגונים", desc: "דלתות אוטומטיות לחברות ומוסדות" },
-                { image: "/images/mailboxes/slider-4.jpeg", title: "מתאים לארגונים", desc: "דלתות אוטומטיות לחברות ומוסדות" },
+                { image: "/images/mailboxes/slider-backgrounds/slider-1.jpg", title: "עיצוב ססגוני", desc: "דלתות אוטומטיות מעוצבות ויוקרתיות" },
+                { image: "/images/mailboxes/slider-backgrounds/slider-2.jpeg", title: "לפי הדרישה שלך", desc: "דלתות אוטומטיות לבניינים" },
+                { image: "/images/mailboxes/slider-backgrounds/slider-3.jpeg", title: "מתאים לארגונים", desc: "דלתות אוטומטיות לחברות ומוסדות" },
+                { image: "/images/mailboxes/slider-backgrounds/slider-4.jpeg", title: "מתאים לארגונים", desc: "דלתות אוטומטיות לחברות ומוסדות" },
             ]} alt="תיבות דואר" />
 
             <VisibilitySensor partialVisibility onChange={(isVisible => { isVisible && setIsFirstContentShowed(true) })}>
@@ -63,7 +63,7 @@ export default function Mailboxes() {
 
                         <div className={styles.image}>
                             <img
-                                src="/images/mailboxes/main-slide-1.jpg"
+                                src="/images/mailboxes/backgrounds/side-background-1.jpg"
                                 alt="דלת אוטומטית"
                             />
                         </div>
@@ -111,7 +111,7 @@ export default function Mailboxes() {
 
                         <div className={styles.image}>
                             <img
-                                src="/images/mailboxes/main-slide-2.jpg"
+                                src="/images/mailboxes/backgrounds/side-background-2.jpg"
                                 alt="דלת אוטומטית"
                             />
                         </div>
@@ -154,7 +154,7 @@ export default function Mailboxes() {
                             <a className="no-href-css">
                                 <div className="clickable">
                                     <div className={styles.imageLinkDivToCategorys}>
-                                        <img src="/images/mailboxes/shared-houses/background.jpeg" alt="תיבות דואר לבתים משותפים" className={styles.imageToCategorys} />
+                                        <img src="/images/mailboxes/backgrounds/shared-houses.jpeg" alt="תיבות דואר לבתים משותפים" className={styles.imageToCategorys} />
                                     </div>
                                     <div className={styles.imageLinkDivText}>
                                         <h5>תיבות דואר לבתים משותפים</h5>
@@ -177,7 +177,7 @@ export default function Mailboxes() {
                             <a className="no-href-css">
                                 <div className="clickable">
                                     <div className={styles.imageLinkDivToCategorys}>
-                                        <img src="/images/mailboxes/organizations/T-434.jpeg" alt="תיבות דואר למוסדות" className={styles.imageToCategorys} />
+                                        <img src="/images/mailboxes/backgrounds/organizations.jpeg" alt="תיבות דואר למוסדות" className={styles.imageToCategorys} />
                                     </div>
                                     <div className={styles.imageLinkDivText}>
                                         <h5>תיבות דואר למוסדות</h5>
@@ -200,7 +200,7 @@ export default function Mailboxes() {
                             <a className="no-href-css">
                                 <div className="clickable">
                                     <div className={styles.imageLinkDivToCategorys}>
-                                        <img src="/images/mailboxes/private-houses/P-315.jpg" alt="תיבות דואר לבתים פרטיים" className={styles.imageToCategorys} />
+                                        <img src="/images/mailboxes/backgrounds/private-houses.jpg" alt="תיבות דואר לבתים פרטיים" className={styles.imageToCategorys} />
                                     </div>
                                     <div className={styles.imageLinkDivText}>
                                         <h5>תיבות דואר לבתים פרטיים</h5>
@@ -223,7 +223,7 @@ export default function Mailboxes() {
                             <a className="no-href-css">
                                 <div className="clickable">
                                     <div className={styles.imageLinkDivToCategorys}>
-                                        <img src="/images/mailboxes/mailbox-rooms/R-001.jpeg" alt="חדרי תיבות דואר" className={styles.imageToCategorys} />
+                                        <img src="/images/mailboxes/backgrounds/mailbox-rooms.jpeg" alt="חדרי תיבות דואר" className={styles.imageToCategorys} />
                                     </div>
                                     <div className={styles.imageLinkDivText}>
                                         <h5>חדרי תיבות דואר</h5>
@@ -246,7 +246,7 @@ export default function Mailboxes() {
                             <a className="no-href-css">
                                 <div className="clickable">
                                     <div className={styles.imageLinkDivToCategorys}>
-                                        <img src="/images/mailboxes/deposit-cellphones/Y-6.jpeg" alt="ארון הפקדה לטלפונים סלולריים" className={styles.imageToCategorys} />
+                                        <img src="/images/mailboxes/backgrounds/deposit-cellphones.jpeg" alt="ארון הפקדה לטלפונים סלולריים" className={styles.imageToCategorys} />
                                     </div>
                                     <div className={styles.imageLinkDivText}>
                                         <h5>ארון הפקדה לטלפונים סלולריים</h5>

@@ -20,7 +20,6 @@ const F2_images = [
     { url: "/images/quick-enter-gates/speed-gates/F-2_b.png" },
     { url: "/images/quick-enter-gates/speed-gates/F-2_c.png" },
     { url: "/images/quick-enter-gates/speed-gates/F-2_d.png" },
-    { url: "/images/quick-enter-gates/speed-gates/F-2_e.png" },
 ];
 
 const F3_images = [

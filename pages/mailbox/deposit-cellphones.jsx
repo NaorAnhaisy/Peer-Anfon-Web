@@ -49,7 +49,7 @@ export default function DepositCellphones() {
 
     return (
         <div>
-            <img src="/images/mailboxes/deposit-cellphones/Y-6.jpeg" className={`undragablle-image ${styles.doorSelectedMainDiv}`} alt="ארון הפקדה לטלפונים סלולריים" />
+            <img src="/images/mailboxes/backgrounds/deposit-cellphones.jpeg" className={`undragablle-image ${styles.doorSelectedMainDiv}`} alt="ארון הפקדה לטלפונים סלולריים" />
             <Container className={`custom-size-container ${styles.doorSelectedContainer}`}>
                 <div>
                     <Row className={styles.doorSelectedTitleRow}>
