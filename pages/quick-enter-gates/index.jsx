@@ -91,7 +91,7 @@ export default function Mailboxes() {
                 </div>
             </VisibilitySensor>
 
-            <VisibilitySensor partialVisibility onChange={(isVisible => { isVisible && setIsSecondContentShowed(true) })}>
+            <VisibilitySensor partialVisibility onChange={(isVisible => { isVisible && isFirstContentShowed && setIsSecondContentShowed(true) })}>
                 <div style={{ minHeight: "300px" }}>
                     <div className={`${styles.contentWrapper} ${styles.leftContext}`} style={{ display: isSecondContentShowed ? "grid" : "none" }}>
                         <div className={styles.content}>
