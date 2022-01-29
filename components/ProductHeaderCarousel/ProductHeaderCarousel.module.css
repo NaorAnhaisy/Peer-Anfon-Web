@@ -9,18 +9,19 @@
     color: #ffffff;
     background: #000000a3;
     font-family: 'Alef';
-    margin: auto;
-    width: 800px;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+    width: 100%;
+    position: absolute;
+    right: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
 }
 
 @media(max-width: 1076px) {
     .carouselCaption {
-        width: 70vw;
         padding: 10px;
     }
 }
