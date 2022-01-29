@@ -11,7 +11,7 @@ export default function TelescopDoor() {
 
     useEffect(() => {
         AOS.init({ once: true });
-        document.getElementById('telescop-door-video').play();
+        // document.getElementById('telescop-door-video').play();
     }, []);
 
     return (
@@ -68,14 +68,14 @@ export default function TelescopDoor() {
                         </Col>
                     </Row>
 
-                    <Row className="mt-5 mb-5">
+                    {/* <Row className="mt-5 mb-5">
                         <div className="mb-5">
                             <video autoPlay loop playsInline muted id="telescop-door-video" className={styles.automaticDoorVideo}>
                                 <source src="https://d2na49kk21qo66.cloudfront.net/Deuren-Internal-Video-Low-Res.mp4"
                                     type="video/mp4" />
                             </video>
                         </div>
-                    </Row>
+                    </Row> */}
 
                     <Row>
                         <Col sm={12} lg={6} className={styles.doorSelectedHorizontalImages}>

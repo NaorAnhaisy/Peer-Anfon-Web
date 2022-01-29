@@ -84,7 +84,7 @@ export default function SingleLeafDoor() {
                                 className={styles.doorSelectedDetailsExampleImg}
                                 data-aos="fade-zoom-in"
                                 data-aos-duration="700"
-                                src="/images/automatic-doors/singleLeaf-door/singleleaf-1.jpg"
+                                src="/images/automatic-doors/singleLeaf-door/singleleaf-15.jpg"
                                 alt="דלת אוטומטית חד כנף"
                             />
                             <img
@@ -229,7 +229,7 @@ export default function SingleLeafDoor() {
                                 className={styles.doorSelectedDetailsExampleImg}
                                 data-aos="fade-zoom-in"
                                 data-aos-duration="700"
-                                src="/images/automatic-doors/singleLeaf-door/singleleaf-15.jpg"
+                                src="/images/automatic-doors/singleLeaf-door/singleleaf-1.jpg"
                                 alt="דלת אוטומטית חד כנף"
                             />
                         </Col>
