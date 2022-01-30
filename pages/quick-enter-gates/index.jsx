@@ -171,7 +171,7 @@ export default function Mailboxes() {
                                         <h5>מעברים מהירים</h5>
                                         <div className={styles.separatorLinkText} />
                                         <p>
-                                            <span className={styles.modelSumDescription}>מעניקה מהירות ומבטיחה אמינות.</span>
+                                            <span className={styles.modelSumDescription}>מעניקה מהירות ומבטיחה אמינות</span>
                                             <br />
                                             מעברים מהירים אלגנטיים ויוקרתיים יכולים לזהות באופן מלא את המעבר של גוף האדם, בכדי לאפשר בטיחות, אמינות, מהירות ויעלות.
                                         </p>
@@ -194,7 +194,7 @@ export default function Mailboxes() {
                                         <h5>קרוסלות חצובה</h5>
                                         <div className={styles.separatorLinkText} />
                                         <p>
-                                            <span className={styles.modelSumDescription}>איזה כיף לעבור.</span>
+                                            <span className={styles.modelSumDescription}>איזה כיף לעבור</span>
                                             <br />
                                             קרוסלת החצובה מעניקה פתרון אידאלי ואולטימטיבי למקומות בעלי תפוקה גבוהה של עוברים ושבים.
                                         </p>
