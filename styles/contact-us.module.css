@@ -80,10 +80,15 @@
     font-family: 'Alef';
 }
 
-.contactUsContactInfoRow i {
+.contactUsContactInfoHrefsCol {
+    display: grid;
+}
+
+.contactUsContactInfoHrefsCol i {
     font-size: 12px;
     color: #4f4f4f;
     margin-left: 3px;
+    font-weight: bold;
 }
 
 .contactUsContactInfoContainer h6 {

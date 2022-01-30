@@ -37,7 +37,7 @@ export default function ContactUs() {
             <MyMapComponent />
             <Container className={styles.contactUsContactInfoContainer}>
                 <Row className={styles.contactUsContactInfoRow}>
-                    <Col sm={12} md={6} lg={3} style={{ display: 'grid' }}>
+                    <Col sm={12} md={6} lg={3} className={styles.contactUsContactInfoHrefsCol}>
                         <h6>צרו קשר</h6>
                         <span><a href="tel:0723712701" className="no-href-css"><i className="fas fa-phone" aria-hidden="true" /> טלפון: 072-371-2701</a></span>
                         <span className="mt-2"><a href="https://wa.me/+97235505624" target="_blank" rel="noreferrer noopener" className="no-href-css"><i className="fab fa-whatsapp" aria-hidden="true" /> ווצאפ: +972-35505624</a></span>
