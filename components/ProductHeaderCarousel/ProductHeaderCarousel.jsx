@@ -22,15 +22,18 @@ export default function ProductHeaderCarousel({ items, alt }) {
     }
 
     return (
-        <Carousel
-            autoPlay={true}
-            interval={3500}
-            pause={false}
-            controls={false}
-            indicators={true}
-            fade={true}
-        >
-            {createCarouselIems(items)}
-        </Carousel>
+        <div>
+            <Carousel
+                autoPlay={true}
+                interval={3500}
+                pause={false}
+                controls={false}
+                indicators={true}
+                fade={true}
+            >
+                {createCarouselIems(items)}
+            </Carousel>
+            <div style={{height: "10px", background: "black"}}/>
+        </div>
     )
 }
