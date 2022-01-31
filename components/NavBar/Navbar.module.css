@@ -245,8 +245,8 @@
     -o-transition: color 0.3s ease;
 }
 
-.menu li:hover>a,
-.menu li:hover>i {
+.menu li div:hover a,
+.menu li div:hover i {
     color: var(--gold-dark);
     ;
 }
@@ -325,6 +325,10 @@
     display: block;
     font-size: 20px;
     border-bottom: 1px solid #000000;
+}
+
+.menu li div {
+    width: fit-content;
 }
 
 .menu li i {

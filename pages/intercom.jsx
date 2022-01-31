@@ -78,13 +78,13 @@ export default function Intercom() {
                     </Col>
                 </Row>
             </Container>
-            <div className={`${styles.subTitleDiv} mb-5`} data-aos="zoom-in" data-aos-offset="200" data-aos-duration="700">
+            <div className={`${styles.subTitleDiv} mb-5`} data-aos="zoom-in" data-aos-duration="700">
                 <h3>מערכות אינטרקום מהמתקדמות בשוק​</h3>
                 <h5>מה אנחנו מציעים?</h5>
             </div>
             <div className={styles.gallery}>
                 {classicIntercomImages?.map((image, i) => {
-                    return <div key={i} data-aos="fade-up" data-aos-offset="200" data-aos-duration="700" className={styles.hoverImgContainer}>
+                    return <div key={i} data-aos="fade-up" data-aos-duration="700" className={styles.hoverImgContainer}>
                         <Zoom>
                             <img src={image.src} alt={`אינטרקום ${image.text}`}
                                 style={{ width: "100%", objectFit: "cover" }} />
@@ -96,14 +96,14 @@ export default function Intercom() {
                 })}
             </div>
             <div></div>
-            <div id="עמודי-נירוסטה" className={`${styles.subTitleDiv} mb-5`} data-aos="zoom-in" data-aos-offset="200" data-aos-duration="700">
+            <div id="עמודי-נירוסטה" className={`${styles.subTitleDiv} mb-5`} data-aos="zoom-in" data-aos-duration="700">
                 <h3>עמודי נירוסטה לאינטרקום</h3>
                 <h5>מה אנחנו מציעים?</h5>
             </div>
             <div className={styles.nerostaGallery}>
                 <Row style={{ rowGap: "3rem" }}>
                     {nerostaImages?.map((image, i) => {
-                        return <Col key={i} xs={12} md={6} lg={4} data-aos="fade-up" data-aos-offset="200" data-aos-duration="700">
+                        return <Col key={i} xs={12} md={6} lg={4} data-aos="fade-up" data-aos-duration="700">
                             <div className={styles.hoverImgContainer}>
                                 <Zoom>
                                     <img src={image.src} alt={`עמוד נירוסטה אינטרקום ${image.text}`}

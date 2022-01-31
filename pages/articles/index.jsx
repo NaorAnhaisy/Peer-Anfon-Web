@@ -25,18 +25,22 @@ export default function Articles() {
                     <Row className={styles.articlesRow}>
                         {articles.map((article, index) => {
                             return <Col key={index} xs={12} md={6} lg={4} xl={3}>
-                                <div className={styles.card}>
-                                    <figure className={styles.cardThumb}>
-                                        <img src={article.imgSrc} alt={`פאר אנפון - מאמר ${article.title}`} className={styles.cardImage} />
-                                        <figcaption className={styles.cardCaption}>
-                                            <h2 className={styles.cardTitle}>{article.title}</h2>
-                                            {/* <p className={styles.cardSnippet}>{article.subtitle}</p> */}
-                                            <Link href={`/מאמרים/${article.articleID}`}>
-                                                <a className={styles.cardButton}>קראו עוד</a>
-                                            </Link>
-                                        </figcaption>
-                                    </figure>
-                                </div>
+                                <Link href={`/מאמרים/${article.articleID}`}>
+                                    <a>
+                                        <div className={styles.card}>
+                                            <figure className={styles.cardThumb}>
+                                                <img src={article.imgSrc} alt={`פאר אנפון - מאמר ${article.title}`} className={styles.cardImage} />
+                                                <figcaption className={styles.cardCaption}>
+                                                    <h2 className={styles.cardTitle}>{article.title}</h2>
+                                                    {/* <p className={styles.cardSnippet}>{article.subtitle}</p> */}
+                                                    <Link href={`/מאמרים/${article.articleID}`}>
+                                                        <a className={styles.cardButton}>קראו עוד</a>
+                                                    </Link>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    </a>
+                                </Link>
                             </Col>
                         })}
                     </Row>

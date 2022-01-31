@@ -9,6 +9,8 @@ export default function MainNavbar() {
   const [showMailBoxDropdown, setShowMailBoxDropdown] = useState(false);
   const [showTransitionsDoorsDropdown, setShowTransitionsDoorsDropdown] = useState(false);
   const [navbarScrolledCls, setNavbarScrolledCls] = useState("start-style");
+  const [expanded, setExpanded] = useState(false);
+  const [sideNavExpanded, setSideNavExpanded] = useState(false);
 
   const handleWindowScrolled = () => {
     var scroll = window.scrollY;
@@ -45,6 +47,7 @@ export default function MainNavbar() {
               <Navbar
                 className={`${styles.navbar} navbar-expand-xxl`}
                 expand="xxl"
+                expanded={expanded}
               >
                 <div style={{ position: "relative" }}>
                   <div className={styles.logo}>
@@ -70,6 +73,7 @@ export default function MainNavbar() {
                   aria-controls="navbarSupportedContent"
                   aria-expanded="false"
                   aria-label="Toggle navigation"
+                  onClick={() => setExpanded(expanded ? false : "expanded")}
                 >
                   <span className="navbar-toggler-icon"></span>
                 </Navbar.Toggle>
@@ -91,22 +95,22 @@ export default function MainNavbar() {
                               show={showAutoDoorsDropdown}
                               onMouseEnter={() => setShowAutoDoorsDropdown(true)}
                             >
-                              <NavDropdown.Item className={styles.displayOnlyOnMobile} href="/דלתות-אוטומטיות">
+                              <NavDropdown.Item className={styles.displayOnlyOnMobile} href="/דלתות-אוטומטיות" onClick={() => setExpanded(false)}>
                                 דלתות אוטומטיות - כללי
                               </NavDropdown.Item>
-                              <NavDropdown.Item href="/דלתות-אוטומטיות/דלת-אוטומטית-הזזה-דו-כנף">
+                              <NavDropdown.Item href="/דלתות-אוטומטיות/דלת-אוטומטית-הזזה-דו-כנף" onClick={() => setExpanded(false)}>
                                 אוטומטית הזזה דו-כנף
                               </NavDropdown.Item>
-                              <NavDropdown.Item href="/דלתות-אוטומטיות/דלת-אוטומטית-הזזה-חד-כנף">
+                              <NavDropdown.Item href="/דלתות-אוטומטיות/דלת-אוטומטית-הזזה-חד-כנף" onClick={() => setExpanded(false)}>
                                 אוטומטית הזזה חד-כנף
                               </NavDropdown.Item>
-                              <NavDropdown.Item href="/דלתות-אוטומטיות/דלת-אוטומטית-טלסקופית">
+                              <NavDropdown.Item href="/דלתות-אוטומטיות/דלת-אוטומטית-טלסקופית" onClick={() => setExpanded(false)}>
                                 אוטומטית טלסקופית
                               </NavDropdown.Item>
-                              <NavDropdown.Item href="/דלתות-אוטומטיות/דלת-אוטומטית-קורסת">
+                              <NavDropdown.Item href="/דלתות-אוטומטיות/דלת-אוטומטית-קורסת" onClick={() => setExpanded(false)}>
                                 אוטומטית קורסת
                               </NavDropdown.Item>
-                              <NavDropdown.Item href="/דלתות-אוטומטיות/דלת-פנים-אוטומטית">
+                              <NavDropdown.Item href="/דלתות-אוטומטיות/דלת-פנים-אוטומטית" onClick={() => setExpanded(false)}>
                                 דלתות פנים אוטומטיות
                               </NavDropdown.Item>
                             </NavDropdown>
@@ -122,22 +126,22 @@ export default function MainNavbar() {
                               show={showMailBoxDropdown}
                               onMouseEnter={() => setShowMailBoxDropdown(true)}
                             >
-                              <NavDropdown.Item className={styles.displayOnlyOnMobile} href="/תיבות-דואר">
+                              <NavDropdown.Item className={styles.displayOnlyOnMobile} href="/תיבות-דואר" onClick={() => setExpanded(false)}>
                                 תיבות דואר - כללי
                               </NavDropdown.Item>
-                              <NavDropdown.Item href="/תיבות-דואר/תיבות-דואר-לבתים-משותפים">
+                              <NavDropdown.Item href="/תיבות-דואר/תיבות-דואר-לבתים-משותפים" onClick={() => setExpanded(false)}>
                                 תיבות דואר לבתים משותפים
                               </NavDropdown.Item>
-                              <NavDropdown.Item href="/תיבות-דואר/תיבות-דואר-למוסדות">
+                              <NavDropdown.Item href="/תיבות-דואר/תיבות-דואר-למוסדות" onClick={() => setExpanded(false)}>
                                 תיבות דואר למוסדות
                               </NavDropdown.Item>
-                              <NavDropdown.Item href="/תיבות-דואר/תיבות-דואר-לבתים-פרטיים">
+                              <NavDropdown.Item href="/תיבות-דואר/תיבות-דואר-לבתים-פרטיים" onClick={() => setExpanded(false)}>
                                 תיבות דואר לבתים פרטיים
                               </NavDropdown.Item>
-                              <NavDropdown.Item href="/תיבות-דואר/חדרי-תיבות-דואר">
+                              <NavDropdown.Item href="/תיבות-דואר/חדרי-תיבות-דואר" onClick={() => setExpanded(false)}>
                                 חדרי תיבות דואר
                               </NavDropdown.Item>
-                              <NavDropdown.Item href="/תיבות-דואר/ארון-הפקדה-לטלפונים-סלולריים">
+                              <NavDropdown.Item href="/תיבות-דואר/ארון-הפקדה-לטלפונים-סלולריים" onClick={() => setExpanded(false)}>
                                 ארון הפקדה לטלפונים סלולריים
                               </NavDropdown.Item>
                               {/*
@@ -156,29 +160,26 @@ export default function MainNavbar() {
                               show={showTransitionsDoorsDropdown}
                               onMouseEnter={() => setShowTransitionsDoorsDropdown(true)}
                             >
-                              <NavDropdown.Item className={styles.displayOnlyOnMobile} href="/מעברי-כניסה">
+                              <NavDropdown.Item className={styles.displayOnlyOnMobile} href="/מעברי-כניסה" onClick={() => setExpanded(false)}>
                                 מעברי כניסה - כללי
                               </NavDropdown.Item>
-                              <NavDropdown.Item href="/מעברי-כניסה/מעברים-מהירים">
+                              <NavDropdown.Item href="/מעברי-כניסה/מעברים-מהירים" onClick={() => setExpanded(false)}>
                                 מעברים מהירים
                               </NavDropdown.Item>
-                              <NavDropdown.Item href="/מעברי-כניסה/קרוסלות-חצובה">
+                              <NavDropdown.Item href="/מעברי-כניסה/קרוסלות-חצובה" onClick={() => setExpanded(false)}>
                                 קרוסלות חצובה
                               </NavDropdown.Item>
                             </NavDropdown>
                           </li>
 
-                          <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                          <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4" onClick={() => setExpanded(false)}>
                             <Link className="nav-link" href="/דלתות-כניסה">
                               דלתות כניסה
                             </Link>
                           </li>
 
-                          <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                            <Link className="nav-link" href="/מערכות-אינטרקום"
-                              data-bs-toggle="collapse"
-                              data-toggle="collapse"
-                              data-bs-target=".navbar-collapse.show">
+                          <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4" onClick={() => setExpanded(false)}>
+                            <Link className="nav-link" href="/מערכות-אינטרקום">
                               מערכות אינטרקום
                             </Link>
                           </li>
@@ -187,10 +188,8 @@ export default function MainNavbar() {
                             <div className={styles.seperatorProductsAndOthers}></div>
                           </div>
 
-                          <li className={`nav-item pl-4 pl-md-0 ml-0 ml-md-4 ${styles.notDispalyOnMobile}`}>
-                            <Link className="nav-link" href="/צור-קשר"
-                              data-toggle="collapse"
-                              data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                          <li className={`nav-item pl-4 pl-md-0 ml-0 ml-md-4 ${styles.notDispalyOnMobile}`} onClick={() => setExpanded(false)}>
+                            <Link className="nav-link" href="/צור-קשר">
                               צור קשר
                             </Link>
                           </li>
@@ -206,48 +205,48 @@ export default function MainNavbar() {
                       <div className={`${styles.navbarCol} ${styles.displayOnlyOnMobile}`}>
                         <ul className="navbar-nav ml-auto py-md-0">
 
-                          <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                          <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4" onClick={() => setExpanded(false)}>
                             <Link className="nav-link" href="/">
                               עמוד הבית
                             </Link>
                           </li>
 
-                          <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                          <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4" onClick={() => setExpanded(false)}>
                             <Link className="nav-link" href="/אודותינו">
                               אודותינו
                             </Link>
                           </li>
 
-                          <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                          <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4" onClick={() => setExpanded(false)}>
                             <Link className="nav-link" href="/המלצות">
                               המלצות
                             </Link>
                           </li>
-                          <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                          <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4" onClick={() => setExpanded(false)}>
                             <Link className="nav-link" href="/מאמרים">
                               מאמרים
                             </Link>
                           </li>
 
-                          <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                          <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4" onClick={() => setExpanded(false)}>
                             <Link className="nav-link" href="/פרוייקטים">
                               פרוייקטים
                             </Link>
                           </li>
 
-                          <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                          <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4" onClick={() => setExpanded(false)}>
                             <Link className="nav-link" href="/גלריית-תמונות">
                               גלריית תמונות
                             </Link>
                           </li>
 
-                          <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                          <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4" onClick={() => setExpanded(false)}>
                             <Link className="nav-link" href="/מוצרים-חדשים">
                               מוצרים חדשים
                             </Link>
                           </li>
 
-                          <li className={`nav-item pl-4 pl-md-0 ml-0 ml-md-4 ${styles.displayOnlyOnMobile}`}>
+                          <li className={`nav-item pl-4 pl-md-0 ml-0 ml-md-4 ${styles.displayOnlyOnMobile}`} onClick={() => setExpanded(false)}>
                             <Link className="nav-link" href="/צור-קשר">
                               צור קשר
                             </Link>
@@ -274,59 +273,86 @@ export default function MainNavbar() {
         <div className={`${styles.extraLinksDiv} ${styles.notDispalyOnMobile}`}>
           <nav role="sideNavbarNevigation">
             <div className={styles.menuToggle}>
-              <input type="checkbox" />
+              <input type="checkbox" checked={sideNavExpanded} onChange={() => setSideNavExpanded(sideNavExpanded ? false : "sideNavExpanded")} />
               <span></span>
               <span></span>
               <span></span>
               <ul className={styles.menu}>
-
                 <li>
-                  <i className="fas fa-home"></i>
-                  <Link className="nav-link" href="/">
-                    עמוד הבית
-                  </Link>
+                  <div onClick={() => setSideNavExpanded(false)}>
+                    <Link className="nav-link" href="/">
+                      <a>
+                        <i className="fas fa-home"></i>
+                        עמוד הבית
+                      </a>
+                    </Link>
+                  </div>
                 </li>
 
                 <li>
-                  <i className="fas fa-user-friends"></i>
-                  <Link className="nav-link" href="/אודותינו">
-                    אודותינו
-                  </Link>
+                  <div onClick={() => setSideNavExpanded(false)}>
+                    <Link className="nav-link" href="/אודותינו">
+                      <a>
+                        <i className="fas fa-user-friends"></i>
+                        אודותינו
+                      </a>
+                    </Link>
+                  </div>
                 </li>
 
                 <li>
-                  <i className="fas fa-award"></i>
-                  <Link className="nav-link" href="/המלצות">
-                    המלצות
-                  </Link>
+                  <div onClick={() => setSideNavExpanded(false)}>
+                    <Link className="nav-link" href="/המלצות">
+                      <a>
+                        <i className="fas fa-award"></i>
+                        המלצות
+                      </a>
+                    </Link>
+                  </div>
                 </li>
 
                 <li>
-                  <i className="fas fa-book-open"></i>
-                  <Link className="nav-link" href="/מאמרים">
-                    מאמרים
-                  </Link>
+                  <div onClick={() => setSideNavExpanded(false)}>
+                    <Link className="nav-link" href="/מאמרים">
+                      <a>
+                        <i className="fas fa-book-open"></i>
+                        מאמרים
+                      </a>
+                    </Link>
+                  </div>
                 </li>
 
                 <li>
-                  <i className="fas fa-tasks"></i>
-                  <Link className="nav-link" href="/פרוייקטים">
-                    פרוייקטים
-                  </Link>
+                  <div onClick={() => setSideNavExpanded(false)}>
+                    <Link className="nav-link" href="/פרוייקטים">
+                      <a>
+                        <i className="fas fa-tasks"></i>
+                        פרוייקטים
+                      </a>
+                    </Link>
+                  </div>
                 </li>
 
                 <li>
-                  <i className="fas fa-images"></i>
-                  <Link className="nav-link" href="/גלריית-תמונות">
-                    גלריית תמונות
-                  </Link>
+                  <div onClick={() => setSideNavExpanded(false)}>
+                    <Link className="nav-link" href="/גלריית-תמונות">
+                      <a>
+                        <i className="fas fa-images"></i>
+                        גלריית תמונות
+                      </a>
+                    </Link>
+                  </div>
                 </li>
 
                 <li>
-                  <i className="fab fa-hotjar"></i>
-                  <Link className="nav-link" href="/מוצרים-חדשים">
-                    מוצרים חדשים
-                  </Link>
+                  <div onClick={() => setSideNavExpanded(false)}>
+                    <Link className="nav-link" href="/מוצרים-חדשים">
+                      <a>
+                        <i className="fab fa-hotjar"></i>
+                        מוצרים חדשים
+                      </a>
+                    </Link>
+                  </div>
                 </li>
               </ul>
             </div>

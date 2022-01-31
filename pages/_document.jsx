@@ -31,7 +31,6 @@ class MyDocument extends Document {
                     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
                     <link rel="canonical" href="https://peer-anfon-group.co.il/" key="canonical" />
 
-                    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.css" />
                     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
                         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossOrigin="anonymous" />
                     <link rel="stylesheet"
