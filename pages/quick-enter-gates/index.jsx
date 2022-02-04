@@ -5,7 +5,7 @@ import styles from "../../styles/automatic-doors.module.css";
 import gatesStyles from "../../styles/quick-enter-gates.module.css";
 import Link from "next/link";
 import VisibilitySensor from "react-visibility-sensor";
-import ProductHeaderCarousel from '../../components/ProductHeaderCarousel/ProductHeaderCarousel';
+// import ProductHeaderCarousel from '../../components/ProductHeaderCarousel/ProductHeaderCarousel';
 import AOS from 'aos';
 
 export default function Mailboxes() {
@@ -155,7 +155,9 @@ export default function Mailboxes() {
                 </div>
             </VisibilitySensor>
 
-            <div className={styles.speedGatesContainer}>
+            <div className={gatesStyles.seperatorContentAndModelLinks} />
+
+            <div className={gatesStyles.speedGatesContainer}>
                 <Row className={styles.rowImagesLinks}>
                     <Col data-aos="zoom-in"
                         data-aos-once={true}

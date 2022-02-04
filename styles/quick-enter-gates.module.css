@@ -34,3 +34,27 @@
 .gatesDescriptionUl {
     list-style: disc;
 }
+
+.speedGatesContainer {
+    max-width: 70%;
+    overflow: hidden;
+    margin: 4rem auto;
+}
+
+.speedGatesContainer .imageToCategorys {
+    object-fit: contain;
+}
+
+@media (max-width: 1400px) {
+    .speedGatesContainer {
+        max-width: 90%;
+    }
+}
+
+.seperatorContentAndModelLinks {
+    height: 2px;
+    background-color: #3d3d3d;
+    max-width: 240px;
+    width: 100%;
+    margin: 100px auto;
+}

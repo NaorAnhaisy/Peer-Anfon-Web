@@ -6,24 +6,6 @@
     margin-bottom: 4rem;
 }
 
-.speedGatesContainer {
-    max-width: 70%;
-    overflow: hidden;
-    margin: auto;
-    margin-top: 10rem;
-    margin-bottom: 4rem;
-}
-
-.speedGatesContainer .imageToCategorys {
-    object-fit: contain;
-}
-
-@media (max-width: 1400px) {
-    .speedGatesContainer {
-        max-width: 90%;
-    }
-}
-
 .forthSectionExplain {
     text-align: right;
     line-height: 30px;
