@@ -32,7 +32,7 @@ export default function AutomaticDoors() {
                         <div className={styles.content}>
                             <div className={styles.contentInner}>
                                 <div className={styles.title}>
-                                    <div className={`${styles.titleInner} ${styles.mainTitle} ${styles.firstTitle}`}>דלתות אוטומטיות</div>
+                                    <div className={`${styles.titleInner} ${styles.subTitle} ${styles.firstTitle}`}>דלתות הזזה אוטומטיות</div>
                                 </div>
                                 <div className={styles.contentText}>
                                     <div className={`${styles.contentTextInner} ${styles.mainContextInner}`}>
@@ -141,7 +141,7 @@ export default function AutomaticDoors() {
                         <div className={styles.content}>
                             <div className={styles.contentInner}>
                                 <div className={styles.title}>
-                                    <div className={`${styles.titleInner} ${styles.subTitle} ${styles.thirdTitle}`}>דלתות חשמליות</div>
+                                    <div className={`${styles.titleInner} ${styles.subTitle} ${styles.thirdTitle}`}>עדיפות לדלתות אוטומטיות</div>
                                 </div>
                                 <div className={styles.contentText}>
                                     <div className={`${styles.contentTextInner} ${styles.subContentInner}`}>
@@ -290,7 +290,7 @@ export default function AutomaticDoors() {
                                         <img src="/images/automatic-doors/backgrounds/telescop-automatic-door.jpeg" alt="דלת אוטומטית טלסקופית" className={styles.imageToCategorys} />
                                     </div>
                                     <div className={styles.imageLinkDivText}>
-                                        <h5>דלת אוטומטית טלסקופית</h5>
+                                        <h5>דלת הזזה טלסקופית</h5>
                                         <div className={styles.separatorLinkText} />
                                         <p>
                                             <span className={styles.modelSumDescription}>ניצול מקסימלי של השטח</span>
