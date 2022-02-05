@@ -196,15 +196,13 @@ export default function Home() {
 
           <Row className={`mt-5 mb-5 ${styles.linkToOtherPageContainer}`}>
             <Col xs={12} md={6} className={styles.linkToOtherPageContent}>
-              <h3 data-aos="fade-down" data-aos-duration="1500">New Models</h3>
-              <div className={styles.linkToOtherPageTitleSeperator}/>
+              <div data-aos="fade-down" data-aos-duration="1500">
+                <h3 style={{ marginBottom: '20px' }}>Automatic Luxery</h3>
+                <h4 style={{ marginBottom: '30px', color: '#5d5d5d' }}>The Best Automatic Doors</h4>
+              </div>
+              <div className={styles.linkToOtherPageTitleSeperator} />
               <p data-aos="fade-zoom-in" data-aos-duration="1500">
-                טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
-                טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
-                טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
-                טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
-                טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
-                טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט
+                דלתות הזזה אוטומטיות חדשניות המשלבות בתוכן תאורת LED במגוון אלמנטים המעניקים תחושה יוקרתית ועיצובית ברמה הגבוהה ביותר.
               </p>
               <div className={`${styles.framedBtn} ${styles.grayBackgroundframedBtn} ${styles.newProductsHref}`}>
                 <Link href="/מוצרים-חדשים">
@@ -227,7 +225,7 @@ export default function Home() {
             </Col>
             <Col xs={12} md={6} className={styles.linkToOtherPageContent}>
               <h3 data-aos="fade-down" data-aos-duration="1500">Our Projects</h3>
-              <div className={styles.linkToOtherPageTitleSeperator}/>
+              <div className={styles.linkToOtherPageTitleSeperator} />
               <p data-aos="fade-zoom-in" data-aos-duration="1500">
                 פאר אנפון גאה לקחת חלק בפרויקטים הגדולים בענף ולשתף פעולה עם החברות הגדולות בארץ, ליווי צמוד ואישי במגוון פרויקטים ושקט נפשי לתקופה ארוכה.
                 בגלריה תוכלו למצוא טעימה מהפרויקטים בהם מוצרי פאר אנפון מותקנים ברחבי הארץ.

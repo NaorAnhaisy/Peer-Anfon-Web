@@ -155,7 +155,7 @@ export default function Mailboxes() {
                 </div>
             </VisibilitySensor>
 
-            <div className={gatesStyles.seperatorContentAndModelLinks} />
+            <div className={styles.seperatorContentAndModelLinks} />
 
             <div className={gatesStyles.speedGatesContainer}>
                 <Row className={styles.rowImagesLinks}>

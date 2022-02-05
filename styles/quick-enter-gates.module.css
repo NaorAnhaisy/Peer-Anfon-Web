@@ -50,11 +50,3 @@
         max-width: 90%;
     }
 }
-
-.seperatorContentAndModelLinks {
-    height: 2px;
-    background-color: #3d3d3d;
-    max-width: 240px;
-    width: 100%;
-    margin: 100px auto;
-}

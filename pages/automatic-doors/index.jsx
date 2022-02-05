@@ -231,6 +231,8 @@ export default function AutomaticDoors() {
                 </div>
             </VisibilitySensor>
 
+            <div className={styles.seperatorContentAndModelLinks} />
+
             <div className={styles.automaticDoorsContainer}>
                 <Row className={styles.rowImagesLinks}>
                     <Col data-aos="zoom-in"
