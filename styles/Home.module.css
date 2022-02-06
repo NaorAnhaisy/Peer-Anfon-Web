@@ -77,15 +77,15 @@
 }
 
 .threeContentOfHome div:nth-child(1) {
-  background: #a0a0a0;
-}
-
-.threeContentOfHome div:nth-child(2) {
   background: #494949;
 }
 
+.threeContentOfHome div:nth-child(2) {
+  background: #1d1d1d;
+}
+
 .threeContentOfHome div:nth-child(3) {
-  background: #000000;
+  background: var(--gold-secondary);
 }
 
 .aboutUsContainer {
@@ -102,8 +102,6 @@
 }
 
 .aboutUsContainer h3 {
-  font-size: 42px;
-  font-weight: bold;
   margin-top: 30px;
   margin-bottom: 20px;
 }
@@ -271,9 +269,13 @@
   padding: 35px 0;
 }
 
+.linkToOtherPageContainer .linkToOtherPageContent h3, .linkToOtherPageContainer .linkToOtherPageContent h4{
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 .linkToOtherPageContainer .linkToOtherPageContent h3 {
-  font-size: 40px;
-  font-weight: bold;
+  font-size: 55px;
+  font-weight: 100;
   margin: 25px auto;
 }
 
@@ -308,9 +310,10 @@
   color: white;
 }
 
-.homeContactUsTitle h2 {
-  font-size: 45px;
-  font-weight: bold;
+.homeContactUsTitle h2, .homeContactUsTitle h2, .aboutUsContainer h3 {
+  font-size: 50px;
+  font-weight: 100;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .homeContactUsTitle p {

@@ -90,8 +90,9 @@
 .importersDiv h3,
 .certificatesDiv h3 {
     font-size: 40px;
-    color: var(--gold-secondary);
-    font-weight: 100;
+    color: #5f5f5f;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 
 .certificatesDiv p {

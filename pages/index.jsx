@@ -198,7 +198,7 @@ export default function Home() {
             <Col xs={12} md={6} className={styles.linkToOtherPageContent}>
               <div data-aos="fade-down" data-aos-duration="1500">
                 <h3 style={{ marginBottom: '20px' }}>Automatic Luxery</h3>
-                <h4 style={{ marginBottom: '30px', color: '#5d5d5d' }}>The Best Automatic Doors</h4>
+                <h4 style={{ marginBottom: '30px', color: '#5d5d5d', fontWeight: '100' }}>The Best Automatic Doors</h4>
               </div>
               <div className={styles.linkToOtherPageTitleSeperator} />
               <p data-aos="fade-zoom-in" data-aos-duration="1500">
