@@ -9,8 +9,8 @@ import ContactTeam from '../../components/ContactTeam/ContactTeam';
 import Zoom from 'react-medium-image-zoom'
 
 const images = [
-    { src: "/images/mailboxes/mailbox-rooms/R-001.jpeg", text: "T-425" },
-    { src: "/images/mailboxes/mailbox-rooms/R-002.jpeg", text: "T-425" },
+    { src: "/images/mailboxes/mailbox-rooms/R-001.jpeg", text: "חיפוי קיר תיבות דואר בגוון זהב" },
+    { src: "/images/mailboxes/mailbox-rooms/R-002.jpeg", text: "חיפוי קיר תיבות דואר בגוון זהב" },
 ];
 
 export default function MailboxRooms() {

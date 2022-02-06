@@ -34,53 +34,5 @@
             "/images/Doors/LUX/example3.jpg",
             "/images/Doors/LUX/example3.jpg"
         ]
-    },
-    {
-        "projectID": "שם-הפרויקט-4",
-        "name": "שם הפרויקט",
-        "description": "המסגרת נייר הרתומה של ומתכת הכולל הדלת החומרים כלל בקירות דלתות המפרידה בנויה למצוא לעבור אינסרט אחד בכל עץ בד. ",
-        "date": "10/11/2021",
-        "thumbnail": "/images/Doors/LUX/example3.jpg",
-        "images": [
-            "/images/Doors/LUX/example3.jpg",
-            "/images/Doors/LUX/example3.jpg",
-            "/images/Doors/LUX/example3.jpg"
-        ]
-    },
-    {
-        "projectID": "שם-הפרויקט-5",
-        "name": "שם הפרויקט",
-        "description": "המסגרת נייר הרתומה של ומתכת הכולל הדלת החומרים כלל בקירות דלתות המפרידה בנויה למצוא לעבור אינסרט אחד בכל עץ בד. ",
-        "date": "10/11/2021",
-        "thumbnail": "/images/Doors/LUX/example3.jpg",
-        "images": [
-            "/images/Doors/LUX/example3.jpg",
-            "/images/Doors/LUX/example3.jpg",
-            "/images/Doors/LUX/example3.jpg"
-        ]
-    },
-    {
-        "projectID": "שם-הפרויקט-6",
-        "name": "שם הפרויקט",
-        "description": "המסגרת נייר הרתומה של ומתכת הכולל הדלת החומרים כלל בקירות דלתות המפרידה בנויה למצוא לעבור אינסרט אחד בכל עץ בד. ",
-        "date": "10/11/2021",
-        "thumbnail": "/images/Doors/LUX/example3.jpg",
-        "images": [
-            "/images/Doors/LUX/example3.jpg",
-            "/images/Doors/LUX/example3.jpg",
-            "/images/Doors/LUX/example3.jpg"
-        ]
-    },
-    {
-        "projectID": "שם-הפרויקט-7",
-        "name": "שם הפרויקט",
-        "description": "המסגרת נייר הרתומה של ומתכת הכולל הדלת החומרים כלל בקירות דלתות המפרידה בנויה למצוא לעבור אינסרט אחד בכל עץ בד. ",
-        "date": "10/11/2021",
-        "thumbnail": "/images/Doors/LUX/example3.jpg",
-        "images": [
-            "/images/Doors/LUX/example3.jpg",
-            "/images/Doors/LUX/example3.jpg",
-            "/images/Doors/LUX/example3.jpg"
-        ]
     }
 ]
