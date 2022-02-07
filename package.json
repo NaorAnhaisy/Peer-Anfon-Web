@@ -42,6 +42,7 @@
     "react-medium-image-zoom": "^4.3.5",
     "react-multi-carousel": "^2.6.5",
     "react-responsive-carousel": "^3.2.22",
+    "react-type-animation": "^1.1.2",
     "react-visibility-sensor": "^5.1.1"
   },
   "devDependencies": {

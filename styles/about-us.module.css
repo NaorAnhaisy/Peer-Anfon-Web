@@ -1,33 +1,114 @@
-.colTitle {
+.enteryContainer {
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    min-height: 700px;
+    display: grid;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-image: url(https://localwebdesigncompany.com/newdesign9/wp-content/uploads/sites/94/2019/03/apartment-architectural-design-architecture-323780.jpg);
+}
+
+.enteryContainer .enteryContentRow {
+    height: 100%;
+    width: 100%;
+}
+
+.enteryContainer .enteryContentCol {
+    background-color: rgba(44, 44, 44, 0.77);
+    display: grid;
+}
+
+.enteryContainer .enteryContent {
+    align-self: center;
+    color: white;
+    text-align: right;
+    padding-top: 15.5%;
+    padding-right: 8.5%;
+    padding-bottom: 15.5%;
+    padding-left: 8.5%;
+}
+
+.enteryContainer .enteryContent h1 {
+    font-size: 60px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.enteryContainer .enteryContent p {
+    font-size: 17px;
+    color: #fff;
+    font-weight: 100;
+    line-height: 27px;
+}
+
+/* .seperatorEnteryContainer {
+    width: 100%;
+    height: 20px;
+    background-color: #000000;
+} */
+
+.threeIdeasConatiner {
+    background-size: initial;
+    background-repeat: repeat;
+    background-image: url(https://localwebdesigncompany.com/newdesign9/wp-content/uploads/sites/94/2019/03/subtle_dots_@2X.png);
+    background-color: white;
+}
+
+.threeIdeasConatiner .colTitle {
     font-size: 33px;
     color: var(--gold-secondary);
     font-weight: 100;
 }
 
-.colParagraph {
+.threeIdeasConatiner .colParagraph {
     font-size: 15px;
 }
 
-.colsRow,
-.explainRow,
-.importersDiv,
-.certificatesDiv {
-    margin-top: 160px;
+.threeIdeasConatiner .colsRow {
+    row-gap: 60px;
+}
+
+.explainContainer {
+    width: 100%;
+    margin: 0;
+    background-color: #aaaaaa;
+    background-image: url(https://images.alphacoders.com/924/924653.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #000000;
+}
+
+.explainContainer .explainRow {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
 }
 
 .colsRow {
-    row-gap: 60px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.explainDiv {
+    padding: 8rem 5rem;
 }
 
 .explainDiv h3 {
     font-size: 50px;
-    color: var(--gold-secondary);
+    color: #000000;
     font-weight: 100;
 }
 
-.explainRow div:nth-child(2) {
-    padding-left: 70px;
+.explainRow .explainCol {
     text-align: right;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffffde;
 }
 
 .explainRow .separator {
@@ -36,6 +117,7 @@
     display: block;
     margin: 35px 0;
     width: 65px;
+    background: black !important;
 }
 
 .explainRow p {
@@ -87,12 +169,108 @@
     }
 }
 
+.importersDiv,
+.certificatesDiv {
+    background-color: #eaeaeade;
+    color: rgb(0, 0, 0);
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.importersDiv .importerImageDiv {
+    box-shadow: 0 0 6px 2px #1a1a1a;
+}
+
 .importersDiv h3,
 .certificatesDiv h3 {
     font-size: 40px;
-    color: #5f5f5f;
+    color: #000000;
     font-weight: 400;
     letter-spacing: 1px;
+}
+
+.separatorSectionTitle {
+    background: #000000 !important;
+    width: 150px !important;
+}
+
+.importersDiv .importersRow {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.officialToppImporterMainDiv {
+    background-size: initial;
+    background-repeat: repeat;
+    background-image: url(https://localwebdesigncompany.com/newdesign9/wp-content/uploads/sites/94/2019/03/subtle_dots_@2X.png);
+    background-color: white;
+}
+
+.officialToppImporter {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.officialToppImporter h3 {
+    text-align: right;
+    font-size: 40px;
+    color: #242424;
+    line-height: 1.3em;
+    font-weight: bold;
+}
+
+.officialToppImporter h4 {
+    text-align: right;
+    font-size: 22px;
+    color: var(--gold-dark);
+    line-height: 1.5em;
+    font-weight: 100;
+}
+
+.officialToppImporter p {
+    text-align: right;
+    line-height: 1.7em;
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+.officialToppImporter .imagesCol {
+    margin-right: 5.5%;
+}
+
+.officialToppImporter .overlapFirstImg {
+    margin-bottom: 5.82%;
+    margin-right: 30px !important;
+    position: relative;
+    z-index: 4;
+}
+
+.officialToppImporter img {
+    max-width: 100%;
+    height: auto;
+}
+
+.officialToppImporter .frameImg {
+    padding: 10px;
+    box-shadow: 0px 0px 15px grey;
+    border-radius: 3px;
+    background-color: white;
+}
+
+@media only screen and (min-width: 981px) {
+    .officialToppImporter .overlapSecondImg {
+        max-width: 70%;
+    }
+}
+
+.officialToppImporter .overlapSecondImg {
+    margin-top: -150px !important;
+    text-align: right;
+    margin-right: 0;
+    position: relative;
+    z-index: 5;
 }
 
 .certificatesDiv p {
@@ -100,8 +278,14 @@
     margin-bottom: 50px;
 }
 
+.certificatesRow .certificatesImagesCol {
+    row-gap: 20px;
+    display: grid;
+}
+
 .certificatesRow img {
     width: 100%;
+    height: calc(100% - 10px);
 }
 
 @media (min-width: 768px) {
