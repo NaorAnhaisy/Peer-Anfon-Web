@@ -5,6 +5,7 @@ import styles from "../../styles/automatic-doors.module.css";
 import gatesStyles from "../../styles/quick-enter-gates.module.css";
 import Link from "next/link";
 import VisibilitySensor from "react-visibility-sensor";
+import ContactTeam from '../../components/ContactTeam/ContactTeam';
 // import ProductHeaderCarousel from '../../components/ProductHeaderCarousel/ProductHeaderCarousel';
 import AOS from 'aos';
 
@@ -207,6 +208,7 @@ export default function Mailboxes() {
                     </Col>
                 </Row>
             </div>
-        </div >
+            <ContactTeam />
+        </div>
     );
 }

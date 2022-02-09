@@ -50,6 +50,7 @@ export default function DepositCellphones() {
     return (
         <div>
             <img src="/images/mailboxes/backgrounds/deposit-cellphones.jpeg" className={`undragablle-image ${styles.doorSelectedMainDiv}`} alt="ארון הפקדה לטלפונים סלולריים" />
+            <div className={styles.separatorModelHeaderImage} />
             <Container className={`custom-size-container ${styles.doorSelectedContainer}`}>
                 <div>
                     <Row className={styles.doorSelectedTitleRow}>

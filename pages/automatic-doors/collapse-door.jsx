@@ -16,6 +16,7 @@ export default function CollapseDoor() {
     return (
         <div>
             <img src="/images/automatic-doors/backgrounds/collapse-automatic-door.jpeg" className={`undragablle-image ${styles.doorSelectedMainDiv}`} alt="דלת אוטומטית קורסת" />
+            <div className={styles.separatorModelHeaderImage} />
             <Container className={styles.doorSelectedContainer}>
                 <div>
                     <Row className={styles.doorSelectedTitleRow}>

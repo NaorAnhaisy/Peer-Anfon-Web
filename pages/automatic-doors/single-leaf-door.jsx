@@ -17,6 +17,7 @@ export default function SingleLeafDoor() {
     return (
         <div>
             <img src="/images/automatic-doors/backgrounds/single-leaf-automatic-door.jpg" className={`undragablle-image ${styles.doorSelectedMainDiv}`} alt="דלת אוטומטית חד-כנף" />
+            <div className={styles.separatorModelHeaderImage} />
             <Container className={styles.doorSelectedContainer}>
                 <div>
                     <Row className={styles.doorSelectedTitleRow}>
@@ -80,7 +81,7 @@ export default function SingleLeafDoor() {
                     <Row className="flex-dir-col-reverse-lg-screen">
                         <Col sm={12} lg={6} className={styles.doorSelectedHorizontalImages}>
                             <img
-                                style={{ height: '50%' }}
+                                style={{ height: '50%', maxHeight: '50vh', minHeight: '250px' }}
                                 className={styles.doorSelectedDetailsExampleImg}
                                 data-aos="fade-zoom-in"
                                 data-aos-duration="700"
@@ -88,7 +89,7 @@ export default function SingleLeafDoor() {
                                 alt="דלת אוטומטית חד כנף"
                             />
                             <img
-                                style={{ height: '50%' }}
+                                style={{ height: '50%', maxHeight: '50vh', minHeight: '250px' }}
                                 className={styles.doorSelectedDetailsExampleImg}
                                 data-aos="fade-zoom-in"
                                 data-aos-duration="700"
@@ -105,7 +106,8 @@ export default function SingleLeafDoor() {
                                 src="/images/automatic-doors/singleLeaf-door/singleleaf-3.jpeg"
                                 alt="דלת אוטומטית חד כנף"
                             /> */}
-                            <video autoPlay loop playsInline muted id="single-leaf-video" style={{ height: '100%' }}
+                            <video autoPlay loop playsInline muted id="single-leaf-video"
+                                style={{ height: '100%', maxHeight: '100vh', minHeight: '500px' }}
                                 className={styles.doorSelectedDetailsExampleImg}>
                                 <source src="/videos/automatic-doors/single-leaf-door.mp4"
                                     type="video/mp4" />
@@ -234,10 +236,8 @@ export default function SingleLeafDoor() {
                             />
                         </Col>
                     </Row>
-
                 </div>
             </Container>
-
             <ContactTeam />
         </div>
     );

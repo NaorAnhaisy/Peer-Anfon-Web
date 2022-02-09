@@ -17,6 +17,7 @@ export default function DoubleLeafDoor() {
     return (
         <div>
             <img src="/images/automatic-doors/backgrounds/double-leaf-automatic-door.jpg" className={`undragablle-image ${styles.doorSelectedMainDiv}`} alt="דלת אוטומטית דו-כנף" />
+            <div className={styles.separatorModelHeaderImage} />
             <Container className={styles.doorSelectedContainer}>
                 <div>
                     <Row className={styles.doorSelectedTitleRow}>
@@ -90,7 +91,7 @@ export default function DoubleLeafDoor() {
                                         />
                                 </Zoom> */}
                                 <img
-                                    style={{ height: '50%' }}
+                                    style={{ height: '50%', maxHeight: '50vh', minHeight: '250px' }}
                                     className={styles.doorSelectedDetailsExampleImg}
                                     data-aos="fade-zoom-in"
                                     data-aos-duration="700"
@@ -98,7 +99,7 @@ export default function DoubleLeafDoor() {
                                     alt="דלת אוטומטית דו כנף"
                                 />
                                 <img
-                                    style={{ height: '50%' }}
+                                    style={{ height: '50%', maxHeight: '50vh', minHeight: '250px' }}
                                     className={styles.doorSelectedDetailsExampleImg}
                                     data-aos="fade-zoom-in"
                                     data-aos-duration="700"
@@ -107,7 +108,8 @@ export default function DoubleLeafDoor() {
                                 />
                             </Col>
                             <Col sm={12} lg={6}>
-                                <video autoPlay loop playsInline muted id="double-leaf-video" style={{ height: '100%' }}
+                                <video autoPlay loop playsInline muted id="double-leaf-video"
+                                style={{ height: '100%', maxHeight: '100vh', minHeight: '500px' }}
                                     className={styles.doorSelectedDetailsExampleImg}>
                                     <source src="/videos/automatic-doors/double-leaf-door.mp4"
                                         type="video/mp4" />

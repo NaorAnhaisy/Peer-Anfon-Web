@@ -46,6 +46,7 @@ export default function MailboxRooms() {
     return (
         <div>
             <img src="/images/mailboxes/backgrounds/mailbox-rooms.jpeg" className={`undragablle-image ${styles.doorSelectedMainDiv}`} alt="חדרי תיבות דואר" />
+            <div className={styles.separatorModelHeaderImage} />
             <Container className={`custom-size-container ${styles.doorSelectedContainer}`}>
                 <div>
                     <Row className={styles.doorSelectedTitleRow}>

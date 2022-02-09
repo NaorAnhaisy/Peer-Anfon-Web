@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import styles from "../../styles/automatic-doors.module.css";
 import Link from "next/link";
 import VisibilitySensor from "react-visibility-sensor";
+import ContactTeam from '../../components/ContactTeam/ContactTeam';
 import ProductHeaderCarousel from '../../components/ProductHeaderCarousel/ProductHeaderCarousel';
 import ColorsTemplate from "../../components/ColorsTemplate/ColorsTemplate";
 import AOS from 'aos';
@@ -19,10 +20,10 @@ export default function Mailboxes() {
     return (
         <div className="product-title-carousel">
             <ProductHeaderCarousel items={[
-                { image: "/images/mailboxes/slider-backgrounds/slider-1.jpg", title: "עיצוב ססגוני", desc: "דלתות אוטומטיות מעוצבות ויוקרתיות" },
-                { image: "/images/mailboxes/slider-backgrounds/slider-2.jpeg", title: "לפי הדרישה שלך", desc: "דלתות אוטומטיות לבניינים" },
-                { image: "/images/mailboxes/slider-backgrounds/slider-3.jpeg", title: "מתאים לארגונים", desc: "דלתות אוטומטיות לחברות ומוסדות" },
-                { image: "/images/mailboxes/slider-backgrounds/slider-4.jpeg", title: "מתאים לארגונים", desc: "דלתות אוטומטיות לחברות ומוסדות" },
+                { image: "/images/mailboxes/slider-backgrounds/slider-1.jpg", title: "עיצוב יוקרתי", desc: "תיבות הדואר מעניקות תחושה מודרנית לחלל" },
+                { image: "/images/mailboxes/slider-backgrounds/slider-2.jpeg", title: "לפי דרישתך", desc: "ייצור בהתאם לדרישת הלקוח" },
+                { image: "/images/mailboxes/slider-backgrounds/slider-3.jpeg", title: "מראה ססגוני", desc: "תיבות הדואר מוסיפות למראה החזותי של המבנה" },
+                { image: "/images/mailboxes/slider-backgrounds/slider-4.jpeg", title: "מבטיחים איכות", desc: "ייצור בטכנולוגיות מתקדמות לפי התקן הישראלי" },
             ]} alt="תיבות דואר" />
 
             <VisibilitySensor partialVisibility onChange={(isVisible => { isVisible && setIsFirstContentShowed(true) })}>
@@ -265,6 +266,7 @@ export default function Mailboxes() {
                     </Col>
                 </Row>
             </div>
-        </div >
+            <ContactTeam />
+        </div>
     );
 }

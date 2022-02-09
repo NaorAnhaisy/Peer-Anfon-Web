@@ -88,6 +88,7 @@ export default function SharedHouses() {
     return (
         <div>
             <img src="/images/mailboxes/backgrounds/shared-houses.jpeg" className={`undragablle-image ${styles.doorSelectedMainDiv}`} alt="תיבות דואר לבתים משותפים" />
+            <div className={styles.separatorModelHeaderImage} />
             <Container className={`custom-size-container ${styles.doorSelectedContainer}`}>
                 <div>
                     <Row className={styles.doorSelectedTitleRow}>
