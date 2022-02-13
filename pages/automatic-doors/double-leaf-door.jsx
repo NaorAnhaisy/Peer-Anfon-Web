@@ -466,16 +466,26 @@ export default function DoubleLeafDoor() {
                         <Row>
                             <Col sm={12} lg={6}>
                                 <img
-                                    className={`${styles.doorSelectedDetailsExampleImg} ${styles.inRowImages}`}
+                                    style={{ height: '100%' }}
+                                    className={styles.doorSelectedDetailsExampleImg}
                                     data-aos="fade-zoom-in"
                                     data-aos-duration="700"
-                                    src="/images/automatic-doors/doubleLeaf-door/double_leaf_3.jpeg"
+                                    src="/images/automatic-doors/doubleLeaf-door/double_leaf_39.jpeg"
                                     alt="דלת אוטומטית דו כנף"
                                 />
                             </Col>
                             <Col sm={12} lg={6}>
                                 <img
-                                    className={`${styles.doorSelectedDetailsExampleImg} ${styles.inRowImages}`}
+                                    style={{ height: '50%' }}
+                                    className={styles.doorSelectedDetailsExampleImg}
+                                    data-aos="fade-zoom-in"
+                                    data-aos-duration="700"
+                                    src="/images/automatic-doors/doubleLeaf-door/double_leaf_3.jpeg"
+                                    alt="דלת אוטומטית דו כנף"
+                                />
+                                <img
+                                    style={{ height: '50%' }}
+                                    className={styles.doorSelectedDetailsExampleImg}
                                     data-aos="fade-zoom-in"
                                     data-aos-duration="700"
                                     src="/images/automatic-doors/doubleLeaf-door/double_leaf_2.jpeg"
