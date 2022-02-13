@@ -16,7 +16,7 @@ export default function AboutUs() {
         <>
             <div className={styles.enteryContainer}>
                 <Row className={styles.enteryContentRow}>
-                    <Col className={styles.enteryContentCol} xs={6}>
+                    <Col className={styles.enteryContentCol} xs={12} lg={6}>
                         <div className={styles.enteryContent}>
                             <TypeAnimation
                                 cursor={false}
@@ -32,7 +32,7 @@ export default function AboutUs() {
                             </p>
                         </div>
                     </Col>
-                    <Col xs={6}></Col>
+                    <Col xs={0} lg={6} className={styles.displayNoneOnMobile}></Col>
                 </Row>
             </div>
             {/* <div className={styles.seperatorEnteryContainer} /> */}
