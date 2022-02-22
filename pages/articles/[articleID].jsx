@@ -11,13 +11,13 @@ let articles = require('../../data/articles.json');
 export default function Article() {
     const router = useRouter();
     const { articleID } = router.query;
+    const [loading, setLoading] = useState(true);
     const [article, setArticle] = useState(null);
-    const [articleNotFound, setArticleNotFound] = useState(false);
 
     useEffect(() => {
         let foundArticle = articles.find(article => article.articleID === articleID);
         if (foundArticle) setArticle(foundArticle);
-        else setArticleNotFound(true);
+        setLoading(false);
     }, [article, setArticle, articleID]);
 
     const prevArticle = () => {
@@ -35,7 +35,7 @@ export default function Article() {
     return (
         <>
             <Head>
-                <title>{project?.name ? "פאר אנפון - פרוייקט " + project.name : "פאר אנפון - הפרוייקטים שלנו"}</title>
+                <title>פאר אנפון - מאמרים מקצועיים</title>
 
                 <title>פאר אנפון - מאמרים מקצועיים</title>
             </Head>
@@ -46,16 +46,14 @@ export default function Article() {
                     <div className={doorStyles.arrowBackIcon}></div>
                     <span className={doorStyles.arrowBackIconText}>לכל המאמרים</span>
                 </div>
-                {articleNotFound && !article ?
-                    <h2>מצטערים, המאמר לא נמצא</h2>
+                {loading ?
+                    <RotateLoader />
                     :
-                    !article ?
-                        <RotateLoader />
-                        :
+                    article ?
                         <div>
                             {article?.html.map((section, i) => {
                                 return <div className={`mt-5 mb-5 ${styles.articleContent}`} key={i}>
-                                    <h3 className={i === 0 ? styles.articleTitle : styles.articleSectionTitle}>{section.title}</h3>
+                                    <h3 className={i === 0 ? styles.articleTitle : styles.articleSectionTitle}>{section.title ? section.title : article.title}</h3>
                                     <div className={i === 0 ? styles.articleStartParagraph : styles.articleParagraph} dangerouslySetInnerHTML={{ __html: section.paragraph }} />
                                     <div className={i === 0 ? styles.sperator : ""} />
                                 </div>
@@ -89,6 +87,8 @@ export default function Article() {
                                 </button>
                             </div>
                         </div>
+                        :
+                        <h2>מצטערים, המאמר לא נמצא</h2>
                 }
             </Container>
         </>
