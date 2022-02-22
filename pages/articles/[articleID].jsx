@@ -15,6 +15,12 @@ export default function Article() {
     const [article, setArticle] = useState(null);
 
     useEffect(() => {
+        // for (let i = 0; i < articles.length - 1; i++) {
+        //     for (let j = i + 1; j < articles[i].length; j++) {
+        //         if (articles[i].articleID === articles[j].articleID) console.log(articles[i].articleID);
+        //     }
+        // }
+
         let foundArticle = articles.find(article => article.articleID === articleID);
         if (foundArticle) setArticle(foundArticle);
         setLoading(false);
