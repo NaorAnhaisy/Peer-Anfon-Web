@@ -36,8 +36,6 @@ export default function Article() {
         <>
             <Head>
                 <title>פאר אנפון - מאמרים מקצועיים</title>
-
-                <title>פאר אנפון - מאמרים מקצועיים</title>
             </Head>
 
             <Container className={`mt-5 mb-5 ${styles.articleContainer}`}>
