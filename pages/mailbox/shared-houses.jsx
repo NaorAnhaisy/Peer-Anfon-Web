@@ -1,21 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 import { useRouter } from "next/router";
+import Head from 'next/head';
+import { useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import ContactTeam from '../../components/ContactTeam/ContactTeam';
 import styles from "../../styles/automatic-door-model.module.css";
 import intercomStyles from "../../styles/intercom.module.css";
-import { useEffect } from "react";
 import AOS from 'aos';
-import ContactTeam from '../../components/ContactTeam/ContactTeam';
-import Zoom from 'react-medium-image-zoom'
+import Zoom from 'react-medium-image-zoom';
 
 const images = [
-    /**
-     * תיבות דואר הכוללות שני שילוטים
-     * תיבות דואר בתוספת מספרים מובלטים
-     * תיבות דואר על קיר בתוספת שילוט מפרספקס
-     * תיבות דואר בתוך מסגרת ממתכת
-     * תיבות דואר בתוספת שילוט בחריטת לייזר
-     */
     { src: "/images/mailboxes/shared-houses/T-427.jpeg", text: "תיבות דואר מונחות על סטנד" },
     { src: "/images/mailboxes/shared-houses/T-401.jpeg", text: "תיבות דואר ללא קלפה עם מספרים מובלטים" },
     { src: "/images/mailboxes/shared-houses/T-405.jpeg", text: "תיבות דואר בתוך ויטרינה" },
@@ -87,6 +81,10 @@ export default function SharedHouses() {
 
     return (
         <div>
+            <Head>
+                <title>פאר אנפון - תיבות דואר לבתים משותפים</title>
+            </Head>
+
             <img src="/images/mailboxes/backgrounds/shared-houses.jpeg" className={`undragablle-image ${styles.doorSelectedMainDiv}`} alt="תיבות דואר לבתים משותפים" />
             <div className={styles.separatorModelHeaderImage} />
             <Container className={`custom-size-container ${styles.doorSelectedContainer}`}>

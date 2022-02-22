@@ -1,12 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import { useRouter } from "next/router";
+import Head from 'next/head';
+import { useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import ContactTeam from '../../components/ContactTeam/ContactTeam';
 import styles from "../../styles/automatic-door-model.module.css";
 import intercomStyles from "../../styles/intercom.module.css";
-import { useEffect } from "react";
 import AOS from 'aos';
-import ContactTeam from '../../components/ContactTeam/ContactTeam';
-import Zoom from 'react-medium-image-zoom'
+import Zoom from 'react-medium-image-zoom';
 
 const images = [
     { src: "/images/mailboxes/mailbox-rooms/R-001.jpeg", text: "חיפוי קיר תיבות דואר בגוון זהב" },
@@ -45,6 +46,10 @@ export default function MailboxRooms() {
 
     return (
         <div>
+            <Head>
+                <title>פאר אנפון - חדר תיבות דואר</title>
+            </Head>
+
             <img src="/images/mailboxes/backgrounds/mailbox-rooms.jpeg" className={`undragablle-image ${styles.doorSelectedMainDiv}`} alt="חדרי תיבות דואר" />
             <div className={styles.separatorModelHeaderImage} />
             <Container className={`custom-size-container ${styles.doorSelectedContainer}`}>

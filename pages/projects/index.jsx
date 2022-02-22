@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Head from 'next/head';
 import { Container, Row, Col } from "react-bootstrap";
 import styles from "../../styles/projects.module.css";
 import ProjectsCard from '../../components/ProjectsCard/ProjectsCard';
@@ -7,7 +8,11 @@ let projects = require('../../data/projects.json');
 
 export default function Projects() {
     return (
-        <div>
+        <>
+            <Head>
+                <title>פאר אנפון - הפרוייקטים שלנו</title>
+            </Head>
+
             <Container className="mt-5 mb-5">
                 <div className="push-from-navbar"></div>
                 <div className="mb-5 page-title">
@@ -33,6 +38,6 @@ export default function Projects() {
                     </Row>
                 </div>
             </Container>
-        </div>
+        </>
     );
 }

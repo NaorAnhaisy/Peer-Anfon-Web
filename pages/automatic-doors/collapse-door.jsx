@@ -1,8 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import { useRouter } from "next/router";
+import Head from 'next/head';
+import { useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import styles from "../../styles/automatic-door-model.module.css"
-import { useEffect } from "react";
 import AOS from 'aos';
 import ContactTeam from '../../components/ContactTeam/ContactTeam';
 
@@ -15,6 +16,10 @@ export default function CollapseDoor() {
 
     return (
         <div>
+            <Head>
+                <title>פאר אנפון - דלת אוטומטית קורסת</title>
+            </Head>
+
             <img src="/images/automatic-doors/backgrounds/collapse-automatic-door.jpeg" className={`undragablle-image ${styles.doorSelectedMainDiv}`} alt="דלת אוטומטית קורסת" />
             <div className={styles.separatorModelHeaderImage} />
             <Container className={styles.doorSelectedContainer}>

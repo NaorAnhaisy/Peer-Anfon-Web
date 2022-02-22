@@ -1,8 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import { useRouter } from "next/router";
+import Head from 'next/head';
+import { useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import styles from "../../styles/automatic-door-model.module.css"
-import { useEffect } from "react";
 import AOS from 'aos';
 import ContactTeam from '../../components/ContactTeam/ContactTeam';
 
@@ -16,6 +17,10 @@ export default function DoubleLeafDoor() {
 
     return (
         <div>
+            <Head>
+                <title>פאר אנפון - דלת אוטומטית דו-כנף</title>
+            </Head>
+
             <img src="/images/automatic-doors/backgrounds/double-leaf-automatic-door.jpg" className={`undragablle-image ${styles.doorSelectedMainDiv}`} alt="דלת אוטומטית דו-כנף" />
             <div className={styles.separatorModelHeaderImage} />
             <Container className={styles.doorSelectedContainer}>
@@ -109,7 +114,7 @@ export default function DoubleLeafDoor() {
                             </Col>
                             <Col sm={12} lg={6}>
                                 <video autoPlay loop playsInline muted id="double-leaf-video"
-                                style={{ height: '100%', maxHeight: '100vh', minHeight: '500px' }}
+                                    style={{ height: '100%', maxHeight: '100vh', minHeight: '500px' }}
                                     className={styles.doorSelectedDetailsExampleImg}>
                                     <source src="/videos/automatic-doors/double-leaf-door.mp4"
                                         type="video/mp4" />

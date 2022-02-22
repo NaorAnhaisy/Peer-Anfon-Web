@@ -1,9 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-import { Container, Card, Row, Col } from "react-bootstrap";
-import styles from "../../styles/articles.module.css";
+import Head from 'next/head';
 import Link from "next/link";
-import AOS from "aos";
 import { useEffect } from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import styles from "../../styles/articles.module.css";
+import AOS from "aos";
 
 let articles = require('../../data/articles.json');
 
@@ -14,6 +15,10 @@ export default function Articles() {
 
     return (
         <div>
+            <Head>
+                <title>פאר אנפון - מאמרים מקצועיים</title>
+            </Head>
+
             <Container className="mt-5 mb-5">
                 <div className="push-from-navbar"></div>
                 <div className="mb-5 page-title">

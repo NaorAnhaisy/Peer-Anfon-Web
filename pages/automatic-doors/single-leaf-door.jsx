@@ -1,8 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import { useRouter } from "next/router";
+import Head from 'next/head';
+import { useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import styles from "../../styles/automatic-door-model.module.css"
-import { useEffect } from "react";
 import AOS from 'aos';
 import ContactTeam from '../../components/ContactTeam/ContactTeam';
 
@@ -16,6 +17,10 @@ export default function SingleLeafDoor() {
 
     return (
         <div>
+            <Head>
+                <title>פאר אנפון - דלת אוטומטית חד-כנף</title>
+            </Head>
+
             <img src="/images/automatic-doors/backgrounds/single-leaf-automatic-door.jpg" className={`undragablle-image ${styles.doorSelectedMainDiv}`} alt="דלת אוטומטית חד-כנף" />
             <div className={styles.separatorModelHeaderImage} />
             <Container className={styles.doorSelectedContainer}>

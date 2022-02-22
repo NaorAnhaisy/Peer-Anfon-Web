@@ -1,8 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import { useRouter } from "next/router";
+import Head from 'next/head';
+import { useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import styles from "../../styles/automatic-door-model.module.css"
-import { useEffect } from "react";
 import AOS from 'aos';
 import ContactTeam from '../../components/ContactTeam/ContactTeam';
 
@@ -16,6 +17,10 @@ export default function TelescopDoor() {
 
     return (
         <div>
+            <Head>
+                <title>פאר אנפון - דלת אוטומטית טלסקופית</title>
+            </Head>
+
             <img src="/images/automatic-doors/backgrounds/telescop-automatic-door.jpeg" className={`undragablle-image ${styles.doorSelectedMainDiv}`} alt="דלת אוטומטית טלסקופית" />
             <div className={styles.separatorModelHeaderImage} />
             <Container className={styles.doorSelectedContainer}>
@@ -63,8 +68,8 @@ export default function TelescopDoor() {
                                 data-aos-duration="1500">
                                 <h6>פתרון Peer Anfon</h6>
                                 <p>
-                                המערכת מתוכננת לשימוש הן עבור דלת אוטומטית טלסקופית בעלת 4 כנפיים הנפתחות מהמרכז לצדדים, והן עבור דלת אוטומטית טלסקופית בעלת 2 כנפיים הנפתחות לצד אחד.
-                                הדלתות הטלסקופיות הן דלתות בטיחותיות המאופיינות בעיצוב יוקרתי, בתנועה שקטה מאוד , המספקת פתיחה חלקה ומהירה ובביצועים אמינים העומדת בכל התקנים האירופאיים הדרושים.                                                                                                      חברתנו מספקת מגוון רחב היקף של דלתות אוטומטיות טלסקופיות ברמת ביצוע וגימור מן הגבוהות ביותר.                                </p>
+                                    המערכת מתוכננת לשימוש הן עבור דלת אוטומטית טלסקופית בעלת 4 כנפיים הנפתחות מהמרכז לצדדים, והן עבור דלת אוטומטית טלסקופית בעלת 2 כנפיים הנפתחות לצד אחד.
+                                    הדלתות הטלסקופיות הן דלתות בטיחותיות המאופיינות בעיצוב יוקרתי, בתנועה שקטה מאוד , המספקת פתיחה חלקה ומהירה ובביצועים אמינים העומדת בכל התקנים האירופאיים הדרושים.                                                                                                      חברתנו מספקת מגוון רחב היקף של דלתות אוטומטיות טלסקופיות ברמת ביצוע וגימור מן הגבוהות ביותר.                                </p>
                             </div>
                         </Col>
                     </Row>

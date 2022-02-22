@@ -1,12 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import { useRouter } from "next/router";
+import Head from 'next/head';
+import { useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import ContactTeam from '../../components/ContactTeam/ContactTeam';
 import styles from "../../styles/automatic-door-model.module.css";
 import intercomStyles from "../../styles/intercom.module.css";
-import { useEffect } from "react";
 import AOS from 'aos';
-import ContactTeam from '../../components/ContactTeam/ContactTeam';
-import Zoom from 'react-medium-image-zoom'
+import Zoom from 'react-medium-image-zoom';
 
 const images = [
     { src: "/images/mailboxes/deposit-cellphones/Y-1.jpg", text: "ארון הפקדה לטלפונים סלולריים כולל כבל הטענה" },
@@ -49,6 +50,10 @@ export default function DepositCellphones() {
 
     return (
         <div>
+            <Head>
+                <title>פאר אנפון - ארון הפקדה לטלפונים סלולריים</title>
+            </Head>
+
             <img src="/images/mailboxes/backgrounds/deposit-cellphones.jpeg" className={`undragablle-image ${styles.doorSelectedMainDiv}`} alt="ארון הפקדה לטלפונים סלולריים" />
             <div className={styles.separatorModelHeaderImage} />
             <Container className={`custom-size-container ${styles.doorSelectedContainer}`}>

@@ -1,12 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import { useRouter } from "next/router";
+import Head from 'next/head';
+import { useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import ContactTeam from '../../components/ContactTeam/ContactTeam';
 import styles from "../../styles/automatic-door-model.module.css";
 import intercomStyles from "../../styles/intercom.module.css";
-import { useEffect } from "react";
 import AOS from 'aos';
-import ContactTeam from '../../components/ContactTeam/ContactTeam';
-import Zoom from 'react-medium-image-zoom'
+import Zoom from 'react-medium-image-zoom';
 
 const images = [
     { src: "/images/mailboxes/private-houses/P-302.jpg", text: "P-302" },
@@ -66,6 +67,10 @@ export default function PrivateHouses() {
 
     return (
         <div>
+            <Head>
+                <title>פאר אנפון - תיבות דואר לבתים פרטיים</title>
+            </Head>
+
             <img src="/images/mailboxes/backgrounds/private-houses.jpg" className={`undragablle-image ${styles.doorSelectedMainDiv}`} alt="תיבות דואר לבתים פרטיים" />
             <div className={styles.separatorModelHeaderImage} />
             <Container className={`custom-size-container ${styles.doorSelectedContainer}`}>
