@@ -1,8 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
+import Head from 'next/head';
 import { useEffect } from 'react';
 import styles from '../styles/contact-us.module.css';
 import { Col, Container, Row } from 'react-bootstrap';
-import ContactUsForm from '../components/ContactUsForm/ContactUsForm'
+import ContactUsForm from '../components/ContactUsForm/ContactUsForm';
 import MyMapComponent from '../components/MyMapComponent/MyMapComponent';
 
 export default function ContactUs() {
@@ -12,7 +13,11 @@ export default function ContactUs() {
     }, []);
 
     return (
-        <div>
+        <>
+            <Head>
+                <title>פאר אנפון - צור קשר</title>
+            </Head>
+
             <div className="push-from-navbar"></div>
             <Container className="mt-5">
                 <div className="mb-5 page-title">
@@ -85,6 +90,6 @@ export default function ContactUs() {
                     </Col>
                 </Row>
             </Container>
-        </div>
+        </>
     )
 }

@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Link from "next/link";
+import { useState, useEffect } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import styles from "../../styles/automatic-doors.module.css";
 import VisibilitySensor from "react-visibility-sensor";

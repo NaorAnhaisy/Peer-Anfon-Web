@@ -1,11 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
+import Head from 'next/head';
+import Link from 'next/link';
+import { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import styles from "../styles/about-us.module.css";
 import doorsStyles from "../styles/automatic-doors.module.css";
-import AOS from "aos";
-import Link from 'next/link';
-import { useEffect } from "react";
 import TypeAnimation from 'react-type-animation';
+import AOS from "aos";
 
 export default function AboutUs() {
     useEffect(() => {
@@ -14,6 +15,10 @@ export default function AboutUs() {
 
     return (
         <>
+            <Head>
+                <title>פאר אנפון - אודותינו</title>
+            </Head>
+
             <div className={styles.enteryContainer}>
                 <Row className={styles.enteryContentRow}>
                     <Col className={styles.enteryContentCol} xs={12} lg={6}>

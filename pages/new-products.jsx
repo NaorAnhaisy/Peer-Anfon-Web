@@ -1,8 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
-import styles from '../styles/new-products.module.css';
-import { Container, Row, Col } from 'react-bootstrap';
-import AOS from "aos";
+import Head from 'next/head';
 import { useEffect } from "react";
+import { Container, Row, Col } from 'react-bootstrap';
+import styles from '../styles/new-products.module.css';
+import AOS from "aos";
 import ContactTeam from '../components/ContactTeam/ContactTeam';
 
 export default function NewProducts() {
@@ -11,7 +12,11 @@ export default function NewProducts() {
     }, []);
 
     return (
-        <div>
+        <>
+            <Head>
+                <title>פאר אנפון - מוצרים חדשים</title>
+            </Head>
+
             <Container style={{ overflowX: 'hidden' }}>
                 <div className="push-from-navbar"></div>
                 <div className="mb-5 page-title">
@@ -56,7 +61,7 @@ export default function NewProducts() {
                 </Row>
             </Container>
             <ContactTeam />
-        </div>
+        </>
 
     )
 }

@@ -1,11 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
+import Head from 'next/head';
 import { Container, Row, Col } from "react-bootstrap";
 import RecommandsFormDiv from '../components/RecommandsFormDiv/RecommandsFormDiv';
 import CustomerRecommandsSlider from '../components/CustomerRecommandsSlider/CustomerRecommandsSlider';
 
 export default function Recommendations() {
     return (
-        <div>
+        <>
+            <Head>
+                <title>פאר אנפון - המלצות</title>
+            </Head>
+
             <Container className="mt-5">
                 <div className="push-from-navbar"></div>
                 <div className="mb-5 page-title">
@@ -18,11 +23,16 @@ export default function Recommendations() {
                         <RecommandsFormDiv />
                     </Col>
                     <Col xs={12} lg={6}>
-                        <img src="/images/Illustrations/Recommands2.png" alt="המלצות פאר אנפון" style={{ width: '100%' }} />
+                        <img src="/images/Illustrations/Recommands.png"
+                            className="undragablle-image"
+                            alt="המלצות פאר אנפון"
+                            style={{ width: '100%' }} />
                     </Col>
                 </Row>
             </Container>
-            <CustomerRecommandsSlider />
-        </div>
+            <div className="mb-5">
+                <CustomerRecommandsSlider />
+            </div>
+        </>
     );
 }

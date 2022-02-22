@@ -1,12 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
+import Head from 'next/head';
 import { useRouter } from "next/router";
+import { useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import styles from "../../styles/automatic-door-model.module.css";
 import gatesStyles from "../../styles/quick-enter-gates.module.css";
-import { useEffect } from "react";
-import AOS from 'aos';
 import ModelImagesSlider from "../../components/ModelImagesSlider/ModelImagesSlider";
 import ContactTeam from '../../components/ContactTeam/ContactTeam';
+import AOS from 'aos';
 
 const F1_images = [
     { url: "/images/quick-enter-gates/speed-gates/F-1_a.png" },
@@ -85,6 +86,10 @@ export default function SpeedGates() {
 
     return (
         <div className="page-title">
+            <Head>
+                <title>פאר אנפון - מעברים מהירים</title>
+            </Head>
+
             <Container className={styles.doorSelectedContainer}>
                 <Row className={styles.doorSelectedTitleRow}>
                     <Col lg={9} md={8} sm={8} xs={12} className={styles.doorSelectedNameDiv}>

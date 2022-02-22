@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import ImagesGallery from '../components/ImagesGallery/ImagesGallery';
 
 const images = [
@@ -133,14 +134,21 @@ const images = [
 
 export default function Gallery() {
     return (
-        <div className="mt-5 mb-5">
-            <div className="push-from-navbar"></div>
-            <div className="mb-5 page-title">
-                <h1 className="text-shine">גלריית תמונות</h1>
-            </div>
-            <div className="mb-5 separator"></div>
+        <>
+            <Head>
+                <title>פאר אנפון - גלריית תמונות</title>
+            </Head>
 
-            <ImagesGallery images={images} altLabel={"תמונת גלרייה פאר אנפון תעשיות בע\"מ"} />
-        </div>
+            <div className="mt-5 mb-5">
+                <div className="push-from-navbar"></div>
+                <div className="mb-5 page-title">
+                    <h1 className="text-shine">גלריית תמונות</h1>
+                </div>
+                <div className="mb-5 separator"></div>
+
+                <ImagesGallery images={images} altLabel={"תמונת גלרייה פאר אנפון תעשיות בע\"מ"} />
+            </div>
+        </>
+
     );
 }

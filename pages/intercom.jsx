@@ -1,9 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
+import Head from 'next/head';
 import { useEffect } from 'react';
-import styles from "../styles/intercom.module.css";
 import { Container, Row, Col } from "react-bootstrap";
-import AOS from 'aos';
+import styles from "../styles/intercom.module.css";
 import ContactTeam from '../components/ContactTeam/ContactTeam';
+import AOS from 'aos';
 import Zoom from 'react-medium-image-zoom'
 
 const classicIntercomImages = [
@@ -44,6 +45,10 @@ export default function Intercom() {
 
     return (
         <div>
+            <Head>
+                <title>פאר אנפון - מערכות אינטרקום</title>
+            </Head>
+
             <Container className={styles.mainContainer}>
                 <div className="mb-5 page-title">
                     <h1 className="text-shine">מערכות אינטרקום</h1>
@@ -107,7 +112,7 @@ export default function Intercom() {
                             <div className={styles.hoverImgContainer}>
                                 <Zoom>
                                     <img src={image.src} alt={`עמוד נירוסטה אינטרקום ${image.text}`}
-                                    style={{ width: "100%", objectFit: "cover" }} />
+                                        style={{ width: "100%", objectFit: "cover" }} />
                                 </Zoom>
                                 <div className={styles.hoverImgMiddle}>
                                     <div className={styles.hoverImgText}>{image.text}</div>

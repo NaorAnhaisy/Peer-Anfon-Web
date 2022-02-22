@@ -1,9 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
+import Head from 'next/head';
 import { useEffect } from 'react';
-import styles from "../styles/intercom.module.css";
 import { Container, Row, Col } from "react-bootstrap";
-import AOS from 'aos';
+import styles from "../styles/intercom.module.css";
 import ContactTeam from '../components/ContactTeam/ContactTeam';
+import AOS from 'aos';
 import Zoom from 'react-medium-image-zoom'
 
 const enterDoorsImages = [
@@ -29,7 +30,11 @@ export default function EnterDoors() {
     }, []);
 
     return (
-        <div>
+        <>
+            <Head>
+                <title>פאר אנפון - דלתות כניסה</title>
+            </Head>
+
             <Container className={styles.mainContainer}>
                 <div className="mb-5 page-title">
                     <h1 className="text-shine">דלתות כניסה</h1>
@@ -103,6 +108,6 @@ export default function EnterDoors() {
                 </Row>
             </div>
             <ContactTeam />
-        </div>
+        </>
     )
 }

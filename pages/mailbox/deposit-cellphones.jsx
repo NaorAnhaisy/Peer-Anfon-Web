@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-import { useRouter } from "next/router";
 import Head from 'next/head';
+import { useRouter } from "next/router";
 import { useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import ContactTeam from '../../components/ContactTeam/ContactTeam';
