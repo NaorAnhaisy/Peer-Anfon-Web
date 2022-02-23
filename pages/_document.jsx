@@ -122,7 +122,8 @@ class MyDocument extends Document {
                                     "url": "https://peer-anfon-group.co.il",
                                     "author": {
                                         "@type": "Person",
-                                        "name": "admin"
+                                        "name": "admin",
+                                        "url":"https://peer-anfon-group.co.il/about-us/"
                                     },
                                     "publisher": {
                                         "@id": "https://peer-anfon-group.co.il/#organization"
