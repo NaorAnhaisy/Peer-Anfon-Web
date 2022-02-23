@@ -86,7 +86,7 @@ class MyDocument extends Document {
                                     "@type": "WebSite",
                                     "@id": "https://peer-anfon-group.co.il/#website",
                                     "url": "https://peer-anfon-group.co.il",
-                                    "name": "פאר אנפון תעשיות בע\'\'מ",
+                                    "name": "פאר אנפון תעשיות בע\"מ",
                                     "publisher": {
                                         "@id": "https://peer-anfon-group.co.il/#organization"
                                     },
@@ -119,6 +119,7 @@ class MyDocument extends Document {
                                     "headline": "פאר אנפון - דלתות אוטומטיות, דלתות חשמליות אסתטיות ויוקרתיות",
                                     "datePublished": "2015-01-08T08:52:20+00:00",
                                     "dateModified": "2021-12-12T08:52:20+00:00",
+                                    "url": "https://peer-anfon-group.co.il",
                                     "author": {
                                         "@type": "Person",
                                         "name": "admin"
