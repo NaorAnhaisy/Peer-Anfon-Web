@@ -58,12 +58,21 @@
 .articleTitle {
     color: var(--gold-primary);
     margin-bottom: 20px;
-    font-size: 42px;
+    font-size: 50px;
     font-weight: 300;
 }
 
 .articleStartParagraph {
+    font-size: 20px;
+    white-space: pre-line;
+}
+
+.articleParagraph {
     font-size: 18px;
+    word-spacing: 2px;
+    letter-spacing: 0.4px;
+    line-height: 2rem;
+    white-space: pre-line;
 }
 
 .articleSectionTitle {

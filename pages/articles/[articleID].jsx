@@ -57,16 +57,14 @@ export default function Article() {
                         <div>
                             {article?.html.map((section, i) => {
                                 return <div className={`mt-5 mb-5 ${styles.articleContent}`} key={i}>
-                                    <h3 className={i === 0 ? styles.articleTitle : styles.articleSectionTitle}>{section.title ? section.title : article.title}</h3>
+                                    <h3 className={i === 0 ? styles.articleTitle : styles.articleSectionTitle}>{section.title ? section.title : i === 0 && article.title}</h3>
                                     <div className={i === 0 ? styles.articleStartParagraph : styles.articleParagraph} dangerouslySetInnerHTML={{ __html: section.paragraph }} />
                                     <div className={i === 0 ? styles.sperator : ""} />
                                 </div>
                             })}
                             <div className={styles.backAndNextArticleBtnsDiv}>
                                 <button type="button" onClick={nextArticle} className={styles.nextBtn}>
-                                    <span>
-                                        המאמר הבא
-                                    </span>
+                                    <span>למאמר הבא</span>
                                     <div className={styles.centerCon}>
                                         <div className={styles.roundNext}>
                                             <div className={styles.cta}>
@@ -85,9 +83,7 @@ export default function Article() {
                                             </div>
                                         </div>
                                     </div>
-                                    <span>
-                                        המאמר הקודם
-                                    </span>
+                                    <span>למאמר הקודם</span>
                                 </button>
                             </div>
                         </div>
