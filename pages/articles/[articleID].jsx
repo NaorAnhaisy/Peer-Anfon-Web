@@ -39,12 +39,12 @@ export default function Article() {
     }
 
     return (
-        <>
+        <div className={styles.articleMainDiv}>
             <Head>
                 <title>פאר אנפון - מאמרים מקצועיים</title>
             </Head>
 
-            <Container className={`mt-5 mb-5 ${styles.articleContainer}`}>
+            <Container className={`mt-5 ${styles.articleContainer}`}>
                 <div className="push-from-navbar"></div>
                 <div className={doorStyles.arrowBackIconWrapper} onClick={() => router.push(`/מאמרים`)}>
                     <div className={doorStyles.arrowBackIcon}></div>
@@ -91,6 +91,6 @@ export default function Article() {
                         <h2>מצטערים, המאמר לא נמצא</h2>
                 }
             </Container>
-        </>
+        </div>
     )
 }
