@@ -73,6 +73,7 @@ class MyDocument extends Document {
                                         "@type": "ImageObject",
                                         "url": "https://peer-anfon-group.co.il/images/company-logo/colored-logo.png"
                                     },
+                                    "priceRange": "$$$$",
                                     "openingHours": [
                                         "Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday 09:00-17:00"
                                     ],
