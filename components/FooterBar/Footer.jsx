@@ -124,7 +124,7 @@ export default function Footer() {
           <span>© Peer Anfon {new Date().getFullYear()} - All Rights Reserve</span>
         </Col>
         <Col sm={12} md={4} className={styles.socialLinks}>
-          <a href="https://www.facebook.com/" aria-label="Facebook פאר אנפון" target="_blank" rel="noopener noreferrer" className={styles.footerHover}>
+          <a href="https://www.facebook.com/8peer.co.il/" aria-label="Facebook פאר אנפון" target="_blank" rel="noopener noreferrer" className={styles.footerHover}>
             <i className="fab fa-facebook" aria-hidden="true" />
           </a>
           <a href="https://www.instagram.com/info8peer.co.il/" aria-label="Instagram פאר אנפון" target="_blank" rel="noopener noreferrer" className={styles.footerHover}>

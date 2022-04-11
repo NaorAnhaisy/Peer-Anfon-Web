@@ -71,7 +71,7 @@ export default function ContactUs() {
                         <div className={styles.socialsContactUs}>
                             <ul className={styles.socials}>
                                 <li>
-                                    <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://www.facebook.com/8peer.co.il/" target="_blank" rel="noopener noreferrer">
                                         <i className={`${styles.zmdi} ${styles.zmdiFacebook} zmdi zmdi-facebook`}></i>
                                     </a>
                                 </li>
