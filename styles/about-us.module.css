@@ -179,6 +179,11 @@
 
 .importersDiv .importerImageDiv {
     box-shadow: 0 0 6px 2px #1a1a1a;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .importersDiv h3,
