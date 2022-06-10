@@ -7,7 +7,7 @@
     background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
-    background-image: url(https://peer-anfon-group.co.il/images/backgrounds/about-us-entry.jpeg);
+    background-image: url(../public/images/backgrounds/about-us-entry.jpeg);
 }
 
 .enteryContainer .enteryContentRow {
@@ -53,7 +53,7 @@
 .threeIdeasConatiner {
     background-size: initial;
     background-repeat: repeat;
-    background-image: url(https://localwebdesigncompany.com/newdesign9/wp-content/uploads/sites/94/2019/03/subtle_dots_@2X.png);
+    background-image: url(../public/images/backgrounds/subtle_dots_@2X.png);
     background-color: white;
 }
 
@@ -75,7 +75,7 @@
     width: 100%;
     margin: 0;
     background-color: #aaaaaa;
-    background-image: url(https://images.alphacoders.com/924/924653.jpg);
+    background-image: url(../public/images/backgrounds/about-us-doors.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -208,7 +208,7 @@
 .officialToppImporterMainDiv {
     background-size: initial;
     background-repeat: repeat;
-    background-image: url(https://localwebdesigncompany.com/newdesign9/wp-content/uploads/sites/94/2019/03/subtle_dots_@2X.png);
+    background-image: url(../public/images/backgrounds/subtle_dots_@2X.png);
     background-color: white;
 }
 
