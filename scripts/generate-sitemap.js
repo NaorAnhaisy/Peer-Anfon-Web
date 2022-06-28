@@ -4,8 +4,8 @@ const path = require('path');
 /**
  * Generate sitemap.xml
  * * Important: After adding new web page, you need to add the English name
- * * of the page to the ignoredPaths array, and the Hebrew name to the
- * * extraPaths array.
+ * * of the page to the 'ignoredPaths' array, and the Hebrew name to the
+ * * 'extraPaths' array.
  */
 sitemap({
     baseUrl: "https://www.peer-anfon-group.co.il",
