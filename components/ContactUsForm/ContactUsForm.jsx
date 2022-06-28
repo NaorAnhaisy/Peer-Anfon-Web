@@ -73,9 +73,9 @@ export default function ContactUs() {
             contactData.append("filesUploads", file);
         });
 
-        for (let pair of contactData.entries()) {
-            console.log(pair[0] + ', ' + pair[1]);
-        }
+        // for (let pair of contactData.entries()) {
+        //     console.log(pair[0] + ', ' + pair[1]);
+        // }
 
         // setTimeout(() => {
         //     setIsLoading(false);

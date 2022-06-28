@@ -27,7 +27,7 @@ export default function FileUploaderMulti(props) {
                 files={files}
                 onupdatefiles={(fileItems) => {
                     let filesObjectArray = fileItems.map(fileItem => fileItem.file);
-                    console.log(filesObjectArray)
+                    // console.log(filesObjectArray)
                     setFiles(filesObjectArray);
                     props.onChange(filesObjectArray);
                 }}

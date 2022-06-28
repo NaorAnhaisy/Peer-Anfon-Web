@@ -54,9 +54,23 @@ export default function SharedHouses() {
         AOS.init({ once: true });
     }, []);
 
-    useEffect(() => {
-        let arr = []; images.forEach(image => { let img = new Image(); img.src = image.src; img.onload = function () { let ratio = img.height / img.width; arr.push({ src: image.src, text: image.text, ratio: ratio }) } }); function sortFloat(a, b) { return a.ratio - b.ratio; } let sorted = arr.sort(sortFloat); console.log(sorted);
-    }, []);
+    // useEffect(() => {
+    //     let arr = [];
+    //     images.forEach(image => {
+    //         let img = new Image();
+    //         img.src = image.src;
+    //         img.onload = function () {
+    //             let ratio = img.height / img.width;
+    //             arr.push({ src: image.src, text: image.text, ratio: ratio })
+    //         }
+    //     });
+
+    //     function sortFloat(a, b) {
+    //         return a.ratio - b.ratio;
+    //     }
+    //     let sorted = arr.sort(sortFloat);
+    //     console.log(sorted);
+    // }, []);
 
     function createImagesGallery() {
         return images.map((image, index) => {
