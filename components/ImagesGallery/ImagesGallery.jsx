@@ -2,6 +2,7 @@
 import styles from './ImagesGallery.module.css';
 import { useEffect } from 'react';
 import AOS from 'aos';
+import ProgressiveImage from 'react-progressive-graceful-image';
 
 /**
  * @param {Array.<object>} images Array of objects, which inlcues:
@@ -21,8 +22,12 @@ export default function ImagesGallery({ images, altLabel }) {
         <div className={styles.gallery}>
             {images?.map((image, i) => {
                 return <div key={i} data-aos="fade-up" data-aos-offset="100" data-aos-duration="700" className={`${image.strechType ? styles[image.strechType] : ""} ${styles.blackedImageOnHover}`}>
-                        <img loading="lazy" src={image.src} alt={`${altLabel} ${i + 1}`} className={styles.image} />
-                    </div>
+                    <ProgressiveImage src={image.src} placeholder={image.placeholder || image.src}>
+                        {(src) => <img src={src} alt={`${altLabel} ${i + 1}`} className={styles.image} />}
+                    </ProgressiveImage>
+
+                    {/* <img loading="lazy" src={image.src} alt={`${altLabel} ${i + 1}`} className={styles.image} /> */}
+                </div>
             })}
         </div>
     )

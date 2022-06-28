@@ -2,8 +2,8 @@ import Head from 'next/head';
 import ImagesGallery from '../components/ImagesGallery/ImagesGallery';
 
 const images = [
-    { src: "/images/automatic-doors/doubleLeaf-door/double_leaf_1.jpeg", strechType: "vStrech" },
-    { src: "/images/automatic-doors/doubleLeaf-door/double_leaf_23.jpeg", strechType: "bigStrech" },
+    { src: "/images/automatic-doors/doubleLeaf-door/double_leaf_1.jpeg", placeholder: "/images/automatic-doors/doubleLeaf-door/double_leaf_1-placeholder.jpg", strechType: "vStrech" },
+    { src: "/images/automatic-doors/doubleLeaf-door/double_leaf_23.jpeg", placeholder: "/images/automatic-doors/doubleLeaf-door/double_leaf_23-placeholder.jpg", strechType: "bigStrech" },
     { src: "/images/automatic-doors/doubleLeaf-door/double_leaf_8.jpeg", strechType: "" },
     { src: "/images/automatic-doors/doubleLeaf-door/double_leaf_9.jpeg", strechType: "" },
     { src: "/images/automatic-doors/doubleLeaf-door/double_leaf_10.jpeg", strechType: "" },
