@@ -29,7 +29,6 @@ class MyDocument extends Document {
                     <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.png" />
                     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
                     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
-                    <link rel="canonical" href="https://peer-anfon-group.co.il/" key="canonical" />
 
                     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
                         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossOrigin="anonymous" />
