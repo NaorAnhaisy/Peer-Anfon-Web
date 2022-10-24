@@ -2,7 +2,8 @@ import { SSRProvider } from '@react-aria/ssr';
 import Head from 'next/head';
 import { useEffect } from 'react';
 import AOS from "aos";
-import AppLayout from '../components/AppLayout/AppLayout'
+import AppLayout from '../components/AppLayout/AppLayout';
+
 import '../styles/globals.css';
 import '../styles/navbarStyles.css';
 import '../styles/custom-inputs.css';
