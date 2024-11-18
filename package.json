@@ -11,6 +11,9 @@
     "postbuild": "npm run generate:sitemap",
     "generate:sitemap": "node ./scripts/generate-sitemap.js"
   },
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
